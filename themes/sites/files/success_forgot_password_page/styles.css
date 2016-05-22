@@ -1,0 +1,509 @@
+body {
+    margin:0px;
+    background-image:none;
+    position:static;
+    left:auto;
+    width:1360px;
+    margin-left:0;
+    margin-right:0;
+    text-align:left;
+}
+#base {
+    position:absolute;
+    z-index:0;
+}
+#u0 {
+    position:absolute;
+    left:0px;
+    top:57px;
+    width:1360px;
+    height:589px;
+    font-family:'Segoe UI Обычный', 'Segoe UI';
+    font-size:14px;
+}
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1360px;
+    height:589px;
+}
+#u1 {
+    position:absolute;
+    left:2px;
+    top:286px;
+    width:1356px;
+    visibility:hidden;
+    word-wrap:break-word;
+}
+#u2 {
+    position:absolute;
+    left:560px;
+    top:220px;
+    width:240px;
+    height:30px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-size:16px;
+    text-align:center;
+}
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:240px;
+    height:30px;
+}
+#u3 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:240px;
+    word-wrap:break-word;
+}
+#u4 {
+    position:absolute;
+    left:446px;
+    top:270px;
+    width:469px;
+    height:20px;
+    font-family:'Segoe UI Обычный', 'Segoe UI';
+    font-weight:400;
+    font-size:13px;
+    color:#FF0000;
+}
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:469px;
+    height:20px;
+}
+#u5 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:469px;
+    word-wrap:break-word;
+}
+#u6 {
+    position:absolute;
+    left:571px;
+    top:320px;
+    width:218px;
+    height:40px;
+    font-family:'Segoe UI Обычный', 'Segoe UI';
+    font-size:13px;
+    color:#FFFFFF;
+}
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:218px;
+    height:40px;
+}
+#u6_img.mouseOver {
+}
+#u6.mouseOver {
+}
+#u7 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:214px;
+    word-wrap:break-word;
+}
+#u8 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1360px;
+    height:57px;
+}
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1360px;
+    height:57px;
+}
+#u9 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:1356px;
+    visibility:hidden;
+    word-wrap:break-word;
+}
+#u10 {
+    position:absolute;
+    left:529px;
+    top:0px;
+    width:362px;
+    height:57px;
+}
+#u10_menu {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:368px;
+    height:63px;
+}
+#u11 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:367px;
+    height:62px;
+}
+#u12 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:121px;
+    height:57px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    color:#FFFFFF;
+    text-align:center;
+}
+#u12_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:121px;
+    height:57px;
+}
+#u12_img.mouseOver {
+}
+#u12.mouseOver {
+}
+#u13 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:117px;
+    word-wrap:break-word;
+}
+#u14 {
+    position:absolute;
+    left:121px;
+    top:0px;
+    width:127px;
+    height:57px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    color:#FFFFFF;
+    text-align:center;
+}
+#u14_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:127px;
+    height:57px;
+}
+#u14_img.mouseOver {
+}
+#u14.mouseOver {
+}
+#u15 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:123px;
+    word-wrap:break-word;
+}
+#u16 {
+    position:absolute;
+    left:248px;
+    top:0px;
+    width:114px;
+    height:57px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    color:#FFFFFF;
+    text-align:center;
+}
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:114px;
+    height:57px;
+}
+#u16_img.mouseOver {
+}
+#u16.mouseOver {
+}
+#u17 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:110px;
+    word-wrap:break-word;
+}
+#u18 {
+    position:absolute;
+    left:1152px;
+    top:0px;
+    width:116px;
+    height:57px;
+}
+#u18_menu {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:122px;
+    height:63px;
+}
+#u19 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:121px;
+    height:62px;
+}
+#u20 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:116px;
+    height:57px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    text-decoration:underline;
+    color:#FFFFFF;
+    text-align:center;
+}
+#u20_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:116px;
+    height:57px;
+}
+#u20_img.mouseOver {
+}
+#u20.mouseOver {
+}
+#u21 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:112px;
+    word-wrap:break-word;
+}
+#u22 {
+    position:absolute;
+    left:30px;
+    top:16px;
+    width:23px;
+    height:22px;
+    color:#FFFFFF;
+}
+#u22_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:23px;
+    height:22px;
+}
+#u23 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:19px;
+    visibility:hidden;
+    word-wrap:break-word;
+}
+#u24 {
+    position:absolute;
+    left:63px;
+    top:13px;
+    width:73px;
+    height:28px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    color:#FFFFFF;
+}
+#u24_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:73px;
+    height:28px;
+}
+#u25 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:73px;
+    word-wrap:break-word;
+}
+#u26 {
+    position:absolute;
+    left:0px;
+    top:646px;
+    width:1360px;
+    height:44px;
+    color:#D7D7D7;
+}
+#u26_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1360px;
+    height:44px;
+}
+#u27 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:1356px;
+    visibility:hidden;
+    word-wrap:break-word;
+}
+#u28 {
+    position:absolute;
+    left:1305px;
+    top:660px;
+    width:31px;
+    height:12px;
+    font-family:'Segoe UI Обычный', 'Segoe UI';
+    font-size:9px;
+    color:#FFFFFF;
+}
+#u28_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:31px;
+    height:12px;
+}
+#u29 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:31px;
+    white-space:nowrap;
+}
+#u30 {
+    position:absolute;
+    left:600px;
+    top:646px;
+    width:219px;
+    height:44px;
+}
+#u30_menu {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:225px;
+    height:50px;
+}
+#u31 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:224px;
+    height:49px;
+}
+#u32 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:66px;
+    height:44px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    text-decoration:underline;
+    color:#FFFFFF;
+    text-align:center;
+}
+#u32_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:66px;
+    height:44px;
+}
+#u32_img.mouseOver {
+}
+#u32.mouseOver {
+}
+#u33 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:62px;
+    word-wrap:break-word;
+}
+#u34 {
+    position:absolute;
+    left:66px;
+    top:0px;
+    width:91px;
+    height:44px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    text-decoration:underline;
+    color:#FFFFFF;
+    text-align:center;
+}
+#u34_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:91px;
+    height:44px;
+}
+#u34_img.mouseOver {
+}
+#u34.mouseOver {
+}
+#u35 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:87px;
+    word-wrap:break-word;
+}
+#u36 {
+    position:absolute;
+    left:157px;
+    top:0px;
+    width:62px;
+    height:44px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    text-decoration:underline;
+    color:#FFFFFF;
+    text-align:center;
+}
+#u36_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:62px;
+    height:44px;
+}
+#u36_img.mouseOver {
+}
+#u36.mouseOver {
+}
+#u37 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:58px;
+    word-wrap:break-word;
+}

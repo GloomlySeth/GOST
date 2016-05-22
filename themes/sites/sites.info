@@ -1,0 +1,30 @@
+name = Sites
+description = My theme.
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[screen][] = editor_-_demand_create/styles.css
+stylesheets[screen][] = editor_-_main_page/styles.css
+stylesheets[screen][] = editor_-_my_demands/styles.css
+stylesheets[screen][] = editor_-_my_documents/styles.css
+stylesheets[screen][] = editor_-_my_documents_-_show_more/styles.css
+stylesheets[screen][] = forgot_password/styles.css
+stylesheets[screen][] = login_page/styles.css
+stylesheets[screen][] = main_page/styles.css
+stylesheets[screen][] = register_page/styles.css
+stylesheets[screen][] = success_forgot_password_page/styles.css
+stylesheets[screen][] = success_registration_page/styles.css
+
+settings[shortcut_module_link] = 1
+regions[content] = Content
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[sidebar_first] = First sidebar
+regions_hidden[] = sidebar_first
+
+; Information added by Drupal.org packaging script on 2016-02-24
+version = "7.43"
+project = "drupal"
+datestamp = "1456343506"
+
