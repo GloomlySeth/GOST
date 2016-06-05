@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.css">
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="plugins/spectrum/styles/spectrum.css" type="text/css" rel="stylesheet"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-    <title>Document</title>
-</head>
-<body>
+<?php ?>
 <div class="header">
     <div class = "row topMenu">
 
@@ -43,34 +25,17 @@
             <div id="u9" class="ax_table">
 
                 <!-- Unnamed (Menu Item) -->
-                <div id="u10" class="ax_table_cell">
-                    <div id="u11" class="text">
-                        <p>
-                            <span>МОИ ДОКУМЕНТЫ</span>
-                        </p>
-                    </div>
-                </div>
+
 
                 <!-- Unnamed (Menu Item) -->
-                <div id="u12" class="ax_table_cell">
-                    <div id="u13" class="text">
-                        <p>
-                            <span>ТРЕБОВАНИЯ</span>
-                        </p>
-                    </div>
-                </div>
+
 
                 <!-- Unnamed (Menu Item) -->
-                <div id="u14" class="ax_table_cell">
-                    <div id="u15" class="text">
-                        <p>
-                            <span>СПОСОБЫ ОПЛАТЫ</span>
-                        </p>
-                    </div>
-                </div>
+
             </div>
         </div>
 
+        <!-- Unnamed (Menu) -->
         <div id="u16" class="ax_menu col-xs-2">
 
             <!-- Unnamed (Table) -->
@@ -122,6 +87,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 <div class="midCont">
@@ -146,76 +112,65 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <h1 class="text-center">Подробная информация о документе</h1>
+                <h1 class="text-center">Список документов</h1>
 
+                <form class="form-inline nameDiv">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Все</button>
+                        <button type="submit" class="btn btn-primary">Новые</button>
+                        <button type="submit" class="btn btn-primary">Ждут оплаты</button>
+                        <button type="submit" class="btn btn-primary">В разработке</button>
+                        <button type="submit" class="btn btn-primary">Готовые</button>
 
-                <div class="mineTable nameDiv">
+                        <input type="text" class="form-control" placeholder="">
+                        <button type="submit" class="btn btn-success">Поиск</button>
+                    </div>
+                </form>
+                <div class="mineTable">
                     <table class="table table-bordered">
-
+                        <tr>
+                            <th></th>
+                            <th class="text-center">Название</th>
+                            <th class="text-center">Размер</th>
+                            <th class="text-center">Дата загрузки</th>
+                            <th class="text-center">Состояние</th>
+                            <th class="text-center">Требование</th>
+                            <th class="text-center"></th>
+                            <th class="text-center"></th>
+                        </tr>
                         <tr>
                             <td class="text-center">
-                                <p>Название</p>
+                                <input type="checkbox">
                             </td>
                             <td class="text-center">
                                 Документ1
                             </td>
-                        </tr>
-                        <tr>
                             <td class="text-center">
-                                <p>Тип</p>
+                                2.5 мб
                             </td>
                             <td class="text-center">
-                                .docx
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">
-                                <p>Размер</p>
+                                24.01.2015
                             </td>
                             <td class="text-center">
-                                12 мб
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">
-                                <p>Приемное требование</p>
+                                Новый
                             </td>
                             <td class="text-center">
-                                Требование1
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">
-                                <p>Состояние</p>
+                                Требование2
                             </td>
                             <td class="text-center">
-                                Ждет оплаты
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">
-                                <p>Дата загрузки</p>
+                                <img src="images/document_list/Filetype-Word-doc.ico" width="25" height="25">
                             </td>
                             <td class="text-center">
-                                26.03.2015 9.00
+                                <img src="images/document_list/Filetype-Pdf.ico" width="25" height="25">
                             </td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">
-                                <p>Дата изменения</p>
-                            </td>
-                            <td class="text-center">
-                                30.03.2015 14.05
-                            </td>
+
                         </tr>
 
                     </table>
                 </div>
-                <button type="submit" class="btn btn-danger">Скачать .pdf</button>
-                <button type="submit" class="btn btn-primary">Скачать .docx</button>
-                <button type="submit" class="btn btn-success">Изменить название</button>
-                <button type="submit" class="btn btn-danger">Удалить файл</button>
-                <button type="submit" class="btn btn-default" disabled>Посмотреть результат</button>
+                <button type="submit" class="btn btn-success">Обработать</button>
+                <button type="submit" class="btn btn-danger">Удалить...</button>
+                <button type="submit" class="btn btn-default">Детальная информация</button>
 
 
 
@@ -270,5 +225,5 @@
                 </div>
             </div>
         </div>
-</body>
-</html>
+</div>
+    </div>

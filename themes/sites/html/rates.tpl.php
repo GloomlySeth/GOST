@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.css">
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <title>Document</title>
-</head>
-<body>
+<?php ?>
 <div class="header">
     <div class = "row topMenu">
 
@@ -35,18 +24,11 @@
             <!-- Unnamed (Table) -->
             <div id="u9" class="ax_table">
 
-                <!-- Unnamed (Menu Item) -->
 
-
-                <!-- Unnamed (Menu Item) -->
-
-
-                <!-- Unnamed (Menu Item) -->
 
             </div>
         </div>
 
-        <!-- Unnamed (Menu) -->
         <div id="u16" class="ax_menu col-xs-2">
 
             <!-- Unnamed (Table) -->
@@ -80,36 +62,67 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <h1 class="text-center">Информация о пользователе</h1>
-                <div class="form-inline divButtons text-center nameDiv">
-                    Номер лицевого счета
-                    <input type="text" class="form-control">
+                <h1 class="text-center">Тарифы</h1>
 
+
+
+
+
+
+                <div class="mineTable nameDiv">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th class="text-center">Название тарифа</th>
+                            <th class="text-center">Сумма в месяц</th>
+                            <th class="text-center">Сумма в год</th>
+                            <th class="text-center">Количество беспл. документов, шт</th>
+                            <th class="text-center">Максимальный объем беспл. документа</th>
+                            <th class="text-center">Сумма за документ</th>
+                            <th class="text-center">Алгоритм списания</th>
+                            <th class="text-center">Время начала действия тарифа</th>
+                        </tr>
+                        <tr>
+                            <td class="text-center">Тариф1</td>
+                            <td class="text-center">10000</td>
+                            <td class="text-center">120000</td>
+                            <td class="text-center">20</td>
+                            <td class="text-center">-</td>
+                            <td class="text-center">-</td>
+                            <td class="text-center">ежедн</td>
+                            <td class="text-center">12.12.12</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">Тариф2</td>
+                            <td class="text-center">10000</td>
+                            <td class="text-center">120000</td>
+                            <td class="text-center">30</td>
+                            <td class="text-center">-</td>
+                            <td class="text-center">-</td>
+                            <td class="text-center">ежедн</td>
+                            <td class="text-center">12.12.14</td>
+                        </tr>
+
+
+                    </table>
                 </div>
-                <div>
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#">Состояние счета</a></li>
-                        <li><a href="#">Личная информация</a></li>
-                        <li><a href="#">Информация о компании</a></li>
-                        <li><a href="#">Список документов</a></li>
-                        <li><a href="#">Список требований</a></li>
-                    </ul>
+                <div class="btnDown">
+                    <button class="btn btn-primary">Сохранить изменения</button>
+                    <button class="btn btn-primary">Создать тариф</button>
                 </div>
+
+
+
+
+
 
             </div>
-
-
-
-
-
         </div>
+
+
+
+
     </div>
-
-
-
-
 </div>
-
 <div class="footer">
     <div class="row rowEdit" >
         <!-- Unnamed (Shape) -->
@@ -152,5 +165,3 @@
                 </div>
             </div>
         </div>
-</body>
-</html>

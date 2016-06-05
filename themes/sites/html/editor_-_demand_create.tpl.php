@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-
-    <title>Editor - Demand create</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="stylesheet" type="text/css" href="resources/bootstrap/css/bootstrap.min.css">
-
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <link rel="stylesheet" href="data/editor_styles.css">
-    <link href="plugins/spectrum/styles/spectrum.css" type="text/css" rel="stylesheet"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="files/editor_-_demand_create/styles.css">
-    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
-    <script src="plugins/spectrum/spectrum.js"></script>
-
-</head>
-<body>
+<?php ?>
 <div id="base">
     <!-- top menu -->
     <div class = "row topMenu">
@@ -1266,5 +1244,3 @@
         // })
     })
 </script>
-</body>
-</html>

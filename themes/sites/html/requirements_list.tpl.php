@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.css">
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <title>Document</title>
-</head>
-<body>
+<?php ?>
 <div class="header">
     <div class = "row topMenu">
 
@@ -47,6 +35,7 @@
             </div>
         </div>
 
+        <!-- Unnamed (Menu) -->
         <div id="u16" class="ax_menu col-xs-2">
 
             <!-- Unnamed (Table) -->
@@ -82,43 +71,47 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <h1 class="text-center">Состояние счета</h1>
-                <div class="billDiv">
-                    <p>Баланс: 0</p>
-                    <a href="#">Бел.руб</a>
-                    <a href="#">Рос.руб</a>
-                    <a href="#">USD</a>
-                    <a href="#">EUR</a>
+                <h1 class="text-center">Список требований</h1>
 
-                </div>
-                <div>
-                    Текущий тариф
-                    <button type="submit" class="btn btn-default">Смена тарифа</button>
-                    <button type="submit" class="btn btn-default">Наименование тарифа</button>
-                </div>
-                <h4 class="text-center">Движения по счету</h4>
+                <form class="form-inline nameDiv">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Все</button>
+                        <button type="submit" class="btn btn-primary">Стандартные</button>
+                        <button type="submit" class="btn btn-primary">Мои</button>
 
+                        <input type="text" class="form-control" placeholder="">
+                        <button type="submit" class="btn btn-success">Поиск</button>
+                    </div>
+                </form>
                 <div class="mineTable">
                     <table class="table table-bordered">
-
                         <tr>
-                            <th class="text-center">Дата</th>
-                            <th class="text-center">Время</th>
-                            <th class="text-center">Действие</th>
-                            <th class="text-center">Документ</th>
-                            <th class="text-center">Сумма</th>
-
+                            <th></th>
+                            <th class="text-center">Название</th>
+                            <th class="text-center">Дата создания</th>
+                            <th class="text-center">Тип</th>
                         </tr>
                         <tr>
-                            <td class="text-center"></td>
-                            <td class="text-center"></td>
-                            <td class="text-center">Пополнение счета</td>
-                            <td class="text-center">-</td>
-                            <td class="text-center">+10 000</td>
+                            <td class="text-center">
+                                <input type="checkbox">
+                            </td>
+                            <td class="text-center">
+                                Требование1
+                            </td>
+                            <td class="text-center">
+                                24.01.2015
+                            </td>
+                            <td class="text-center">
+                                Стандартное
+                            </td>
                         </tr>
+
                     </table>
                 </div>
-                <button type="submit" class="btn btn-success">Пополнить счет</button>
+                <div>
+                    <button type="submit" class="btn btn-danger">Удалить...</button>
+                    <button type="submit" class="btn btn-success">Создать требования</button>
+                </div>
 
 
 
@@ -174,5 +167,5 @@
                 </div>
             </div>
         </div>
-</body>
-</html>
+</div>
+    </div>

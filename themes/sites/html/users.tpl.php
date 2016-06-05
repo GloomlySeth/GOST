@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.css">
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <title>Document</title>
-</head>
-<body>
+<?php ?>
 <div class="header">
     <div class = "row topMenu">
 
@@ -35,24 +24,15 @@
             <!-- Unnamed (Table) -->
             <div id="u9" class="ax_table">
 
-                <!-- Unnamed (Menu Item) -->
-
-
-                <!-- Unnamed (Menu Item) -->
-
-
-                <!-- Unnamed (Menu Item) -->
 
             </div>
         </div>
 
-        <!-- Unnamed (Menu) -->
         <div id="u16" class="ax_menu col-xs-2">
 
             <!-- Unnamed (Table) -->
             <div id="u17" class="ax_table">
 
-                <!-- Unnamed (Menu Item) -->
 
             </div>
 
@@ -70,59 +50,52 @@
                 <div class="col-md-3 menuClassOne sidebar" >
                     <div>
                         <ul class="nav bs-docs-sidenav listMenuOne">
-                            <li><a href="#">Загрузка документа</a></li>
-                            <li><a href="#">Формирование требований</a></li>
+                            <li><a href="#">Тарифы</a></li>
+                            <li><a href="#">Статистика</a></li>
+                            <li><a href="#">Пользователи</a></li>
                             <li><a href="#">Список требований</a></li>
-                            <li><a href="#">Список документов</a></li>
-                            <li><a href="#">Личная информация</a></li>
-                            <li><a href="#">Информация о компании</a></li>
-                            <li><a href="#">Состояние счета</a></li>
+                            <li><a href="#">Формирование требований</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-9">
-                <h1 class="text-center">Список требований</h1>
+                <h1 class="text-center">Пользователи</h1>
 
-                <form class="form-inline nameDiv">
+
+                <form class="nameDiv form-inline text-right">
+
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Все</button>
-                        <button type="submit" class="btn btn-primary">Стандартные</button>
-                        <button type="submit" class="btn btn-primary">Мои</button>
+                        Поиск по N лицевого счета
+                        <input type="text" class="form-control">
 
-                        <input type="text" class="form-control" placeholder="">
-                        <button type="submit" class="btn btn-success">Поиск</button>
+                        <button class="btn btn-success">Поиск</button>
                     </div>
                 </form>
+
+
+
                 <div class="mineTable">
                     <table class="table table-bordered">
                         <tr>
-                            <th></th>
-                            <th class="text-center">Название</th>
-                            <th class="text-center">Дата создания</th>
-                            <th class="text-center">Тип</th>
+                            <th class="text-center">N Лиц. счета</th>
+                            <th class="text-center">Тариф</th>
+                            <th class="text-center">Баланс</th>
+                            <th class="text-center">Юрлицо</th>
                         </tr>
                         <tr>
-                            <td class="text-center">
-                                <input type="checkbox">
-                            </td>
-                            <td class="text-center">
-                                Требование1
-                            </td>
-                            <td class="text-center">
-                                24.01.2015
-                            </td>
-                            <td class="text-center">
-                                Стандартное
-                            </td>
+                            <td class="text-center">23443123</td>
+                            <td class="text-center">Тариф1</td>
+                            <td class="text-center">100000</td>
+                            <td class="text-center">-</td>
                         </tr>
+
+
 
                     </table>
                 </div>
-                <div>
-                    <button type="submit" class="btn btn-danger">Удалить...</button>
-                    <button type="submit" class="btn btn-success">Создать требования</button>
-                </div>
+
+
 
 
 
@@ -178,5 +151,5 @@
                 </div>
             </div>
         </div>
-</body>
-</html>
+</div>
+    </div>

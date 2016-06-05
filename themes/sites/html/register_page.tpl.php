@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Editor - Main page</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="stylesheet" type="text/css" href="resources/bootstrap/css/bootstrap.min.css"><!-- bootstrap -->
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <link href="files/editor_-_main_page/styles.css" type="text/css" rel="stylesheet"/>
-    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
-
-</head>
-<body>
+<?php ?>
 <div id="base" class="">
-
-
-
     <div class = "row topMenu">
 
         <div class="col-xs-2 someMargin1" style="margin: 15px 0px 0px;">
@@ -46,7 +28,7 @@
                 <div id="u10" class="ax_table_cell">
                     <div id="u11" class="text">
                         <p>
-                            <span>МОИ ДОКУМЕНТЫ</span>
+                            <span>ВОЗМОЖНОСТИ</span>
                         </p>
                     </div>
                 </div>
@@ -55,7 +37,7 @@
                 <div id="u12" class="ax_table_cell">
                     <div id="u13" class="text">
                         <p>
-                            <span>ТРЕБОВАНИЯ</span>
+                            <span>БЛОГ</span>
                         </p>
                     </div>
                 </div>
@@ -64,7 +46,7 @@
                 <div id="u14" class="ax_table_cell">
                     <div id="u15" class="text">
                         <p>
-                            <span>СПОСОБЫ ОПЛАТЫ</span>
+                            <span>ОТЗЫВЫ</span>
                         </p>
                     </div>
                 </div>
@@ -83,66 +65,27 @@
                     <!-- Unnamed () -->
                     <div id="u19" class="text">
                         <p>
-                            <span style="text-decoration:underline;">Aliaksei</span>
+                            <span style="text-decoration:underline;">ВОЙТИ</span>
                         </p>
                     </div>
                 </div>
             </div>
-
-            <!-- Unnamed (Menu) -->
-            <div id="u20" class="ax_menu sub_menu">
-                <!-- Unnamed (Table) -->
-                <div id="u21" class="ax_table">
-
-                    <!-- Unnamed (Menu Item) -->
-                    <div id="u22" class="ax_table_cell">
-                        <div id="u23" class="text">
-                            <p>
-                                <span>Мои документы</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Unnamed (Menu Item) -->
-                    <div id="u24" class="ax_table_cell">
-                        <div id="u25" class="text">
-                            <p>
-                                <span>Настройки учётной записи</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Unnamed (Menu Item) -->
-                    <div id="u26" class="ax_table_cell">
-                        <div id="u27" class="text">
-                            <p>
-                                <span>Выход</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-
     </div>
     <!-- top menu-->
 
-    <div class="row">
-        <!-- Unnamed (Image) -->
-        <div id="u0" class="ax_image">
+    <div class="centerContent">
+        <div class="inCenter">
+            <p class="line1">Регистрация нового пользователя</p>
 
-            <!-- Unnamed (Shape) -->
-            <div id="u2" class="ax_paragraph">
+            <input type="text" class="inputMail" placeholder="Имя">
+            <input type="text" class="inputMail" placeholder="Электронная почта">
+            <input type="text" class="inputMail" placeholder="Пароль">
+            <input type="text" class="inputMail" placeholder="Моб. телефон">
 
-                <div id="u3" class="text">
-                    <p><span>ПОРЯДОК РАБОТЫ С СИСТЕМОЙ</span></p>
-                </div>
-                <div id="u4" class="text">
-                    <p><span>1. Для загрузки одного или нескольких файлов нажмите на кнопку &quot;Загрузить&quot;.</span></p><p><span>&nbsp;</span></p><p><span>2. Выберите требования для документа или создайте свои.</span></p><p><span>&nbsp;</span></p><p><span>3. Выберите способ оплаты.</span></p><p><span>&nbsp;</span></p><p><span>4. Ожидайте, пока система обработает ваш документ.</span></p>
-                </div>
-
-            </div>
+            <button class="button btnDownload">Регистрация</button>
         </div>
+
 
     </div>
     <!-- row 2 -->
@@ -201,17 +144,4 @@
     </div>
 
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#u16").hover(function(){
-                        $("#u20").slideToggle();
-                    },
-                    function(){
-                        $("#u20").hide();
-                    });
-        })
-    </script>
-
 </div>
-</body>
-</html>

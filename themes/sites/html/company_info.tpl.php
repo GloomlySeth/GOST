@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.css">
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <title>Document</title>
-</head>
-<body>
+<?php ?>
 <div class="header">
     <div class = "row topMenu">
 
@@ -277,5 +265,3 @@
         </div>
     </div>
 </div>
-</body>
-</html>

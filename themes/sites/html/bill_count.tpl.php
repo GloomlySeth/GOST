@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.css">
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <title>Document</title>
-
-</head>
-<body>
-
-
+<?php ?>
 <div class="header">
     <div class = "row topMenu">
 
@@ -39,35 +25,16 @@
             <div id="u9" class="ax_table">
 
                 <!-- Unnamed (Menu Item) -->
-                <div id="u10" class="ax_table_cell">
-                    <div id="u11" class="text">
-                        <p>
-                            <span>ВОЗМОЖНОСТИ</span>
-                        </p>
-                    </div>
-                </div>
+
 
                 <!-- Unnamed (Menu Item) -->
-                <div id="u12" class="ax_table_cell">
-                    <div id="u13" class="text">
-                        <p>
-                            <span>БЛОГ</span>
-                        </p>
-                    </div>
-                </div>
+
 
                 <!-- Unnamed (Menu Item) -->
-                <div id="u14" class="ax_table_cell">
-                    <div id="u15" class="text">
-                        <p>
-                            <span>ОТЗЫВЫ</span>
-                        </p>
-                    </div>
-                </div>
+
             </div>
         </div>
 
-        <!-- Unnamed (Menu) -->
         <div id="u16" class="ax_menu col-xs-2">
 
             <!-- Unnamed (Table) -->
@@ -103,56 +70,48 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <h1 class="text-center">Загрузка документов</h1>
+                <h1 class="text-center">Состояние счета</h1>
+                <div class="billDiv">
+                    <p>Баланс: 0</p>
+                    <a href="#">Бел.руб</a>
+                    <a href="#">Рос.руб</a>
+                    <a href="#">USD</a>
+                    <a href="#">EUR</a>
 
-                <form class="nameDiv">
-                    <label>Требования к оформлению</label>
-                    <div class="form-group">
-                        <select class="form-control">
-                            <option>Opt1</option>
-                            <option>Opt2</option>
-                        </select>
+                </div>
+                <div>
+                    Текущий тариф
+                    <button type="submit" class="btn btn-default">Смена тарифа</button>
+                    <button type="submit" class="btn btn-default">Наименование тарифа</button>
+                </div>
+                <h4 class="text-center">Движения по счету</h4>
 
-                    </div>
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Edit">
-                        </div>
-                        <button type="submit" class="btn btn-warning">Обзор</button>
-                        <button type="submit" class="btn btn-success">Загрузить</button>
-                        <button type="submit" class="btn btn-danger">Удалить</button>
-                    </div>
+                <div class="mineTable">
+                    <table class="table table-bordered">
 
-                    <div class="divCheckBoxes">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> SampleDoc1.docx
+                        <tr>
+                            <th class="text-center">Дата</th>
+                            <th class="text-center">Время</th>
+                            <th class="text-center">Действие</th>
+                            <th class="text-center">Документ</th>
+                            <th class="text-center">Сумма</th>
 
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
+                        </tr>
+                        <tr>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-center">Пополнение счета</td>
+                            <td class="text-center">-</td>
+                            <td class="text-center">+10 000</td>
+                        </tr>
+                    </table>
+                </div>
+                <button type="submit" class="btn btn-success">Пополнить счет</button>
 
-                                <input type="checkbox"> SampleDoc2.docx
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
 
-                                <input type="checkbox"> SampleDoc2.docx
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
 
-                                <input type="checkbox"> SampleDoc2.docx
-                            </label>
-                        </div>
 
-                    </div>
 
-                    <button type="submit" class="btn btn-success">Начать обработку</button>
-                </form>
             </div>
         </div>
 
@@ -203,10 +162,3 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-</body>
-</html>

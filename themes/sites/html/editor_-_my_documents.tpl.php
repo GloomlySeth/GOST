@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Editor - Main page</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="stylesheet" type="text/css" href="resources/bootstrap/css/bootstrap.min.css"><!-- bootstrap -->
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <link href="files/editor_-_my_demands/styles.css" type="text/css" rel="stylesheet"/>
-    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
-
-</head>
-<body>
+<?php ?>
 <div id="base" class="">
     <div class = "row topMenu">
 
@@ -128,16 +113,19 @@
             <button class="buttonCreate">СОЗДАТЬ...</button>
             <ul>
                 <li><a href="">Все</a></li>
-                <li><a href="">Стандартные</a></li>
-                <li><a href="">Мои</a></li>
+                <li><a href="">Новые</a></li>
+                <li><a href="">Ждут оплаты</a></li>
+                <li><a href="">В обработке</a></li>
+                <li><a href="">Готовые</a></li>
             </ul>
         </div>
 
         <!-- center content -->
         <div class="col-xs-10 centerContent">
-            <h3>Список требований</h3>
+            <h3>Список документов</h3>
             <div class="inCenter">
                 <div>
+                    <button class="buttonHandle">Обработать</button>
                     <form>
                         <input type="text" class="searField">
                         <button class="buttonSearch">Поиск</button>
@@ -148,39 +136,58 @@
                     <thead>
                     <td></td>
                     <td><span>Название</span></td>
-                    <td><span>Дата создания</span></td>
-                    <td><span>Тип</span></td>
+                    <td><span>Размер</span></td>
+                    <td><span>Дата загрузки</span></td>
+                    <td><span>Состояние</span></td>
+                    <td><span>Требование</span></td>
+                    <td></td>
                     </thead>
                     <tr>
                         <td><input type="checkbox"></td>
-                        <td><span>Требование1</span></td>
+                        <td><span>Документ1</span></td>
+                        <td><span>2.5 мб</span></td>
                         <td><span>24.01.2015</span></td>
-                        <td><span>Стандартное</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
+                        <td><span>Новый</span></td>
                         <td><span>Требование2</span></td>
-                        <td><span>24.01.2015</span></td>
-                        <td><span>Стандартное</span></td>
+                        <td><img src="images/editor_-_my_documents/u203.png"></td>
                     </tr>
                     <tr>
                         <td><input type="checkbox"></td>
+                        <td><span>Документ2</span></td>
+                        <td><span>2.5 мб</span></td>
+                        <td><span>24.01.2015</span></td>
+                        <td><span>Новый</span></td>
+                        <td><span>Требование2</span></td>
+                        <td><img src="images/editor_-_my_documents/u203.png"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><span>Документ3</span></td>
+                        <td><span>2.5 мб</span></td>
+                        <td><span>24.01.2015</span></td>
+                        <td><span>Новый</span></td>
                         <td><span>Требование3</span></td>
-                        <td><span>24.01.2015</span></td>
-                        <td><span>Стандартное</span></td>
+                        <td><img src="images/editor_-_my_documents/u203.png"></td>
                     </tr>
                     <tr>
                         <td><input type="checkbox"></td>
+                        <td><span>Документ4</span></td>
+                        <td><span>2.5 мб</span></td>
+                        <td><span>24.01.2015</span></td>
+                        <td><span>Новый</span></td>
                         <td><span>Требование4</span></td>
-                        <td><span>24.01.2015</span></td>
-                        <td><span>Стандартное</span></td>
+                        <td><img src="images/editor_-_my_documents/u203.png"></td>
                     </tr>
                     <tr>
                         <td><input type="checkbox"></td>
-                        <td><span>Требование5</span></td>
+                        <td><span>Документ5</span></td>
+                        <td><span>2.5 мб</span></td>
                         <td><span>24.01.2015</span></td>
-                        <td><span>Стандартное</span></td>
+                        <td><span>Новый</span></td>
+                        <td><span>Требование5</span></td>
+                        <td><img src="images/editor_-_my_documents/u203.png"></td>
                     </tr>
+
                 </table>
 
                 <button class="buttonDelete">Удалить...</button>
@@ -257,5 +264,3 @@
     </script>
 
 </div>
-</body>
-</html>

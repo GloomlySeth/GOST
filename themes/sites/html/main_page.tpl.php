@@ -1,30 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Authorised user</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="stylesheet" type="text/css" href="resources/bootstrap/css/bootstrap.min.css"><!-- bootstrap -->
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-
-
-    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
-
-</head>
-<body>
+<?php
+?>
 <div id="base" class="">
-
     <div class = "row topMenu">
-
         <div class="col-xs-2 someMargin1" style="margin: 15px 0px 0px;">
             <!-- Logo (Image) -->
             <div id="u28" class="ax_image" data-label="Logo">
                 <img id="u28_img" class="img " src="images/main_page/logo_u34.png"/>
             </div>
-
             <!-- Logo title (Shape) -->
             <div id="u30" class="ax_paragraph" data-label="Logo title">
                 <div id="u31" class="text">
@@ -34,13 +16,10 @@
                 </div>
             </div>
         </div>
-
         <!-- Unnamed (Menu) -->
         <div id="u8" class="ax_menu col-xs-8">
-
             <!-- Unnamed (Table) -->
             <div id="u9" class="ax_table">
-
                 <!-- Unnamed (Menu Item) -->
                 <div id="u10" class="ax_table_cell">
                     <div id="u11" class="text">
@@ -49,7 +28,6 @@
                         </p>
                     </div>
                 </div>
-
                 <!-- Unnamed (Menu Item) -->
                 <div id="u12" class="ax_table_cell">
                     <div id="u13" class="text">
@@ -58,7 +36,6 @@
                         </p>
                     </div>
                 </div>
-
                 <!-- Unnamed (Menu Item) -->
                 <div id="u14" class="ax_table_cell">
                     <div id="u15" class="text">
@@ -69,7 +46,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Unnamed (Menu) -->
         <div id="u16" class="ax_menu col-xs-2">
 
@@ -190,5 +166,3 @@
     </div>
 
 </div>
-</body>
-</html>

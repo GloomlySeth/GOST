@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Editor - Main page</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="stylesheet" type="text/css" href="resources/bootstrap/css/bootstrap.min.css"><!-- bootstrap -->
-    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
-    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
-    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
-    <link href="files/forgot_password/styles.css" type="text/css" rel="stylesheet"/>
-    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
-
-</head>
-<body>
+<?php ?>
 <div id="base" class="">
     <div class = "row topMenu">
 
@@ -91,10 +76,9 @@
 
     <div class="centerContent">
         <div class="inCenter">
-            <p class="line1">Востановление пароля</p>
-            <p class="line2">Если вы забыли пароль для входа на сайт, введите адрес электронной почты, который вы указывали при регистрации</p>
-            <input type="text" class="inputMail" placeholder="электронной адрес" style="padding: 3px;">
-            <button class="button btnDownload">Выслать пароль</button>
+            <p class="line1" style="color: black;">Востановление пароля</p>
+            <p class="line2" style="color:red">На Ваш электронный адрес отправлено письмо для восстановления пароля!</p>
+            <button class="button btnDownload">Вернуться на главную</button>
         </div>
 
 
@@ -156,5 +140,3 @@
 
 
 </div>
-</body>
-</html>
