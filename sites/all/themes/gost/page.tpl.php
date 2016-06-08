@@ -8,15 +8,17 @@
             <div class="col-xs-2 someMargin1" style="margin: 15px 0px 0px;">
                 <!-- Logo (Image) -->
                 <div id="u28" class="ax_image" data-label="Logo">
+                  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
                     <img id="u28_img" class="img " src="/<?=$directory;?>/images/main_page/logo_u34.png"/>
+                  </a>
                 </div>
 
                 <!-- Logo title (Shape) -->
                 <div id="u30" class="ax_paragraph" data-label="Logo title">
                     <div id="u31" class="text">
-                        <p>
-                            <span>РЕДАКТОР ДОКУМЕНТОВ</span>
-                        </p>
+                      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+                        <span>РЕДАКТОР ДОКУМЕНТОВ</span>
+                      </a>
                     </div>
                 </div>
             </div>
@@ -26,11 +28,20 @@
 
                 <!-- Unnamed (Table) -->
                 <div id="u9" class="ax_table">
+                  <? foreach ($main_menu as $menu_item): ?>
                     <!-- Unnamed (Menu Item) -->
-                    <!-- Unnamed (Menu Item) -->
-                    <!-- Unnamed (Menu Item) -->
+                    <a href="<?=$menu_item['href'];?>" id="u11" class="text">
+                      <div id="u10" class="ax_table_cell">
+                          <p>
+                            <span><?=$menu_item['title'];?></span>
+                          </p>
+                      </div>
+                    </a>
+                  <?endforeach;?>
                 </div>
             </div>
+
+
 
             <!-- Unnamed (Menu) -->
             <div id="u16" class="ax_menu col-xs-2">
@@ -50,11 +61,21 @@
           <div class="menuClassParent">
             <div class="col-md-3 menuClassOne sidebarUsr" >
               <div>
-                <!-- Меню, которое слева -->
+                <?php if ($secondary_menu): ?>
+                  <?php print theme('links__system_secondary_menu', array(
+                      'links' => $secondary_menu,
+                      'attributes' => array(
+                        'id' => 'secondary-menu-links',
+                        'class' => array('nav', 'bs-docs-sidenav', 'listMenuOne'),
+                      )
+                  )); ?>
+                <?php endif; ?>
               </div>
             </div>
 
             <div class="col-md-9">
+                <h1 class="text-center">Содержание</h1>
+
                 <?php print render($page['content']); ?>
             </div>
           </div>
@@ -66,7 +87,6 @@
       <div class="row rowEdit" >
             <!-- Unnamed (Shape) -->
             <div id="u32" class="ax_shape">
-
 
             <div class="col-xs-2"></div>
 
