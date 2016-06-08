@@ -5,5 +5,16 @@ package = Core
 version = VERSION
 core = 7.x
 
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/jquery-ui-themes.css
+stylesheets[all][] = css/axure_rp_page.css
+stylesheets[all][] = css/styles.css
+
+regions[header] = Header
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
 engine = phptemplate
 project = "drupal"
