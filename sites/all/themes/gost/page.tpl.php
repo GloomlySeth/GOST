@@ -26,19 +26,18 @@
             <!-- Unnamed (Menu) -->
             <div id="u8" class="ax_menu col-xs-8">
 
-                <!-- Unnamed (Table) -->
+                <!-- Unnamed (Table) 
                 <div id="u9" class="ax_table">
-                  <? foreach ($main_menu as $menu_item): ?>
-                    <!-- Unnamed (Menu Item) -->
-                    <a href="<?=$menu_item['href'];?>" id="u11" class="text">
+                    <a href="/" id="u11" class="text">
                       <div id="u10" class="ax_table_cell">
                           <p>
-                            <span><?=$menu_item['title'];?></span>
+                            <span></span>
                           </p>
                       </div>
                     </a>
-                  <?endforeach;?>
                 </div>
+                -->
+                
             </div>
 
 
@@ -75,7 +74,6 @@
 
             <div class="col-md-9">
                 <h1 class="text-center">Содержание</h1>
-
                 <?php print render($page['content']); ?>
             </div>
           </div>
