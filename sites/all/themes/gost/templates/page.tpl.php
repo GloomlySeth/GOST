@@ -45,15 +45,7 @@
       <div class="menuClassParent">
         <div class="col-md-3 menuClassOne sidebarUsr" >
           <div>
-                <? print render($page['sidebar_first']); 
-                  /*<?php 
-                    print theme('links', array(
-                        'links' => menu_navigation_links('secondary_menu'),
-                        'attributes' => array(
-                          'class'=> array('links', 'main-menu')
-                        )
-                  ));?>*/
-                ?>
+            <? print render($page['sidebar_first']);?>
           </div>
         </div>
 

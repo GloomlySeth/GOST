@@ -634,9 +634,22 @@ body {
   background: #0099cc;
 }
 
+.footer_link,
+.header_menu_link,
+.header_menu_link:hover,
+.header_menu_link:active,
+.header_menu_link:visited{
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+
 #u11 {
-  /*  width:117px;
-  word-wrap:break-word;*/
+  width:117px;
+  word-wrap:break-word;
 }
 #u12 {
   display: inline-block;
@@ -814,9 +827,15 @@ body {
 }
 
 #u31 {
-  width: 73px;
+  width: 103px;
   word-wrap: break-word;
 }
+
+#u31 a{
+  color: white;
+  font-size: 10px;
+}
+
 #u32 {
   background: #999999;
   width: 100%;
