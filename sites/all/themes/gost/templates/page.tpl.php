@@ -1,76 +1,42 @@
-<div class="header">
-  <div class = "row topMenu">
-    <div class="col-xs-2 someMargin1" style="margin: 15px 0px 0px;">
-      <!-- Logo (Image) -->
-      <div id="u28" class="ax_image" data-label="Logo">
-        <a href="/" title="<?php print t('Home'); ?>" rel="home">
-          <img id="u28_img" class="img " src="/<?=$directory;?>/images/main_page/logo_u34.png"/>
-        </a>
-      </div>
+<link rel="stylesheet" href="/sites/all/themes/gost/css/main.css">
 
-      <!-- Logo title (Shape) -->
-      <div id="u30" class="ax_paragraph" data-label="Logo title">
-        <div id="u31" class="text">
-          <a href="/" title="<?php print t('Home'); ?>" rel="home">
-            <span><?=$site_name;?></span>
-          </a>
-        </div>
-      </div>
+<div class="header">
+  <div class="grid__center">
+    <div class="header__logo">    
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" >
+        <img src="/<?=$directory;?>/images/logo.png" alt="<?php print t('Home'); ?>" />
+        <span class="header__site-name"><?=$site_name;?></span>
+      </a>
     </div>
 
-    <!-- (Menu) -->
-    <div id="u8" class="ax_menu col-xs-8">
+    <div class="header__menu">
       <? print render($page['header']); ?>
     </div>
 
-    <!-- (Menu) -->
-    <div id="u16" class="ax_menu col-xs-2">
-      <!-- (Table) -->
-      <div id="u17" class="ax_table">
-        <div id="u18" class="ax_table_cell">
-            <img id="u18_img" class="img " src="#"/>
-            <div id="u19" class="text">
-              <a href="#"><p><span style="text-decoration:underline; color: white">ВОЙТИ</span></p></a>
-            </div>
-        </div>
-      </div>
+    <div class="header__user-link">
+      <a href="#">Войти</a>
     </div>
+    
   </div>
 </div>
 
-
-<div class="midCont">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="menuClassParent">
-        <div class="col-md-3 menuClassOne sidebarUsr" >
-          <div>
-            <? print render($page['sidebar_first']);?>
-          </div>
-        </div>
-
-        <div class="col-md-9">
-          <h1 class="text-center">Содержание</h1>
-          <?php print render($page['content']); ?>
-        </div>
-      </div>
+<div class="grid__center">
+  <div class="sidebar grid__sidebar">
+    <div class="sidebar__menu">
+      <? print render($page['sidebar_first']); ?>
     </div>
+  </div>
+
+  <div class="data-content grid__content">
+    <h1 class="text-center">Содержание</h1>
+    <?php print render($page['content']); ?>
   </div>
 </div>
 
 
 <div class="footer">
-  <div class="row rowEdit" >
-    <!-- Unnamed (Shape) -->
-    <div id="u32" class="ax_shape">
-      <div class="col-xs-2"></div>
-      <!-- Unnamed (Menu) -->
-      <div id="u36" class="ax_menu col-xs-8">
-      <!-- Unnamed (Table) -->
-        <div id="u37" class="ax_table">
-          <? print render($page['footer']); ?>
-        </div>
-      </div>
-    </div>
+  <div class="footer__menu">
+    <? print render($page['footer']); ?>
   </div>
 </div>
+

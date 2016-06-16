@@ -4,10 +4,7 @@ package = Core
 version = VERSION
 core = 7.x
 
-stylesheets[all][] = css/bootstrap.min.css
-stylesheets[all][] = css/jquery-ui-themes.css
-stylesheets[all][] = css/axure_rp_page.css
-stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/main.css
 
 
 regions[header] = Header
