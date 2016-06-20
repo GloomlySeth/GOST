@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="/sites/all/themes/gost/css/main.css">
-
 <div class="header">
   <div class="grid__center">
     <div class="header__logo">    
@@ -14,7 +12,7 @@
     </div>
 
     <div class="header__user-link">
-      <a href="#">Войти</a>
+      <?php l('Войти', "#"); ?>
     </div>
     
   </div>
@@ -23,7 +21,7 @@
 <div class="grid__center">
   <div class="sidebar grid__sidebar">
     <div class="sidebar__menu">
-      <? print render($page['sidebar_first']); ?>
+      <?php print render($page['sidebar_first']); ?>
     </div>
   </div>
 
@@ -36,7 +34,6 @@
 
 <div class="footer">
   <div class="footer__menu">
-    <? print render($page['footer']); ?>
+    <?php print render($page['footer']); ?>
   </div>
 </div>
-
