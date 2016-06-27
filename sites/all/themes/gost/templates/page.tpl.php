@@ -8,13 +8,12 @@
     </div>
 
     <div class="header__menu">
-      <? print render($page['header']); ?>
+      <?php print render($page['header']); ?>
     </div>
 
     <div class="header__user-link">
       <?php l('Войти', "#"); ?>
     </div>
-    
   </div>
 </div>
 
