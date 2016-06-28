@@ -2,8 +2,8 @@
   <div class="grid__center">
     <div class="header__logo">    
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" >
-        <img src="/<?=$directory;?>/images/logo.png" alt="<?php print t('Home'); ?>" />
-        <span class="header__site-name"><?=$site_name;?></span>
+        <img src="/<?php print $directory; ?>/images/logo.png" alt="<?php print t('Home'); ?>" />
+        <span class="header__site-name"><?php print $site_name; ?></span>
       </a>
     </div>
 
