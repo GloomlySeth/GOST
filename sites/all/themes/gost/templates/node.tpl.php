@@ -87,7 +87,6 @@
     </h2>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-
   <?php if ($display_submitted): ?>
     <div class="meta submitted">
       <?php print $user_picture; ?>

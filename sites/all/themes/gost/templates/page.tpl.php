@@ -1,16 +1,38 @@
-<?php if ($title): ?>
-  <h1 class="title" id="page-title">
-    <?php print $title; ?>
-  </h1>
-<?php endif; ?>
+<div class="header">
+  <div class="grid__center">
+    <div class="header__logo">    
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" >
+        <img src="/<?php print $directory; ?>/images/logo.png" alt="<?php print t('Home'); ?>" />
+        <span class="header__site-name"><?php print $site_name; ?></span>
+      </a>
+    </div>
 
-<?php if ($tabs): ?>
-  <div class="tabs"><?php print render($tabs); ?></div>
-<?php endif; ?>
+    <div class="header__menu">
+      <?php print render($page['header']); ?>
+    </div>
 
-<?php print render($page['help']); ?>
-<?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul>
-<?php endif; ?>
+    <div class="header__user-link">
+      <?php l('Войти', "#"); ?>
+    </div>
+  </div>
+</div>
 
-<?php print render($page['content']); ?>
+<div class="grid__center">
+  <div class="sidebar grid__sidebar">
+    <div class="sidebar__menu">
+      <?php print render($page['sidebar_first']); ?>
+    </div>
+  </div>
 
+  <div class="data-content grid__content">
+    <h1 class="text-center">Содержание</h1>
+    <?php print render($page['content']); ?>
+  </div>
+</div>
+
+
+<div class="footer">
+  <div class="footer__menu">
+    <?php print render($page['footer']); ?>
+  </div>
+</div>
