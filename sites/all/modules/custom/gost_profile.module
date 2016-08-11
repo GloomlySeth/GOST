@@ -1,21 +1,18 @@
 <?php
 
   /**
- * Implements hook_form_alter().
+ * Implements hook_form_FORM_ID_alter().
  */
-  function gost_profile_form_alter(&$form, &$form_state, $form_id) {
-    if ($form_id == 'user_register_form') {
-      $form['account']['name']['#description'] = '';
-      $form['account']['name']['#attributes']['placeholder'] = t('Имя');
+  function gost_profile_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+    $form['account']['name']['#description'] = '';
+    $form['account']['name']['#attributes']['placeholder'] = t('Имя');
 	  $form['account']['mail']['#description'] = '';
 	  $form['account']['mail']['#attributes']['placeholder'] = t('Электронная почта');
 	  $form['field_mobilenumber']['und']['0']['value']['#attributes']['placeholder'] = t('Мобильный телефон');
 	  $form['account']['pass']['#description'] = '';
-	}
-  
-    if ($form_id == 'user_pass') {
-      $form['name']['#title'] = t('Если вы забыли пароль для входа на сайт, введите адрес электронной почты, который вы указывали при регистрации');
-      $form['name']['#attributes']['placeholder'] = t('Электронная почта');
-    }
   }
-  
+
+  function gost_profile_form_user_pass_alter(&$form, &$form_state, $form_id) {
+  $form['name']['#title'] = t('Если вы забыли пароль для входа на сайт, введите адрес электронной почты, который вы указывали при регистрации');
+  $form['name']['#attributes']['placeholder'] = t('Электронная почта');
+  }
