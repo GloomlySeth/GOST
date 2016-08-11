@@ -8,7 +8,7 @@
     $form['account']['name']['#attributes']['placeholder'] = t('Имя');
     $form['account']['mail']['#description'] = '';
     $form['account']['mail']['#attributes']['placeholder'] = t('Электронная почта');
-	  $form['field_mobilenumber']['und']['0']['value']['#attributes']['placeholder'] = t('Мобильный телефон');
+    $form['field_mobilenumber']['und']['0']['value']['#attributes']['placeholder'] = t('Мобильный телефон');
     $form['account']['pass']['#description'] = '';
   }
 
