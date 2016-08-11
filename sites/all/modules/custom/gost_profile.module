@@ -6,10 +6,10 @@
   function gost_profile_form_user_register_form_alter(&$form, &$form_state, $form_id) {
     $form['account']['name']['#description'] = '';
     $form['account']['name']['#attributes']['placeholder'] = t('Имя');
-	  $form['account']['mail']['#description'] = '';
-	  $form['account']['mail']['#attributes']['placeholder'] = t('Электронная почта');
+    $form['account']['mail']['#description'] = '';
+    $form['account']['mail']['#attributes']['placeholder'] = t('Электронная почта');
 	  $form['field_mobilenumber']['und']['0']['value']['#attributes']['placeholder'] = t('Мобильный телефон');
-	  $form['account']['pass']['#description'] = '';
+    $form['account']['pass']['#description'] = '';
   }
 
   function gost_profile_form_user_pass_alter(&$form, &$form_state, $form_id) {
