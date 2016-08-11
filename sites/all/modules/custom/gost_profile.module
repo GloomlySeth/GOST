@@ -12,6 +12,7 @@
     $form['account']['pass']['#description'] = '';
   }
 
+
   function gost_profile_form_user_pass_alter(&$form, &$form_state, $form_id) {
   $form['name']['#title'] = t('Если вы забыли пароль для входа на сайт, введите адрес электронной почты, который вы указывали при регистрации');
   $form['name']['#attributes']['placeholder'] = t('Электронная почта');
