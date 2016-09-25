@@ -253,6 +253,341 @@ body {
   font-size: 12px;
 }
 
-.data-content {
+.page-demand-create .data-content {
   padding: 10px 30px;
+}
+
+.page-demand-create .section-content label {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.page-demand-create .ll {
+  display: table-cell;
+  font-size: 15px;
+  font-weight: 500;
+  padding-right: 60px;
+  line-height: 25px;
+  text-transform: none;
+  text-align: left!important;
+  vertical-align: top;
+  width: 140px;
+  margin: 24px 0;
+  color: rgba(0,0,0,.54);
+  box-sizing: content-box;
+}
+
+.page-demand-create .section-content {
+  display: table-cell;
+  padding-right: 15px;
+}
+
+.page-demand-create label.option {
+  font-size: 11px;
+}
+
+.page-demand-create h3 {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.page-demand-create .n_visibl_r + label span,
+.page-demand-create .n_visibl + label span {
+	width: 27px;
+    height: 30px;
+    display: inline-block;
+	box-sizing: border-box;
+	font-weight: normal;
+    font-size: 13px;
+}
+
+.page-demand-create .num + label span {
+	width: 76px;
+    height: 76px;
+}
+
+.page-demand-create .bord + label span {
+	width: 100px;
+    height: 16px;
+}
+
+#edit-align-text-0 + label span, 
+#edit-font-align-text-0 + label span,
+#edit-table-font-align-text-0 + label span,
+#edit-label-picture-0 + label span,
+#edit-position-picture-0 + label span {
+	background: url('../images/editor_-_demand_create/u101.png') no-repeat;
+}
+
+#edit-align-text-0:checked + label span,
+#edit-font-align-text-0:checked + label span,
+#edit-table-font-align-text-0:checked + label span,
+#edit-label-picture-0:checked + label span,
+#edit-position-picture-0:checked + label span {
+	background: url('../images/editor_-_demand_create/u101_mouseOver.png') no-repeat;
+}
+
+#edit-align-text-1 + label span,
+#edit-font-align-text-1 + label span,
+#edit-table-font-align-text-1 + label span,
+#edit-label-picture-1 + label span,
+#edit-position-picture-1 + label span {
+	background: url('../images/editor_-_demand_create/u99.png') no-repeat;
+}
+
+#edit-align-text-1:checked + label span,
+#edit-font-align-text-1:checked + label span,
+#edit-table-font-align-text-1:checked + label span,
+#edit-label-picture-1:checked + label span,
+#edit-position-picture-1:checked + label span {
+	background: url('../images/editor_-_demand_create/u99_mouseOver.png') no-repeat;
+}
+
+#edit-align-text-2 + label span,
+#edit-font-align-text-2 + label span,
+#edit-table-font-align-text-2 + label span,
+#edit-label-picture-2 + label span,
+#edit-position-picture-2 + label span {
+	background: url('../images/editor_-_demand_create/u103.png') no-repeat;
+}
+
+#edit-align-text-2:checked + label span,
+#edit-font-align-text-2:checked + label span,
+#edit-table-font-align-text-2:checked + label span,
+#edit-label-picture-2:checked + label span,
+#edit-position-picture-2:checked + label span {
+	background: url('../images/editor_-_demand_create/u103_mouseOver.png') no-repeat;
+}
+
+#edit-font-align-text-3 + label span,
+#edit-table-font-align-text-3 + label span {
+	background: url('../images/editor_-_demand_create/u105.png') no-repeat;
+}
+
+#edit-font-align-text-3:checked + label span,
+#edit-table-font-align-text-3:checked + label span {
+	background: url('../images/editor_-_demand_create/u105_mouseOver.png') no-repeat;
+}
+
+.page-demand-create .form-type-radio,
+.page-demand-create .form-type-radios,
+.page-demand-create .form-item-typeface-bold,
+.page-demand-create .form-item-typeface-italic,
+.page-demand-create .form-item-typeface-underline,
+.page-demand-create .form-item-font-typeface-bold,
+.page-demand-create .form-item-font-typeface-italic,
+.page-demand-create .form-item-font-typeface-underline,
+.page-demand-create .form-item-table-font-typeface-bold,
+.page-demand-create .form-item-table-font-typeface-italic,
+.page-demand-create .form-item-table-font-typeface-underline,
+.page-demand-create .form-item-color-text,
+.page-demand-create .form-item-color-selected-text,
+.page-demand-create .form-item-font-color-text,
+.page-demand-create .form-item-font-color-selected-text,
+.page-demand-create .form-item-table-font-color-text,
+.page-demand-create .form-item-table-font-color-selected {
+	display: inline-block;
+}
+
+.page-demand-create #edit-border-picture,
+.page-demand-create .form-item-border-picture {
+	display: block;
+}
+
+.page-demand-create input.n_visibl_r,
+.page-demand-create .n_visibl {
+	display: none;
+}
+
+.page-demand-create .bold_font + label span {
+	background: url('../images/editor_-_demand_create/u107.png') no-repeat;
+}
+
+.page-demand-create .bold_font:checked + label span {
+	background: url('../images/editor_-_demand_create/u107_mouseOver.png') no-repeat;
+}
+
+.page-demand-create .italic_font + label span {
+	background: url('../images/editor_-_demand_create/u109.png') no-repeat;
+}
+
+.page-demand-create .italic_font:checked + label span {
+	background: url('../images/editor_-_demand_create/u109_mouseOver.png') no-repeat;
+}
+.page-demand-create .underlined_font + label span {
+	background: url('../images/editor_-_demand_create/u111.png') no-repeat;
+}
+
+.page-demand-create .underlined_font:checked + label span {
+	background: url('../images/editor_-_demand_create/u111_mouseOver.png') no-repeat;
+}
+
+#edit-columns-text-0 + label span {
+	background: url('../images/editor_-_demand_create/u1421.png') no-repeat;
+	display: block;
+}
+
+#edit-columns-text-0:checked + label span {
+	background: url('../images/editor_-_demand_create/u1421_mouseOver.png') no-repeat;
+	display: block;
+}
+
+#edit-columns-text-1 + label span {
+	background: url('../images/editor_-_demand_create/u1423.png') no-repeat;
+	display: block;
+}
+
+#edit-columns-text-1:checked + label span {
+	background: url('../images/editor_-_demand_create/u1423_mouseOver.png') no-repeat;
+	display: block;
+}
+
+#edit-columns-text-2 + label span {
+	background: url('../images/editor_-_demand_create/u1425.png') no-repeat;
+	display: block;
+}
+
+#edit-columns-text-2:checked + label span {
+	background: url('../images/editor_-_demand_create/u1425_mouseOver.png') no-repeat;
+	display: block;
+}
+
+#edit-columns-text-3 + label span {
+	background: url('../images/editor_-_demand_create/u1427.png') no-repeat;
+	display: block;
+}
+
+#edit-columns-text-3:checked + label span {
+	background: url('../images/editor_-_demand_create/u1427_mouseOver.png') no-repeat;
+	display: block;
+}
+
+#edit-columns-text-4 + label span {
+	background: url('../images/editor_-_demand_create/u1429.png') no-repeat;
+	display: block;
+}
+
+#edit-columns-text-4:checked + label span {
+	background: url('../images/editor_-_demand_create/u1429_mouseOver.png') no-repeat;
+	display: block;
+}
+ 
+#edit-number-view input[type=radio]:checked + label span,
+#edit-title-number-view input[type=radio]:checked + label span,
+#edit-indents-number-view input[type=radio]:checked + label span,
+#edit-table-number-view input[type=radio]:checked + label span,
+#edit-formula-number-view input[type=radio]:checked + label span,
+#edit-lists-number-view input[type=radio]:checked + label span,
+#edit-border-picture input[type=radio]:checked + label span {
+  border: 1px solid #0099cc;
+}
+
+#edit-number-view-0 + label span,
+#edit-title-number-view-0 + label span,
+#edit-indents-number-view-0 + label span,
+#edit-table-number-view-0 + label span,
+#edit-formula-number-view-0 + label span,
+#edit-lists-number-view-0 + label span {
+	background: url('../images/editor_-_demand_create/u269.jpg') no-repeat;
+}
+
+#edit-number-view-1 + label span,
+#edit-title-number-view-1 + label span,
+#edit-indents-number-view-1 + label span,
+#edit-table-number-view-1 + label span,
+#edit-formula-number-view-1 + label span,
+#edit-lists-number-view-1 + label span {
+	background: url('../images/editor_-_demand_create/u271.jpg') no-repeat;
+}
+
+#edit-number-view-2 + label span,
+#edit-title-number-view-2 + label span,
+#edit-indents-number-view-2 + label span,
+#edit-table-number-view-2 + label span,
+#edit-formula-number-view-2 + label span,
+#edit-lists-number-view-2 + label span {
+	background: url('../images/editor_-_demand_create/u273.jpg') no-repeat;
+}
+
+#edit-number-view-3 + label span,
+#edit-title-number-view-3 + label span,
+#edit-indents-number-view-3 + label span,
+#edit-table-number-view-3 + label span,
+#edit-formula-number-view-3 + label span,
+#edit-lists-number-view-3 + label span {
+	background: url('../images/editor_-_demand_create/u275.jpg') no-repeat;
+}
+
+#edit-number-view-4 + label span,
+#edit-title-number-view-4 + label span ,
+#edit-indents-number-view-4 + label span,
+#edit-table-number-view-4 + label span,
+#edit-formula-number-view-4 + label span,
+#edit-lists-number-view-4 + label span {
+	background: url('../images/editor_-_demand_create/u277.jpg') no-repeat;
+}
+
+#edit-number-view-5 + label span,
+#edit-title-number-view-5 + label span,
+#edit-indents-number-view-5 + label span,
+#edit-table-number-view-5 + label span,
+#edit-formula-number-view-5 + label span,
+#edit-lists-number-view-5 + label span {
+	background: url('../images/editor_-_demand_create/u279.jpg') no-repeat;
+}
+
+#edit-number-view-6 + label span,
+#edit-title-number-view-6 + label span,
+#edit-indents-number-view-6 + label span,
+#edit-table-number-view-6 + label span,
+#edit-formula-number-view-6 + label span,
+#edit-lists-number-view-6 + label span {
+	background: url('../images/editor_-_demand_create/u281.jpg') no-repeat;
+}
+
+#edit-number-view-7 + label span,
+#edit-title-number-view-7 + label span,
+#edit-indents-number-view-7 + label span,
+#edit-table-number-view-7 + label span,
+#edit-formula-number-view-7 + label span,
+#edit-lists-number-view-7 + label span {
+	background: url('../images/editor_-_demand_create/u283.jpg') no-repeat;
+}
+
+#edit-border-picture-0 + label span {
+	background: url('../images/editor_-_demand_create/u866.jpg') no-repeat;
+}
+
+#edit-border-picture-1 + label span {
+	background: url('../images/editor_-_demand_create/u868.jpg') no-repeat;
+}
+
+#edit-border-picture-2 + label span {
+	background: url('../images/editor_-_demand_create/u870.jpg') no-repeat;
+}
+
+#edit-border-picture-3 + label span {
+	background: url('../images/editor_-_demand_create/u872.jpg') no-repeat;
+}
+
+#edit-border-picture-4 + label span {
+	background: url('../images/editor_-_demand_create/u874.jpg') no-repeat;
+}
+
+#edit-border-picture-5 + label span {
+	background: url('../images/editor_-_demand_create/u876.jpg') no-repeat;
+}
+
+#edit-border-picture-6 + label span {
+	background: url('../images/editor_-_demand_create/u878.jpg') no-repeat;
+}
+
+.page-demand-create .width_sel {
+	width: 175px;
 }

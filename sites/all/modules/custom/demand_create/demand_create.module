@@ -1,0 +1,1632 @@
+<?php
+
+/**
+ * Build page and form for demands.
+ */
+
+/**
+ *  Implements hook_menu().
+ */
+function demand_create_menu() {
+  $items = array();
+  $items['demand_create'] = array(
+    'title' => 'ФОРМИРОВАНИЕ ТРЕБОВАНИЙ',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('demand_create_page_form'),
+    'access callback' => TRUE,
+  );
+
+  return $items;
+}
+
+/**
+ *  Build form.
+ */
+function demand_create_page_form($form, $form_state) {
+  $form = array();
+  $form['name'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Название',
+    '#size' => 10,
+  );
+
+  $form['note'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Примечание',
+    '#size' => 10,
+  );
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => 'СОХРАНИТЬ ШАБЛОН',
+  );
+
+  $form['item_fields'] = array(
+    '#type' => 'item',
+    '#title' => 'Поля',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['field_top'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Верхнее',
+    '#size' => 20,
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['field_bottom'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Нижнее',
+    '#suffix' => '</div>',
+    '#size' => 20,
+  );
+
+  $form['field_left'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Левое',
+    '#size' => 20,
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['field_right'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Правое',
+    '#size' => 20,
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_page'] = array(
+    '#type' => 'item',
+    '#title' => 'Размер бумаги',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+    '#value' => '',
+  );
+
+  $form['page_size'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => 'Размер бумаги',
+      1 => 'A1',
+      2 => 'A2',
+      3 => 'A3',
+      4 => 'A4',
+      5 => 'A5',
+    ),
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['page_orientation'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => 'Ориентация',
+      1 => 'Книжная',
+      2 => 'Альбомная',
+    ),
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_pattern'] = array(
+    '#type' => 'item',
+    '#title' => 'Готовые настройки',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+    '#value' => '',
+  );
+
+  $form['pattern_number'] = array(
+    '#type' => 'select',
+    '#title' => 'Выбрать шаблон настроек',
+    '#options' => array(
+      0 => '',
+      1 => t('№1'),
+      2 => t('№2'),
+    ),
+    '#prefix' => '<div class="section-content">',
+    '#suffix' => '</div>',
+  );
+
+  $form['item_running_title'] = array(
+    '#type' => 'item',
+    '#title' => 'Колонтитулы',
+    '#theme_wrappers' => array(),
+    '#prefix' => '<h3>'.'Колонтитулы',
+    '#suffix' => '</h3>',
+    '#value' => '',
+  );
+
+  $form['item_number_page'] = array(
+    '#type' => 'item',
+    '#title' => 'Расположение номера страницы',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+    '#value' => '',
+  );
+
+  $form['number_page'] = array(
+    '#type' => 'select',
+    '#title' => 'Выбрать шаблон настроек',
+    '#options' => array(
+      0 => 'Расположение номера страницы',
+      1 => 'Вверху',
+      2 => 'Внизу',
+      3 => 'Левая граница',
+      4 => 'Правая граница',
+    ),
+    '#prefix' => '<div class="section-content">',
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_filter_number_page'] = array(
+    '#type' => 'item',
+    '#title' => 'Фильтрация нумерации страниц',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+    '#value' => '',
+  );
+
+  $form['filter_number_page_from'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Начать с:',
+    '#size' => 20,
+    '#prefix' => '<div class="section-content"> <div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['filter_number_page_skip'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Пропустить:',
+    '#size' => 20,
+    '#prefix' => '<div class="container-inline">',
+    '#suffix' => '</div> </div> <br />',
+  );
+
+  $form['item_text_setting'] = array(
+    '#type' => 'item',
+    '#title' => 'Настройка текста',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+    '#value' => '',
+  );
+
+  $form['item_text_setting_2'] = array(
+    '#type' => 'item',
+    '#title' => 'Выбрать шаблон настроек',
+    '#prefix' => '<div class="section-content">',
+    '#value' => '',
+  );
+
+  $form['text_setting_font'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => t('algerian'),
+      1 => t('amaze'),
+    ),
+    '#theme_wrappers' => array(),
+
+    '#suffix' => '&nbsp',
+  );
+
+  $form['text_setting_font_size'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => '12',
+      1 => '14',
+    ),
+    '#theme_wrappers' => array(),
+
+    '#suffix' => '<br />',
+  );
+
+  $form['align_text'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r')),
+    '#title' => '',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(0 => '<span></span>', 1 => '<span></span>', 2 => '<span></span>'),
+    '#suffix' => '&nbsp',
+  );
+
+  $form['typeface_bold'] = array(
+    '#type' => 'checkbox',
+    '#title' => '<span></span>',
+    '#attributes' => array('class' => array('n_visibl', 'bold_font')),
+  );
+
+  $form['typeface_italic'] = array(
+    '#type' => 'checkbox',
+    '#attributes' => array('class' => array('n_visibl', 'italic_font')),
+    '#title' => '<span></span>',
+  );
+
+  $form['typeface_underline'] = array(
+    '#type' => 'checkbox',
+    '#attributes' => array('class' => array('n_visibl', 'underlined_font')),
+    '#title' => '<span></span>',
+    '#suffix' => '&nbsp',
+  );
+
+  $form['color_text'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => '',
+      1 => '',
+    ),
+  );
+
+  $form['color_selected_text'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => '',
+      1 => '',
+    ),
+  );
+
+  $form['setting_main_text'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки основного текста',
+    '#prefix' => '<br />',
+    '#suffix' => '</div>',
+  );
+
+  $form['item_main_text'] = array(
+    '#type' => 'item',
+    '#title' => 'Основной текст',
+    '#theme_wrappers' => array(),
+    '#prefix' => '<h3>'.'Основной текст',
+    '#suffix' => '</h3>',
+    '#value' => '',
+  );
+
+  $form['item_font_text'] = array(
+    '#type' => 'item',
+    '#title' => 'Шрифт',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+    '#value' => '',
+  );
+
+  $form['font_text'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => t('algerian'),
+      1 => t('amaze'),
+    ),
+    '#theme_wrappers' => array(),
+    '#prefix' => '<div class="section-content">',
+    '#suffix' => '&nbsp',
+  );
+
+  $form['font_size_text_setting'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => '12',
+      1 => '14',
+    ),
+    '#theme_wrappers' => array(),
+    '#suffix' => '<br />',
+  );
+
+  $form['font_align_text'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r')),
+    '#title' => '',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>',
+      1 => '<span></span>',
+      2 => '<span></span>',
+      3 => '<span></span>',
+      ),
+    '#suffix' => '&nbsp',
+  );
+
+  $form['font_typeface_bold'] = array(
+    '#type' => 'checkbox',
+    '#attributes' => array('class' => array('n_visibl', 'bold_font')),
+    '#title' => '<span></span>',
+  );
+
+  $form['font_typeface_italic'] = array(
+    '#type' => 'checkbox',
+    '#attributes' => array('class' => array('n_visibl', 'italic_font')),
+    '#title' => '<span></span>',
+  );
+
+  $form['font_typeface_underline'] = array(
+    '#type' => 'checkbox',
+    '#attributes' => array('class' => array('n_visibl', 'underlined_font')),
+    '#title' => '<span></span>',
+    '#suffix' => '&nbsp',
+  );
+
+  $form['font_color_text'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => '',
+      1 => '',
+    ),
+  );
+
+  $form['font_color_selected_text'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => '',
+      1 => '',
+    ),
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_margins'] = array(
+    '#type' => 'item',
+    '#title' => 'Отступы',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['margins_left'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Слева',
+    '#size' => 20,
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['margins_right'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Справа',
+    '#size' => 20,
+  );
+
+  $form['margins_mirror'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Зеркальные отступы',
+    '#suffix' => '</div>',
+  );
+
+  $form['margins_right_str'] = array(
+    '#type' => 'select',
+    '#title' => 'Правая строка',
+    '#attributes' => array('class' => array('width_sel')),
+    '#options' => array(
+      0 =>'Нет',
+      1 => 'Отступ',
+      2 => 'Выступ',
+    ),
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['margins_right_str_int'] = array(
+    '#type' => 'textfield',
+    '#title' => 'На',
+    '#size' => 20,
+  );
+
+  $form['margins_division_word'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Добавить переносы',
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_interval'] = array(
+    '#type' => 'item',
+    '#title' => 'Интервал',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['interval_left'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Слева',
+    '#size' => 20,
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['interval_right'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Справа',
+    '#size' => 20,
+  );
+
+  $form['interval_mirror'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Зеркальные отступы',
+  );
+
+  $form['str_in_page'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Количество строк на страницу',
+  );
+
+  $form['interval_non'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Не добавлять интервал между<br />абзацами одного стиля',
+    '#suffix' => '</div>',
+  );
+
+  $form['interval_str'] = array(
+    '#type' => 'select',
+    '#title' => 'Междустрочный',
+    '#attributes' => array('class' => array('width_sel')),
+    '#options' => array(
+      0 => 'Нет',
+      1 => 'Одинарный',
+      2 => '1.5 строки',
+      3 => 'Двойной',
+      4 => 'Минимум',
+      5 => 'Точно',
+      6 => 'Множитель',
+      ),
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['interval_str_int'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Значение',
+    '#size' => 20,
+  );
+
+  $form['interval_division_word'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Добавить переносы',
+  );
+
+  $form['str_in_page_int'] = array(
+    '#type' => 'textfield',
+    '#title' => '',
+    '#size' => 20,
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_columns'] = array(
+    '#type' => 'item',
+    '#title' => 'Колонки',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['columns_text'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r')),
+    '#title' => '',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>'.'Одна',
+      1 => '<span></span>'.'Две',
+      2 => '<span></span>'.'Три',
+      3 => '<span></span>'.'Слева',
+      4 => '<span></span>'.'Справа',
+      ),
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['columns_int'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Число столбцов',
+    '#size' => 20,
+    '#prefix' => '<div class="section-content">',
+    '#suffix' => '</div> ',
+  );
+
+  $form['columns_division'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Разделитель',
+    '#prefix' => '<div class="section-content">',
+    '#suffix' => '</div> ',
+  );
+
+  $form['item_width_interval'] = array(
+    '#type' => 'item',
+    '#title' => 'ширина и промежуток',
+    '#value' => '',
+  );
+
+  $form['width_interval_number1'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Номер',
+    '#size' => 4,
+    '#prefix' => '<div class="section-content">',
+
+   );
+
+  $form['width_interval_number2'] = array(
+    '#type' => 'textfield',
+    '#title' => '',
+    '#size' => 4,
+    '#suffix' => '</div>',
+  );
+
+  $form['width_1_interval'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Ширина',
+    '#size' => 4,
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['width_2_interval'] = array(
+    '#type' => 'textfield',
+    '#title' => '',
+    '#size' => 4,
+    '#suffix' => '</div>',
+  );
+
+  $form['width_interval_1'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Интервал',
+    '#size' => 4,
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['width_interval_2'] = array(
+    '#type' => 'textfield',
+    '#title' => '',
+    '#size' => 4,
+    '#suffix' => '</div>',
+  );
+
+  $form['width_same'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Столбцы одинаковой ширины',
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_number'] = array(
+    '#type' => 'item',
+    '#title' => 'Нумерация',
+    '#theme_wrappers' => array(),
+    '#prefix' => '<h3>'.'Нумерация',
+    '#suffix' => '</h3>',
+    '#value' => '',
+  );
+
+  $form['item_number_main'] = array(
+    '#type' => 'item',
+    '#title' => 'Основные',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['number_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Тип нумерации',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => 'Сквозная',
+      2 => 'Привязка к разделам/подразделам',
+    ),
+    '#prefix' => '<div class="section-content"> <div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['number_view'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r', 'num')),
+    '#title' => 'Вид нумерации',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>',
+      1 => '<span></span>',
+      2 => '<span></span>',
+      3 => '<span></span>',
+      4 => '<span></span>',
+      5 => '<span></span>',
+      6 => '<span></span>',
+      7 => '<span></span>',
+    ),
+  );
+
+  $form['division_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Вид разделителя между подписью и текстом:',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => '.',
+      2 => ',',
+      3 => ')',
+      4 => '\\',
+      5 => '-',
+      6 => '*',
+      7 => '+',
+      8 => 'Пробел',
+    ),
+    '#prefix' => '<div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['number_setting_main_text'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки основного текста',
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['number_pattern'] = array(
+    '#type' => 'item',
+    '#title' => 'Шаблоны',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['number_pattern_pic'] = array(
+    '#type' => 'select',
+    '#title' => 'Шаблон нумерации рисунка:',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => 'Рисунок',
+      2 => 'Рис.',
+      3 => 'Иллюстрация',
+      4 => 'Pict.',
+      5 => 'Fig.',
+      6 => 'Добавить свой',
+      ),
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['number_pattern_pic_own'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Свой вариант',
+    '#size' => 20,
+  );
+
+  $form['number_pattern_table'] = array(
+    '#type' => 'select',
+    '#title' => 'Шаблон нумерации таблицы:',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => 'Таблица',
+      2 => 'Табл.',
+      3 => 'Table',
+    ),
+  );
+
+  $form['number_pattern_table_own'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Свой вариант',
+    '#size' => 20,
+    '#suffix' => '</div>  <br />',
+  );
+
+  $form['item_title'] = array(
+    '#type' => 'item',
+    '#title' => 'Заголовки',
+    '#theme_wrappers' => array(),
+    '#prefix' => '<h3>'.'Заголовки',
+    '#suffix' => '</h3>',
+    '#value' => '',
+  );
+
+  $form['title_main'] = array(
+    '#type' => 'item',
+    '#title' => 'Основные',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['title_size'] = array(
+    '#type' => 'select',
+    '#title' => 'Уровень заголовка:',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => 'H1',
+      2 => 'H2',
+      3 => 'H3',
+      4 => 'H4',
+      5 => 'H5',
+      6 => 'H6',
+    ),
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['title_pattern'] = array(
+    '#type' => 'select',
+    '#title' => 'Шаблон нумерации заголовка:',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => 'Глава',
+      2 => 'Гл.',
+      3 => 'Параграф',
+    ),
+  );
+
+  $form['title_pattern_own'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Свой вариант',
+    '#size' => 20,
+  );
+
+  $form['title_setting_main_text'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки основного текста',
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_title_number_main'] = array(
+    '#type' => 'item',
+    '#title' => 'Нумерация',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['title_number_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Тип нумерации',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => 'Сквозная',
+      2 => 'Привязка к разделам/подразделам',
+    ),
+    '#prefix' => '<div class="section-content"> <div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['title_number_view'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r', 'num')),
+    '#title' => 'Вид нумерации',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>',
+      1 => '<span></span>',
+      2 => '<span></span>',
+      3 => '<span></span>',
+      4 => '<span></span>',
+      5 => '<span></span>',
+      6 => '<span></span>',
+      7 => '<span></span>',
+    ),
+  );
+
+  $form['title_division_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Вид разделителя между подписью и текстом:',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => '.',
+      2 => ',',
+      3 => ')',
+      4 => '\\',
+      5 => '-',
+      6 => '*',
+      7 => '+',
+      8 => 'Пробел',
+    ),
+    '#prefix' => '<div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['title_number_setting_main_text'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки основного текста',
+  );
+
+  $form['title_button'] = array(
+    '#type' => 'button',
+    '#value' => 'добавить заголовок',
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_contents'] = array(
+    '#type' => 'item',
+    '#title' => 'Содержание',
+    '#theme_wrappers' => array(),
+    '#prefix' => '<h3>'.'Содержание',
+    '#suffix' => '</h3>',
+    '#value' => '',
+  );
+
+  $form['contents_main'] = array(
+    '#type' => 'item',
+    '#title' => 'Основные',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['contents_position'] = array(
+    '#type' => 'select',
+    '#title' => 'Расположение содержания',
+    '#options' => array(
+      0 => 'В начале документа',
+      1 => 'В конце документа',
+    ),
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['contents_division_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Вид разделителя между подписью и текстом:',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => '.',
+      2 => ',',
+      3 => ')',
+      4 => '\\',
+      5 => '-',
+      6 => '*',
+      7 => '+',
+      8 => 'Пробел',
+    ),
+  );
+
+  $form['contents_setting_main_text'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки основного текста',
+  );
+
+  $form['contents_setting_table'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки списков',
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_picture'] = array(
+    '#type' => 'item',
+    '#title' => 'Картинки',
+    '#theme_wrappers' => array(),
+    '#prefix' => '<h3>'.'Картинки',
+    '#suffix' => '</h3>',
+    '#value' => '',
+  );
+
+  $form['item_picture_size'] = array(
+    '#type' => 'item',
+    '#title' => 'Размеры',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['picture_size'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => 'Допустимые размеры',
+      1 => 'Допустимое соотношение',
+    ),
+    '#prefix' => '<div class="section-content"><div class="container-inline">',
+  );
+
+  $form['picture_size_w'] = array(
+    '#type' => 'textfield',
+    '#title' => '',
+    '#size' => 10,
+  );
+
+  $form['picture_size_h'] = array(
+    '#type' => 'textfield',
+    '#title' => 'X',
+    '#size' => 10,
+    '#suffix' => '</div></div> <br />',
+  );
+
+  $form['item_border_picture'] = array(
+    '#type' => 'item',
+    '#title' => 'Границы рисунка',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['border_picture_size'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Толщина:',
+    '#size' => 10,
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['color']=array(
+    '#type'=>'markup',
+    '#title' => 'Цвет',
+    '#theme' => array('color_fields'),
+  );
+
+  $form['border_picture'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r', 'bord')),
+    '#title' => '',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>',
+      1 => '<span></span>',
+      2 => '<span></span>',
+      3 => '<span></span>',
+      4 => '<span></span>',
+      5 => '<span></span>',
+      6 => '<span></span>',
+    ),
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_position_picture'] = array(
+    '#type' => 'item',
+    '#title' => 'Размещение рисунка',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['position_picture'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r')),
+    '#title' => '',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>',
+      1 => '<span></span>',
+      2 => '<span></span>',
+    ),
+    '#prefix' => '<div class="section-content">',
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_label_picture'] = array(
+    '#type' => 'item',
+    '#title' => 'Настройки подписи',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['label_picture'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r')),
+    '#title' => '',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>',
+      1 => '<span></span>',
+      2 => '<span></span>',
+    ),
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['picture_setting_main_text'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки основного текста',
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_indents_spacing'] = array(
+    '#type' => 'item',
+    '#title' => 'Отступы и интервалы',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['indents_picture_top'] = array(
+    '#type' => 'textfield',
+    '#title' => 'От верхнего края рисунка до текста:',
+    '#size' => 10,
+    '#prefix' => '<div class="section-content"> <div class="container-inline">',
+  );
+
+  $form['indents_picture_top_sel'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => 'мм',
+      1 => 'Пробел. строки',
+     ),
+    '#suffix' => '</div>',
+  );
+
+  $form['indents_picture_text'] = array(
+    '#type' => 'textfield',
+    '#title' => 'От подписи рисунка до текста:',
+    '#size' => 10,
+    '#prefix' => '<div class="container-inline">',
+  );
+
+  $form['indents_picture_text_sel'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => 'мм',
+      1 => 'Пробел. строки',
+    ),
+    '#suffix' => '</div>',
+  );
+
+  $form['indents_picture_label'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Между подписью и рисунком:',
+    '#size' => 10,
+    '#prefix' => '<div class="container-inline">',
+  );
+
+  $form['indents_picture_label_sel'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => 'мм',
+      1 => 'Пробел. строки',
+    ),
+    '#suffix' => '</div> </div> <br />',
+  );
+
+  $form['item_indents_number_main'] = array(
+    '#type' => 'item',
+    '#title' => 'Нумерация',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['indents_number_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Тип нумерации',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => 'Сквозная',
+      2 => 'Привязка к разделам/подразделам',
+    ),
+    '#prefix' => '<div class="section-content"> <div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['indents_number_view'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r', 'num')),
+    '#title' => 'Вид нумерации',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>',
+      1 => '<span></span>',
+      2 => '<span></span>',
+      3 => '<span></span>',
+      4 => '<span></span>',
+      5 => '<span></span>',
+      6 => '<span></span>',
+      7 => '<span></span>',
+    ),
+  );
+
+  $form['indents_division_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Вид разделителя между подписью и текстом:',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => '.',
+      2 => ',',
+      3 => ')',
+      4 => '\\',
+      5 => '-',
+      6 => '*',
+      7 => '+',
+      8 => 'Пробел',
+    ),
+    '#prefix' => '<div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['indents_number_setting_main_text'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки основного текста',
+    '#suffix' => '</div>',
+  );
+
+  $form['item_table'] = array(
+    '#type' => 'item',
+    '#title' => 'Таблицы',
+    '#theme_wrappers' => array(),
+    '#prefix' => '<h3>'.'Таблицы',
+    '#suffix' => '</h3>',
+    '#value' => '',
+  );
+
+  $form['item_table_font'] = array(
+    '#type' => 'item',
+    '#title' => 'Настройки подписи',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+    '#value' => '',
+  );
+
+  $form['table_position'] = array(
+    '#type' => 'select',
+    '#title' => 'Расположение подписи: ',
+    '#options' => array(
+      0 => 'До таблицы',
+      1 => 'После разрыва таблицы',
+    ),
+    '#prefix' => '<div class="section-content"> <div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['table_font_text'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => t('algerian'),
+      1 => t('amaze'),
+    ),
+    '#theme_wrappers' => array(),
+    '#suffix' => '&nbsp',
+  );
+
+  $form['table_font_size_setting'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => '12',
+      1 => '14',
+    ),
+    '#theme_wrappers' => array(),
+    '#suffix' => '<br />',
+  );
+
+  $form['table_font_align_text'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r')),
+    '#title' => '',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>',
+      1 => '<span></span>',
+      2 => '<span></span>',
+      3 => '<span></span>',
+
+    ),
+    '#suffix' => '&nbsp',
+  );
+
+  $form['table_font_typeface_bold'] = array(
+    '#type' => 'checkbox',
+    '#attributes' => array('class' => array('n_visibl', 'bold_font')),
+    '#title' => '<span></span>',
+  );
+
+  $form['table_font_typeface_italic'] = array(
+    '#type' => 'checkbox',
+    '#attributes' => array('class' => array('n_visibl', 'italic_font')),
+    '#title' => '<span></span>',
+  );
+
+  $form['table_font_typeface_underline'] = array(
+    '#type' => 'checkbox',
+    '#attributes' => array('class' => array('n_visibl', 'underlined_font')),
+    '#title' => '<span></span>',
+    '#suffix' => '&nbsp',
+  );
+
+  $form['table_font_color_text'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => '',
+      1 => '',
+    ),
+  );
+
+  $form['table_font_color_selected'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => '',
+      1 => '',
+    ),
+  );
+
+  $form['table_header'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Перенос шапки таблицы',
+  );
+
+  $form['table_number_col'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Перенос нумерации колонок',
+  );
+
+  $form['table_both_line'] = array(
+    '#type' => 'checkbox',
+    '#title' => ' Нижняя граница при переносе',
+  );
+
+  $form['table_continue'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Надпись: "Продолжение таблицы ХХХ"',
+  );
+
+  $form['table_continue_radio'] = array(
+    '#type' => 'radios',
+    '#title' => '',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '',
+      1 => '',
+      2 => '',
+    ),
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_table_number_main'] = array(
+    '#type' => 'item',
+    '#title' => 'Настройки нумерации',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['table_number_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Тип нумерации',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => 'Сквозная',
+      2 => 'Привязка к разделам/подразделам',
+    ),
+    '#prefix' => '<div class="section-content"> <div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['table_number_view'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r', 'num')),
+    '#title' => 'Вид нумерации',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>',
+      1 => '<span></span>',
+      2 => '<span></span>',
+      3 => '<span></span>',
+      4 => '<span></span>',
+      5 => '<span></span>',
+      6 => '<span></span>',
+      7 => '<span></span>',
+    ),
+  );
+
+  $form['table_division_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Вид разделителя между подписью и текстом:',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => '.',
+      2 => ',',
+      3 => ')',
+      4 => '\\',
+      5 => '-',
+      6 => '*',
+      7 => '+',
+      8 => 'Пробел',
+    ),
+    '#prefix' => '<div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['table_number_setting_main_text'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки основного текста',
+    '#suffix' => '</div>',
+  );
+
+  $form['item_formula'] = array(
+    '#type' => 'item',
+    '#title' => 'Формулы',
+    '#theme_wrappers' => array(),
+    '#prefix' => '<h3>'.'Формулы',
+    '#suffix' => '</h3>',
+    '#value' => '',
+  );
+
+  $form['item_indents_formula'] = array(
+    '#type' => 'item',
+    '#title' => 'Интервал',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['indents_text_formula'] = array(
+    '#type' => 'textfield',
+    '#title' => 'От текста до формулы: ',
+    '#size' => 10,
+    '#prefix' => '<div class="section-content"> <div class="container-inline">',
+  );
+
+  $form['indents_text_formula_sel'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => 'мм',
+      1 => 'Пробел. строки',
+    ),
+    '#suffix' => '</div>',
+  );
+
+  $form['indents_formula_text'] = array(
+    '#type' => 'textfield',
+    '#title' => 'От формулы до текста: ',
+    '#size' => 10,
+    '#prefix' => '<div class="container-inline">',
+  );
+
+  $form['indents_formula_text_sel'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => array(
+      0 => 'мм',
+      1 => 'Пробел. строки',
+    ),
+    '#suffix' => '</div> </div> <br />',
+  );
+
+  $form['item_formula_number_main'] = array(
+    '#type' => 'item',
+    '#title' => 'Настройки нумерации',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['formula_number_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Тип нумерации',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => 'Сквозная',
+      2 => 'Привязка к разделам/подразделам',
+    ),
+    '#prefix' => '<div class="section-content"> <div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['formula_number_view'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r', 'num')),
+    '#title' => 'Вид нумерации',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>',
+      1 => '<span></span>',
+      2 => '<span></span>',
+      3 => '<span></span>',
+      4 => '<span></span>',
+      5 => '<span></span>',
+      6 => '<span></span>',
+      7 => '<span></span>',
+    ),
+  );
+
+  $form['formula_division_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Вид разделителя между подписью и текстом:',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => '.',
+      2 => ',',
+      3 => ')',
+      4 => '\\',
+      5 => '-',
+      6 => '*',
+      7 => '+',
+      8 => 'Пробел',
+    ),
+    '#prefix' => '<div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['formula_number_setting_main_text'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки основного текста',
+    '#suffix' => '</div>',
+  );
+
+  $form['item_lists'] = array(
+    '#type' => 'item',
+    '#title' => 'Списки',
+    '#theme_wrappers' => array(),
+    '#prefix' => '<h3>'.'Списки',
+    '#suffix' => '</h3>',
+    '#value' => '',
+  );
+
+  $form['item_formatting'] = array(
+    '#type' => 'item',
+    '#title' => 'Форматирование',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['indents_lists_level'] = array(
+    '#type' => 'select',
+    '#title' => 'Уровень списка:',
+    '#options' => array(
+      0 => 'S1',
+      1 => 'S2',
+      2 => 'S3',
+      3 => 'S4',
+      4 => 'S5',
+      5 => 'S6',
+    ),
+    '#prefix' => '<div class="section-content">',
+  );
+
+  $form['indents_lists_fields'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Отступы от полей:',
+    '#size' => 10,
+    '#prefix' => '<div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['indents_lists_number'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Отступы от нумерации:',
+    '#size' => 10,
+    '#prefix' => '<div class="container-inline">',
+   '#suffix' => '</div>',
+  );
+
+  $form['lists_setting_main_text'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки основного текста',
+  );
+
+  $form['item_valid_symbols'] = array(
+    '#type' => 'item',
+    '#title' => 'Допустимые символы и знаки'),
+    '#value' => '',
+  );
+
+  $form['lists_valid_symbol_1'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('1'),
+  );
+
+  $form['lists_valid_symbol_2'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('1)'),
+  );
+
+  $form['lists_valid_symbol_3'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('1.'),
+  );
+
+  $form['lists_valid_symbol_4'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('*'),
+  );
+
+  $form['lists_valid_symbol_5'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('-'),
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_lists_number_main'] = array(
+    '#type' => 'item',
+    '#title' => 'Нумерация',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['lists_number_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Тип нумерации',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => 'Сквозная',
+      2 => 'Привязка к разделам/подразделам',
+    ),
+    '#prefix' => '<div class="section-content"> <div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['lists_number_view'] = array(
+    '#type' => 'radios',
+    '#attributes' => array('class' => array('n_visibl_r', 'num')),
+    '#title' => 'Вид нумерации',
+    '#default_value' => variable_get('align_text', 0),
+    '#options' => array(
+      0 => '<span></span>',
+      1 => '<span></span>',
+      2 => '<span></span>',
+      3 => '<span></span>',
+      4 => '<span></span>',
+      5 => '<span></span>',
+      6 => '<span></span>',
+      7 => '<span></span>',
+    ),
+  );
+
+  $form['lists_division_type'] = array(
+    '#type' => 'select',
+    '#title' => 'Вид разделителя между подписью и текстом:',
+    '#options' => array(
+      0 => '(Нет)',
+      1 => '.',
+      2 => ',',
+      3 => ')',
+      4 => '\\',
+      5 => '-',
+      6 => '*',
+      7 => '+',
+      8 => 'Пробел',
+    ),
+    '#prefix' => '<div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+  $form['lists_number_setting_main_text'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Применить настройки основной нумерации',
+  );
+
+  $form['lists_number__button'] = array(
+    '#type' => 'button',
+    '#value' => 'Добавить список',
+    '#suffix' => '</div> <br />',
+  );
+
+  $form['item_quotes'] = array(
+    '#type' => 'item',
+    '#title' => 'Кавычки',
+    '#theme_wrappers' => array(),
+    '#prefix' => '<h3>'.'Кавычки',
+    '#suffix' => '</h3>',
+    '#value' => '',
+  );
+
+  $form['quotes_main'] = array(
+    '#type' => 'item',
+    '#title' => 'Основные',
+    '#value' => '',
+    '#prefix' => '<div class="ll">',
+    '#suffix' => '</div>',
+  );
+
+  $form['quotes'] = array(
+    '#type' => 'select',
+    '#title' => 'Символы кавычек:',
+    '#options' => array(
+      0 => t('" "'),
+      1 => t("' '"),
+      2 => t('@ @'),
+      3 => t("$ $"),
+      4 => t('/ /'),
+      5 => t("* *"),
+    ),
+    '#prefix' => '<div class="section-content">',
+    '#suffix' => '</div>',
+  );
+ return $form;
+}
+
+/**
+ * Implements hook_theme()
+ */
+function demand_create_theme(){
+  return array(
+  'color_fields' => array(
+    'render element' => 'element',
+  ),
+);
+}
+
+function theme_color_fields($elements) {
+  $form = $elements['element'];
+  $form['#children'] = '<div><input type="color" name="favcolor" value="#ff0000"></div>';
+  return theme('form_element', array('element'=>$form));
+}
