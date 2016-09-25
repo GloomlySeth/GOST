@@ -256,3 +256,7 @@ body {
 .data-content {
   padding: 10px 30px;
 }
+
+#user-register-form  label {
+  display: none;
+}
