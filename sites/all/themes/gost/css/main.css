@@ -253,7 +253,7 @@ body {
   font-size: 12px;
 }
 
-.data-content {
+.page-demand-create .data-content {
   padding: 10px 30px;
 }
 
@@ -262,7 +262,7 @@ body {
   font-size: 13px;
 }
 
-.ll {
+.page-demand-create .ll {
   display: table-cell;
   font-size: 15px;
   font-weight: 500;
@@ -277,7 +277,7 @@ body {
   box-sizing: content-box;
 }
 
-.section-content {
+.page-demand-create .section-content {
   display: table-cell;
   padding-right: 15px;
 }
@@ -405,26 +405,26 @@ body {
 	display: none;
 }
 
-.bold_font + label span {
+.page-demand-create .bold_font + label span {
 	background: url('../images/editor_-_demand_create/u107.png') no-repeat;
 }
 
-.bold_font:checked + label span {
+.page-demand-create .bold_font:checked + label span {
 	background: url('../images/editor_-_demand_create/u107_mouseOver.png') no-repeat;
 }
 
-.italic_font + label span {
+.page-demand-create .italic_font + label span {
 	background: url('../images/editor_-_demand_create/u109.png') no-repeat;
 }
 
-.italic_font:checked + label span {
+.page-demand-create .italic_font:checked + label span {
 	background: url('../images/editor_-_demand_create/u109_mouseOver.png') no-repeat;
 }
-.underlined_font + label span {
+.page-demand-create .underlined_font + label span {
 	background: url('../images/editor_-_demand_create/u111.png') no-repeat;
 }
 
-.underlined_font:checked + label span {
+.page-demand-create .underlined_font:checked + label span {
 	background: url('../images/editor_-_demand_create/u111_mouseOver.png') no-repeat;
 }
 
@@ -588,6 +588,6 @@ body {
 	background: url('../images/editor_-_demand_create/u878.jpg') no-repeat;
 }
 
-.width_sel {
+.page-demand-create .width_sel {
 	width: 175px;
 }
