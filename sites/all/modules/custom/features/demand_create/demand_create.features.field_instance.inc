@@ -11,6 +11,274 @@ function demand_create_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
+  // 'field_collection_item-field_list_number_1-field_list_number_division2'.
+  $field_instances['field_collection_item-field_list_number_1-field_list_number_division2'] = array(
+    'bundle' => 'field_list_number_1',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_list_number_division2',
+    'label' => 'Вид разделителя между подписью и текстом:',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_list_number_1-field_list_number_main2'.
+  $field_instances['field_collection_item-field_list_number_1-field_list_number_main2'] = array(
+    'bundle' => 'field_list_number_1',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_list_number_main2',
+    'label' => 'Применить настройки основной нумерации',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_list_number_1-field_list_number_type2'.
+  $field_instances['field_collection_item-field_list_number_1-field_list_number_type2'] = array(
+    'bundle' => 'field_list_number_1',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_list_number_type2',
+    'label' => 'Тип нумерации:',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_list_number_1-field_list_number_view2'.
+  $field_instances['field_collection_item-field_list_number_1-field_list_number_view2'] = array(
+    'bundle' => 'field_list_number_1',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_list_number_view2',
+    'label' => 'Вид нумерации:',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_title_number_r-field_title_number_division2'.
+  $field_instances['field_collection_item-field_title_number_r-field_title_number_division2'] = array(
+    'bundle' => 'field_title_number_r',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_title_number_division2',
+    'label' => 'Вид разделителя между подписью и текстом:',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_title_number_r-field_title_number_setting2'.
+  $field_instances['field_collection_item-field_title_number_r-field_title_number_setting2'] = array(
+    'bundle' => 'field_title_number_r',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_title_number_setting2',
+    'label' => 'Применить настройки основного текста',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_title_number_r-field_title_number_type2'.
+  $field_instances['field_collection_item-field_title_number_r-field_title_number_type2'] = array(
+    'bundle' => 'field_title_number_r',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_title_number_type2',
+    'label' => 'Тип нумерации',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_title_number_r-field_title_number_view2'.
+  $field_instances['field_collection_item-field_title_number_r-field_title_number_view2'] = array(
+    'bundle' => 'field_title_number_r',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_title_number_view2',
+    'label' => 'Вид нумерации:',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
   // 'profile2-demand_create-field_contents_main_division'.
   $field_instances['profile2-demand_create-field_contents_main_division'] = array(
     'bundle' => 'demand_create',
@@ -1189,6 +1457,43 @@ function demand_create_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 117,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-demand_create-field_list_number_1'.
+  $field_instances['profile2-demand_create-field_list_number_1'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Добавить',
+          'delete' => 'Удалить',
+          'description' => TRUE,
+          'edit' => 'Редактировать',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 124,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_list_number_1',
+    'label' => 'Нумерация',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 122,
     ),
   );
 
@@ -4255,6 +4560,43 @@ function demand_create_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'profile2-demand_create-field_title_number_r'.
+  $field_instances['profile2-demand_create-field_title_number_r'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Добавить',
+          'delete' => 'Удалить',
+          'description' => TRUE,
+          'edit' => 'Редактировать',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 123,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_title_number_r',
+    'label' => 'Нумерация',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 66,
+    ),
+  );
+
   // Exported field_instance:
   // 'profile2-demand_create-field_title_number_setting'.
   $field_instances['profile2-demand_create-field_title_number_setting'] = array(
@@ -4383,6 +4725,7 @@ function demand_create_field_default_field_instances() {
   t('Нижнее');
   t('Нижняя граница при переносе');
   t('Номер');
+  t('Нумерация');
   t('Ориентация');
   t('От верхнего края рисунка до текста:');
   t('От подписи рисунка до текста:');
