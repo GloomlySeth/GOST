@@ -1,6 +1,7 @@
 name = Demand create
 core = 7.x
 package = Features
+dependencies[] = ctools
 dependencies[] = colorfield
 dependencies[] = entity
 dependencies[] = features
@@ -12,6 +13,7 @@ dependencies[] = options
 dependencies[] = profile2
 dependencies[] = taxonomy
 dependencies[] = text
+features[ctools][] = field_group:field_group:1
 features[features_api][] = api:2
 features[field_base][] = field_contents_main_division
 features[field_base][] = field_contents_main_list
