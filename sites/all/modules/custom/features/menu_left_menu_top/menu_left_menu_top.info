@@ -1,0 +1,13 @@
+name = Menu left, menu top
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = menu-left-menu
+features[menu_custom][] = menu-top-menu
+features[menu_links][] = menu-left-menu_--:menutoken/58373ea2639e9
+features[menu_links][] = menu-left-menu_-:menutoken/58373e3107af8
+features[menu_links][] = menu-left-menu_-:menutoken/58373e5b7e681
+features[menu_links][] = menu-left-menu_-:user
+features[menu_links][] = menu-top-menu_:<front>
