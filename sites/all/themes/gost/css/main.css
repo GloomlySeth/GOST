@@ -735,3 +735,86 @@ body {
 #block-menu-menu-top-menu a {
   color: #F2F3F4;
 }
+
+.fileform { 
+  background-color: #FFFFFF;
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 40px;
+  overflow: hidden;
+  padding: 2px;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  width: 250px;
+}
+ 
+ #edit-submit-load,
+ #edit-submit-del,
+ #edit-submit-processing,
+.fileform .selectbutton { 
+  border: 1px solid #939494;
+  border-radius: 4px;
+  height: 34px;
+  overflow: hidden;
+  padding: 5px 13px;
+  margin-left: 5px;
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+ 
+ .fileform #fileformlabel { 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  float: left;
+  overflow: hidden;
+  padding: 5px;
+  text-align: left;
+  vertical-align: middle;
+  width:160px;
+  font-size: 14px;
+  height: 34px;
+  line-height: 1.42857143;
+  color: #555;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+ 
+.fileform #edit-file-doc{
+  position:absolute; 
+  top:0; 
+  left:0; 
+  width:100%; 
+  -moz-opacity: 0; 
+  filter: alpha(opacity=0); 
+  opacity: 0; 
+  font-size: 150px; 
+  height: 50px; 
+  z-index:20;
+}
+
+#edit-submit-load,
+#edit-submit-processing { 
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+#edit-submit-del { 
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+#edit-pattern-doc{
+  width: 100%;
+}

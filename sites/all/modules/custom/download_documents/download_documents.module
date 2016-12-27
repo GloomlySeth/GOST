@@ -1,0 +1,191 @@
+<?php
+
+/**
+ * Build page and form.
+*/
+function download_documents_permission(){
+    return array(
+    'administer download_documents' =>  array(
+      'title' => t('View page "Download documents"'),
+    ),
+  );
+}
+
+/**
+ *  Implements hook_menu().
+ */
+function download_documents_menu() {
+  $items = array();
+  $items['load_document'] = array(
+    'title' => 'Загрузка документов',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('download_documents_page_form'),
+    'access arguments' => array('administer download_documents'),
+  );
+
+  return $items;
+}
+
+/**
+ *  Build form.
+ */
+function download_documents_page_form($form, $form_state) {
+  $form = array();
+  global $user;
+  
+  $form['pattern_doc'] = array(
+    '#type' => 'select',
+    '#title' => '',
+  );
+  
+  $form['file_doc'] = array(
+    '#type' => 'file',
+    '#title' => '',
+	'#theme_wrappers' =>'',
+	'#attributes' => array('onchange' => array('getName(this.value);')),
+	'#suffix' => '</div>',
+	'#prefix' => '<div class="fileform"><div id="fileformlabel"></div><div class="selectbutton">Обзор</div>',
+  );
+
+  $form['submit_load'] = array(
+    '#type' => 'submit',
+    '#value' => 'Загрузить',
+	'#validate' => array('request_form_page_form_load_validate'),
+	'#submit' => array('request_form_page_form_load_submit'),
+  );
+  
+  $form['submit_del'] = array(
+    '#type' => 'submit',
+    '#value' => 'Удалить',
+	'#validate' => array('request_form_page_form_del_validate'),
+	'#submit' => array('request_form_page_form_del_submit'),
+  );
+  
+  $pach = 'sites/default/files/Documents/' . $user->uid;	
+  if(is_dir($pach)){
+    $all_files=array();
+    GetListFiles($pach, $all_files);
+      foreach($all_files as $key => $check){
+        $n = 'check' . $key;
+        $form[$n] = array(
+          '#type' => 'checkbox',
+          '#title' => $check,
+        );
+      } 
+  }
+  
+  $form['submit_processing'] = array(
+    '#type' => 'submit',
+    '#value' => 'Начать обработку',
+	'#submit' => array('request_form_page_form_pr_submit'),
+	'#suffix' => '</div>',
+	'#prefix' => '<div>',
+  );
+
+  $form['#attached']['js'] = array(
+    drupal_get_path('module', 'download_documents') . '/get_name.js' => array(
+    'type' => 'file',
+    ),
+  );
+  
+ return $form;
+}
+
+function GetListFiles($folder, &$all_files){
+  $fp=opendir($folder);
+  while($cv_file = readdir($fp)) {
+    if(is_file($folder . "/" . $cv_file)) {
+      $all_files[] = $cv_file;
+    }
+	elseif($cv_file != "." && $cv_file != ".." && is_dir($folder . "/" . $cv_file)){
+      GetListFiles($folder . "/" . $cv_file, $all_files);
+    }
+  }
+  closedir($fp);
+}
+
+function request_form_page_form_load_submit($form, &$form_state) {
+  global $user;  
+  $query = db_select('file_managed', 'f');
+  $query->fields('f', array('fid'));
+  $query->condition('f.uid', $user->uid, '=');
+  $query->condition('f.filename', $_FILES['files']['name']['file_doc'], '=');
+  $result = $query->execute();
+  $count = $result->rowCount();
+  
+  if($count != 0){
+    $_FILES['files']['name']['file_doc'] = time(). '_' . $_FILES['files']['name']['file_doc'];
+  }
+  
+  $pach = $user->uid . '/raw/' . date('o') . '/' . date('m');
+  $pach2 = 'sites/default/files/Documents/' . $pach;
+  $pach3 = 'private://' . $pach;
+  $validators['file_validate_extensions'] = array();
+  if((is_dir($pach2))){
+    drupal_set_message($pach, 'status');
+      if ($file = file_save_upload('file_doc', $validators, $pach3)) {
+        $file->status = FILE_STATUS_PERMANENT; // Изменяем статус файла на "Постоянный"
+		file_save($file);
+      }
+      else {
+        form_set_error('file_doc', 'Файл не был загружен');
+      }
+  }
+  else{
+    drupal_set_message('ab', 'status');
+    mkdir($pach2, 0777, true);
+      if ($file = file_save_upload('file_doc', $validators, $pach3)) {
+        $file->status = FILE_STATUS_PERMANENT; // Изменяем статус файла на "Постоянный"
+		
+        file_save($file);
+    }
+    else {
+      form_set_error('file_doc', 'Файл не был загружен');
+    }
+  }
+  
+  
+}
+
+function request_form_page_form_del_submit($form, &$form_state) {
+  global $user;
+
+  $n = 0;
+  $m = 'check' . $n;
+  $arr = array();
+
+  while(isset($form[$m]['#value'])){
+    if($form[$m]['#value'] == 1){  
+      $arr[$n] = $form[$m]['#title'];
+    }
+    $n++;
+    $m = 'check' . $n;
+  }
+
+  foreach($arr as $value){
+  $query = db_select('file_managed', 'f');
+  $query->fields('f', array('fid'));
+  $query->condition('f.uid', $user->uid, '=');
+  $query->condition('f.filename', $value, '=');
+  $result = $query->execute();
+  $fid = $result->fetchField();
+  $file = file_load($fid);
+  file_delete($file);
+  } 
+  
+}
+
+function request_form_page_form_load_validate($form, &$form_state) {
+  if (empty($_FILES['files']['name']['file_doc'])) { 
+    form_set_error('file_doc', 'Поле не заполнено');
+  }
+  elseif(pathinfo($_FILES['files']['name']['file_doc'], PATHINFO_EXTENSION) != '.docx'){
+    form_set_error('file_doc', 'Система может обработать файл с расширением .docx. Сохраните Ваш файл в "Microsoft Word 2007" и выше');
+  }
+}
+
+
+function request_form_page_form_del_validate($form, &$form_state) {
+	
+}
+
