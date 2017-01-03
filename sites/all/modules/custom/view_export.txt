@@ -12,7 +12,10 @@ $view->disabled = FALSE; /* Edit this to true to make a default view disabled in
 $handler = $view->new_display('default', 'Master', 'default');
 $handler->display->display_options['title'] = 'Список требований';
 $handler->display->display_options['use_more_always'] = FALSE;
-$handler->display->display_options['access']['type'] = 'none';
+$handler->display->display_options['access']['type'] = 'role';
+$handler->display->display_options['access']['role'] = array(
+  2 => '2',
+);
 $handler->display->display_options['cache']['type'] = 'none';
 $handler->display->display_options['query']['type'] = 'views_query';
 $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -56,7 +59,7 @@ $handler->display->display_options['header']['area_text_custom']['field'] = 'are
 $handler->display->display_options['header']['area_text_custom']['empty'] = TRUE;
 $handler->display->display_options['header']['area_text_custom']['content'] = '<div class="1 btn"><a href="/requirements_list?combine=">Все</a></div>
 <div class="2 btn"><a href="/requirements_list?combine=">Стандартные</a></div>
-<div class="3 btn"><a href="/requirements_list?combine=5">Мои</a></div>';
+<div class="3 btn"><a href="/requirements_list?combine=">Мои</a></div>';
 $handler->display->display_options['defaults']['footer'] = FALSE;
 /* Footer: Global: Unfiltered text */
 $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
@@ -188,7 +191,7 @@ $translatables['requirements_list'] = array(
   t('Поиск'),
   t('<div class="1 btn"><a href="/requirements_list?combine=">Все</a></div>
 <div class="2 btn"><a href="/requirements_list?combine=">Стандартные</a></div>
-<div class="3 btn"><a href="/requirements_list?combine=5">Мои</a></div>'),
+<div class="3 btn"><a href="/requirements_list?combine=">Мои</a></div>'),
   t('<a href="user/1/edit/demand_create" class="demand_del">Удалить...</a>
 <a href="user/1/edit/demand_create" class="demand">Создать требование</a>'),
   t('User'),
