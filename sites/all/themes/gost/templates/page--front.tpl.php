@@ -11,15 +11,10 @@
       <?php print render($page['header']); ?>
     </div>
 
-    <div class="header__user-link">
-      <?php l('Войти', "#"); ?>
-    </div>
   </div>
 </div>
 
-
   <div class="data-content grid__content">
-    <h1 class="text-center">Содержание</h1>
     <?php print render($page['content']); ?>
   </div>
 </div>

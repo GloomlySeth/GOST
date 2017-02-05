@@ -64,33 +64,6 @@ function menu_left_menu_top_menu_default_menu_links() {
     'weight' => -46,
     'customized' => 1,
   );
-  // Exported menu link: menu-left-menu_-:menutoken/58373e5b7e681.
-  $menu_links['menu-left-menu_-:menutoken/58373e5b7e681'] = array(
-    'menu_name' => 'menu-left-menu',
-    'link_path' => 'menutoken/58373e5b7e681',
-    'router_path' => 'menutoken/%',
-    'link_title' => 'Формирование требований',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'alter' => TRUE,
-      'menu_token_link_uuid' => 'menutoken/583738804a7d1',
-      'menu_token_link_path' => 'user/[current-user:uid]/edit/demand_create',
-      'menu_token_data' => array(),
-      'menu_token_options' => array(
-        'clear' => 0,
-      ),
-      'identifier' => 'menu-left-menu_-:menutoken/58373e5b7e681',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-  );
   // Exported menu link: menu-left-menu_-:user.
   $menu_links['menu-left-menu_-:user'] = array(
     'menu_name' => 'menu-left-menu',
@@ -116,19 +89,20 @@ function menu_left_menu_top_menu_default_menu_links() {
     'menu_name' => 'menu-top-menu',
     'link_path' => '<front>',
     'router_path' => '',
-    'link_title' => 'Требования',
+    'link_title' => 'Отзывы',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
       'identifier' => 'menu-top-menu_:<front>',
+      'alter' => TRUE,
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -48,
     'customized' => 1,
   );
 
@@ -137,8 +111,7 @@ function menu_left_menu_top_menu_default_menu_links() {
   t('Загрузка документа');
   t('Информация о компании');
   t('Личная информация');
-  t('Требования');
-  t('Формирование требований');
+  t('Отзывы');
 
   return $menu_links;
 }

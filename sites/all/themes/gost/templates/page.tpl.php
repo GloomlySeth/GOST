@@ -11,9 +11,6 @@
       <?php print render($page['header']); ?>
     </div>
 
-    <div class="header__user-link">
-      <?php l('Войти', "#"); ?>
-    </div>
   </div>
 </div>
 
@@ -25,7 +22,11 @@
   </div>
 
   <div class="data-content grid__content">
-    <h1 class="text-center">Содержание</h1>
+    <?php if ($tabs): ?>
+      <div class="tabs">
+        <?php print render($tabs); ?>
+      </div>
+    <?php endif; ?>
     <?php print render($page['content']); ?>
   </div>
 </div>
