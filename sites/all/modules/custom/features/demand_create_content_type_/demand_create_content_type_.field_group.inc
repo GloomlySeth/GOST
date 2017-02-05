@@ -21,22 +21,22 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_margins_r2';
   $field_group->data = array(
     'label' => '',
-    'weight' => '41',
+    'weight' => '85',
     'children' => array(
       0 => 'field_main_margins_str',
       1 => 'field_main_margins_on',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => '',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-border-1 field-group-html-element n_border',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-border-1 field-group-html-element n_border',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -53,22 +53,22 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_interval_r2';
   $field_group->data = array(
     'label' => '',
-    'weight' => '29',
+    'weight' => '30',
     'children' => array(
       0 => 'field_main_interval_str',
       1 => 'field_main_interval_int',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => '',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-border-2 field-group-html-element n_border',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-border-2 field-group-html-element n_border',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -85,7 +85,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_contents_main';
   $field_group->data = array(
     'label' => 'Основные',
-    'weight' => '37',
+    'weight' => '137',
     'children' => array(
       0 => 'field_contents_main_position',
       1 => 'field_contents_main_division',
@@ -104,6 +104,7 @@ function demand_create_content_type__field_group_info() {
         'label_element' => 'div',
         'attributes' => '',
       ),
+      'formatter' => '',
     ),
   );
   $field_groups['group_contents_main_r1|node|demand_create|form'] = $field_group;
@@ -116,10 +117,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_contents';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Основные',
-    'weight' => '34',
+    'weight' => '32',
     'children' => array(
       0 => 'group_contents_main_r1',
     ),
@@ -246,7 +247,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Поля',
-    'weight' => '5',
+    'weight' => '4',
     'children' => array(
       0 => 'group_fields_r1',
       1 => 'group_fields_r2',
@@ -275,10 +276,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_formula_indents_r1';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '93',
+    'weight' => '166',
     'children' => array(
       0 => 'group_formula_indents_r11',
       1 => 'group_formula_indents_r12',
@@ -307,10 +308,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_formula_indents_r1';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '94',
+    'weight' => '170',
     'children' => array(
       0 => 'group_formula_indents_r13',
       1 => 'group_formula_indents_r14',
@@ -342,21 +343,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula_indents_1';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '94',
+    'weight' => '166',
     'children' => array(
       0 => 'field_formula_indents_text',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Интервал',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-formula-indents-r11 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-formula-indents-r11 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -373,21 +374,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula_indents_1';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '95',
+    'weight' => '167',
     'children' => array(
       0 => 'field_formula_indents_text2',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Интервал',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-formula-indents-r12 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-formula-indents-r12 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -404,21 +405,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula_indents_2';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '42',
+    'weight' => '170',
     'children' => array(
       0 => 'field_formula_indents_formula',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Интервал',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-formula-indents-r13 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-formula-indents-r13 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -435,21 +436,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula_indents_2';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '43',
+    'weight' => '171',
     'children' => array(
       0 => 'field_formula_indents_formula2',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Интервал',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-formula-indents-r14 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-formula-indents-r14 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -498,7 +499,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula_number';
   $field_group->data = array(
     'label' => 'Настройки нумерации',
-    'weight' => '45',
+    'weight' => '152',
     'children' => array(
       0 => 'field_formula_number_type',
       1 => 'field_formula_number_division',
@@ -506,15 +507,15 @@ function demand_create_content_type__field_group_info() {
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки нумерации',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-formula-number-r1 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-formula-number-r1 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -528,16 +529,16 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_pic';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Настройки нумерации',
-    'weight' => '49',
+    'weight' => '36',
     'children' => array(
       0 => 'group_formula_number_r1',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки нумерации',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -562,7 +563,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_header_filter';
   $field_group->data = array(
     'label' => 'Фильтрация нумерации страниц',
-    'weight' => '19',
+    'weight' => '25',
     'children' => array(
       0 => 'field_header_filter_from',
       1 => 'field_header_filter_skip',
@@ -591,10 +592,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_header';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Фильтрация нумерации страниц',
-    'weight' => '16',
+    'weight' => '25',
     'children' => array(
       0 => 'group_header_filter_r1',
     ),
@@ -625,7 +626,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_header_number';
   $field_group->data = array(
     'label' => 'Расположение номера страницы',
-    'weight' => '16',
+    'weight' => '79',
     'children' => array(
       0 => 'field_header_number_page',
     ),
@@ -653,10 +654,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_header';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Расположение номера страницы',
-    'weight' => '15',
+    'weight' => '23',
     'children' => array(
       0 => 'group_header_number_r1',
     ),
@@ -687,7 +688,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_header_setting_r1';
   $field_group->data = array(
     'label' => 'Настройка текста',
-    'weight' => '24',
+    'weight' => '65',
     'children' => array(
       0 => 'group_header_setting_r11',
       1 => 'group_header_setting_r12',
@@ -719,19 +720,16 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_header_setting_r1';
   $field_group->data = array(
     'label' => 'Настройка текста',
-    'weight' => '26',
+    'weight' => '67',
     'children' => array(
       0 => 'field_header_setting_text',
     ),
-    'format_type' => 'html-element',
+    'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => '',
+      'formatter' => 'collapsible',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-header-setting-2 field-group-html-element',
-        'attributes' => '',
+        'description' => '',
+        'classes' => 'group-header-setting-2 field-group-fieldset',
         'required_fields' => 1,
         'id' => '',
       ),
@@ -750,7 +748,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_header_setting_r1';
   $field_group->data = array(
     'label' => 'Настройка текста',
-    'weight' => '25',
+    'weight' => '66',
     'children' => array(
       0 => 'group_header_setting_r13',
       1 => 'group_header_setting_r14',
@@ -784,21 +782,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_header_setting_1';
   $field_group->data = array(
     'label' => 'Настройка текста',
-    'weight' => '25',
+    'weight' => '65',
     'children' => array(
       0 => 'field_header_setting_font',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройка текста',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-header-setting-r11 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-header-setting-r11 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -815,19 +813,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_header_setting_1';
   $field_group->data = array(
     'label' => 'Настройка текста',
-    'weight' => '26',
-    'children' => array(),
+    'weight' => '66',
+    'children' => array(
+      0 => 'field_header_setting_size',
+    ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройка текста',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-header-setting-r12 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-header-setting-r12 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -844,21 +844,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_header_setting_3';
   $field_group->data = array(
     'label' => 'Настройка текста',
-    'weight' => '30',
+    'weight' => '69',
     'children' => array(
       0 => 'field_header_setting_align',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройка текста',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-header-setting-r13 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-header-setting-r13 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -875,21 +875,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_header_setting_3';
   $field_group->data = array(
     'label' => 'Настройка текста',
-    'weight' => '31',
+    'weight' => '70',
     'children' => array(
       0 => 'field_header_setting_typeface',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройка текста',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-header-setting-r14 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-header-setting-r14 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -906,21 +906,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_header_setting_3';
   $field_group->data = array(
     'label' => 'Настройка текста',
-    'weight' => '32',
+    'weight' => '71',
     'children' => array(
       0 => 'field_header_setting_color',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройка текста',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-header-setting-r15 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-header-setting-r15 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -937,21 +937,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_header_setting_3';
   $field_group->data = array(
     'label' => 'Настройка текста',
-    'weight' => '33',
+    'weight' => '72',
     'children' => array(
       0 => 'field_header_setting_background',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройка текста',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-header-setting-r16 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-header-setting-r16 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -965,14 +965,14 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_header_setting';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Настройка текста',
-    'weight' => '23',
+    'weight' => '22',
     'children' => array(
       0 => 'group_header_setting_1',
-      1 => 'group_header_setting_2',
-      2 => 'group_header_setting_3',
+      1 => 'group_header_setting_3',
+      2 => 'group_header_setting_2',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -1067,7 +1067,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_list_formatting';
   $field_group->data = array(
     'label' => 'Форматирование',
-    'weight' => '35',
+    'weight' => '120',
     'children' => array(
       0 => 'field_list_formatting_level',
       1 => 'field_list_formatting_indentatio',
@@ -1077,15 +1077,15 @@ function demand_create_content_type__field_group_info() {
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Форматирование',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-list-formatting-r1 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-list-formatting-r1 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -1099,16 +1099,16 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_list';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Форматирование',
-    'weight' => '34',
+    'weight' => '29',
     'children' => array(
       0 => 'group_list_formatting_r1',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Форматирование',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -1133,7 +1133,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_list_number';
   $field_group->data = array(
     'label' => 'Нумерация',
-    'weight' => '34',
+    'weight' => '154',
     'children' => array(
       0 => 'field_list_number_type',
       1 => 'field_list_number_view',
@@ -1143,15 +1143,15 @@ function demand_create_content_type__field_group_info() {
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Нумерация',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-list-number-r1 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-list-number-r1 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -1165,16 +1165,16 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_list';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Нумерация',
-    'weight' => '35',
+    'weight' => '38',
     'children' => array(
       0 => 'group_list_number_r1',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Нумерация',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -1232,20 +1232,19 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_columns_r1';
   $field_group->data = array(
     'label' => '',
-    'weight' => '26',
+    'weight' => '97',
     'children' => array(
       0 => 'field_main_columns_text',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'label' => '',
+      'formatter' => 'collapsible',
       'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-main-columns-f1 field-group-fieldset',
         'required_fields' => 1,
         'id' => '',
-        'classes' => 'group-main-columns-f1 field-group-fieldset',
-        'description' => '',
       ),
-      'formatter' => 'open',
     ),
   );
   $field_groups['group_main_columns_f1|node|demand_create|form'] = $field_group;
@@ -1261,7 +1260,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_columns_v2';
   $field_group->data = array(
     'label' => 'Ширина и промежуток',
-    'weight' => '32',
+    'weight' => '101',
     'children' => array(
       0 => 'field_main_columns_width',
       1 => 'group_main_columns_r4',
@@ -1270,14 +1269,13 @@ function demand_create_content_type__field_group_info() {
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'label' => 'Ширина и промежуток',
+      'formatter' => 'collapsible',
       'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-main-columns-f2 field-group-fieldset',
         'required_fields' => 1,
         'id' => '',
-        'classes' => 'group-main-columns-f2 field-group-fieldset',
-        'description' => '',
       ),
-      'formatter' => 'open',
     ),
   );
   $field_groups['group_main_columns_f2|node|demand_create|form'] = $field_group;
@@ -1290,10 +1288,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_main_columns';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Колонки',
-    'weight' => '24',
+    'weight' => '27',
     'children' => array(
       0 => 'group_main_columns_f1',
       1 => 'group_main_columns_v2',
@@ -1325,7 +1323,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_columns_v2';
   $field_group->data = array(
     'label' => 'Колонки',
-    'weight' => '30',
+    'weight' => '99',
     'children' => array(
       0 => 'field_main_columns_number',
     ),
@@ -1356,7 +1354,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_columns_v2';
   $field_group->data = array(
     'label' => 'Колонки',
-    'weight' => '31',
+    'weight' => '100',
     'children' => array(
       0 => 'field_main_columns_division',
     ),
@@ -1387,7 +1385,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_columns_f2';
   $field_group->data = array(
     'label' => 'Колонки',
-    'weight' => '26',
+    'weight' => '103',
     'children' => array(
       0 => 'field_main_width_number1',
       1 => 'field_main_width_number2',
@@ -1419,7 +1417,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_columns_f2';
   $field_group->data = array(
     'label' => 'Колонки',
-    'weight' => '27',
+    'weight' => '104',
     'children' => array(
       0 => 'field_main_width_width',
       1 => 'field_main_width_width2',
@@ -1451,7 +1449,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_columns_f2';
   $field_group->data = array(
     'label' => 'Колонки',
-    'weight' => '28',
+    'weight' => '105',
     'children' => array(
       0 => 'field_main_width_space',
       1 => 'field_main_width_space2',
@@ -1483,7 +1481,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_columns_r1';
   $field_group->data = array(
     'label' => 'Колонки',
-    'weight' => '27',
+    'weight' => '98',
     'children' => array(
       0 => 'group_main_columns_r2',
       1 => 'group_main_columns_r3',
@@ -1544,10 +1542,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_main_font_r1';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Шрифт',
-    'weight' => '18',
+    'weight' => '154',
     'children' => array(
       0 => 'group_main_font_r11',
       1 => 'group_main_font_r12',
@@ -1576,10 +1574,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_main_font_r1';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Шрифт',
-    'weight' => '19',
+    'weight' => '158',
     'children' => array(
       0 => 'group_main_font_r13',
       1 => 'group_main_font_r14',
@@ -1613,21 +1611,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_font_1';
   $field_group->data = array(
     'label' => 'Шрифт',
-    'weight' => '19',
+    'weight' => '154',
     'children' => array(
       0 => 'field_main_font_font',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Шрифт',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-main-font-r11 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-main-font-r11 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -1644,21 +1642,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_font_1';
   $field_group->data = array(
     'label' => 'Шрифт',
-    'weight' => '20',
+    'weight' => '155',
     'children' => array(
       0 => 'field_main_font_size',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Шрифт',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-main-font-r12 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-main-font-r12 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -1675,21 +1673,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_font_2';
   $field_group->data = array(
     'label' => 'Шрифт',
-    'weight' => '25',
+    'weight' => '158',
     'children' => array(
       0 => 'field_main_font_align',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Шрифт',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-main-font-r13 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-main-font-r13 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -1706,21 +1704,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_font_2';
   $field_group->data = array(
     'label' => 'Шрифт',
-    'weight' => '26',
+    'weight' => '159',
     'children' => array(
       0 => 'field_main_font_typeface',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Шрифт',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-main-font-r14 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-main-font-r14 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -1737,21 +1735,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_font_2';
   $field_group->data = array(
     'label' => 'Шрифт',
-    'weight' => '27',
+    'weight' => '160',
     'children' => array(
       0 => 'field_main_font_color',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Шрифт',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-main-font-r15 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-main-font-r15 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -1768,21 +1766,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_font_2';
   $field_group->data = array(
     'label' => 'Шрифт',
-    'weight' => '28',
+    'weight' => '161',
     'children' => array(
       0 => 'field_main_font_background',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Шрифт',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-main-font-r16 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-main-font-r16 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -1831,7 +1829,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_interval';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '43',
+    'weight' => '93',
     'children' => array(
       0 => 'field_main_interval_left',
       1 => 'field_main_interval_right',
@@ -1864,9 +1862,9 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_interval';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '44',
+    'weight' => '94',
     'children' => array(
-      0 => 'field_main_interval_shift',
+      0 => 'field_main_margins_shift',
       1 => 'field_main_interval_non',
       2 => 'group_border_2',
     ),
@@ -1894,10 +1892,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_main';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '18',
+    'weight' => '26',
     'children' => array(
       0 => 'group_main_interval_r1',
       1 => 'group_main_interval_r2',
@@ -1929,7 +1927,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_margins';
   $field_group->data = array(
     'label' => 'Отступы',
-    'weight' => '34',
+    'weight' => '81',
     'children' => array(
       0 => 'field_main_margins_left',
       1 => 'field_main_margins_right',
@@ -1962,9 +1960,9 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_margins';
   $field_group->data = array(
     'label' => 'Отступы',
-    'weight' => '35',
+    'weight' => '82',
     'children' => array(
-      0 => 'field_main_margins_shift',
+      0 => 'field_main_interval_shift',
       1 => 'group_border_1',
     ),
     'format_type' => 'html-element',
@@ -1991,10 +1989,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_main';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Отступы',
-    'weight' => '17',
+    'weight' => '24',
     'children' => array(
       0 => 'group_main_margins_r1',
       1 => 'group_main_margins_r2',
@@ -2061,7 +2059,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_number_main';
   $field_group->data = array(
     'label' => 'Основные',
-    'weight' => '27',
+    'weight' => '115',
     'children' => array(
       0 => 'field_number_main_type',
       1 => 'field_number_main_view',
@@ -2074,7 +2072,7 @@ function demand_create_content_type__field_group_info() {
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
-        'classes' => 'group-number-main-r1 field-group-html-element section-content-r',
+        'classes' => 'group-number-main-r1 field-group-html-element  section-content-r',
         'element' => 'div',
         'show_label' => '0',
         'label_element' => 'div',
@@ -2092,10 +2090,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_number';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Основные',
-    'weight' => '14',
+    'weight' => '28',
     'children' => array(
       0 => 'group_number_main_r1',
     ),
@@ -2126,7 +2124,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_number_pattern';
   $field_group->data = array(
     'label' => 'Шаблоны',
-    'weight' => '30',
+    'weight' => '147',
     'children' => array(
       0 => 'field_number_pattern_pic',
       1 => 'field_number_pattern_own',
@@ -2157,10 +2155,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_number';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Шаблоны',
-    'weight' => '15',
+    'weight' => '34',
     'children' => array(
       0 => 'group_number_pattern_r1',
     ),
@@ -2286,7 +2284,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Размер бумаги',
-    'weight' => '6',
+    'weight' => '5',
     'children' => array(
       0 => 'group_paper_r1',
       1 => 'group_paper_r2',
@@ -2318,21 +2316,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_align';
   $field_group->data = array(
     'label' => 'Размещение рисунка',
-    'weight' => '41',
+    'weight' => '24',
     'children' => array(
       0 => 'field_pic_align_pic',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Размещение рисунка',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-pic-align-r1 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-pic-align-r1 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -2346,16 +2344,16 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_pic';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Размещение рисунка',
-    'weight' => '42',
+    'weight' => '9',
     'children' => array(
       0 => 'group_pic_align_r1',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'label' => 'Границы рисунка',
+      'label' => 'Размещение рисунка',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -2380,7 +2378,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_border';
   $field_group->data = array(
     'label' => 'Границы рисунка',
-    'weight' => '41',
+    'weight' => '20',
     'children' => array(
       0 => 'field_pic_border_thickness',
       1 => 'field_pic_border_color',
@@ -2410,10 +2408,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_pic';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Границы рисунка',
-    'weight' => '41',
+    'weight' => '8',
     'children' => array(
       0 => 'group_pic_border_r1',
     ),
@@ -2444,21 +2442,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_indents_r00';
   $field_group->data = array(
     'label' => 'Отступы и интервалы',
-    'weight' => '51',
+    'weight' => '39',
     'children' => array(
       0 => 'field_pic_indents_top',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Отступы и интервалы',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-pic-indents-11 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-pic-indents-11 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -2475,21 +2473,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_indents_r00';
   $field_group->data = array(
     'label' => 'Отступы и интервалы',
-    'weight' => '52',
+    'weight' => '40',
     'children' => array(
       0 => 'field_pic_indents_top2',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Отступы и интервалы',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-pic-indents-12 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-pic-indents-12 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -2506,21 +2504,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_indents_r01';
   $field_group->data = array(
     'label' => 'Отступы и интервалы',
-    'weight' => '57',
+    'weight' => '43',
     'children' => array(
       0 => 'field_pic_indents_text',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Отступы и интервалы',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-pic-indents-13 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-pic-indents-13 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -2537,21 +2535,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_indents_r01';
   $field_group->data = array(
     'label' => 'Отступы и интервалы',
-    'weight' => '58',
+    'weight' => '44',
     'children' => array(
       0 => 'field_pic_indents_text2',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Отступы и интервалы',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-pic-indents-14 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-pic-indents-14 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -2568,21 +2566,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_indents_r02';
   $field_group->data = array(
     'label' => 'Отступы и интервалы',
-    'weight' => '61',
+    'weight' => '47',
     'children' => array(
       0 => 'field_pic_indents_pic',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Отступы и интервалы',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-pic-indents-15 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-pic-indents-15 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -2599,21 +2597,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_indents_r02';
   $field_group->data = array(
     'label' => 'Отступы и интервалы',
-    'weight' => '62',
+    'weight' => '48',
     'children' => array(
       0 => 'field_pic_indents_pic2',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Отступы и интервалы',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-pic-indents-16 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-pic-indents-16 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -2627,25 +2625,25 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_pic_indents_r1';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Отступы и интервалы',
-    'weight' => '50',
+    'weight' => '12',
     'children' => array(
       0 => 'group_pic_indents_11',
       1 => 'group_pic_indents_12',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Отступы и интервалы',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-pic-indents-r00 field-group-html-element',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-pic-indents-r00 field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -2659,25 +2657,25 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_pic_indents_r1';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Отступы и интервалы',
-    'weight' => '51',
+    'weight' => '13',
     'children' => array(
       0 => 'group_pic_indents_13',
       1 => 'group_pic_indents_14',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Отступы и интервалы',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-pic-indents-r01 field-group-html-element',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-pic-indents-r01 field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -2691,10 +2689,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_pic_indents_r1';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Отступы и интервалы',
-    'weight' => '52',
+    'weight' => '14',
     'children' => array(
       0 => 'group_pic_indents_15',
       1 => 'group_pic_indents_16',
@@ -2759,22 +2757,22 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_label';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '43',
+    'weight' => '26',
     'children' => array(
       0 => 'field_pic_label_align',
       1 => 'field_pic_label_setting',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки подписи',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-pic-label-r1 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-pic-label-r1 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -2788,16 +2786,16 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_pic';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '43',
+    'weight' => '10',
     'children' => array(
       0 => 'group_pic_label_r1',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки подписи',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -2822,7 +2820,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_number';
   $field_group->data = array(
     'label' => 'Нумерация',
-    'weight' => '68',
+    'weight' => '29',
     'children' => array(
       0 => 'field_pic_number_type',
       1 => 'field_pic_number_view',
@@ -2831,15 +2829,15 @@ function demand_create_content_type__field_group_info() {
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Нумерация',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-pic-number-r1 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-pic-number-r1 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -2853,16 +2851,16 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_pic';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Нумерация',
-    'weight' => '45',
+    'weight' => '11',
     'children' => array(
       0 => 'group_pic_number_r1',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Нумерация',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -2887,21 +2885,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_size';
   $field_group->data = array(
     'label' => 'Размеры',
-    'weight' => '43',
+    'weight' => '8',
     'children' => array(
       0 => 'field_pic_size_valid',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'label' => 'Размеры',
+      'formatter' => '',
       'instance_settings' => array(
+        'element' => 'div',
+        'show_label' => 0,
+        'label_element' => 'div',
+        'classes' => 'group-pic-size-r1 field-group-html-element',
+        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
-        'classes' => 'group-pic-size-r1 field-group-html-element section-content-r',
-        'element' => 'div',
-        'show_label' => '0',
-        'label_element' => 'div',
-        'attributes' => '',
       ),
     ),
   );
@@ -2918,7 +2916,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_size';
   $field_group->data = array(
     'label' => 'Размеры',
-    'weight' => '44',
+    'weight' => '9',
     'children' => array(
       0 => 'field_pic_size_1',
     ),
@@ -2949,7 +2947,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_size';
   $field_group->data = array(
     'label' => 'Размеры',
-    'weight' => '45',
+    'weight' => '10',
     'children' => array(
       0 => 'field_pic_size_2',
     ),
@@ -2977,10 +2975,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_pic';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Размеры',
-    'weight' => '40',
+    'weight' => '7',
     'children' => array(
       0 => 'group_pic_size_r1',
       1 => 'group_pic_size_r2',
@@ -2992,9 +2990,9 @@ function demand_create_content_type__field_group_info() {
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
-        'classes' => 'group-pic-size field-group-html-element section-content-l',
+        'classes' => 'group-pic-size-r1 field-group-html-element section-content-r',
         'element' => 'div',
-        'show_label' => '1',
+        'show_label' => '0',
         'label_element' => 'div',
         'attributes' => '',
       ),
@@ -3054,21 +3052,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_quotes_main';
   $field_group->data = array(
     'label' => 'Основные',
-    'weight' => '24',
+    'weight' => '126',
     'children' => array(
       0 => 'field_quotes_main_symbol',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Основные',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-quotes-main-r1 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-quotes-main-r1 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -3082,16 +3080,16 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_quotes';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Основные',
-    'weight' => '29',
+    'weight' => '30',
     'children' => array(
       0 => 'group_quotes_main_r1',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Основные',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -3101,6 +3099,7 @@ function demand_create_content_type__field_group_info() {
         'label_element' => 'div',
         'attributes' => '',
       ),
+      'formatter' => '',
     ),
   );
   $field_groups['group_quotes_main|node|demand_create|form'] = $field_group;
@@ -3148,7 +3147,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_1';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '73',
+    'weight' => '130',
     'children' => array(
       0 => 'field_table_label_font',
     ),
@@ -3159,7 +3158,7 @@ function demand_create_content_type__field_group_info() {
         'element' => 'div',
         'show_label' => 0,
         'label_element' => 'div',
-        'classes' => 'group-table-label-11 field-group-html-element section-content-r',
+        'classes' => 'group-table-label-11 field-group-html-element',
         'attributes' => '',
         'required_fields' => 1,
         'id' => '',
@@ -3179,21 +3178,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_1';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '74',
+    'weight' => '131',
     'children' => array(
       0 => 'field_table_label_size',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки подписи',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-table-label-12 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-table-label-12 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -3210,21 +3209,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_2';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '76',
+    'weight' => '132',
     'children' => array(
       0 => 'field_table_label_align',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки подписи',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-table-label-13 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-table-label-13 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -3241,21 +3240,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_2';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '77',
+    'weight' => '133',
     'children' => array(
       0 => 'field_table_label_typeface',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки подписи',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-table-label-14 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-table-label-14 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -3272,21 +3271,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_2';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '78',
+    'weight' => '134',
     'children' => array(
       0 => 'field_table_label_color',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки подписи',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-table-label-15 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-table-label-15 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -3303,21 +3302,21 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_2';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '79',
+    'weight' => '135',
     'children' => array(
       0 => 'field_table_label_background',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки подписи',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-table-label-16 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-table-label-16 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -3334,7 +3333,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_r1';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '29',
+    'weight' => '128',
     'children' => array(
       0 => 'group_table_label_11',
       1 => 'group_table_label_12',
@@ -3366,7 +3365,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_r1';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '30',
+    'weight' => '129',
     'children' => array(
       0 => 'group_table_label_13',
       1 => 'group_table_label_14',
@@ -3400,7 +3399,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '71',
+    'weight' => '34',
     'children' => array(
       0 => 'field_table_label_location',
       1 => 'field_table_label_header',
@@ -3413,15 +3412,15 @@ function demand_create_content_type__field_group_info() {
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки подписи',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-table-label-r1 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-table-label-r1 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -3435,16 +3434,16 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_table';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '70',
+    'weight' => '31',
     'children' => array(
       0 => 'group_table_label_r1',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки подписи',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -3469,7 +3468,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_number';
   $field_group->data = array(
     'label' => 'Настройки нумерации',
-    'weight' => '88',
+    'weight' => '36',
     'children' => array(
       0 => 'field_table_number_type',
       1 => 'field_table_number_view',
@@ -3478,15 +3477,15 @@ function demand_create_content_type__field_group_info() {
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки нумерации',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-table-number-r1 field-group-html-element section-content-r',
-        'attributes' => '',
         'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-table-number-r1 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -3500,16 +3499,16 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_pic';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Настройки нумерации',
-    'weight' => '47',
+    'weight' => '35',
     'children' => array(
       0 => 'group_table_number_r1',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Настройки нумерации',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -3566,7 +3565,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_title_main';
   $field_group->data = array(
     'label' => 'Основные',
-    'weight' => '28',
+    'weight' => '142',
     'children' => array(
       0 => 'field_title_main_level',
       1 => 'field_title_main_pattern',
@@ -3597,10 +3596,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_title';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Основные',
-    'weight' => '35',
+    'weight' => '33',
     'children' => array(
       0 => 'group_title_main_r1',
     ),
@@ -3631,7 +3630,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_title_number';
   $field_group->data = array(
     'label' => 'Нумерация',
-    'weight' => '33',
+    'weight' => '152',
     'children' => array(
       0 => 'field_title_number_r',
     ),
@@ -3659,10 +3658,10 @@ function demand_create_content_type__field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'demand_create';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_title';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Нумерация',
-    'weight' => '36',
+    'weight' => '37',
     'children' => array(
       0 => 'group_title_number_r1',
     ),

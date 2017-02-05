@@ -6,10 +6,8 @@
 
 include_once 'demand_create_content_type_.features.inc';
 
-function demand_create_form_demand_create_node_form_alter(&$form, &$form_state) {
-dpm($form);
-  unset($form['title']);
-  unset($form['body']);
+function demand_create_content_type__form_demand_create_node_form_alter(&$form, &$form_state) {
+
   unset($form['field_paper_size']['und']['#options']['_none']);
   unset($form['field_paper_orientation']['und']['#options']['_none']);
   unset($form['field_header_setting_align']['und']['#options']['_none']);
@@ -200,17 +198,5 @@ dpm($form);
   $form['field_main_columns_text']['und']['#options'][3] = '<span></span>' . 'Слева';
   $form['field_main_columns_text']['und']['#options'][4] = '<span></span>' . 'Справа';
   $form['field_main_columns_text']['#attributes']['class'][4] = 'n_visibl_r';
-
-  $form['confirm_button1'] = array(
-    '#type'   => 'submit',
-    '#value'  => 'СОХРАНИТЬ ШАБЛОН',
-    '#weight'  => 3,
-  );
-
-  $form['confirm_button2'] = array(
-    '#type'   => 'submit',
-    '#value'  => 'СОХРАНИТЬ ШАБЛОН',
-    '#weight'  => 250,
-  );
-
+  
 }
