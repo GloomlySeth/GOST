@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Demand create feature.
- */
-
-include_once 'demand_create.features.inc';
