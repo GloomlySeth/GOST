@@ -8,5 +8,7 @@ features[menu_custom][] = menu-left-menu
 features[menu_custom][] = menu-top-menu
 features[menu_links][] = menu-left-menu_--:menutoken/58373ea2639e9
 features[menu_links][] = menu-left-menu_-:menutoken/58373e3107af8
+features[menu_links][] = menu-left-menu_-:node/add/demand-create
+features[menu_links][] = menu-left-menu_-:requirements_list
 features[menu_links][] = menu-left-menu_-:user
 features[menu_links][] = menu-top-menu_:<front>

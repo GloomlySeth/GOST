@@ -34,7 +34,7 @@ function menu_left_menu_top_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -46,
     'customized' => 1,
   );
   // Exported menu link: menu-left-menu_-:menutoken/58373e3107af8.
@@ -61,7 +61,50 @@ function menu_left_menu_top_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -47,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-left-menu_-:node/add/demand-create.
+  $menu_links['menu-left-menu_-:node/add/demand-create'] = array(
+    'menu_name' => 'menu-left-menu',
+    'link_path' => 'node/add/demand-create',
+    'router_path' => 'node/add/demand-create',
+    'link_title' => 'Формирование требований',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'alter' => TRUE,
+      'menu_token_link_uuid' => 'menutoken/58373e5b7e681',
+      'identifier' => 'menu-left-menu_-:node/add/demand-create',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-left-menu_-:requirements_list.
+  $menu_links['menu-left-menu_-:requirements_list'] = array(
+    'menu_name' => 'menu-left-menu',
+    'link_path' => 'requirements_list',
+    'router_path' => 'requirements_list',
+    'link_title' => 'Список требований',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-left-menu_-:requirements_list',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
     'customized' => 1,
   );
   // Exported menu link: menu-left-menu_-:user.
@@ -75,6 +118,7 @@ function menu_left_menu_top_menu_default_menu_links() {
         'title' => '',
       ),
       'identifier' => 'menu-left-menu_-:user',
+      'alter' => TRUE,
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -112,6 +156,8 @@ function menu_left_menu_top_menu_default_menu_links() {
   t('Информация о компании');
   t('Личная информация');
   t('Отзывы');
+  t('Список требований');
+  t('Формирование требований');
 
   return $menu_links;
 }
