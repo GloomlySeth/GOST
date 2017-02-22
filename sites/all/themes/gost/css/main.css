@@ -15,6 +15,7 @@ body {
   position: relative;
   color: #000000;
   background-color: #ffffff;
+  height: 100%;
 }
 
 .grid__center {
@@ -70,6 +71,7 @@ body {
   background-color: #2e3442;
   position: relative;
   overflow: hidden;
+  z-index: 99;
 }
 
 .header * {
@@ -876,4 +878,46 @@ body {
 .view-id-requirements_list .demand,
 .view-id-requirements_list .demand_del {
   margin-top: 20px;
+}
+
+.wrap-image {
+  background-image: url(../images/u0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 0;
+}
+
+.wrap-image:before {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+}
+
+.wrap-image .data-content {
+  width: 40%;
+  margin: 0 auto;
+  font-family: 'Segoe UI Курсив', 'Segoe UI';
+  font-style: italic;
+  font-size: 11px;
+  color: #000000;
+  text-align: center;
+  display: block;
+  border: none;
+}
+
+.wrap-image > .content-block {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: middle;
+    text-align: left;
 }

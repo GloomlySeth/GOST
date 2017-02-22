@@ -1,3 +1,4 @@
+
 <div class="header">
   <div class="grid__center">
     <div class="header__logo">    
@@ -13,15 +14,15 @@
 
   </div>
 </div>
-
-  <div class="data-content grid__content">
-    <?php print render($page['content']); ?>
+<div class="wrap-image">
+  <div class="content-block">
+    <div class="data-content">
+      <?php print render($page['content']); ?>
+    </div>
   </div>
-</div>
-
-
-<div class="footer">
-  <div class="footer__menu">
-    <?php print render($page['footer']); ?>
+  <div class="footer">
+    <div class="footer__menu">
+      <?php print render($page['footer']); ?>
+    </div>
   </div>
 </div>
