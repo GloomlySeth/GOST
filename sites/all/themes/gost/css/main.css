@@ -67,38 +67,49 @@ body {
 }
 
 .header {
-  height: 50px;
-  background-color: #2e3442;
+  height: 57px;
+  background-color: #414156;
   position: relative;
   overflow: hidden;
   z-index: 99;
+  font-family: 'Segoe UI Полужирный', 'Segoe UI';
+  font-weight: 700;
+  font-size: 9px;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .header * {
   color: #ffffff;
 }
 
+.header a {
+  line-height: 57px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
 .header__site-name {
   height: 100%;
   display: block;
   line-height: 12px;
-  font-size: 10px;
-  font-weight: 500;
-  padding-left: 40px;
+  padding-left: 28px;
   text-transform: uppercase;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .header__logo {
   width: 10%;
   float: left;
+  width: 73px;
+  height: 28px;
 }
 
 .header__logo img {
-  max-height: 30px;
+  max-height: 24px;
+  margin-top: -12px;
   position: absolute;
   top: 50%;
-  transform: translate(0,-50%);
 }
 
 .header__menu {
@@ -118,20 +129,19 @@ body {
 
 .header__menu ul li.active a {
   font-weight: 600;
-  color: #e9993b;
+  color: #0099CC;;
 }
 
 .header__menu ul li a:hover {
   text-decoration: none;
-  background-color: #e9993b;
+  background-color: #0099CC;
   color: #ffffff;
 }
 
 .header__menu ul li a {
   padding: 30px;
   width: 100%;
-  line-height: 50px;
-  font-size: 12px;
+  line-height: 57px;
 }
 
 .header__user-link {
@@ -150,7 +160,7 @@ body {
 }
 
 .header__user-link a:hover {
-  background-color: #e9993b;
+  background-color: #0099CC;
 }
 
 .sidebar {
@@ -211,13 +221,17 @@ body {
 
 .footer {
   height: 40px;
-  background-color: rgba(46,52,66,0.3);
+  background-color: #999999;
   position: relative;
   overflow: hidden;
   margin: 0;
   position: fixed;
   bottom: 0;
   width: 100%;
+  line-height: 44px;
+  font-family: 'Segoe UI Полужирный', 'Segoe UI';
+  font-weight: 700;
+  text-align: center;
 }
 
 .footer * {
@@ -233,21 +247,16 @@ body {
   text-align: center;
   height: 100%;
   margin-top: 0;
+  text-transform: uppercase;
 }
 
 .footer__menu ul li {
   display: inline;
 }
 
-.footer__menu ul li.active a {
-  text-decoration: none;
-  background-color: rgba(46,52,66,0.2);
-  color: #2e3442;
-}
-
+.footer__menu ul li.active a,
 .footer__menu ul li a:hover {
-  text-decoration: none;
-  background-color: rgba(46,52,66,0.4);
+  text-decoration: underline;
   color: #ffffff;
 }
 
@@ -255,7 +264,9 @@ body {
   padding: 30px;
   width: 100%;
   line-height: 40px;
-  font-size: 12px;
+  font-size: 9px;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .data-content {
@@ -728,10 +739,6 @@ body {
 #block-menu-menu-top-menu ul {
   margin-left: auto;
   margin-right: auto;
-}
-
-#block-menu-menu-top-menu li {
-  display: inline-block;
 }
 
 #block-menu-menu-top-menu a {
