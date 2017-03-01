@@ -16,6 +16,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .grid__center {
@@ -68,9 +69,8 @@ body {
 
 .header {
   height: 57px;
-  background-color: #414156;
   position: relative;
-  overflow: hidden;
+  background-color: #414156;
   z-index: 99;
   font-family: 'Segoe UI Полужирный', 'Segoe UI';
   font-weight: 700;
@@ -84,7 +84,7 @@ body {
 }
 
 .header a {
-  line-height: 57px;
+  line-height: 58px;
   color: #FFFFFF;
   text-align: center;
 }
@@ -99,9 +99,8 @@ body {
 }
 
 .header__logo {
-  width: 10%;
   float: left;
-  width: 73px;
+  width: 110px;
   height: 28px;
 }
 
@@ -113,13 +112,12 @@ body {
 }
 
 .header__menu {
-  width: 80%;
-  float: left;
+  height: 57px;
+  margin-left: 110px;
 }
 
 .header__menu ul {
   text-align: center;
-  height: 100%;
   margin-top: 0;
 }
 
@@ -139,9 +137,9 @@ body {
 }
 
 .header__menu ul li a {
-  padding: 30px;
+  padding: 22px 30px;
   width: 100%;
-  line-height: 57px;
+  line-height: 59px;
 }
 
 .header__user-link {
@@ -161,6 +159,69 @@ body {
 
 .header__user-link a:hover {
   background-color: #0099CC;
+}
+
+.header__menu .content ul {
+  background-color: #414156;
+  position: absolute;
+  display: none;
+  list-style: none;
+  padding: 0px;
+  margin-top: -3px;
+}
+
+.header__menu .content > ul.menu {
+  display: block;
+  height: 57px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.header__menu .content > ul.menu li {
+  display: inline-block;
+  position: relative;
+  padding: 0px;
+  height: 57px;
+}
+
+
+.header__menu .content > ul.menu ul:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 100%;
+  left: 8px;
+}
+
+.header__menu .content > ul.menu ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 100%;
+  left: 4px;
+}
+
+.header__menu .content > ul.menu ul li { 
+  display: block; 
+  width: 100%; 
+  height: 58px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header__menu .content > ul.menu ul li a {
+  display: block;
+  width: 100%;
+  padding: 0px 20px;
+  margin: 0px;
+}
+
+.header__menu li.leaf {
+  padding: 0px;
 }
 
 .sidebar {
@@ -736,13 +797,9 @@ body {
   display: none;
 }
 
-#block-menu-menu-top-menu ul {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #block-menu-menu-top-menu a {
   color: #F2F3F4;
+  white-space: pre;
 }
 /**/
 .view-id-requirements_list .view-header {
