@@ -15,6 +15,8 @@ body {
   position: relative;
   color: #000000;
   background-color: #ffffff;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .grid__center {
@@ -66,47 +68,56 @@ body {
 }
 
 .header {
-  height: 50px;
-  background-color: #2e3442;
+  height: 57px;
   position: relative;
-  overflow: hidden;
+  background-color: #414156;
+  z-index: 99;
+  font-family: 'Segoe UI Полужирный', 'Segoe UI';
+  font-weight: 700;
+  font-size: 9px;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .header * {
   color: #ffffff;
 }
 
+.header a {
+  line-height: 58px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
 .header__site-name {
   height: 100%;
   display: block;
   line-height: 12px;
-  font-size: 10px;
-  font-weight: 500;
-  padding-left: 40px;
+  padding-left: 28px;
   text-transform: uppercase;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .header__logo {
-  width: 10%;
   float: left;
+  width: 110px;
+  height: 28px;
 }
 
 .header__logo img {
-  max-height: 30px;
+  max-height: 24px;
+  margin-top: -12px;
   position: absolute;
   top: 50%;
-  transform: translate(0,-50%);
 }
 
 .header__menu {
-  width: 80%;
-  float: left;
+  height: 57px;
+  margin-left: 110px;
 }
 
 .header__menu ul {
   text-align: center;
-  height: 100%;
   margin-top: 0;
 }
 
@@ -116,20 +127,19 @@ body {
 
 .header__menu ul li.active a {
   font-weight: 600;
-  color: #e9993b;
+  color: #0099CC;;
 }
 
 .header__menu ul li a:hover {
   text-decoration: none;
-  background-color: #e9993b;
+  background-color: #0099CC;
   color: #ffffff;
 }
 
 .header__menu ul li a {
-  padding: 30px;
+  padding: 22px 30px;
   width: 100%;
-  line-height: 50px;
-  font-size: 12px;
+  line-height: 59px;
 }
 
 .header__user-link {
@@ -148,7 +158,70 @@ body {
 }
 
 .header__user-link a:hover {
-  background-color: #e9993b;
+  background-color: #0099CC;
+}
+
+.header__menu .content ul {
+  background-color: #414156;
+  position: absolute;
+  display: none;
+  list-style: none;
+  padding: 0px;
+  margin-top: -3px;
+}
+
+.header__menu .content > ul.menu {
+  display: block;
+  height: 57px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.header__menu .content > ul.menu li {
+  display: inline-block;
+  position: relative;
+  padding: 0px;
+  height: 57px;
+}
+
+
+.header__menu .content > ul.menu ul:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 100%;
+  left: 8px;
+}
+
+.header__menu .content > ul.menu ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 100%;
+  left: 4px;
+}
+
+.header__menu .content > ul.menu ul li { 
+  display: block; 
+  width: 100%; 
+  height: 58px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header__menu .content > ul.menu ul li a {
+  display: block;
+  width: 100%;
+  padding: 0px 20px;
+  margin: 0px;
+}
+
+.header__menu li.leaf {
+  padding: 0px;
 }
 
 .sidebar {
@@ -209,13 +282,17 @@ body {
 
 .footer {
   height: 40px;
-  background-color: rgba(46,52,66,0.3);
+  background-color: #999999;
   position: relative;
   overflow: hidden;
   margin: 0;
   position: fixed;
   bottom: 0;
   width: 100%;
+  line-height: 44px;
+  font-family: 'Segoe UI Полужирный', 'Segoe UI';
+  font-weight: 700;
+  text-align: center;
 }
 
 .footer * {
@@ -231,21 +308,16 @@ body {
   text-align: center;
   height: 100%;
   margin-top: 0;
+  text-transform: uppercase;
 }
 
 .footer__menu ul li {
   display: inline;
 }
 
-.footer__menu ul li.active a {
-  text-decoration: none;
-  background-color: rgba(46,52,66,0.2);
-  color: #2e3442;
-}
-
+.footer__menu ul li.active a,
 .footer__menu ul li a:hover {
-  text-decoration: none;
-  background-color: rgba(46,52,66,0.4);
+  text-decoration: underline;
   color: #ffffff;
 }
 
@@ -253,7 +325,9 @@ body {
   padding: 30px;
   width: 100%;
   line-height: 40px;
-  font-size: 12px;
+  font-size: 9px;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .data-content {
@@ -723,17 +797,9 @@ body {
   display: none;
 }
 
-#block-menu-menu-top-menu ul {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#block-menu-menu-top-menu li {
-  display: inline-block;
-}
-
 #block-menu-menu-top-menu a {
   color: #F2F3F4;
+  white-space: pre;
 }
 /**/
 .view-id-requirements_list .view-header {
@@ -876,4 +942,46 @@ body {
 .view-id-requirements_list .demand,
 .view-id-requirements_list .demand_del {
   margin-top: 20px;
+}
+
+.wrap-image {
+  background-image: url(../images/u0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 0;
+}
+
+.wrap-image:before {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+}
+
+.wrap-image .data-content {
+  width: 40%;
+  margin: 0 auto;
+  font-family: 'Segoe UI Курсив', 'Segoe UI';
+  font-style: italic;
+  font-size: 11px;
+  color: #000000;
+  text-align: center;
+  display: block;
+  border: none;
+}
+
+.wrap-image > .content-block {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: middle;
+    text-align: left;
 }
