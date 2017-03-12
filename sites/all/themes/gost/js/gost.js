@@ -1,7 +1,6 @@
 (function() {
 	jQuery(document).ready(function(){
 		jQuery('a.expanded').hover(function(e){
-			console.log('hover')
 			e.preventDefault();
 		});
 		jQuery('.header__menu .content > ul.menu li').hover(function () {
