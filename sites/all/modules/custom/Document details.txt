@@ -24,7 +24,7 @@ $handler->display->display_options['row_plugin'] = 'fields';
 $handler->display->display_options['footer']['area']['id'] = 'area';
 $handler->display->display_options['footer']['area']['table'] = 'views';
 $handler->display->display_options['footer']['area']['field'] = 'area';
-$handler->display->display_options['footer']['area']['content'] = '<a href="file/[fid]/download">Скачать .docx</a> <a href="file/[fid]/edit">Изменить название</a> <a href="file/[fid]/delete">Удалить файл</a>';
+$handler->display->display_options['footer']['area']['content'] = '[download] [edit] [delete]';
 $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
 $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
 /* Field: File: Name */
@@ -60,6 +60,33 @@ $handler->display->display_options['fields']['fid']['field'] = 'fid';
 $handler->display->display_options['fields']['fid']['label'] = '';
 $handler->display->display_options['fields']['fid']['exclude'] = TRUE;
 $handler->display->display_options['fields']['fid']['element_label_colon'] = FALSE;
+/* Field: File: Delete link */
+$handler->display->display_options['fields']['delete']['id'] = 'delete';
+$handler->display->display_options['fields']['delete']['table'] = 'file_managed';
+$handler->display->display_options['fields']['delete']['field'] = 'delete';
+$handler->display->display_options['fields']['delete']['label'] = '';
+$handler->display->display_options['fields']['delete']['exclude'] = TRUE;
+$handler->display->display_options['fields']['delete']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['delete']['alter']['text'] = 'Удалить файл';
+$handler->display->display_options['fields']['delete']['element_label_colon'] = FALSE;
+/* Field: File: Download link */
+$handler->display->display_options['fields']['download']['id'] = 'download';
+$handler->display->display_options['fields']['download']['table'] = 'file_managed';
+$handler->display->display_options['fields']['download']['field'] = 'download';
+$handler->display->display_options['fields']['download']['label'] = '';
+$handler->display->display_options['fields']['download']['exclude'] = TRUE;
+$handler->display->display_options['fields']['download']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['download']['alter']['text'] = 'Скачать .docx';
+$handler->display->display_options['fields']['download']['element_label_colon'] = FALSE;
+/* Field: File: Edit link */
+$handler->display->display_options['fields']['edit']['id'] = 'edit';
+$handler->display->display_options['fields']['edit']['table'] = 'file_managed';
+$handler->display->display_options['fields']['edit']['field'] = 'edit';
+$handler->display->display_options['fields']['edit']['label'] = '';
+$handler->display->display_options['fields']['edit']['exclude'] = TRUE;
+$handler->display->display_options['fields']['edit']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['edit']['alter']['text'] = 'Изменить название';
+$handler->display->display_options['fields']['edit']['element_label_colon'] = FALSE;
 /* Contextual filter: File: File ID */
 $handler->display->display_options['arguments']['fid']['id'] = 'fid';
 $handler->display->display_options['arguments']['fid']['table'] = 'file_managed';
@@ -96,11 +123,14 @@ $translatables['document_details'] = array(
   t('‹ previous'),
   t('next ›'),
   t('last »'),
-  t('<a href="file/[fid]/download">Скачать .docx</a> <a href="file/[fid]/edit">Изменить название</a> <a href="file/[fid]/delete">Удалить файл</a>'),
+  t('[download] [edit] [delete]'),
   t('Название'),
   t('Тип'),
   t('Размер'),
   t('Дата загрузки'),
+  t('Удалить файл'),
+  t('Скачать .docx'),
+  t('Изменить название'),
   t('All'),
   t('Page'),
 );
