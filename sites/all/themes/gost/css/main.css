@@ -582,11 +582,8 @@ body {
     display: flex;
 }
 
+#edit-field-main-interval-str-und,
 #edit-field-main-margins-str-und {
-    width: 70px;
-}
-
-#edit-field-main-interval-str-und {
     width: 100px;
 }
 
@@ -596,7 +593,7 @@ body {
 #edit-field-main-margins-right-und-0-value,
 #edit-field-main-interval-left-und-0-value,
 #edit-field-main-interval-right-und-0-value {
-    width: 30px;
+    width: 45px;
 }
 
 .field-type-list-text.field-widget-options-select.width_sel.form-wrapper {
@@ -648,7 +645,7 @@ body {
 .form-item.form-type-radio.form-item-field-number-main-view-und label,
 #edit-field-pic-number-view-und label,
 #edit-field-table-number-view-und label,
-#edit-field-list-number-view-und label{
+#edit-field-list-number-view-und label {
     width: 76px;
     height: 76px;
     display: inline-block;
@@ -665,7 +662,7 @@ body {
 #edit-field-number-main-view-und-7 + label,
 #edit-field-pic-number-view-und-7 + label,
 #edit-field-table-number-view-und-7 + label,
-#edit-field-list-number-view-und-7 + label{
+#edit-field-list-number-view-und-7 + label {
     background: url('../images/editor_-_demand_create/u269.jpg') no-repeat;
 }
 
@@ -680,7 +677,7 @@ body {
 #edit-field-number-main-view-und-8 + label,
 #edit-field-pic-number-view-und-8 + label,
 #edit-field-table-number-view-und-8 + label,
-#edit-field-list-number-view-und-8 + label{
+#edit-field-list-number-view-und-8 + label {
     background: url('../images/editor_-_demand_create/u271.jpg') no-repeat;
 }
 
@@ -695,7 +692,7 @@ body {
 #edit-field-number-main-view-und-9 + label,
 #edit-field-pic-number-view-und-9 + label,
 #edit-field-table-number-view-und-9 + label,
-#edit-field-list-number-view-und-9 + label{
+#edit-field-list-number-view-und-9 + label {
     background: url('../images/editor_-_demand_create/u273.jpg') no-repeat;
 }
 
@@ -710,7 +707,7 @@ body {
 #edit-field-number-main-view-und-10 + label,
 #edit-field-pic-number-view-und-10 + label,
 #edit-field-table-number-view-und-10 + label,
-#edit-field-list-number-view-und-10 + label{
+#edit-field-list-number-view-und-10 + label {
     background: url('../images/editor_-_demand_create/u275.jpg') no-repeat;
 }
 
@@ -725,7 +722,7 @@ body {
 #edit-field-number-main-view-und-11 + label,
 #edit-field-pic-number-view-und-11 + label,
 #edit-field-table-number-view-und-11 + label,
-#edit-field-list-number-view-und-11 + label{
+#edit-field-list-number-view-und-11 + label {
     background: url('../images/editor_-_demand_create/u277.jpg') no-repeat;
 }
 
@@ -740,7 +737,7 @@ body {
 #edit-field-number-main-view-und-12 + label,
 #edit-field-pic-number-view-und-12 + label,
 #edit-field-table-number-view-und-12 + label,
-#edit-field-list-number-view-und-12 + label{
+#edit-field-list-number-view-und-12 + label {
     background: url('../images/editor_-_demand_create/u279.jpg') no-repeat;
 }
 
@@ -755,7 +752,7 @@ body {
 #edit-field-number-main-view-und-13 + label,
 #edit-field-pic-number-view-und-13 + label,
 #edit-field-table-number-view-und-13 + label,
-#edit-field-list-number-view-und-13 + label{
+#edit-field-list-number-view-und-13 + label {
     background: url('../images/editor_-_demand_create/u281.jpg') no-repeat;
 }
 
@@ -770,7 +767,7 @@ body {
 #edit-field-number-main-view-und-14 + label,
 #edit-field-pic-number-view-und-14 + label,
 #edit-field-table-number-view-und-14 + label,
-#edit-field-list-number-view-und-14 + label{
+#edit-field-list-number-view-und-14 + label {
     background: url('../images/editor_-_demand_create/u283.jpg') no-repeat;
 }
 
@@ -1068,10 +1065,8 @@ body {
 }
 
 #field-demand-name-add-more-wrapper > div,
-#field-demand-note-add-more-wrapper > div,
-#field-header-filter-from-add-more-wrapper > div,
-#field-header-filter-skip-add-more-wrapper > div {
-    width: 320px;
+#field-demand-note-add-more-wrapper > div {
+    width: 550px;
     display: flex;
     justify-content: space-between;
 }
@@ -1086,13 +1081,23 @@ body {
 }
 
 #field-demand-name-add-more-wrapper div input,
-#field-demand-note-add-more-wrapper div input,
-#field-header-filter-from-add-more-wrapper div input,
-#field-header-filter-skip-add-more-wrapper div input {
-    width: 240px;
+#field-demand-note-add-more-wrapper div input {
+    width: 470px;
     border-radius: 4px;
     -webkit-appearance: none;
-    border: 2px solid #eee;
+    border: 1px solid #cccccc;
+}
+
+#field-header-filter-from-add-more-wrapper div input,
+#field-header-filter-skip-add-more-wrapper div input {
+    width: 280px;
+}
+
+#field-header-filter-from-add-more-wrapper > div,
+#field-header-filter-skip-add-more-wrapper > div {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #edit-field-header-setting-align-und {
@@ -1105,7 +1110,7 @@ body {
 #edit-field-header-setting-typeface-und label span,
 #edit-field-table-label-typeface label span,
 .form-item.form-type-radio.form-item-field-main-columns-text-und label span,
-#edit-field-table-label-continue2-und label span{
+#edit-field-table-label-continue2-und label span {
     position: absolute;
     background-repeat: no-repeat;
     width: 27px;
@@ -1119,37 +1124,37 @@ body {
 
 #edit-field-header-setting-align-und-1 + label span,
 #edit-field-table-label-align-und-28 + label span,
-#edit-field-table-label-continue2-und-1 + label span{
+#edit-field-table-label-continue2-und-1 + label span {
     background-image: url(../images/editor_-_demand_create/u101.png);
 }
 
 #edit-field-header-setting-align-und-1:checked + label span,
 #edit-field-table-label-align-und-28:checked + label span,
-#edit-field-table-label-continue2-und-1:checked + label span{
+#edit-field-table-label-continue2-und-1:checked + label span {
     background-image: url(../images/editor_-_demand_create/u101_mouseOver.png);
 }
 
 #edit-field-header-setting-align-und-2 + label span,
 #edit-field-table-label-align-und-29 + label span,
-#edit-field-table-label-continue2-und-2 + label span{
+#edit-field-table-label-continue2-und-2 + label span {
     background-image: url(../images/editor_-_demand_create/u99.png);
 }
 
 #edit-field-header-setting-align-und-2:checked + label span,
 #edit-field-table-label-align-und-29:checked + label span,
-#edit-field-table-label-continue2-und-2:checked + label span{
+#edit-field-table-label-continue2-und-2:checked + label span {
     background-image: url(../images/editor_-_demand_create/u99_mouseOver.png);
 }
 
 #edit-field-header-setting-align-und-3 + label span,
 #edit-field-table-label-align-und-30 + label span,
-#edit-field-table-label-continue2-und-3 + label span{
+#edit-field-table-label-continue2-und-3 + label span {
     background-image: url(../images/editor_-_demand_create/u103.png);
 }
 
 #edit-field-header-setting-align-und-3:checked + label span,
 #edit-field-table-label-align-und-30:checked + label span,
-#edit-field-table-label-continue2-und-3:checked + label span{
+#edit-field-table-label-continue2-und-3:checked + label span {
     background-image: url(../images/editor_-_demand_create/u103_mouseOver.png);
 }
 
@@ -1198,7 +1203,7 @@ body {
 #edit-field-table-label-align-und-29 + label,
 #edit-field-table-label-align-und-30 + label,
 #edit-field-header-setting-typeface-und div label,
-#edit-field-table-label-continue2-und div{
+#edit-field-table-label-continue2-und div {
     position: relative;
     width: 27px;
     height: 30px;
@@ -1235,7 +1240,7 @@ body {
 .form-item.form-type-radio.form-item-field-table-label-align-und,
 #edit-field-pic-align-pic-und > div,
 #edit-field-pic-label-align-und div,
-#edit-field-table-label-continue2-und > div{
+#edit-field-table-label-continue2-und > div {
     width: 35px;
     height: 30px;
 }
@@ -1344,7 +1349,7 @@ body {
 #edit-field-number-main-view-und > div,
 #edit-field-pic-number-view-und > div,
 #edit-field-table-number-view-und > div,
-#edit-field-list-number-view-und >div{
+#edit-field-list-number-view-und > div {
     margin-right: 2px;
 }
 
@@ -1367,8 +1372,10 @@ body {
 }
 
 .form-item-field-main-interval-left-und-0-value,
-.form-item-field-main-margins-left-und-0-value {
-    width: 77px;
+.form-item-field-main-margins-left-und-0-value,
+.form-item.form-type-textfield.form-item-field-main-margins-right-und-0-value,
+.form-item.form-type-textfield.form-item-field-main-interval-right-und-0-value {
+    width: 95px;
     justify-content: space-between;
 }
 
@@ -1384,8 +1391,9 @@ body {
     margin-right: 8px;
 }
 
-.required-fields.group-main-margins-r1.field-group-html-element.section-content-r {
-    width: 171px;
+.required-fields.group-main-margins-r1.field-group-html-element.section-content-r,
+.required-fields.group-main-interval-r1.field-group-html-element.section-content-r {
+    width: 160px;
 }
 
 #edit-field-setting-und {
@@ -1455,6 +1463,12 @@ body {
 #edit-field-pic-border-type-und > div input {
     display: none;
 }
+
 #edit-field-list-formatting-indentatio-und-0-value {
     margin-left: 27px;
+}
+.field-type-taxonomy-term-reference.field-widget-options-buttons.n_visibl_n.form-wrapper,
+.field-type-taxonomy-term-reference.field-name-field-list-number-view2.field-widget-options-buttons.form-wrapper,
+.field-type-taxonomy-term-reference.field-name-field-title-number-view2.field-widget-options-buttons.form-wrapper{
+    width: 360px;
 }
