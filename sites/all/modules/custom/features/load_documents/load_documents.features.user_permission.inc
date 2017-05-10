@@ -10,6 +10,15 @@
 function load_documents_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer_fe_paths'.
+  $permissions['administer_fe_paths'] = array(
+    'name' => 'administer_fe_paths',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fe_paths',
+  );
+
   // Exported permission: 'create files'.
   $permissions['create files'] = array(
     'name' => 'create files',

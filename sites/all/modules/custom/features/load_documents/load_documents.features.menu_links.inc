@@ -10,28 +10,32 @@
 function load_documents_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: navigation_add-file:file/add.
-  $menu_links['navigation_add-file:file/add'] = array(
-    'menu_name' => 'navigation',
-    'link_path' => 'file/add',
-    'router_path' => 'file/add',
-    'link_title' => 'Add file',
+  // Exported menu link: management_file-entity-paths-settings:admin/config/media/fe-paths.
+  $menu_links['management_file-entity-paths-settings:admin/config/media/fe-paths'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/config/media/fe-paths',
+    'router_path' => 'admin/config/media/fe-paths',
+    'link_title' => 'File Entity Paths settings',
     'options' => array(
+      'attributes' => array(
+        'title' => 'Configure custom paths for file entities',
+      ),
       'alter' => TRUE,
-      'identifier' => 'navigation_add-file:file/add',
+      'identifier' => 'management_file-entity-paths-settings:admin/config/media/fe-paths',
     ),
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
     'weight' => 0,
     'customized' => 0,
+    'parent_identifier' => 'management_media:admin/config/media',
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Add file');
+  t('File Entity Paths settings');
 
   return $menu_links;
 }
