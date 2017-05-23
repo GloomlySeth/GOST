@@ -1,0 +1,81 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function processing_block_info() {
+  $blocks = array();
+  $blocks['processing_form_block'] = array(
+    'info' => t('Processing form'),
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function processing_block_view($delta = '') {
+  if ($delta == 'processing_form_block') {
+    $block['subject'] = '';
+    $block['content'] = drupal_get_form('processing_form');
+  }
+  return $block;
+}
+
+/**
+ * Implements hook_form().
+ */
+function processing_form($form, &$form_state) {
+  global $user;
+  $nodes = db_select('node', 'n');
+  $nodes->fields('n', array('nid', 'title'));
+  $nodes->condition('n.uid', $user->uid);
+  $nodes->condition('n.type', 'demand_create');
+  $list = $nodes->execute()->fetchAllKeyed();
+  $form['list_docx'] = array(
+    '#type' => 'radios',
+    '#title' => '',
+    '#options' => $list
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => 'Начать обработку',
+  );
+  return $form;
+}
+
+function processing_form_submit($form, &$form_state) {
+  $nid = $form_state['values']['list_docx'];
+  $node = node_load($nid);
+  unset($node->rdf_mapping, 
+		$node->name, 
+		$node->picture, 
+		$node->data, 
+		$node->vid, 
+		$node->status, 
+		$node->comment, 
+		$node->promote, 
+		$node->sticky, 
+		$node->vuuid, 
+		$node->nid,
+        $node->type, 
+		$node->language, 
+		$node->created, 
+		$node->changed, 
+		$node->tnid, 
+		$node->translate, 
+		$node->uuid, 
+		$node->revision_timestamp, 
+		$node->revision_uid,
+		$node->log);
+  $data = json_encode($node);
+  
+  $options = array(
+    'method' => 'POST',
+    'data' => $data,
+    'timeout' => 15,
+    'headers' => array('Content-Type' => 'application/x-www-form-urlencoded'),
+  );
+  $result = drupal_http_request('', $options);
+}
+
