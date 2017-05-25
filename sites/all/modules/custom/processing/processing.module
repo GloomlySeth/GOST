@@ -32,6 +32,15 @@ function processing_form($form, &$form_state) {
   $nodes->condition('n.uid', $user->uid);
   $nodes->condition('n.type', 'demand_create');
   $list = $nodes->execute()->fetchAllKeyed();
+  $form['list_settings'] = array(
+    '#type' => 'select',
+    '#title' => '',
+    '#options' => $list
+  );
+  $nodes = db_select('file_managed', 'f');
+  $nodes->fields('f', array('fid', 'filename'));
+  $nodes->condition('f.uid', $user->uid);
+  $list = $nodes->execute()->fetchAllKeyed();
   $form['list_docx'] = array(
     '#type' => 'radios',
     '#title' => '',
@@ -45,30 +54,226 @@ function processing_form($form, &$form_state) {
 }
 
 function processing_form_submit($form, &$form_state) {
-  $nid = $form_state['values']['list_docx'];
+  global $user;
+  $name = $form_state['values']['list_docx'];
+  $uri = db_select('file_managed', 'f');
+  $uri->fields('f', array('uri'));
+  $uri->condition('f.uid', $name);
+  $uri->execute()->fetchField();
+  $nid = $form_state['values']['list_settings'];
   $node = node_load($nid);
-  unset($node->rdf_mapping, 
-		$node->name, 
-		$node->picture, 
-		$node->data, 
-		$node->vid, 
-		$node->status, 
-		$node->comment, 
-		$node->promote, 
-		$node->sticky, 
-		$node->vuuid, 
-		$node->nid,
-        $node->type, 
-		$node->language, 
-		$node->created, 
-		$node->changed, 
-		$node->tnid, 
-		$node->translate, 
-		$node->uuid, 
-		$node->revision_timestamp, 
-		$node->revision_uid,
-		$node->log);
-  $data = json_encode($node);
+  $title_number = array();
+  $list_number = array();
+  if(!empty($node->field_title_number_r)) {
+    foreach ($node->field_title_number_r['und'] as $key => $value) {
+      $field_coll = field_collection_item_load($value['revision_id']);
+      $title_number[] = array(
+        'type' => $field_coll->field_title_number_type2['und'][0]['value'],
+        'view' => $field_coll->field_title_number_view2,
+        'division' => $field_coll->field_title_number_division2,
+        'setting' => $field_coll->field_title_number_setting2['und'][0]['value'],
+      );
+    }
+  }
+  if(!empty($node->field_list_number_1)){
+    foreach ($node->field_list_number_1['und'] as $key => $value) {
+      $field_coll = field_collection_item_load($value['revision_id']);
+      $list_number[] = array(
+        'type' => $field_coll->field_list_number_type2['und'][0]['value'],
+        'view' => $field_coll->field_list_number_view2,
+        'division' => $field_coll->field_list_number_division2,
+        'setting' => $field_coll->field_list_number_setting2['und'][0]['value'],
+      );
+    }
+  }
+  $processing = array(
+    'user' => array(
+    'uid' => $user->uid,
+    ),
+    'file' => array(
+      'patch' => $uri,
+      'name' => $form['list_docx']['#options'][$name],
+    ),
+    'demands' => array(
+      'name' => $node->title,
+      'note' => $node->field_demand_note,
+      'fields' => array(
+        'top' => $node->field_fields_top,
+        'bottom' => $node->field_fields_bottom,
+        'left' => $node->field_fields_left,
+        'right' => $node->field_fields_right,
+      ),
+      'paper' => array(
+        'size' => $node->field_paper_size['und'][0]['value'],
+        'orientation' => $node->field_paper_orientation['und'][0]['value'],
+      ),
+      'header' => array(
+        'setting' => array(
+          'font' => $node->field_header_setting_font,
+          'size' => $node->field_header_setting_size,
+          'align' => $node->field_header_setting_align,
+          'typeface' => $node->field_header_setting_typeface,
+          'color' => $node->field_header_setting_color,
+          'background' => $node->field_header_setting_background,
+          'setting' => $node->field_header_setting_text['und'][0]['value'],
+        ),
+        'number' => array(
+          'number_page' => $node->field_header_number_page['und'][0]['value'],
+        ),
+        'filter' => array(
+          'filter_from' => $node->field_header_filter_from,
+          'filter_skip' => $node->field_header_filter_skip,
+        ),
+      ),
+      'main' => array(
+        'font' => array(
+          'font' => $node->field_main_font_font,
+          'size' => $node->field_main_font_size,
+          'align' => $node->field_main_font_align,
+          'typeface' => $node->field_main_font_typeface,
+          'color' => $node->field_main_font_color,
+          'background' => $node->field_main_font_background,
+        ),
+        'columns' => array(
+          'text' => $node->field_main_columns_text,
+          'number' => $node->field_main_columns_number,
+          'division' => $node->field_main_columns_division['und'][0]['value'],
+          'width' => $node->field_main_columns_width['und'][0]['value'],
+        ),
+        'margins' => array(
+          'left' => $node->field_main_margins_left,
+          'right' => $node->field_main_margins_right,
+          'mirror' => $node->field_main_margins_mirror['und'][0]['value'],
+          'str' => $node->field_main_margins_str,
+          'on' => $node->field_main_margins_on,
+          'shift' => $node->field_main_margins_shift['und'][0]['value'],
+        ),
+        'interval' => array(
+          'page' => $node->field_main_interval_page['und'][0]['value'],
+          'page2' => $node->field_main_interval_page2,
+          'mirror' => $node->field_main_interval_shift['und'][0]['value'],
+          'left' => $node->field_main_interval_left,
+          'non' => $node->field_main_interval_non['und'][0]['value'],
+          'shift' => $node->field_main_interval_str['und'][0]['value'],
+          'int' => $node->field_main_interval_int,
+        ),
+      ),
+      'number' => array(
+        'main' => array(
+          'type' => $node->field_number_main_type,
+          'view' => $node->field_number_main_view,
+          'setting' => $node->field_number_main_setting['und'][0]['value'],
+        ),
+        'pattern' => array(
+          'pic' => $node->field_number_pattern_pic,
+          'own' => $node->field_number_pattern_own,
+          'table' => $node->field_number_pattern_table,
+          'own2' => $node->field_number_pattern_own2,
+        ),
+      ),
+      'title' => array(
+        'main' => array(
+          'level' => $node->field_title_main_level,
+          'pattern' => $node->field_title_main_pattern,
+          'own' => $node->field_title_main_own,
+          'text' => $node->field_title_main_text['und'][0]['value'],
+        ),
+        'number' => $title_number,
+      ),
+      'contents' => array(
+        'main' => array(
+          'position' => $node->field_contents_main_position['und'][0]['value'],
+          'division' => $node->field_contents_main_division,
+          'setting' => $node->field_contents_main_setting['und'][0]['value'],
+          'list' => $node->field_contents_main_list['und'][0]['value'],
+        ),
+      ),
+      'pic' => array(
+        'size' => array(
+          'position' => $node->field_pic_size_valid['und'][0]['value'],
+          'size_1' => $node->field_pic_size_1,
+          'size_2' => $node->field_pic_size_2,
+        ),
+        'border' => array(
+          'thickness' => $node->field_pic_border_thickness,
+          'color' => $node->field_pic_border_color,
+          'type' => $node->field_pic_border_type,
+        ),
+        'align' => array(
+          'align' => $node->field_pic_align_pic,
+        ),
+        'label' => array(
+          'align' => $node->field_pic_label_align,
+          'setting' => $node->field_pic_label_setting['und'][0]['value'],
+        ),
+        'indents' => array(
+          'top' => $node->field_pic_indents_top,
+          'top2' => $node->field_pic_indents_top2['und'][0]['value'],
+          'text' => $node->field_pic_indents_text,
+          'text2' => $node->field_pic_indents_text2['und'][0]['value'],
+          'pic' => $node->field_pic_indents_pic,
+          'pic2' => $node->field_pic_indents_pic2['und'][0]['value'],
+        ),
+        'number' => array(
+          'type' => $node->field_pic_number_type,
+          'view' => $node->field_pic_number_view,
+          'setting' => $node->field_pic_number_setting['und'][0]['value'],
+        ),
+      ),
+      'table' => array(
+        'label' => array(
+          'location' => $node->field_table_label_location,
+          'font' => $node->field_table_label_font['und'][0]['tid'],
+          'size' => $node->field_table_label_size['und'][0]['tid'],
+          'align' => $node->field_table_label_align,
+          'typeface' => $node->field_table_label_typeface,
+          'color' => $node->field_table_label_color,
+          'background' => $node->field_table_label_background,
+          'header' => $node->field_table_label_header['und'][0]['value'],
+          'number' => $node->field_table_label_number['und'][0]['value'],
+          'line' => $node->field_table_label_line['und'][0]['value'],
+          'continue' => $node->field_table_label_continue['und'][0]['value'],
+          'continue2' => $node->field_table_label_continue2,
+        ),
+        'number' => array(
+          'type' => $node->field_table_number_type,
+          'view' => $node->field_table_number_view,
+          'division' => $node->field_table_number_division,
+          'setting' => $node->field_table_number_setting['und'][0]['value'],
+        ),
+      ),
+      'formula' => array(
+        'indents' => array(
+          'text' => $node->field_formula_indents_text,
+          'text2' => $node->field_formula_indents_text2['und'][0]['value'],
+          'formula' => $node->field_formula_indents_formula,
+          'formula2' => $node->field_formula_indents_formula2['und'][0]['value'],
+        ),
+        'number' => array(
+          'type' => $node->field_formula_number_type,
+          'view' => $node->field_formula_number_division,
+          'division' => $node->field_formula_number_setting['und'][0]['value'],
+        ),
+      ),
+      'list' => array(
+        'formatting' => array(
+          'level' => $node->field_list_formatting_level['und'][0]['value'],
+          'indentatio' => $node->field_list_formatting_indentatio,
+          'number' => $node->field_list_formatting_number,
+          'main' => $node->field_list_formatting_main['und'][0]['value'],
+          'valid' => $node->field_list_formatting_valid,
+        ),
+        'number' => $list_number,
+      ),
+      'quotes' => array(
+        'main' => array(
+          'symbol' => $node->field_quotes_main_symbol['und'][0]['value'],
+        ),
+      ),
+    ),
+
+  );
+  $data = json_encode($processing);
   
   $options = array(
     'method' => 'POST',
@@ -77,5 +282,6 @@ function processing_form_submit($form, &$form_state) {
     'headers' => array('Content-Type' => 'application/x-www-form-urlencoded'),
   );
   $result = drupal_http_request('', $options);
+  ($result->code == 200) ? drupal_set_message('Успешно отправлено') : drupal_set_message("$result->code: $result->error", 'error');
 }
 
