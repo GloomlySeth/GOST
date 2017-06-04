@@ -22,6 +22,15 @@ function processing_block_view($delta = '') {
   return $block;
 }
 
+function term_name($tid){
+  $tname = taxonomy_term_load($tid);
+  return (!empty($tname->name)) ? $tname->name : 0;
+}
+
+function is_empty($value){
+  return (!empty($value)) ? $value : 0;
+}
+
 /**
  * Implements hook_form().
  */
@@ -68,10 +77,10 @@ function processing_form_submit($form, &$form_state) {
     foreach ($node->field_title_number_r['und'] as $key => $value) {
       $field_coll = field_collection_item_load($value['revision_id']);
       $title_number[] = array(
-        'type' => $field_coll->field_title_number_type2['und'][0]['value'],
-        'view' => $field_coll->field_title_number_view2,
-        'division' => $field_coll->field_title_number_division2,
-        'setting' => $field_coll->field_title_number_setting2['und'][0]['value'],
+        'type' => is_empty($field_coll->field_title_number_type2['und'][0]['value']),
+        'view' => is_empty(term_name($field_coll->field_title_number_view2)),
+        'division' => is_empty(term_name($field_coll->field_title_number_division2)),
+        'setting' => is_empty($field_coll->field_title_number_setting2['und'][0]['value']),
       );
     }
   }
@@ -79,10 +88,10 @@ function processing_form_submit($form, &$form_state) {
     foreach ($node->field_list_number_1['und'] as $key => $value) {
       $field_coll = field_collection_item_load($value['revision_id']);
       $list_number[] = array(
-        'type' => $field_coll->field_list_number_type2['und'][0]['value'],
-        'view' => $field_coll->field_list_number_view2,
-        'division' => $field_coll->field_list_number_division2,
-        'setting' => $field_coll->field_list_number_setting2['und'][0]['value'],
+        'type' => is_empty($field_coll->field_list_number_type2['und'][0]['value']),
+        'view' => is_empty(term_name($field_coll->field_list_number_view2)),
+        'division' => is_empty(term_name($field_coll->field_list_number_division2)),
+        'setting' => is_empty($field_coll->field_list_number_setting2['und'][0]['value']),
       );
     }
   }
@@ -91,183 +100,183 @@ function processing_form_submit($form, &$form_state) {
     'uid' => $user->uid,
     ),
     'file' => array(
-      'patch' => $uri,
-      'name' => $form['list_docx']['#options'][$name],
+      'patch' => is_empty($uri),
+      'name' => is_empty($form['list_docx']['#options'][$name]),
     ),
     'demands' => array(
       'name' => $node->title,
-      'note' => $node->field_demand_note,
+      'note' => is_empty($node->field_demand_note),
       'fields' => array(
-        'top' => $node->field_fields_top,
-        'bottom' => $node->field_fields_bottom,
-        'left' => $node->field_fields_left,
-        'right' => $node->field_fields_right,
+        'top' => is_empty($node->field_fields_top),
+        'bottom' => is_empty($node->field_fields_bottom),
+        'left' => is_empty($node->field_fields_left),
+        'right' => is_empty($node->field_fields_right),
       ),
       'paper' => array(
-        'size' => $node->field_paper_size['und'][0]['value'],
-        'orientation' => $node->field_paper_orientation['und'][0]['value'],
+        'size' => is_empty($node->field_paper_size['und'][0]['value']),
+        'orientation' => is_empty($node->field_paper_orientation['und'][0]['value']),
       ),
       'header' => array(
         'setting' => array(
-          'font' => $node->field_header_setting_font,
-          'size' => $node->field_header_setting_size,
-          'align' => $node->field_header_setting_align,
-          'typeface' => $node->field_header_setting_typeface,
-          'color' => $node->field_header_setting_color,
-          'background' => $node->field_header_setting_background,
-          'setting' => $node->field_header_setting_text['und'][0]['value'],
+          'font' => is_empty(term_name($node->field_header_setting_font)),
+          'size' => is_empty(term_name($node->field_header_setting_size)),
+          'align' => is_empty(term_name($node->field_header_setting_align)),
+          'typeface' => is_empty(term_name($node->field_header_setting_typeface)),
+          'color' => is_empty(term_name($node->field_header_setting_color)),
+          'background' => is_empty(term_name($node->field_header_setting_background)),
+          'setting' => is_empty($node->field_header_setting_text['und'][0]['value']),
         ),
         'number' => array(
-          'number_page' => $node->field_header_number_page['und'][0]['value'],
+          'number_page' => is_empty($node->field_header_number_page['und'][0]['value']),
         ),
         'filter' => array(
-          'filter_from' => $node->field_header_filter_from,
-          'filter_skip' => $node->field_header_filter_skip,
+          'filter_from' => is_empty($node->field_header_filter_from),
+          'filter_skip' => is_empty($node->field_header_filter_skip),
         ),
       ),
       'main' => array(
         'font' => array(
-          'font' => $node->field_main_font_font,
-          'size' => $node->field_main_font_size,
-          'align' => $node->field_main_font_align,
-          'typeface' => $node->field_main_font_typeface,
-          'color' => $node->field_main_font_color,
-          'background' => $node->field_main_font_background,
+          'font' => is_empty(term_name($node->field_main_font_font)),
+          'size' => is_empty(term_name($node->field_main_font_size)),
+          'align' => is_empty(term_name($node->field_main_font_align)),
+          'typeface' => is_empty(term_name($node->field_main_font_typeface)),
+          'color' => is_empty(term_name($node->field_main_font_color)),
+          'background' => is_empty(term_name($node->field_main_font_background)),
         ),
         'columns' => array(
-          'text' => $node->field_main_columns_text,
-          'number' => $node->field_main_columns_number,
-          'division' => $node->field_main_columns_division['und'][0]['value'],
-          'width' => $node->field_main_columns_width['und'][0]['value'],
+          'text' => is_empty($node->field_main_columns_text),
+          'number' => is_empty($node->field_main_columns_number),
+          'division' => is_empty($node->field_main_columns_division['und'][0]['value']),
+          'width' => is_empty($node->field_main_columns_width['und'][0]['value']),
         ),
         'margins' => array(
-          'left' => $node->field_main_margins_left,
-          'right' => $node->field_main_margins_right,
-          'mirror' => $node->field_main_margins_mirror['und'][0]['value'],
-          'str' => $node->field_main_margins_str,
-          'on' => $node->field_main_margins_on,
-          'shift' => $node->field_main_margins_shift['und'][0]['value'],
+          'left' => is_empty($node->field_main_margins_left),
+          'right' => is_empty($node->field_main_margins_right),
+          'mirror' => is_empty($node->field_main_margins_mirror['und'][0]['value']),
+          'str' => is_empty($node->field_main_margins_str),
+          'on' => is_empty($node->field_main_margins_on),
+          'shift' => is_empty($node->field_main_margins_shift['und'][0]['value']),
         ),
         'interval' => array(
-          'page' => $node->field_main_interval_page['und'][0]['value'],
-          'page2' => $node->field_main_interval_page2,
-          'mirror' => $node->field_main_interval_shift['und'][0]['value'],
-          'left' => $node->field_main_interval_left,
-          'non' => $node->field_main_interval_non['und'][0]['value'],
-          'shift' => $node->field_main_interval_str['und'][0]['value'],
-          'int' => $node->field_main_interval_int,
+          'page' => is_empty($node->field_main_interval_page['und'][0]['value']),
+          'page2' => is_empty($node->field_main_interval_page2),
+          'mirror' => is_empty($node->field_main_interval_shift['und'][0]['value']),
+          'left' => is_empty($node->field_main_interval_left),
+          'non' => is_empty($node->field_main_interval_non['und'][0]['value']),
+          'shift' => is_empty($node->field_main_interval_str['und'][0]['value']),
+          'int' => is_empty($node->field_main_interval_int),
         ),
       ),
       'number' => array(
         'main' => array(
-          'type' => $node->field_number_main_type,
-          'view' => $node->field_number_main_view,
-          'setting' => $node->field_number_main_setting['und'][0]['value'],
+          'type' => is_empty($node->field_number_main_type),
+          'view' => is_empty(term_name($node->field_number_main_view)),
+          'setting' => is_empty($node->field_number_main_setting['und'][0]['value']),
         ),
         'pattern' => array(
-          'pic' => $node->field_number_pattern_pic,
-          'own' => $node->field_number_pattern_own,
-          'table' => $node->field_number_pattern_table,
-          'own2' => $node->field_number_pattern_own2,
+          'pic' => is_empty($node->field_number_pattern_pic),
+          'own' => is_empty($node->field_number_pattern_own),
+          'table' => is_empty($node->field_number_pattern_table),
+          'own2' => is_empty($node->field_number_pattern_own2),
         ),
       ),
       'title' => array(
         'main' => array(
-          'level' => $node->field_title_main_level,
-          'pattern' => $node->field_title_main_pattern,
-          'own' => $node->field_title_main_own,
-          'text' => $node->field_title_main_text['und'][0]['value'],
+          'level' => is_empty($node->field_title_main_level),
+          'pattern' => is_empty($node->field_title_main_pattern),
+          'own' => is_empty($node->field_title_main_own),
+          'text' => is_empty($node->field_title_main_text['und'][0]['value']),
         ),
         'number' => $title_number,
       ),
       'contents' => array(
         'main' => array(
-          'position' => $node->field_contents_main_position['und'][0]['value'],
-          'division' => $node->field_contents_main_division,
-          'setting' => $node->field_contents_main_setting['und'][0]['value'],
-          'list' => $node->field_contents_main_list['und'][0]['value'],
+          'position' => is_empty($node->field_contents_main_position['und'][0]['value']),
+          'division' => is_empty(term_name($node->field_contents_main_division)),
+          'setting' => is_empty($node->field_contents_main_setting['und'][0]['value']),
+          'list' => is_empty($node->field_contents_main_list['und'][0]['value']),
         ),
       ),
       'pic' => array(
         'size' => array(
-          'position' => $node->field_pic_size_valid['und'][0]['value'],
-          'size_1' => $node->field_pic_size_1,
-          'size_2' => $node->field_pic_size_2,
+          'position' => is_empty($node->field_pic_size_valid['und'][0]['value']),
+          'size_1' => is_empty($node->field_pic_size_1),
+          'size_2' => is_empty($node->field_pic_size_2),
         ),
         'border' => array(
-          'thickness' => $node->field_pic_border_thickness,
-          'color' => $node->field_pic_border_color,
-          'type' => $node->field_pic_border_type,
+          'thickness' => is_empty($node->field_pic_border_thickness),
+          'color' => is_empty($node->field_pic_border_color),
+          'type' => is_empty(term_name($node->field_pic_border_type)),
         ),
         'align' => array(
-          'align' => $node->field_pic_align_pic,
+          'align' => is_empty(term_name($node->field_pic_align_pic)),
         ),
         'label' => array(
-          'align' => $node->field_pic_label_align,
-          'setting' => $node->field_pic_label_setting['und'][0]['value'],
+          'align' => is_empty(term_name($node->field_pic_label_align)),
+          'setting' => is_empty($node->field_pic_label_setting['und'][0]['value']),
         ),
         'indents' => array(
-          'top' => $node->field_pic_indents_top,
-          'top2' => $node->field_pic_indents_top2['und'][0]['value'],
-          'text' => $node->field_pic_indents_text,
-          'text2' => $node->field_pic_indents_text2['und'][0]['value'],
-          'pic' => $node->field_pic_indents_pic,
-          'pic2' => $node->field_pic_indents_pic2['und'][0]['value'],
+          'top' => is_empty($node->field_pic_indents_top),
+          'top2' => is_empty($node->field_pic_indents_top2['und'][0]['value']),
+          'text' => is_empty($node->field_pic_indents_text),
+          'text2' => is_empty($node->field_pic_indents_text2['und'][0]['value']),
+          'pic' => is_empty($node->field_pic_indents_pic),
+          'pic2' => is_empty($node->field_pic_indents_pic2['und'][0]['value']),
         ),
         'number' => array(
-          'type' => $node->field_pic_number_type,
-          'view' => $node->field_pic_number_view,
-          'setting' => $node->field_pic_number_setting['und'][0]['value'],
+          'type' => is_empty($node->field_pic_number_type),
+          'view' => is_empty(term_name($node->field_pic_number_view)),
+          'setting' => is_empty($node->field_pic_number_setting['und'][0]['value']),
         ),
       ),
       'table' => array(
         'label' => array(
-          'location' => $node->field_table_label_location,
-          'font' => $node->field_table_label_font['und'][0]['tid'],
-          'size' => $node->field_table_label_size['und'][0]['tid'],
-          'align' => $node->field_table_label_align,
-          'typeface' => $node->field_table_label_typeface,
-          'color' => $node->field_table_label_color,
-          'background' => $node->field_table_label_background,
-          'header' => $node->field_table_label_header['und'][0]['value'],
-          'number' => $node->field_table_label_number['und'][0]['value'],
-          'line' => $node->field_table_label_line['und'][0]['value'],
-          'continue' => $node->field_table_label_continue['und'][0]['value'],
-          'continue2' => $node->field_table_label_continue2,
+          'location' => is_empty($node->field_table_label_location),
+          'font' => is_empty(term_name($node->field_table_label_font['und'][0]['tid'])),
+          'size' => is_empty(term_name($node->field_table_label_size['und'][0]['tid'])),
+          'align' => is_empty(term_name($node->field_table_label_align)),
+          'typeface' => is_empty(term_name($node->field_table_label_typeface)),
+          'color' => is_empty(term_name($node->field_table_label_color)),
+          'background' => is_empty(term_name($node->field_table_label_background)),
+          'header' => is_empty($node->field_table_label_header['und'][0]['value']),
+          'number' => is_empty($node->field_table_label_number['und'][0]['value']),
+          'line' => is_empty($node->field_table_label_line['und'][0]['value']),
+          'continue' => is_empty($node->field_table_label_continue['und'][0]['value']),
+          'continue2' => is_empty(term_name($node->field_table_label_continue2)),
         ),
         'number' => array(
-          'type' => $node->field_table_number_type,
-          'view' => $node->field_table_number_view,
-          'division' => $node->field_table_number_division,
-          'setting' => $node->field_table_number_setting['und'][0]['value'],
+          'type' => is_empty($node->field_table_number_type),
+          'view' => is_empty(term_name($node->field_table_number_view)),
+          'division' => is_empty(term_name($node->field_table_number_division)),
+          'setting' => is_empty($node->field_table_number_setting['und'][0]['value']),
         ),
       ),
       'formula' => array(
         'indents' => array(
-          'text' => $node->field_formula_indents_text,
-          'text2' => $node->field_formula_indents_text2['und'][0]['value'],
-          'formula' => $node->field_formula_indents_formula,
-          'formula2' => $node->field_formula_indents_formula2['und'][0]['value'],
+          'text' => is_empty($node->field_formula_indents_text),
+          'text2' => is_empty($node->field_formula_indents_text2['und'][0]['value']),
+          'formula' => is_empty($node->field_formula_indents_formula),
+          'formula2' => is_empty($node->field_formula_indents_formula2['und'][0]['value']),
         ),
         'number' => array(
-          'type' => $node->field_formula_number_type,
-          'view' => $node->field_formula_number_division,
-          'division' => $node->field_formula_number_setting['und'][0]['value'],
+          'type' => is_empty($node->field_formula_number_type),
+          'view' => is_empty(term_name($node->field_formula_number_division)),
+          'division' => is_empty($node->field_formula_number_setting['und'][0]['value']),
         ),
       ),
       'list' => array(
         'formatting' => array(
-          'level' => $node->field_list_formatting_level['und'][0]['value'],
-          'indentatio' => $node->field_list_formatting_indentatio,
-          'number' => $node->field_list_formatting_number,
-          'main' => $node->field_list_formatting_main['und'][0]['value'],
-          'valid' => $node->field_list_formatting_valid,
+          'level' => is_empty($node->field_list_formatting_level['und'][0]['value']),
+          'indentatio' => is_empty($node->field_list_formatting_indentatio),
+          'number' => is_empty($node->field_list_formatting_number),
+          'main' => is_empty($node->field_list_formatting_main['und'][0]['value']),
+          'valid' => is_empty($node->field_list_formatting_valid),
         ),
         'number' => $list_number,
       ),
       'quotes' => array(
         'main' => array(
-          'symbol' => $node->field_quotes_main_symbol['und'][0]['value'],
+          'symbol' => is_empty($node->field_quotes_main_symbol['und'][0]['value']),
         ),
       ),
     ),
