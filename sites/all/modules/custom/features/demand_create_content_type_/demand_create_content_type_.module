@@ -29,9 +29,9 @@ function demand_create_content_type__form_demand_create_node_form_alter(&$form, 
   $form['field_main_width_number2']['und'][0]['value']['#title'] = '';
   $form['field_main_width_width2']['und'][0]['value']['#title'] = '';
   $form['field_main_width_space2']['und'][0]['value']['#title'] = '';
-  $form['field_header_setting_align']['und']['#options'][1] = '<span></span>';
-  $form['field_header_setting_align']['und']['#options'][2] = '<span></span>';
-  $form['field_header_setting_align']['und']['#options'][3] = '<span></span>';
+  $form['field_header_setting_align']['und']['#options'][23] = '<span></span>';
+  $form['field_header_setting_align']['und']['#options'][24] = '<span></span>';
+  $form['field_header_setting_align']['und']['#options'][25] = '<span></span>';
   $form['field_header_setting_align']['und']['#title'] = '';
   $form['field_header_setting_align']['#attributes']['class'][3] = 'n_visibl_r';
   $form['field_header_setting_typeface']['und']['#options'][8] = '<span></span>';
@@ -198,5 +198,4 @@ function demand_create_content_type__form_demand_create_node_form_alter(&$form, 
   $form['field_main_columns_text']['und']['#options'][3] = '<span></span>' . 'Слева';
   $form['field_main_columns_text']['und']['#options'][4] = '<span></span>' . 'Справа';
   $form['field_main_columns_text']['#attributes']['class'][4] = 'n_visibl_r';
-  
 }

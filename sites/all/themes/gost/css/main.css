@@ -1122,37 +1122,37 @@ body {
     position: static;
 }
 
-#edit-field-header-setting-align-und-1 + label span,
+#edit-field-header-setting-align-und-23 + label span,
 #edit-field-table-label-align-und-28 + label span,
 #edit-field-table-label-continue2-und-1 + label span {
     background-image: url(../images/editor_-_demand_create/u101.png);
 }
 
-#edit-field-header-setting-align-und-1:checked + label span,
+#edit-field-header-setting-align-und-23:checked + label span,
 #edit-field-table-label-align-und-28:checked + label span,
 #edit-field-table-label-continue2-und-1:checked + label span {
     background-image: url(../images/editor_-_demand_create/u101_mouseOver.png);
 }
 
-#edit-field-header-setting-align-und-2 + label span,
+#edit-field-header-setting-align-und-24 + label span,
 #edit-field-table-label-align-und-29 + label span,
 #edit-field-table-label-continue2-und-2 + label span {
     background-image: url(../images/editor_-_demand_create/u99.png);
 }
 
-#edit-field-header-setting-align-und-2:checked + label span,
+#edit-field-header-setting-align-und-24:checked + label span,
 #edit-field-table-label-align-und-29:checked + label span,
 #edit-field-table-label-continue2-und-2:checked + label span {
     background-image: url(../images/editor_-_demand_create/u99_mouseOver.png);
 }
 
-#edit-field-header-setting-align-und-3 + label span,
+#edit-field-header-setting-align-und-25 + label span,
 #edit-field-table-label-align-und-30 + label span,
 #edit-field-table-label-continue2-und-3 + label span {
     background-image: url(../images/editor_-_demand_create/u103.png);
 }
 
-#edit-field-header-setting-align-und-3:checked + label span,
+#edit-field-header-setting-align-und-25:checked + label span,
 #edit-field-table-label-align-und-30:checked + label span,
 #edit-field-table-label-continue2-und-3:checked + label span {
     background-image: url(../images/editor_-_demand_create/u103_mouseOver.png);
