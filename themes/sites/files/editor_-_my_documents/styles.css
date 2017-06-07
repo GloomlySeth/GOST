@@ -1,0 +1,520 @@
+body {
+    margin:0px;
+    background-image:none;
+}
+#base {
+    height: 57px;
+    margin: 0 auto;
+    display: block;
+}
+#u0 {
+    /*background: url(../../images/main_page/u0.jpg);*/
+    width: 100%;
+    height:589px;
+    background-size: 100%;
+}
+#u0_img {
+    width: 100%;
+    height:589px;
+}
+
+#u2 {
+    position: relative;
+    display: block;
+    top: 165px;
+    margin: 0 auto 0 auto;
+    width:520px;
+    height:144px;
+    font-family:'Segoe UI Курсив', 'Segoe UI';
+    font-style:italic;
+    font-size:11px;
+    color:#000000;
+    text-align:center;
+}
+#u2_img {
+    width:312px;
+    height:144px;
+}
+#u3 {
+    width:520px;
+    font-size:16px;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    word-wrap:break-word;
+}
+#u4 {
+    /*width:164px;*/
+    height:46px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-size:16px;
+    color:#000000;
+    font-weight: 700;
+    text-align: center;
+}
+#u4_img {
+    width:164px;
+    height:46px;
+}
+#u5 {
+    /*width:164px;*/
+    word-wrap:break-word;
+}
+#u6 {
+    height:57px;
+
+}
+.topMenu {
+    background: url(../../images/main_page/u20.png);
+    height: 57px;
+    margin:0;
+}
+
+#u6_img {
+    height:57px;
+}
+#u7 {
+    visibility:hidden;
+    word-wrap:break-word;
+}
+#u8 {
+    height:57px;
+}
+#u8_menu {
+    height:63px;
+}
+#u9 {
+    height:62px;
+}
+#u10 {
+    display: inline-block;
+    width:121px;
+    height:57px;
+    line-height: 57px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    color:#FFFFFF;
+    text-align:center;
+}
+
+#u10:hover {
+    background:#00CC66;
+}
+
+#u11 {
+    /*  width:117px;
+      word-wrap:break-word;*/
+}
+#u12 {
+    display: inline-block;
+    width:127px;
+    height:57px;
+    line-height:57px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    color:#FFFFFF;
+    text-align:center;
+}
+#u12:hover {
+    background:#00CC66;
+}
+
+#u13 {
+    /*  width:123px;
+      word-wrap:break-word;*/
+}
+#u14 {
+    display: inline-block;
+    width:114px;
+    height:57px;
+    line-height:57px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    color:#FFFFFF;
+    text-align:center;
+}
+
+#u14:hover {
+    background:#00CC66;
+}
+
+#u15 {
+    /*  width:110px;
+      word-wrap:break-word;*/
+}
+#u16 {
+    width:116px;
+    height:57px;
+}
+#u16_menu {
+    width:122px;
+    height:63px;
+}
+#u17 {
+    width:121px;
+    height:57px;
+}
+#u18 {
+    width:116px;
+    height:57px;
+    line-height:57px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    text-decoration:underline;
+    color:#FFFFFF;
+    text-align:center;
+}
+
+#u18:hover {
+    background:#00CC66;
+}
+
+#u18_img {
+    display: none;
+}
+
+#u19 {
+    width:112px;
+    word-wrap:break-word;
+}
+#u20 {
+    width:116px;
+    height:104px;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: 99;
+}
+#u20_menu {
+    width:116px;
+    height:110px;
+}
+#u21 {
+    width:116px;
+    height:109px;
+}
+#u22 {
+    width:116px;
+    height:36px;
+    line-height:36px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    color:#FFFFFF;
+    background: #666666;
+    padding-left:3px;
+}
+
+#u22:hover {
+    background:#00CC66;
+}
+
+#u23 {
+    width:116px;
+
+}
+#u24 {
+    width:116px;
+    height:35px;
+    /*line-height:35px;*/
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    color:#FFFFFF;
+    background: #666666;
+    padding-left:3px;
+    word-wrap:break-word;
+}
+
+#u24:hover {
+    background:#00CC66;
+}
+
+#u25 {
+    width:116px;
+    word-wrap:break-word;
+}
+#u26 {
+    width:116px;
+    height:33px;
+    line-height:33px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    color:#FFFFFF;
+    background: #666666;
+    padding-left:3px;
+}
+
+#u26:hover {
+    background:#00CC66;
+}
+
+#u27 {
+    width:116px;
+    word-wrap:break-word;
+}
+#u28 {
+    width:23px;
+    height:22px;
+    color:#FFFFFF;
+    float:left;
+    margin: 0 10px 0 0;
+}
+#u28_img {
+    width:23px;
+    height:22px;
+}
+
+.someMargin1 {
+    margin: 15px 0px 0px;
+}
+
+#u30 {
+    width:73px;
+    height:28px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    color:#FFFFFF;
+    float: left;
+}
+
+#u31 {
+    width:73px;
+    word-wrap:break-word;
+}
+#u32 {
+    background: #999999;
+    width:100%;
+    height:44px;
+    color:#D7D7D7;
+}
+#u32_img {
+    width:100%;
+    height:44px;
+}
+#u33 {
+    width:100%;
+    visibility:hidden;
+    word-wrap:break-word;
+}
+#u34 {
+    height:12px;
+    line-height:44px;
+    font-family:'Segoe UI Обычный', 'Segoe UI';
+    font-size:9px;
+    color:#FFFFFF;
+}
+
+#u35 {
+    width:31px;
+    white-space:nowrap;
+    float:right;
+}
+#u36 {
+    height:44px;
+}
+#u36_menu {
+    width:225px;
+    height:50px;
+}
+#u37 {
+    display: block;
+    width:250px;
+    height:44px;
+    margin: 0 auto;
+}
+#u38 {
+    width:66px;
+    height:44px;
+    line-height:44px;
+    display: inline-block;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    text-decoration:underline;
+    color:#FFFFFF;
+    text-align:center;
+}
+
+#u39 {
+    width:62px;
+    word-wrap:break-word;
+}
+#u40 {
+    display: inline-block;
+    width:91px;
+    height:44px;
+    line-height:44px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    text-decoration:underline;
+    color:#FFFFFF;
+    text-align:center;
+}
+
+#u41 {
+    width:87px;
+    word-wrap:break-word;
+}
+#u42 {
+    display: inline-block;
+    width:62px;
+    height:44px;
+    line-height:44px;
+    font-family:'Segoe UI Полужирный', 'Segoe UI';
+    font-weight:700;
+    font-size:9px;
+    text-decoration:underline;
+    color:#FFFFFF;
+    text-align:center;
+}
+#u42_img {
+    width:62px;
+    height:44px;
+}
+#u42_img.mouseOver {
+}
+#u42.mouseOver {
+}
+#u43 {
+    width:58px;
+    word-wrap:break-word;
+}
+#u44 {
+    display: block;
+    width:175px;
+    height:32px;
+    line-height:32px;
+    font-family:'Segoe UI Обычный', 'Segoe UI';
+    font-size:9px;
+    color:#FFFFFF;
+    margin: 25px auto 0 auto;
+    background: url(../../images/main_page/u6.png);
+}
+
+#u44:hover {
+    background: url(../../images/main_page/u6_mouseOver.png);
+}
+
+#u45 {
+    width:171px;
+    word-wrap:break-word;
+}
+p {
+    margin:0;
+}
+
+.leftMenu {
+    background: #CCCCCC;
+    padding: 20px 10px 20px 20px;
+    height: 100%;
+}
+
+.buttonCreate {
+    background: #0066CC;
+    width: 150px;
+    height: 40px;
+    color:white;
+    margin-bottom: 40px;
+    border:none;
+}
+
+.buttonCreate:hover {
+    background: #0033CC;
+}
+
+.leftMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.leftMenu ul li {
+    color:black;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.centerContent form{
+    float: right;
+    margin-bottom: 10px;
+}
+
+.centerContent h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.buttonSearch, .buttonDelete {
+    cursor: pointer;
+    background: #414156;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color:white;
+}
+
+.buttonDelete {
+    margin-top: 10px;
+}
+
+.searField {
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    font-size: 16px;
+}
+
+.centerContent table {
+    min-width: 680px;
+    border: solid 1px #ccc;
+}
+
+.centerContent table thead {
+    background:#414156;
+    color:white;
+    font-weight: 600;
+}
+
+.centerContent table thead td,
+.centerContent table tr td{
+    text-align: center;
+    padding: 5px 30px;
+    border: solid 1px #ccc;
+}
+
+.inCenter {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.backColor {
+    background: #CCC none repeat scroll 0% 0%;
+}
+
+.centerContent {
+    background: #fff none repeat scroll 0% 0%;
+    padding-bottom: 25px;
+}
+
+.buttonHandle {
+    width: 130px;
+    height: 40px;
+    margin-bottom: 10px;
+    float: left;
+    color: white;
+    background: #CC3300;
+    border: none;
+}
+
+.buttonHandle:hover {
+    background: #CC0000;
+}
