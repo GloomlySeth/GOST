@@ -290,6 +290,6 @@ function processing_form_submit($form, &$form_state) {
     'timeout' => 15,
     'headers' => array('Content-Type' => 'application/json'),
   );
-  $result = drupal_http_request('http://93.125.115.115:21735', $options);
+  $result = drupal_http_request('http://192.168.3.55:21735', $options);
   ($result->code == 200) ? drupal_set_message('Успешно отправлено') : drupal_set_message("$result->code: $result->error", 'error');
 }
