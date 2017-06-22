@@ -67,8 +67,8 @@ function processing_form_submit($form, &$form_state) {
   $name = $form_state['values']['list_docx'];
   $uri = db_select('file_managed', 'f');
   $uri->fields('f', array('uri'));
-  $uri->condition('f.uid', $name);
-  $uri->execute()->fetchField();
+  $uri->condition('f.fid', $name);
+  $url = file_create_url($uri->execute()->fetchField());
   $nid = $form_state['values']['list_settings'];
   $node = node_load($nid);
   $title_number = array();
@@ -100,7 +100,7 @@ function processing_form_submit($form, &$form_state) {
     'uid' => $user->uid,
     ),
     'file' => array(
-      'patch' => is_empty($uri),
+      'patch' => is_empty($url),
       'name' => is_empty($form['list_docx']['#options'][$name]),
     ),
     'demands' => array(
