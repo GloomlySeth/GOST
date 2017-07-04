@@ -8,6 +8,9 @@ function processing_block_info() {
   $blocks['processing_form_block'] = array(
     'info' => t('Processing form'),
   );
+  $blocks['done_processing_block'] = array(
+    'info' => t('Done'),
+  );
   return $blocks;
 }
 
@@ -19,6 +22,10 @@ function processing_block_view($delta = '') {
     $block['subject'] = '';
     $block['content'] = drupal_get_form('processing_form');
   }
+  if ($delta == 'done_processing_block') {
+    $block['subject'] = '';
+    $block['content'] = list_file();
+  }
   return $block;
 }
 
@@ -29,6 +36,47 @@ function term_name($tid){
 
 function is_empty($value){
   return (!empty($value)) ? $value : 0;
+}
+
+function list_file(){
+  global $base_url;
+  global $user;
+  $list = '';
+  $directory = 'sites\default\files\private\\' . $user->uid . '\raw';
+  $file = array();
+  if(file_exists($directory)){
+	$scanned_directory = array_diff(scandir($directory), array('..', '.'));
+	foreach($scanned_directory as $value){
+      if(is_dir($directory . '/' . $value)){
+		$scanned_directory_y = array_diff(scandir($directory . '/' . $value), array('..', '.')); 
+        foreach($scanned_directory_y as $value_y){
+          if(is_dir($directory . '/' . $value . '/' . $value_y) && 
+		  file_exists($directory . '/' . $value . '/' . $value_y . '/Done')){ 
+		  $scanned_directory_f = array_diff(scandir($directory . '/' . $value . '/' . $value_y . '/Done'), array('..', '.'));  
+		    foreach($scanned_directory_f as $value_f){
+			  $patch = $base_url. '/system/files/1/raw/' . $value . '/' . $value_y . '/Done/' . $value_f;
+		      $file[$patch] = $value_f;
+		    }
+	      }
+	    }		
+	  }
+	}
+  }
+  foreach($file as $key => $value){
+	  $list .= '<div><a href="' . $key . '">' . $value .'</a></div>';
+  }
+  return $list;
+}
+
+
+function processing_file_download($uri){
+  global $user;
+  $uri_arr = explode("/", $uri);
+  dpm($uri_arr);
+  
+  if($uri_arr[2] == $user->uid && $uri_arr[6] == 'Done'){
+	  return array('Content-Type' => 'docx');
+  }
 }
 
 /**
