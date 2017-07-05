@@ -42,7 +42,7 @@ function list_file(){
   global $base_url;
   global $user;
   $list = '';
-  $directory = 'sites\default\files\private\\' . $user->uid . '\raw';
+  $directory = 'sites/default/files/private/' . $user->uid . '/raw';
   $file = array();
   if(file_exists($directory)){
 	$scanned_directory = array_diff(scandir($directory), array('..', '.'));
@@ -54,7 +54,7 @@ function list_file(){
 		  file_exists($directory . '/' . $value . '/' . $value_y . '/Done')){ 
 		  $scanned_directory_f = array_diff(scandir($directory . '/' . $value . '/' . $value_y . '/Done'), array('..', '.'));  
 		    foreach($scanned_directory_f as $value_f){
-			  $patch = $base_url. '/system/files/1/raw/' . $value . '/' . $value_y . '/Done/' . $value_f;
+			  $patch = $base_url. '/system/files/' . $user->uid . '/raw/' . $value . '/' . $value_y . '/Done/' . $value_f;
 		      $file[$patch] = $value_f;
 		    }
 	      }
@@ -63,19 +63,16 @@ function list_file(){
 	}
   }
   foreach($file as $key => $value){
-	  $list .= '<div><a href="' . $key . '">' . $value .'</a></div>';
+	  $list .= '<div><a href="' . $key . '" download>' . $value .'</a></div>';
   }
   return $list;
 }
 
-
 function processing_file_download($uri){
   global $user;
-  $uri_arr = explode("/", $uri);
-  dpm($uri_arr);
-  
+  $uri_arr = explode("/", $uri);  
   if($uri_arr[2] == $user->uid && $uri_arr[6] == 'Done'){
-	  return array('Content-Type' => 'docx');
+    return array('Content-Type' => 'docx');
   }
 }
 
