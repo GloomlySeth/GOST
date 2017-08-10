@@ -104,6 +104,11 @@ function processing_form($form, &$form_state) {
     '#type' => 'submit',
     '#value' => 'Начать обработку',
   );
+  $form['remove'] = array(
+    '#type' => 'submit',
+    '#submit' => array('processing_form_remove'),
+    '#value' => 'Удалить',
+  );
   return $form;
 }
 
@@ -337,4 +342,9 @@ function processing_form_submit($form, &$form_state) {
   );
   $result = drupal_http_request('http://192.168.3.55:21735', $options);
   ($result->code == 200) ? drupal_set_message('Успешно отправлено') : drupal_set_message("$result->code: $result->error", 'error');
+}
+
+function processing_form_remove($form, &$form_state) {
+  $file = file_load($form_state['values']['list_docx']);
+  file_delete($file);
 }
