@@ -917,6 +917,7 @@ body {
     padding-top: 1px;
 }
 
+#processing-form select,
 .view-id-requirements_list .view-filters #edit-combine {
     width: 170px;
     border-radius: 4px;
@@ -929,6 +930,12 @@ body {
     margin: 0 0 0 15px;
 }
 
+#processing-form select {
+	width: 400px;
+	margin: 0;
+}
+
+#processing-form input[type="submit"],
 .view-id-requirements_list .view-filters #edit-submit-requirements-list,
 .view-id-requirements_list .demand,
 .view-id-requirements_list .demand_del {
