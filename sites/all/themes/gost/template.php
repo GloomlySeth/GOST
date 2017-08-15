@@ -9,8 +9,10 @@ function gost_preprocess_views_view(&$vars){
 }
 
 function gost_preprocess_views_view_table(&$vars) {
-  global $user;
-  foreach($vars['rows'] as $key => $value){
-	  $value['nothing'] == $user->uid ? $vars['rows'][$key]['nothing'] = 'Мое' : $vars['rows'][$key]['nothing'] = 'Стандартное';
-	} 
+  if($vars['view']->name === 'requirements_list'){
+    global $user;
+    foreach($vars['rows'] as $key => $value){
+      $value['nothing'] == $user->uid ? $vars['rows'][$key]['nothing'] = 'Мое' : $vars['rows'][$key]['nothing'] = 'Стандартное';
+    }
+  }
 }
