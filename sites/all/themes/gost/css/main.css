@@ -935,6 +935,15 @@ body {
 	margin: 0;
 }
 
+#processing-form input[type="submit"] {
+	margin-right: 5px;
+}
+ 
+#processing-form #edit-remove {
+	background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
 #processing-form input[type="submit"],
 .view-id-requirements_list .view-filters #edit-submit-requirements-list,
 .view-id-requirements_list .demand,
