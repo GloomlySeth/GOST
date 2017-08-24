@@ -1488,3 +1488,17 @@ body {
 .field-type-taxonomy-term-reference.field-name-field-title-number-view2.field-widget-options-buttons.form-wrapper{
     width: 360px;
 }
+
+#demand-create-node-form .field-multiple-drag,
+#demand-create-node-form .tabledrag-toggle-weight-wrapper,
+#demand-create-node-form .field-group-html-element th {
+	display: none;
+}
+
+#demand-create-node-form .field-group-html-element tr {
+	border-color: #ffffff;
+	background-color: #ffffff;
+}
+#demand-create-node-form .field-group-html-element tbody {
+	border-color: #ffffff;
+}
