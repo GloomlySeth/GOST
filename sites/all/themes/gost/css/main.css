@@ -917,6 +917,15 @@ body {
     padding-top: 1px;
 }
 
+#file-entity-add-upload .form-type-managed-file label,
+#file-entity-add-upload .form-type-managed-file .description {
+    display: none;
+}
+
+#processing-form #edit-list-docx {
+    display: block;
+}
+
 #processing-form select,
 .view-id-requirements_list .view-filters #edit-combine {
     width: 170px;
@@ -945,6 +954,7 @@ body {
 }
 
 #processing-form input[type="submit"],
+#file-entity-add-upload #edit-upload-upload-button,
 .view-id-requirements_list .view-filters #edit-submit-requirements-list,
 .view-id-requirements_list .demand,
 .view-id-requirements_list .demand_del {

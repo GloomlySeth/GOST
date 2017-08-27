@@ -88,7 +88,7 @@ function processing_form($form, &$form_state) {
   $list = $nodes->execute()->fetchAllKeyed();
   $form['list_settings'] = array(
     '#type' => 'select',
-    '#title' => '',
+    '#title' => t('Demand create'),
     '#options' => $list
   );
   $nodes = db_select('file_managed', 'f');
