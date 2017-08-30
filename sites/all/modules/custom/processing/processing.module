@@ -102,34 +102,48 @@ function processing_form($form, &$form_state) {
     '#title' => '',
     '#options' => $list
   );
-  $nodes = db_select('file_managed', 'f');
-  $nodes->fields('f', array('fid', 'filename'));
-  $nodes->condition('f.uid', $user->uid);
-  $list = $nodes->execute()->fetchAllKeyed();
-  $form['list_docx'] = array(
-    '#type' => 'radios',
-    '#title' => '',
-    '#options' => $list
-  );
-  $form['submit'] = array(
-    '#type' => 'submit',
-    '#value' => 'Начать обработку',
-  );
-  $form['remove'] = array(
-    '#type' => 'submit',
-    '#submit' => array('processing_form_remove'),
-    '#value' => 'Удалить',
-  );
+
+  if(arg(0) == 'file' && arg(1) == 'add'){
+    $nodes = db_select('file_managed', 'f');
+    $nodes->fields('f', array('fid', 'filename'));
+    $nodes->condition('f.uid', $user->uid);
+    $list = $nodes->execute()->fetchAllKeyed();
+    $form['list_docx'] = array(
+      '#type' => 'radios',
+      '#title' => '',
+      '#options' => $list
+    );
+    $form['submit'] = array(
+      '#type' => 'submit',
+      '#value' => 'Начать обработку',
+    );
+    $form['remove'] = array(
+      '#type' => 'submit',
+      '#submit' => array('processing_form_remove'),
+      '#value' => 'Удалить',
+    );
+  }
+  else{
+    $form['submit'] = array(
+      '#type' => 'submit',
+      '#value' => 'Начать обработку',
+    );
+  }
+
   return $form;
 }
 
 function processing_form_submit($form, &$form_state) {
   global $user;
-  $name = $form_state['values']['list_docx'];
+
+  if(arg(0) == 'file' && arg(1) == 'add') $name = $form_state['values']['list_docx'];
+  else $name = arg(1);
+
   $uri = db_select('file_managed', 'f');
-  $uri->fields('f', array('uri'));
+  $uri->fields('f', array('uri', 'filename'));
   $uri->condition('f.fid', $name);
-  $url = file_create_url($uri->execute()->fetchField());
+  $uri->execute()->fetchAssoc();
+  $url = file_create_url($uri->uri);
   $nid = $form_state['values']['list_settings'];
   $node = node_load($nid);
   $title_number = array();
@@ -162,7 +176,7 @@ function processing_form_submit($form, &$form_state) {
     ),
     'file' => array(
       'patch' => is_empty($node, $url),
-      'name' => is_empty($node, $form['list_docx']['#options'][$name]),
+      'name' => is_empty($node, $uri->filename),
     ),
     'demands' => array(
       'name' => $node->title,
