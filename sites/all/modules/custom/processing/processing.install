@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function processing_schema() {
+  $schema['processing'] = array(
+    'description' => 'Table processing',
+    'fields' => array(
+      'entity_id' => array(
+        'type' => 'int',
+        ),
+
+      'status' => array(
+        'type' => 'varchar',
+        'length' => 32,
+        ),
+
+      'demand_id' => array(
+        'type' => 'int',
+        ),
+
+      'demand' => array(
+        'type' => 'varchar',
+        'length' => 32,
+      ),
+      ),
+    );
+
+  return $schema;
+}
+
+function processing_uninstall() {
+  drupal_uninstall_schema('processing');
+}
