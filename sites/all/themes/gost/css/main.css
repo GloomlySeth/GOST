@@ -954,7 +954,7 @@ body {
 }
 
 #processing-form input[type="submit"],
-#file-entity-add-upload #edit-upload-upload-button,
+#file-entity-add-upload #edit-next,
 .view-id-requirements_list .view-filters #edit-submit-requirements-list,
 .view-id-requirements_list .demand,
 .view-id-requirements_list .demand_del {
@@ -1030,10 +1030,13 @@ body {
     display: inline-block;
 }
 
+#file-entity-add-upload #edit-upload-upload-button,
 .view-id-requirements_list .container-inline legend {
     display: none;
 }
 
+#file-entity-add-upload #edit-upload-ajax-wrapper,
+#file-entity-add-upload #edit-actions,
 .view-id-requirements_list .container-inline > div {
     display: inline-block;
 }
