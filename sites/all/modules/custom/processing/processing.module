@@ -15,6 +15,13 @@ function processing_block_info() {
 }
 
 /**
+ * Implements hook_views_api()
+ */
+function processing_views_api() {
+  return array('api' => 2);
+}
+
+/**
  * Implements hook_block_view().
  */
 function processing_block_view($delta = '') {
@@ -92,32 +99,46 @@ function processing_form($form, &$form_state) {
   $list = $nodes->execute()->fetchAllKeyed();
   $form['list_settings'] = array(
     '#type' => 'select',
-    '#title' => '',
+    '#title' => t('Demand create'),
     '#options' => $list
   );
-  $nodes = db_select('file_managed', 'f');
-  $nodes->fields('f', array('fid', 'filename'));
-  $nodes->condition('f.uid', $user->uid);
-  $list = $nodes->execute()->fetchAllKeyed();
-  $form['list_docx'] = array(
-    '#type' => 'radios',
-    '#title' => '',
-    '#options' => $list
-  );
+
+  if(arg(0) == 'file' && arg(1) == 'add'){
+    $nodes = db_select('file_managed', 'f');
+    $nodes->fields('f', array('fid', 'filename'));
+    $nodes->condition('f.uid', $user->uid);
+    $list = $nodes->execute()->fetchAllKeyed();
+    $form['list_docx'] = array(
+      '#type' => 'radios',
+      '#title' => '',
+      '#options' => $list,
+      '#required' => TRUE,
+    );
+    $form['remove'] = array(
+      '#type' => 'submit',
+      '#submit' => array('processing_form_remove'),
+      '#value' => 'Удалить',
+    );
+  }
   $form['submit'] = array(
     '#type' => 'submit',
     '#value' => 'Начать обработку',
   );
+
   return $form;
 }
 
 function processing_form_submit($form, &$form_state) {
   global $user;
-  $name = $form_state['values']['list_docx'];
+  $name = arg(1);
+  if(arg(0) == 'file' && arg(1) == 'add'){
+    $name = $form_state['values']['list_docx'];
+  }
   $uri = db_select('file_managed', 'f');
-  $uri->fields('f', array('uri'));
+  $uri->fields('f', array('uri', 'filename'));
   $uri->condition('f.fid', $name);
-  $url = file_create_url($uri->execute()->fetchField());
+  $uri = $uri->execute()->fetchAssoc();
+  $url = file_create_url($uri['uri']);
   $nid = $form_state['values']['list_settings'];
   $node = node_load($nid);
   $title_number = array();
@@ -149,8 +170,8 @@ function processing_form_submit($form, &$form_state) {
     'uid' => $user->uid,
     ),
     'file' => array(
-      'patch' => is_empty($node, $url),
-      'name' => is_empty($node, $form['list_docx']['#options'][$name]),
+      'patch' => !empty($url) ? $url : NULL,
+      'name' => !empty($form['list_docx']['#options'][$name]) ? $form['list_docx']['#options'][$name] : NULL,
     ),
     'demands' => array(
       'name' => $node->title,
@@ -340,5 +361,45 @@ function processing_form_submit($form, &$form_state) {
     'headers' => array('Content-Type' => 'application/json'),
   );
   $result = drupal_http_request('http://192.168.3.55:21735', $options);
-  ($result->code == 200) ? drupal_set_message('Успешно отправлено') : drupal_set_message("$result->code: $result->error", 'error');
+  if($result->code == 200){
+    drupal_set_message('Успешно отправлено');
+    $status = 'В обработке';
+  }
+  else{
+    drupal_set_message("$result->code: $result->error", 'error');
+    $status = 'Ошибка обработки';
+  }
+  $processing_db = db_insert('processing');
+  $processing_db->fields(
+    array(
+      'entity_id' => $name,
+      'status' => $status,
+      'demand_id' => $nid,
+      'demand' => $node->title,
+    )
+  );
+  $processing_db->execute();
+}
+
+function processing_form_remove($form, &$form_state) {
+  $file = file_load($form_state['values']['list_docx']);
+  file_delete($file);
+}
+
+function processing_form_file_entity_add_upload_alter(&$form, &$form_state, $form_id) {
+  /*dpm($form_state);
+  dpm($form);
+  if(!empty($form_state['clicked_button'])){
+    $form_state['clicked_button']['#submit'][] = $form['#submit'][0];
+    unset($form_state['buttons']);
+    //unset($form_state['clicked_button']['#process']);
+    //$form_state['redirect'] = 'http://gost/';
+    //unset($form_state['no_redirect']);
+  }*/
+  //$form['#submit'][] = '';
+
+ $form['actions']['next']['#value'] = t(Upload);
+    dpm($form_state);
+  dpm($form);
+ // unset($form['actions']['next']);
 }
