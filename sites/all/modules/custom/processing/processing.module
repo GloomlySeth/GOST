@@ -39,7 +39,7 @@ function processing_block_view($delta = '') {
 function is_empty($node, $value){
   $output = field_get_items('node', $node, $value);
   if(!empty($output)){
-    $return = '';
+    $return = array();
     foreach($output as $value2){
       $output2 = field_view_value('node', $node, $value, $value2);
       $return[] = $output2['#markup'];
@@ -94,13 +94,17 @@ function processing_form($form, &$form_state) {
   global $user;
   $nodes = db_select('node', 'n');
   $nodes->fields('n', array('nid', 'title'));
-  $nodes->condition('n.uid', $user->uid);
+  $or = db_or();
+  $or->condition('n.uid', $user->uid);
+  $or->condition('n.uid', 1);
+  $nodes->condition($or);
   $nodes->condition('n.type', 'demand_create');
   $list = $nodes->execute()->fetchAllKeyed();
   $form['list_settings'] = array(
     '#type' => 'select',
     '#title' => t('Demand create'),
-    '#options' => $list
+    '#options' => $list,
+    '#required' => TRUE,
   );
 
   if(arg(0) == 'file' && arg(1) == 'add'){
@@ -387,19 +391,5 @@ function processing_form_remove($form, &$form_state) {
 }
 
 function processing_form_file_entity_add_upload_alter(&$form, &$form_state, $form_id) {
-  /*dpm($form_state);
-  dpm($form);
-  if(!empty($form_state['clicked_button'])){
-    $form_state['clicked_button']['#submit'][] = $form['#submit'][0];
-    unset($form_state['buttons']);
-    //unset($form_state['clicked_button']['#process']);
-    //$form_state['redirect'] = 'http://gost/';
-    //unset($form_state['no_redirect']);
-  }*/
-  //$form['#submit'][] = '';
-
- $form['actions']['next']['#value'] = t(Upload);
-    dpm($form_state);
-  dpm($form);
- // unset($form['actions']['next']);
+  $form['actions']['next']['#value'] = t('Upload');
 }
