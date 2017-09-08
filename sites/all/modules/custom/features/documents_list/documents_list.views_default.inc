@@ -202,6 +202,18 @@ function documents_list_views_default_views() {
   $handler->display->display_options['fields']['demand']['table'] = 'processing';
   $handler->display->display_options['fields']['demand']['field'] = 'demand';
   $handler->display->display_options['fields']['demand']['label'] = 'Требование';
+  /* Field: File: Path */
+  $handler->display->display_options['fields']['uri']['id'] = 'uri';
+  $handler->display->display_options['fields']['uri']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['uri']['field'] = 'uri';
+  $handler->display->display_options['fields']['uri']['exclude'] = TRUE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[uri]';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'document_list';
   $translatables['document_list'] = array(
     t('Master'),
@@ -230,6 +242,8 @@ function documents_list_views_default_views() {
     t('Дата загрузки'),
     t('Состояние'),
     t('Требование'),
+    t('Path'),
+    t('[uri]'),
   );
   $export['document_list'] = $view;
 

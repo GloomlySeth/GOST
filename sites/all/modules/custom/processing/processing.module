@@ -39,7 +39,7 @@ function processing_block_view($delta = '') {
 function is_empty($node, $value){
   $output = field_get_items('node', $node, $value);
   if(!empty($output)){
-    $return = '';
+    $return = array();
     foreach($output as $value2){
       $output2 = field_view_value('node', $node, $value, $value2);
       $return[] = $output2['#markup'];
@@ -94,37 +94,55 @@ function processing_form($form, &$form_state) {
   global $user;
   $nodes = db_select('node', 'n');
   $nodes->fields('n', array('nid', 'title'));
-  $nodes->condition('n.uid', $user->uid);
+  $or = db_or();
+  $or->condition('n.uid', $user->uid);
+  $or->condition('n.uid', 1);
+  $nodes->condition($or);
   $nodes->condition('n.type', 'demand_create');
   $list = $nodes->execute()->fetchAllKeyed();
   $form['list_settings'] = array(
     '#type' => 'select',
-    '#title' => '',
-    '#options' => $list
+    '#title' => t('Demand create'),
+    '#options' => $list,
+    '#required' => TRUE,
   );
-  $nodes = db_select('file_managed', 'f');
-  $nodes->fields('f', array('fid', 'filename'));
-  $nodes->condition('f.uid', $user->uid);
-  $list = $nodes->execute()->fetchAllKeyed();
-  $form['list_docx'] = array(
-    '#type' => 'radios',
-    '#title' => '',
-    '#options' => $list
-  );
+
+  if(arg(0) == 'file' && arg(1) == 'add'){
+    $nodes = db_select('file_managed', 'f');
+    $nodes->fields('f', array('fid', 'filename'));
+    $nodes->condition('f.uid', $user->uid);
+    $list = $nodes->execute()->fetchAllKeyed();
+    $form['list_docx'] = array(
+      '#type' => 'radios',
+      '#title' => '',
+      '#options' => $list,
+      '#required' => TRUE,
+    );
+    $form['remove'] = array(
+      '#type' => 'submit',
+      '#submit' => array('processing_form_remove'),
+      '#value' => 'Удалить',
+    );
+  }
   $form['submit'] = array(
     '#type' => 'submit',
     '#value' => 'Начать обработку',
   );
+
   return $form;
 }
 
 function processing_form_submit($form, &$form_state) {
   global $user;
-  $name = $form_state['values']['list_docx'];
+  $name = arg(1);
+  if(arg(0) == 'file' && arg(1) == 'add'){
+    $name = $form_state['values']['list_docx'];
+  }
   $uri = db_select('file_managed', 'f');
-  $uri->fields('f', array('uri'));
+  $uri->fields('f', array('uri', 'filename'));
   $uri->condition('f.fid', $name);
-  $url = file_create_url($uri->execute()->fetchField());
+  $uri = $uri->execute()->fetchAssoc();
+  $url = file_create_url($uri['uri']);
   $nid = $form_state['values']['list_settings'];
   $node = node_load($nid);
   $title_number = array();
@@ -156,8 +174,8 @@ function processing_form_submit($form, &$form_state) {
     'uid' => $user->uid,
     ),
     'file' => array(
-      'patch' => is_empty($node, $url),
-      'name' => is_empty($node, $form['list_docx']['#options'][$name]),
+      'patch' => !empty($url) ? $url : NULL,
+      'name' => !empty($form['list_docx']['#options'][$name]) ? $form['list_docx']['#options'][$name] : NULL,
     ),
     'demands' => array(
       'name' => $node->title,
@@ -355,14 +373,24 @@ function processing_form_submit($form, &$form_state) {
     drupal_set_message("$result->code: $result->error", 'error');
     $status = 'Ошибка обработки';
   }
-  $processing_db = db_insert('processing');
-  $processing_db->fields(
+  $processing_db = db_query("REPLACE {processing} 
+    SET 
+      entity_id = :eid,
+      status = :status,
+      demand_id = :did,
+      demand = :demand",
     array(
-      'entity_id' => $name,
-      'status' => $status,
-      'demand_id' => $nid,
-      'demand' => $node->title,
-    )
-  );
-  $processing_db->execute();
+      ':eid' => $name,
+      ':status' => $status,
+      ':did' => $nid,
+      ':demand' => $node->title));
+}
+
+function processing_form_remove($form, &$form_state) {
+  $file = file_load($form_state['values']['list_docx']);
+  file_delete($file);
+}
+
+function processing_form_file_entity_add_upload_alter(&$form, &$form_state, $form_id) {
+  $form['actions']['next']['#value'] = t('Upload');
 }

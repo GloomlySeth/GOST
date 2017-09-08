@@ -23,8 +23,11 @@ function processing_schema() {
       'demand' => array(
         'type' => 'varchar',
         'length' => 32,
+        ),
       ),
-      ),
+    'unique keys' => array(
+      'entity_id' => array('entity_id'),
+    ),
     );
 
   return $schema;
