@@ -917,6 +917,16 @@ body {
     padding-top: 1px;
 }
 
+#file-entity-add-upload .form-type-managed-file label,
+#file-entity-add-upload .form-type-managed-file .description {
+    display: none;
+}
+
+#processing-form #edit-list-docx {
+    display: block;
+}
+
+#processing-form select,
 .view-id-requirements_list .view-filters #edit-combine {
     width: 170px;
     border-radius: 4px;
@@ -929,6 +939,22 @@ body {
     margin: 0 0 0 15px;
 }
 
+#processing-form select {
+	width: 400px;
+	margin: 0;
+}
+
+#processing-form input[type="submit"] {
+	margin-right: 5px;
+}
+ 
+#processing-form #edit-remove {
+	background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+#processing-form input[type="submit"],
+#file-entity-add-upload #edit-next,
 .view-id-requirements_list .view-filters #edit-submit-requirements-list,
 .view-id-requirements_list .demand,
 .view-id-requirements_list .demand_del {
@@ -1004,10 +1030,13 @@ body {
     display: inline-block;
 }
 
+#file-entity-add-upload #edit-upload-upload-button,
 .view-id-requirements_list .container-inline legend {
     display: none;
 }
 
+#file-entity-add-upload #edit-upload-ajax-wrapper,
+#file-entity-add-upload #edit-actions,
 .view-id-requirements_list .container-inline > div {
     display: inline-block;
 }
@@ -1471,4 +1500,18 @@ body {
 .field-type-taxonomy-term-reference.field-name-field-list-number-view2.field-widget-options-buttons.form-wrapper,
 .field-type-taxonomy-term-reference.field-name-field-title-number-view2.field-widget-options-buttons.form-wrapper{
     width: 360px;
+}
+
+#demand-create-node-form .field-multiple-drag,
+#demand-create-node-form .tabledrag-toggle-weight-wrapper,
+#demand-create-node-form .field-group-html-element th {
+	display: none;
+}
+
+#demand-create-node-form .field-group-html-element tr {
+	border-color: #ffffff;
+	background-color: #ffffff;
+}
+#demand-create-node-form .field-group-html-element tbody {
+	border-color: #ffffff;
 }
