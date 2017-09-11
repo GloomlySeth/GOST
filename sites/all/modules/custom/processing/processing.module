@@ -373,16 +373,26 @@ function processing_form_submit($form, &$form_state) {
     drupal_set_message("$result->code: $result->error", 'error');
     $status = 'Ошибка обработки';
   }
-  $processing_db = db_insert('processing');
-  $processing_db->fields(
+  $processing_db = db_query("REPLACE {processing} 
+    SET 
+      entity_id = :eid,
+      status = :status,
+      demand_id = :did,
+      demand = :demand",
     array(
-      'entity_id' => $name,
-      'status' => $status,
-      'demand_id' => $nid,
-      'demand' => $node->title,
-    )
-  );
-  $processing_db->execute();
+      ':eid' => $name,
+      ':status' => $status,
+      ':did' => $nid,
+      ':demand' => $node->title));
+}
+
+function processing_form_remove($form, &$form_state) {
+  $file = file_load($form_state['values']['list_docx']);
+  file_delete($file);
+}
+
+function processing_form_file_entity_add_upload_alter(&$form, &$form_state, $form_id) {
+  $form['actions']['next']['#value'] = t('Upload');
 }
 
 function processing_form_remove($form, &$form_state) {
