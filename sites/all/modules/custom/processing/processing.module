@@ -104,7 +104,6 @@ function processing_form($form, &$form_state) {
     '#type' => 'select',
     '#title' => t('Demand create'),
     '#options' => $list,
-    '#required' => TRUE,
   );
 
   if(arg(0) == 'file' && arg(1) == 'add'){
@@ -130,6 +129,14 @@ function processing_form($form, &$form_state) {
   );
 
   return $form;
+}
+
+function processing_form_validate($form, &$form_state) {
+  dpm($form_state);
+  if(empty($form_state['values']['list_settings'])
+    && $form_state['clicked_button']['#type'] == "submit"){
+    form_error($form, t('Please, create a demand.'));
+  }
 }
 
 function processing_form_submit($form, &$form_state) {
