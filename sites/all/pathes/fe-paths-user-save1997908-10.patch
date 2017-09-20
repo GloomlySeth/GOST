@@ -1,0 +1,13 @@
+diff --git a/fe_paths.module b/fe_paths.module
+index efd80b3..2ce13c8 100644
+--- a/fe_paths.module
++++ b/fe_paths.module
+@@ -145,7 +145,7 @@ function fe_paths_entity_presave($entity, $type) {
+     // Get all fields of the saved entity.
+     $bundle = NULL;
+ 
+-    if (isset($entity_info['entity keys']['bundle'])) {
++    if (!empty($entity_info['entity keys']['bundle']) && isset($entity->{$entity_info['entity keys']['bundle']})) {
+       $bundle = $entity->{$entity_info['entity keys']['bundle']};
+     }
+     else {
