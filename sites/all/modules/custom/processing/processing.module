@@ -104,7 +104,6 @@ function processing_form($form, &$form_state) {
     '#type' => 'select',
     '#title' => t('Demand create'),
     '#options' => $list,
-    '#required' => TRUE,
   );
 
   if(arg(0) == 'file' && arg(1) == 'add'){
@@ -130,6 +129,13 @@ function processing_form($form, &$form_state) {
   );
 
   return $form;
+}
+
+function processing_form_validate($form, &$form_state) {
+  if(empty($form_state['values']['list_settings'])
+    && $form_state['clicked_button']['#type'] == "submit"){
+    form_error($form, t('Please, create a demand.'));
+  }
 }
 
 function processing_form_submit($form, &$form_state) {
@@ -392,5 +398,19 @@ function processing_form_remove($form, &$form_state) {
 }
 
 function processing_form_file_entity_add_upload_alter(&$form, &$form_state, $form_id) {
-  $form['actions']['next']['#value'] = t('Upload');
+  $form['upload']['#process'] = array('processing_my_file_element_process');
+  unset($form['actions']['next']);
+}
+
+function processing_my_file_element_process($element, &$form_state, $form) {
+  $element = file_managed_file_process($element, $form_state, $form);
+  $element['upload_button']['#value'] = t('Upload');
+  $element['#file'] = FALSE;
+  $element['#value']['fid'] = 0;
+  unset($element['upload_button']['#ajax']);
+  unset($element['remove_button']);
+  unset($element['#prefix']);
+  unset($element['#suffix']);
+  unset($element['filename']);
+  return $element;
 }
