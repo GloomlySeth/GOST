@@ -30,7 +30,7 @@ function inspected_done($uri) {
   $arr[] = $doc;
   $link = implode('/', $arr);
   if(file_exists ($link)){
-    $url = '<a href="' . file_create_url($link) . '">Download</a>';
+    $url = '<a href="' . file_create_url($link) . ' download">Download</a>';
     return($url);
   }
   return NULL;
