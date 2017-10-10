@@ -1,10 +1,10 @@
 <?php
 
 function gost_preprocess_views_view(&$vars){
-  if($vars['view']->name === 'requirements_list'){
+  if($vars['view']->name === 'requirements_list'
+    || $vars['view']->name === 'document_list'){
     $vars['rows']['select']['action::views_bulk_operations_delete_item']['#value'] = t('Удалить...');
-	$vars['rows']['select']['action::views_bulk_operations_delete_item']['#attributes']['class'][] = 'demand_del';
-	
+    $vars['rows']['select']['action::views_bulk_operations_delete_item']['#attributes']['class'][] = 'demand_del';
   }
 }
 
@@ -30,8 +30,17 @@ function inspected_done($uri) {
   $arr[] = $doc;
   $link = implode('/', $arr);
   if(file_exists ($link)){
-    $url = '<a href="' . file_create_url($link) . '" download>Download</a>';
+    $url = '<a href="' . file_create_url($link) . '" download><img src="/sites/all/themes/gost/images/document_list/Filetype-Word-doc.ico" width="25" height="25"/></a>';
     return($url);
   }
   return NULL;
+}
+
+function gost_form_alter(&$form, &$form_state, $form_id)
+{
+  if($form['#id'] == 'views-exposed-form-document-list-page')
+  {
+    $attributes = array('onclick' => "document.getElementById('edit-submit-document-list').click()");
+    $form['status']['#attributes'] = $attributes;
+  }
 }
