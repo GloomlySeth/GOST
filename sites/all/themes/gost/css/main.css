@@ -1013,6 +1013,18 @@ body {
     color: #333;
 }
 
+.view-id-document_list .views-table tr {
+	word-break: break-all;
+}
+
+#views-exposed-form-document-list-page .views-widget .form-type-radio{
+	margin-right: 5px;
+}
+
+.view-id-document_list .views-table tr .views-field-filename-1{
+	width: 800px;
+}
+
 .view-id-document_list .views-table th,
 .view-id-requirements_list .views-table th {
     padding: 8px;
