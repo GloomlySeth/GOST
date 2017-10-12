@@ -33,13 +33,6 @@ function documents_list_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Footer: Global: Unfiltered text */
-  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
-  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['empty'] = TRUE;
-  $handler->display->display_options['footer']['area_text_custom']['content'] = '<div><a href="file/add">Обработать</a></div>';
-  $handler->display->display_options['footer']['area_text_custom']['tokenize'] = TRUE;
   /* Relationship: File: User who uploaded */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'file_managed';
@@ -91,16 +84,21 @@ function documents_list_views_default_views() {
   $handler->display->display_options['filters']['status']['group_info']['widget'] = 'radios';
   $handler->display->display_options['filters']['status']['group_info']['group_items'] = array(
     1 => array(
+      'title' => 'Новый',
+      'operator' => 'empty',
+      'value' => 'Новый',
+    ),
+    2 => array(
       'title' => 'В обработке',
       'operator' => '=',
       'value' => 'В обработке',
     ),
-    2 => array(
+    3 => array(
       'title' => 'Готов',
       'operator' => '=',
       'value' => 'Готов',
     ),
-    3 => array(
+    4 => array(
       'title' => 'Ошибка обработки',
       'operator' => '=',
       'value' => 'Ошибка обработки',
@@ -160,10 +158,10 @@ function documents_list_views_default_views() {
   $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
   $handler->display->display_options['fields']['views_bulk_operations']['label'] = '';
   $handler->display->display_options['fields']['views_bulk_operations']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '0';
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '1';
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 0;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['row_clickable'] = 1;
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 1;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
     'action::views_bulk_operations_delete_item' => array(
@@ -172,6 +170,16 @@ function documents_list_views_default_views() {
       'skip_confirmation' => 1,
       'override_label' => 0,
       'label' => '',
+    ),
+    'action::processing_my_custom_action' => array(
+      'selected' => 1,
+      'postpone_processing' => 0,
+      'skip_confirmation' => 0,
+      'override_label' => 0,
+      'label' => '',
+      'settings' => array(
+        'options' => 'Iron Man',
+      ),
     ),
   );
   /* Field: File: Name */
@@ -197,6 +205,8 @@ function documents_list_views_default_views() {
   $handler->display->display_options['fields']['status']['table'] = 'processing';
   $handler->display->display_options['fields']['status']['field'] = 'status';
   $handler->display->display_options['fields']['status']['label'] = 'Состояние';
+  $handler->display->display_options['fields']['status']['empty'] = 'Новый';
+  $handler->display->display_options['fields']['status']['hide_alter_empty'] = FALSE;
   /* Field: Processing: Demand */
   $handler->display->display_options['fields']['demand']['id'] = 'demand';
   $handler->display->display_options['fields']['demand']['table'] = 'processing';
@@ -231,7 +241,6 @@ function documents_list_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('<div><a href="file/add">Обработать</a></div>'),
     t('uploaded'),
     t('All'),
     t('Status document'),
@@ -241,6 +250,7 @@ function documents_list_views_default_views() {
     t('Размер'),
     t('Дата загрузки'),
     t('Состояние'),
+    t('Новый'),
     t('Требование'),
     t('Path'),
     t('[uri]'),
