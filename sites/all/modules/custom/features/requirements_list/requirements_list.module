@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Requirements list feature.
+ */
+
+include_once 'requirements_list.features.inc';
