@@ -870,6 +870,7 @@ body {
     background: url('../images/editor_-_demand_create/u878.jpg') no-repeat;
 }
 
+.view-id-document_list #edit-status input,
 .page-node-add-demand-create #edit-submit {
     display: none;
 }
@@ -885,6 +886,7 @@ body {
     margin-top: 7px;
 }
 
+.view-id-document_list #edit-status label,
 .view-id-requirements_list .btn a {
     padding: 7px 12px;
     background-color: #337ab7;
@@ -927,6 +929,7 @@ body {
 }
 
 #processing-form select,
+.view-id-document_list .view-filters #edit-combine,
 .view-id-requirements_list .view-filters #edit-combine {
     width: 170px;
     border-radius: 4px;
@@ -956,7 +959,10 @@ body {
 #processing-form input[type="submit"],
 #file-entity-add-upload #edit-next,
 .view-id-requirements_list .view-filters #edit-submit-requirements-list,
+.view-id-document_list .view-filters #edit-submit-document-list,
+.view-id-document_list .demand,
 .view-id-requirements_list .demand,
+.view-id-document_list .demand_del,
 .view-id-requirements_list .demand_del {
     color: #fff;
     background-color: #5cb85c;
@@ -986,10 +992,12 @@ body {
     padding: 0 0 0 1px;
 }
 
+.view-id-document_list #edit-submit-document-list,
 .view-id-requirements_list #edit-submit-requirements-list {
     margin-top: 1px;
 }
 
+.view-id-document_list .views-table,
 .view-id-requirements_list .views-table {
     border-spacing: 0;
     border: 1px solid #ddd;
@@ -997,6 +1005,7 @@ body {
     background-color: #ffffff;
 }
 
+.view-id-document_list .views-table tr,
 .view-id-requirements_list .views-table tr {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -1004,6 +1013,19 @@ body {
     color: #333;
 }
 
+.view-id-document_list .views-table tr {
+	word-break: break-all;
+}
+
+#views-exposed-form-document-list-page .views-widget .form-type-radio{
+	margin-right: 5px;
+}
+
+.view-id-document_list .views-table tr .views-field-filename-1{
+	width: 800px;
+}
+
+.view-id-document_list .views-table th,
 .view-id-requirements_list .views-table th {
     padding: 8px;
     line-height: 1.42857143;
@@ -1013,6 +1035,7 @@ body {
     border: 1px solid #ddd;
 }
 
+.view-id-document_list .views-table td,
 .view-id-requirements_list .views-table td {
     width: 221px;
     border: 1px solid #ddd;
@@ -1025,12 +1048,13 @@ body {
     font-size: 14px;
 }
 
+.view-id-document_list .container-inline,
 .view-id-requirements_list .container-inline {
     border-style: none;
     display: inline-block;
 }
 
-#file-entity-add-upload #edit-upload-upload-button,
+.view-id-document_list .container-inline legend,
 .view-id-requirements_list .container-inline legend {
     display: none;
 }
@@ -1041,6 +1065,7 @@ body {
     display: inline-block;
 }
 
+.view-id-document_list .demand_del,
 .view-id-requirements_list .demand_del {
     background-color: #d9534f;
     border-color: #d43f3a;
