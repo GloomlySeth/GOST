@@ -144,6 +144,9 @@ function processing_form_submit($form, &$form_state) {
   if(arg(0) == 'file' && arg(1) == 'add'){
     $name = $form_state['values']['list_docx'];
   }
+  if(arg(0) == 'document_list') {
+    $name = $form_state['values']['files_list'];
+  }
   $uri = db_select('file_managed', 'f');
   $uri->fields('f', array('uri', 'filename'));
   $uri->condition('f.fid', $name);
