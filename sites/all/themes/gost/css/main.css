@@ -958,6 +958,7 @@ body {
 
 #processing-form input[type="submit"],
 #file-entity-add-upload #edit-next,
+.view-id-document_list #edit-actionprocessing-my-custom-action,
 .view-id-requirements_list .view-filters #edit-submit-requirements-list,
 .view-id-document_list .view-filters #edit-submit-document-list,
 .view-id-document_list .demand,
@@ -986,6 +987,10 @@ body {
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+}
+
+#edit-actionprocessing-my-custom-action {
+    margin-left: 10px;
 }
 
 .view-id-requirements_list #edit-combine-wrapper + div.views-submit-button {
@@ -1074,6 +1079,10 @@ body {
 .view-id-requirements_list .demand,
 .view-id-requirements_list .demand_del {
     margin-top: 20px;
+}
+
+.view-id-document_list .item-list {
+	padding-bottom: 20px;
 }
 
 .wrap-image {
