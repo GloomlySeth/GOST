@@ -254,6 +254,23 @@ body {
     text-align: center;
 }
 
+.wrap-image > .content-block .data-content #btn-work a {
+        display: block;
+    width: 135px;
+    height: 35px;
+    line-height: 35px;
+    font-family: 'Segoe UI Обычный', 'Segoe UI';
+    font-size: 13px;
+    color: #F2F3F4;
+    margin: 25px auto 5px auto;
+	background-color: #414156;
+}
+
+.wrap-image > .content-block .data-content #btn-work a:hover {
+text-decoration: none;
+    background-color: #0099CC;
+}
+
 .sidebar {
     height: 100%;
     min-height: 400px;
