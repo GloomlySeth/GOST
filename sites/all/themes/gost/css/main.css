@@ -236,6 +236,24 @@ body {
     right: 0;
 }
 
+.wrap-image > .content-block .data-content {
+	background-color: #fff;
+    text-align: left;
+}
+
+.wrap-image > .content-block .data-content h1 {
+    text-align: center;
+	font-size: 25px;
+}
+
+.wrap-image > .content-block .data-content p {
+	font-size: 15px;
+}
+
+.wrap-image > .content-block .data-content #btn-work {
+    text-align: center;
+}
+
 .sidebar {
     height: 100%;
     min-height: 400px;
@@ -1118,7 +1136,7 @@ body {
 }
 
 .wrap-image .data-content {
-    width: 40%;
+    width: 65%;
     margin: 0 auto;
     font-family: 'Segoe UI Курсив', 'Segoe UI';
     font-style: italic;
@@ -1134,6 +1152,7 @@ body {
     white-space: normal;
     vertical-align: middle;
     text-align: left;
+	margin-top: 35px;
 }
 
 #field-demand-name-add-more-wrapper > div,
