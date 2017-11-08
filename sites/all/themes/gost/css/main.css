@@ -227,6 +227,15 @@ body {
     padding: 0px;
 }
 
+#block-menu-menu-top-menu li.last {
+    float: right;
+    padding-right: 0%;
+}
+
+#block-menu-menu-top-menu li.last ul {
+    right: 0;
+}
+
 .sidebar {
     height: 100%;
     min-height: 400px;
