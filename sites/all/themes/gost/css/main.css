@@ -236,6 +236,10 @@ body {
     right: 0;
 }
 
+#block-menu-menu-top-menu .content {
+    position: relative;
+}
+
 .wrap-image > .content-block .data-content {
 	background-color: #fff;
     text-align: left;
