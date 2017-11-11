@@ -1004,6 +1004,8 @@ text-decoration: none;
     border-color: #d43f3a;
 }
 
+.view-id-document_list #views-form-document-list-page #edit-actions #edit-submit,
+.view-id-document_list #views-form-document-list-page #edit-actions a.active,
 #processing-form input[type="submit"],
 #file-entity-add-upload #edit-next,
 .view-id-document_list #edit-actionprocessing-my-custom-action,
@@ -1035,6 +1037,10 @@ text-decoration: none;
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+}
+
+.view-id-document_list #views-form-document-list-page #edit-actions a.active {
+	margin-left: 15px;
 }
 
 #edit-actionprocessing-my-custom-action {
@@ -1118,6 +1124,7 @@ text-decoration: none;
     display: inline-block;
 }
 
+.view-id-document_list #views-form-document-list-page #edit-actions a.active,
 .view-id-document_list .demand_del,
 .view-id-requirements_list .demand_del {
     background-color: #d9534f;
