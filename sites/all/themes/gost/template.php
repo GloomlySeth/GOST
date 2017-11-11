@@ -30,7 +30,7 @@ function inspected_done($uri) {
   $arr[] = $doc;
   $link = implode('/', $arr);
   if(file_exists ($link)){
-    $url = '<a href="' . file_create_url($link) . '" download><img src="/sites/all/themes/gost/images/document_list/Filetype-Word-doc.ico" width="25" height="25"/></a>';
+    $url = '<a href="' . file_create_url($link) . '" download><img src="/sites/all/themes/gost/images/Filetype-Word-doc.ico" width="25" height="25"/></a>';
     return($url);
   }
   return NULL;
