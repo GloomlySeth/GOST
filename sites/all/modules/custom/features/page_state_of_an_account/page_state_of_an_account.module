@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Page: state of an account feature.
+ */
+
+include_once 'page_state_of_an_account.features.inc';
