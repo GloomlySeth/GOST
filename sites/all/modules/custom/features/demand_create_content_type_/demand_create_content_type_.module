@@ -17,7 +17,7 @@ function demand_create_content_type__form_demand_create_node_form_alter(&$form, 
   unset($form['field_header_setting_color']['und']['#options']['_none']);
   unset($form['field_header_setting_background']['und']['#options']['_none']);
   $form['field_setting']['und']['#options']['_none'] = '';
-  $form['field_paper_size']['und']['#title'] = '';
+  //$form['field_paper_size']['und']['#title'] = '';
   $form['field_paper_orientation']['und']['#title'] = '';
   $form['field_header_setting_font']['und']['#title'] = '';
   $form['field_header_setting_size']['und']['#title'] = '';

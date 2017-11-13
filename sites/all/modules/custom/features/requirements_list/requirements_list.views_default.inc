@@ -22,6 +22,7 @@ function requirements_list_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Список требований';
   $handler->display->display_options['css_class'] = 'requirements_list';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
@@ -39,9 +40,9 @@ function requirements_list_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<div class="1 btn"><a href="/requirements_list">Все</a></div>
-<div class="2 btn"><a href="/requirements_list/1">Стандартные</a></div>
-<div class="3 btn"><a href="/requirements_list/2">Мое</a></div>';
+  $handler->display->display_options['header']['area']['content'] = '<div class="1 btnRequirements"><a href="/requirements_list">Все</a></div>
+<div class="2 btnRequirements"><a href="/requirements_list/1">Стандартные</a></div>
+<div class="3 btnRequirements"><a href="/requirements_list/2">Мое</a></div>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['header']['area']['tokenize'] = TRUE;
   /* Footer: Global: Text area */
@@ -207,6 +208,7 @@ return $a;';
   $handler->display->display_options['path'] = 'requirements_list';
   $translatables['requirements_list'] = array(
     t('Master'),
+    t('Список требований'),
     t('more'),
     t('Поиск'),
     t('Reset'),
@@ -220,10 +222,13 @@ return $a;';
     t('‹ previous'),
     t('next ›'),
     t('last »'),
+    t('<div class="1 btnRequirements"><a href="/requirements_list">Все</a></div>
+<div class="2 btnRequirements"><a href="/requirements_list/1">Стандартные</a></div>
+<div class="3 btnRequirements"><a href="/requirements_list/2">Мое</a></div>'),
+    t('<a href="node/add/demand-create" class="demand">Создать требование</a>'),
     t('<div class="1 btn"><a href="/requirements_list">Все</a></div>
 <div class="2 btn"><a href="/requirements_list/1">Стандартные</a></div>
 <div class="3 btn"><a href="/requirements_list/2">Мое</a></div>'),
-    t('<a href="node/add/demand-create" class="demand">Создать требование</a>'),
     t('Title'),
     t('Page'),
     t('- Choose an operation -'),
