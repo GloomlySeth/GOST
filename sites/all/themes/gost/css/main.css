@@ -1008,6 +1008,7 @@ text-decoration: none;
     border-color: #d43f3a;
 }
 
+.btn,
 .view-id-document_list #views-form-document-list-page #edit-actions #edit-submit,
 .view-id-document_list #views-form-document-list-page #edit-actions a.active,
 #processing-form input[type="submit"],
@@ -1043,6 +1044,16 @@ text-decoration: none;
     border-radius: 4px;
 }
 
+.btn:disabled {
+	opacity: 0.65; 
+  cursor: not-allowed;
+}
+
+.balance {
+	font-size: 30px;
+}
+
+
 .view-id-document_list #views-form-document-list-page #edit-actions a.active {
 	margin-left: 15px;
 }
@@ -1060,6 +1071,7 @@ text-decoration: none;
     margin-top: 1px;
 }
 
+..tableGost .view-content table,
 .view-id-document_list .views-table,
 .view-id-requirements_list .views-table {
     border-spacing: 0;
@@ -1088,6 +1100,7 @@ text-decoration: none;
 	width: 800px;
 }
 
+.tableGost .view-content table th,
 .view-id-document_list .views-table th,
 .view-id-requirements_list .views-table th {
     padding: 8px;
@@ -1098,6 +1111,7 @@ text-decoration: none;
     border: 1px solid #ddd;
 }
 
+.tableGost .view-content table td,
 .view-id-document_list .views-table td,
 .view-id-requirements_list .views-table td {
     width: 221px;
