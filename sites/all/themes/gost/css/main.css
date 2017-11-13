@@ -241,17 +241,17 @@ body {
 }
 
 .wrap-image > .content-block .data-content {
-	background-color: #fff;
+    background-color: #fff;
     text-align: left;
 }
 
 .wrap-image > .content-block .data-content h1 {
     text-align: center;
-	font-size: 25px;
+    font-size: 25px;
 }
 
 .wrap-image > .content-block .data-content p {
-	font-size: 15px;
+    font-size: 15px;
 }
 
 .wrap-image > .content-block .data-content #btn-work {
@@ -259,7 +259,7 @@ body {
 }
 
 .wrap-image > .content-block .data-content #btn-work a {
-        display: block;
+    display: block;
     width: 135px;
     height: 35px;
     line-height: 35px;
@@ -267,11 +267,11 @@ body {
     font-size: 13px;
     color: #F2F3F4;
     margin: 25px auto 5px auto;
-	background-color: #414156;
+    background-color: #414156;
 }
 
 .wrap-image > .content-block .data-content #btn-work a:hover {
-text-decoration: none;
+    text-decoration: none;
     background-color: #0099CC;
 }
 
@@ -991,16 +991,16 @@ text-decoration: none;
 }
 
 #processing-form select {
-	width: 400px;
-	margin: 0;
+    width: 400px;
+    margin: 0;
 }
 
 #processing-form input[type="submit"] {
-	margin-right: 5px;
+    margin-right: 5px;
 }
- 
+
 #processing-form #edit-remove {
-	background-color: #d9534f;
+    background-color: #d9534f;
     border-color: #d43f3a;
 }
 
@@ -1041,17 +1041,16 @@ text-decoration: none;
 }
 
 .btn:disabled {
-	opacity: 0.65; 
-  cursor: not-allowed;
+    opacity: 0.65;
+    cursor: not-allowed;
 }
 
 .balance {
-	font-size: 30px;
+    font-size: 30px;
 }
 
-
 .view-id-document_list #views-form-document-list-page #edit-actions a.active {
-	margin-left: 15px;
+    margin-left: 15px;
 }
 
 #edit-actionprocessing-my-custom-action {
@@ -1085,15 +1084,15 @@ text-decoration: none;
 }
 
 .view-id-document_list .views-table tr {
-	word-break: break-all;
+    word-break: break-all;
 }
 
-#views-exposed-form-document-list-page .views-widget .form-type-radio{
-	margin-right: 5px;
+#views-exposed-form-document-list-page .views-widget .form-type-radio {
+    margin-right: 5px;
 }
 
-.view-id-document_list .views-table tr .views-field-filename-1{
-	width: 800px;
+.view-id-document_list .views-table tr .views-field-filename-1 {
+    width: 800px;
 }
 
 .tableGost .view-content table th,
@@ -1151,7 +1150,7 @@ text-decoration: none;
 }
 
 .view-id-document_list .item-list {
-	padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .wrap-image {
@@ -1194,10 +1193,10 @@ text-decoration: none;
     white-space: normal;
     vertical-align: middle;
     text-align: left;
-	margin-top: 35px;
+    margin-top: 35px;
 }
 
-#field-demand-name-add-more-wrapper > div,
+#demand-create-node-form .form-item-title,
 #field-demand-note-add-more-wrapper > div {
     width: 550px;
     display: flex;
@@ -1213,7 +1212,7 @@ text-decoration: none;
     width: 195px;
 }
 
-#field-demand-name-add-more-wrapper div input,
+#demand-create-node-form .form-item-title input,
 #field-demand-note-add-more-wrapper div input {
     width: 470px;
     border-radius: 4px;
@@ -1600,22 +1599,24 @@ text-decoration: none;
 #edit-field-list-formatting-indentatio-und-0-value {
     margin-left: 27px;
 }
+
 .field-type-taxonomy-term-reference.field-widget-options-buttons.n_visibl_n.form-wrapper,
 .field-type-taxonomy-term-reference.field-name-field-list-number-view2.field-widget-options-buttons.form-wrapper,
-.field-type-taxonomy-term-reference.field-name-field-title-number-view2.field-widget-options-buttons.form-wrapper{
+.field-type-taxonomy-term-reference.field-name-field-title-number-view2.field-widget-options-buttons.form-wrapper {
     width: 360px;
 }
 
 #demand-create-node-form .field-multiple-drag,
 #demand-create-node-form .tabledrag-toggle-weight-wrapper,
 #demand-create-node-form .field-group-html-element th {
-	display: none;
+    display: none;
 }
 
 #demand-create-node-form .field-group-html-element tr {
-	border-color: #ffffff;
-	background-color: #ffffff;
+    border-color: #ffffff;
+    background-color: #ffffff;
 }
+
 #demand-create-node-form .field-group-html-element tbody {
-	border-color: #ffffff;
+    border-color: #ffffff;
 }
