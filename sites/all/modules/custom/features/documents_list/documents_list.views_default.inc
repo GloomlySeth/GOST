@@ -45,6 +45,11 @@ function documents_list_views_default_views() {
   $handler->display->display_options['fields']['filename']['label'] = '';
   $handler->display->display_options['fields']['filename']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['filename']['alter']['ellipsis'] = FALSE;
+  /* Sort criterion: File: Upload date */
+  $handler->display->display_options['sorts']['timestamp']['id'] = 'timestamp';
+  $handler->display->display_options['sorts']['timestamp']['table'] = 'file_managed';
+  $handler->display->display_options['sorts']['timestamp']['field'] = 'timestamp';
+  $handler->display->display_options['sorts']['timestamp']['order'] = 'DESC';
   /* Contextual filter: User: Uid */
   $handler->display->display_options['arguments']['uid']['id'] = 'uid';
   $handler->display->display_options['arguments']['uid']['table'] = 'users';
@@ -159,9 +164,9 @@ function documents_list_views_default_views() {
   $handler->display->display_options['fields']['views_bulk_operations']['label'] = '';
   $handler->display->display_options['fields']['views_bulk_operations']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '1';
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 0;
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['row_clickable'] = 1;
-  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 1;
+  $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
     'action::views_bulk_operations_delete_item' => array(
@@ -174,12 +179,9 @@ function documents_list_views_default_views() {
     'action::processing_my_custom_action' => array(
       'selected' => 1,
       'postpone_processing' => 0,
-      'skip_confirmation' => 0,
+      'skip_confirmation' => 1,
       'override_label' => 0,
       'label' => '',
-      'settings' => array(
-        'options' => 'Iron Man',
-      ),
     ),
   );
   /* Field: File: Name */
