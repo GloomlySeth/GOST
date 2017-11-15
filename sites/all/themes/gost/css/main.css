@@ -918,9 +918,12 @@ body {
     background: url('../images/editor_-_demand_create/u878.jpg') no-repeat;
 }
 
-.view-id-document_list #edit-status input,
-.page-node-add-demand-create #edit-submit {
+.view-id-document_list #edit-status input {
     display: none;
+}
+
+.page-node-add-demand-create #edit-submit {
+    margin: 2px 10px 30px 0;
 }
 
 #block-menu-menu-top-menu a {
@@ -1527,6 +1530,10 @@ body {
 .required-fields.group-main-margins-r1.field-group-html-element.section-content-r,
 .required-fields.group-main-interval-r1.field-group-html-element.section-content-r {
     width: 160px;
+}
+
+.group-main-columns-r3 {
+    vertical-align: middle;
 }
 
 #edit-field-setting-und {
