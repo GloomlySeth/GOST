@@ -1392,6 +1392,7 @@ function demand_create_content_type__field_group_info() {
     'weight' => '99',
     'children' => array(
       0 => 'field_main_columns_number',
+      1 => 'field_main_columns_division',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -1932,7 +1933,6 @@ function demand_create_content_type__field_group_info() {
       1 => 'field_main_interval_left',
       2 => 'field_main_interval_right',
       3 => 'field_main_interval_mirror',
-      4 => 'field_main_interval_non',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -1961,7 +1961,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_main_interval';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '95',
+    'weight' => '94',
     'children' => array(
       0 => 'field_main_interval_page2',
       1 => 'field_main_margins_shift',
@@ -1996,8 +1996,9 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Интервал',
     'weight' => '22',
     'children' => array(
-      0 => 'group_main_interval_r1',
-      1 => 'group_main_interval_r2',
+      0 => 'field_main_interval_non',
+      1 => 'group_main_interval_r1',
+      2 => 'group_main_interval_r2',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(

@@ -1787,7 +1787,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 21,
+      'weight' => 23,
     ),
   );
 
@@ -2255,7 +2255,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_main_interval_non',
-    'label' => 'Не добавлять интервал между<br />абзацами одного стиля',
+    'label' => 'Не добавлять интервал между абзацами одного стиля',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -2267,7 +2267,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 39,
+      'weight' => 95,
     ),
   );
 
@@ -2733,7 +2733,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_main_margins_str',
-    'label' => 'Правая строка',
+    'label' => 'Первая строка',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -5033,7 +5033,7 @@ function demand_create_content_type__field_default_field_instances() {
   t('Настройки подписи');
   t('Начать с:');
   t('Начертание');
-  t('Не добавлять интервал между<br />абзацами одного стиля');
+  t('Не добавлять интервал между абзацами одного стиля');
   t('Нижнее');
   t('Нижняя граница при переносе');
   t('Номер');
@@ -5045,11 +5045,11 @@ function demand_create_content_type__field_default_field_instances() {
   t('От формулы до текста:');
   t('Отступы от нумерации:');
   t('Отступы от полей:');
+  t('Первая строка');
   t('Перед');
   t('Перенос нумерации колонок');
   t('Перенос шапки таблицы');
   t('После');
-  t('Правая строка');
   t('Правое');
   t('Применить настройки основного текста');
   t('Применить настройки основной нумерации');
