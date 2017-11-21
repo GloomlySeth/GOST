@@ -995,6 +995,30 @@ body {
 	margin-left: 15px;
 }
 
+#views-form-document-list-page .views-field-views-bulk-operations {
+	width: 5%
+}
+
+#views-form-document-list-page .views-field-filesize {
+	width: 13%
+}
+
+#views-form-document-list-page .views-field-timestamp {
+	width: 16%
+}
+
+#views-form-document-list-page .views-field-status {
+	width: 17%
+}
+
+#views-form-document-list-page .views-field-demand {
+	width: 19%
+}
+
+#views-form-document-list-page .views-field-nothing {
+	width: 7%
+}
+
 #edit-actionprocessing-my-custom-action {
     margin-left: 10px;
 }
@@ -1022,10 +1046,6 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-}
-
-.view-id-document_list .views-table tr {
-	word-break: break-all;
 }
 
 #views-exposed-form-document-list-page .views-widget .form-type-radio{
