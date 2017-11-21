@@ -1,8 +1,8 @@
-name = Requirements list
+name = Page: state of an account
 core = 7.x
 package = Features
 dependencies[] = ctools
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
-features[views_view][] = requirements_list
+features[views_view][] = bill_count

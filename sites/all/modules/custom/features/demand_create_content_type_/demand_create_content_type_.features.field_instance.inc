@@ -23,7 +23,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -59,7 +59,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -81,38 +81,6 @@ function demand_create_content_type__field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'field_collection_item-field_list_number_1-field_list_number_type2'.
-  $field_instances['field_collection_item-field_list_number_1-field_list_number_type2'] = array(
-    'bundle' => 'field_list_number_1',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_list_number_type2',
-    'label' => 'Тип нумерации:',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance:
   // 'field_collection_item-field_list_number_1-field_list_number_view2'.
   $field_instances['field_collection_item-field_list_number_1-field_list_number_view2'] = array(
     'bundle' => 'field_list_number_1',
@@ -125,7 +93,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -290,7 +258,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 92,
+        'weight' => 83,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -331,7 +299,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 94,
+        'weight' => 85,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -351,7 +319,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 41,
@@ -370,7 +338,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 91,
+        'weight' => 82,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -411,7 +379,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 93,
+        'weight' => 84,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -431,49 +399,10 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 40,
-    ),
-  );
-
-  // Exported field_instance: 'node-demand_create-field_demand_name'.
-  $field_instances['node-demand_create-field_demand_name'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_demand_name',
-    'label' => 'Название',
-    'required' => FALSE,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
     ),
   );
 
@@ -489,7 +418,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -513,7 +442,7 @@ function demand_create_content_type__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 1,
     ),
   );
 
@@ -534,7 +463,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -580,7 +509,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 5,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -626,7 +555,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -672,7 +601,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -719,7 +648,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 124,
+        'weight' => 114,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -761,7 +690,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 125,
+        'weight' => 115,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -803,7 +732,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 122,
+        'weight' => 112,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -844,7 +773,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 123,
+        'weight' => 113,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -882,7 +811,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 108,
+        'weight' => 99,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -923,7 +852,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 109,
+        'weight' => 100,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -943,7 +872,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 23,
@@ -962,7 +891,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 107,
+        'weight' => 98,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -987,43 +916,6 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-demand_create-field_formula_number_view'.
-  $field_instances['node-demand_create-field_formula_number_view'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 35,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_formula_number_view',
-    'label' => 'Вид нумерации:',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 16,
-    ),
-  );
-
   // Exported field_instance: 'node-demand_create-field_header_filter_from'.
   $field_instances['node-demand_create-field_header_filter_from'] = array(
     'bundle' => 'demand_create',
@@ -1036,7 +928,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 50,
+        'weight' => 42,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1076,7 +968,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 51,
+        'weight' => 43,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1116,7 +1008,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 43,
+        'weight' => 35,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1153,7 +1045,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 38,
+        'weight' => 30,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1191,7 +1083,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 41,
+        'weight' => 33,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1228,7 +1120,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 40,
+        'weight' => 32,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1265,7 +1157,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 36,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1302,7 +1194,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 37,
+        'weight' => 29,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1343,7 +1235,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 42,
+        'weight' => 34,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1363,7 +1255,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 12,
@@ -1383,7 +1275,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 39,
+        'weight' => 31,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1426,7 +1318,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 74,
+        'weight' => 65,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1467,7 +1359,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 73,
+        'weight' => 64,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1508,7 +1400,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 76,
+        'weight' => 67,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1528,7 +1420,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 25,
@@ -1552,7 +1444,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 75,
+        'weight' => 66,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1593,7 +1485,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 77,
+        'weight' => 68,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1636,7 +1528,7 @@ function demand_create_content_type__field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 115,
+        'weight' => 105,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1661,160 +1553,6 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-demand_create-field_list_number_division'.
-  $field_instances['node-demand_create-field_list_number_division'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 113,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_list_number_division',
-    'label' => 'Вид разделителя между подписью и текстом:',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 25,
-    ),
-  );
-
-  // Exported field_instance: 'node-demand_create-field_list_number_main'.
-  $field_instances['node-demand_create-field_list_number_main'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 114,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_list_number_main',
-    'label' => 'Применить настройки основной нумерации',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 26,
-    ),
-  );
-
-  // Exported field_instance: 'node-demand_create-field_list_number_type'.
-  $field_instances['node-demand_create-field_list_number_type'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 111,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_list_number_type',
-    'label' => 'Тип нумерации:',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 23,
-    ),
-  );
-
-  // Exported field_instance: 'node-demand_create-field_list_number_view'.
-  $field_instances['node-demand_create-field_list_number_view'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 112,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_list_number_view',
-    'label' => 'Вид нумерации:',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 24,
-    ),
-  );
-
   // Exported field_instance: 'node-demand_create-field_main_columns_division'.
   $field_instances['node-demand_create-field_main_columns_division'] = array(
     'bundle' => 'demand_create',
@@ -1831,7 +1569,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 61,
+        'weight' => 53,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1851,7 +1589,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 22,
@@ -1875,7 +1613,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 60,
+        'weight' => 52,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1900,7 +1638,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 21,
+      'weight' => 23,
     ),
   );
 
@@ -1916,7 +1654,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 59,
+        'weight' => 51,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1957,7 +1695,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 62,
+        'weight' => 54,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1977,7 +1715,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 25,
@@ -1996,7 +1734,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 118,
+        'weight' => 108,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2033,7 +1771,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 121,
+        'weight' => 111,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2070,7 +1808,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 120,
+        'weight' => 110,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2107,7 +1845,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 116,
+        'weight' => 106,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2144,7 +1882,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 117,
+        'weight' => 107,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2181,7 +1919,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 119,
+        'weight' => 109,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2223,7 +1961,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 58,
+        'weight' => 50,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2269,7 +2007,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 52,
+        'weight' => 44,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2280,7 +2018,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_main_interval_left',
-    'label' => 'Слева',
+    'label' => 'Перед',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -2314,7 +2052,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 54,
+        'weight' => 46,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2334,7 +2072,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 37,
@@ -2357,7 +2095,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 56,
+        'weight' => 48,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2377,10 +2115,10 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 28,
+      'weight' => 95,
     ),
   );
 
@@ -2400,7 +2138,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 29,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2420,10 +2158,10 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 15,
+      'weight' => 38,
     ),
   );
 
@@ -2444,7 +2182,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 30,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2469,7 +2207,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 17,
+      'weight' => 33,
     ),
   );
 
@@ -2490,7 +2228,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 53,
+        'weight' => 45,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2501,7 +2239,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_main_interval_right',
-    'label' => 'Справа',
+    'label' => 'После',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -2535,7 +2273,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 47,
+        'weight' => 39,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2555,10 +2293,10 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 27,
+      'weight' => 86,
     ),
   );
 
@@ -2574,7 +2312,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 57,
+        'weight' => 49,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2616,7 +2354,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 44,
+        'weight' => 36,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2661,7 +2399,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 46,
+        'weight' => 38,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2681,7 +2419,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 24,
@@ -2705,7 +2443,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 49,
+        'weight' => 41,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2751,7 +2489,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 45,
+        'weight' => 37,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2796,7 +2534,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 55,
+        'weight' => 47,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2816,10 +2554,10 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 40,
+      'weight' => 32,
     ),
   );
 
@@ -2835,7 +2573,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 48,
+        'weight' => 40,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2846,7 +2584,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_main_margins_str',
-    'label' => 'Правая строка',
+    'label' => 'Первая строка',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -2877,7 +2615,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 63,
+        'weight' => 55,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2923,7 +2661,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 64,
+        'weight' => 56,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2969,7 +2707,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 67,
+        'weight' => 59,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3015,7 +2753,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 68,
+        'weight' => 60,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3061,7 +2799,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 65,
+        'weight' => 57,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3107,7 +2845,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 66,
+        'weight' => 58,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3136,43 +2874,6 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-demand_create-field_number_main_division'.
-  $field_instances['node-demand_create-field_number_main_division'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 71,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_number_main_division',
-    'label' => 'Вид разделителя между подписью и текстом:',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 21,
-    ),
-  );
-
   // Exported field_instance: 'node-demand_create-field_number_main_setting'.
   $field_instances['node-demand_create-field_number_main_setting'] = array(
     'bundle' => 'demand_create',
@@ -3189,7 +2890,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 72,
+        'weight' => 63,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3209,7 +2910,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 22,
@@ -3228,7 +2929,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 69,
+        'weight' => 61,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3265,7 +2966,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 70,
+        'weight' => 62,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3302,7 +3003,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 100,
+        'weight' => 91,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3342,7 +3043,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 102,
+        'weight' => 93,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3382,7 +3083,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 99,
+        'weight' => 90,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3419,7 +3120,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 101,
+        'weight' => 92,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3456,7 +3157,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 8,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3489,11 +3190,11 @@ function demand_create_content_type__field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3530,7 +3231,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 16,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3570,7 +3271,7 @@ function demand_create_content_type__field_default_field_instances() {
           'width' => 20,
         ),
         'type' => 'colorfield_color_swatch',
-        'weight' => 14,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3621,7 +3322,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 13,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3662,7 +3363,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 15,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3704,7 +3405,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 27,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3745,7 +3446,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 28,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3787,7 +3488,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 25,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3828,7 +3529,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 26,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3839,7 +3540,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_pic_indents_text2',
-    'label' => 'т подписи рисунка до текста:',
+    'label' => 'От подписи рисунка до текста:',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -3870,7 +3571,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 23,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3911,7 +3612,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 24,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3948,7 +3649,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 17,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3989,7 +3690,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 18,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4009,47 +3710,10 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 96,
-    ),
-  );
-
-  // Exported field_instance: 'node-demand_create-field_pic_number_division'.
-  $field_instances['node-demand_create-field_pic_number_division'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 21,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_pic_number_division',
-    'label' => 'Вид разделителя между подписью и текстом:',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 101,
     ),
   );
 
@@ -4069,7 +3733,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 22,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4089,7 +3753,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 102,
@@ -4108,7 +3772,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 19,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4145,7 +3809,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 20,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4187,7 +3851,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 12,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4233,7 +3897,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 11,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4250,7 +3914,7 @@ function demand_create_content_type__field_default_field_instances() {
       'max' => '',
       'min' => '',
       'prefix' => '',
-      'suffix' => '',
+      'suffix' => 'мм',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4274,7 +3938,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 10,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4311,7 +3975,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 78,
+        'weight' => 69,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4348,7 +4012,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 9,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4369,7 +4033,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -4385,7 +4049,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 82,
+        'weight' => 73,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4422,7 +4086,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 85,
+        'weight' => 76,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4459,7 +4123,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 84,
+        'weight' => 75,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4500,7 +4164,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 89,
+        'weight' => 80,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4520,7 +4184,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 34,
@@ -4539,7 +4203,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 90,
+        'weight' => 81,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4576,7 +4240,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 80,
+        'weight' => 71,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4617,7 +4281,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 86,
+        'weight' => 77,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4637,7 +4301,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 31,
@@ -4660,7 +4324,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 88,
+        'weight' => 79,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4680,7 +4344,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 33,
@@ -4699,7 +4363,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 79,
+        'weight' => 70,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4740,7 +4404,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 87,
+        'weight' => 78,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4760,7 +4424,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 32,
@@ -4779,7 +4443,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 81,
+        'weight' => 72,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4816,7 +4480,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 83,
+        'weight' => 74,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4853,7 +4517,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 105,
+        'weight' => 96,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4894,7 +4558,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 106,
+        'weight' => 97,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4914,7 +4578,7 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 47,
@@ -4933,7 +4597,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 103,
+        'weight' => 94,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -4970,7 +4634,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 104,
+        'weight' => 95,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -5007,7 +4671,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 95,
+        'weight' => 86,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -5049,7 +4713,7 @@ function demand_create_content_type__field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_decimal',
-        'weight' => 97,
+        'weight' => 88,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -5090,7 +4754,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 96,
+        'weight' => 87,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -5131,7 +4795,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 98,
+        'weight' => 89,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -5151,47 +4815,10 @@ function demand_create_content_type__field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
       ),
       'type' => 'options_onoff',
       'weight' => 55,
-    ),
-  );
-
-  // Exported field_instance: 'node-demand_create-field_title_number_division'.
-  $field_instances['node-demand_create-field_title_number_division'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 33,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_title_number_division',
-    'label' => 'Вид разделителя между подписью и текстом:',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 20,
     ),
   );
 
@@ -5213,7 +4840,7 @@ function demand_create_content_type__field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 110,
+        'weight' => 101,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -5238,123 +4865,6 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-demand_create-field_title_number_setting'.
-  $field_instances['node-demand_create-field_title_number_setting'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 34,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_title_number_setting',
-    'label' => 'Применить настройки основного текста',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 21,
-    ),
-  );
-
-  // Exported field_instance: 'node-demand_create-field_title_number_type'.
-  $field_instances['node-demand_create-field_title_number_type'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 31,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_title_number_type',
-    'label' => 'Тип нумерации',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 18,
-    ),
-  );
-
-  // Exported field_instance: 'node-demand_create-field_title_number_view'.
-  $field_instances['node-demand_create-field_title_number_view'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 32,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_title_number_view',
-    'label' => 'Вид нумерации:',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 19,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Верхнее');
@@ -5371,7 +4881,6 @@ function demand_create_content_type__field_default_field_instances() {
   t('Междустрочный');
   t('На');
   t('Надпись: "Продолжение таблицы ХХХ"');
-  t('Название');
   t('Настройки подписи');
   t('Начать с:');
   t('Начертание');
@@ -5387,9 +4896,11 @@ function demand_create_content_type__field_default_field_instances() {
   t('От формулы до текста:');
   t('Отступы от нумерации:');
   t('Отступы от полей:');
+  t('Первая строка');
+  t('Перед');
   t('Перенос нумерации колонок');
   t('Перенос шапки таблицы');
-  t('Правая строка');
+  t('После');
   t('Правое');
   t('Применить настройки основного текста');
   t('Применить настройки основной нумерации');
@@ -5427,7 +4938,6 @@ function demand_create_content_type__field_default_field_instances() {
   t('Ширина');
   t('Ширина:');
   t('Шрифт');
-  t('т подписи рисунка до текста:');
 
   return $field_instances;
 }
