@@ -1219,9 +1219,6 @@ body {
 #demand-create-node-form .form-item-title input,
 #field-demand-note-add-more-wrapper div input {
     width: 470px;
-    border-radius: 4px;
-    -webkit-appearance: none;
-    border: 1px solid #cccccc;
 }
 
 #field-header-filter-from-add-more-wrapper div input,
