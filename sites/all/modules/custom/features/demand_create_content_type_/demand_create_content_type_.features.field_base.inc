@@ -501,7 +501,7 @@ function demand_create_content_type__field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'align',
+          'vocabulary' => 'align_4',
           'parent' => 0,
         ),
       ),
@@ -1015,7 +1015,7 @@ function demand_create_content_type__field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'align',
+          'vocabulary' => 'align_4',
           'parent' => 0,
         ),
       ),
