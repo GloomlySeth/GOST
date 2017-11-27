@@ -29,9 +29,10 @@ function demand_create_content_type__form_demand_create_node_form_alter(&$form, 
   $form['field_main_width_number2']['und'][0]['value']['#title'] = '';
   $form['field_main_width_width2']['und'][0]['value']['#title'] = '';
   $form['field_main_width_space2']['und'][0]['value']['#title'] = '';
-  $form['field_header_setting_align']['und']['#options'][23] = '<span></span>';
-  $form['field_header_setting_align']['und']['#options'][24] = '<span></span>';
-  $form['field_header_setting_align']['und']['#options'][25] = '<span></span>';
+  $form['field_header_setting_align']['und']['#options'][26] = '<span></span>';
+  $form['field_header_setting_align']['und']['#options'][27] = '<span></span>';
+  $form['field_header_setting_align']['und']['#options'][29] = '<span></span>';
+  $form['field_header_setting_align']['und']['#options'][28] = '<span></span>';
   $form['field_header_setting_align']['und']['#title'] = '';
   $form['field_header_setting_align']['#attributes']['class'][3] = 'n_visibl_r';
   $form['field_header_setting_typeface']['und']['#options'][51] = '<span></span>';
@@ -70,10 +71,10 @@ function demand_create_content_type__form_demand_create_node_form_alter(&$form, 
   $form['field_main_font_size']['und']['#title'] = '';
   unset($form['field_main_font_size']['und']['#options']['_none']);
   unset($form['field_main_font_align']['und']['#options']['_none']);
-  $form['field_main_font_align']['und']['#options'][23] = '<span></span>';
-  $form['field_main_font_align']['und']['#options'][24] = '<span></span>';
-  $form['field_main_font_align']['und']['#options'][25] = '<span></span>';
-  //$form['field_main_font_align']['und']['#options'][31] = '<span></span>';
+  $form['field_main_font_align']['und']['#options'][26] = '<span></span>';
+  $form['field_main_font_align']['und']['#options'][27] = '<span></span>';
+  $form['field_main_font_align']['und']['#options'][29] = '<span></span>';
+  $form['field_main_font_align']['und']['#options'][28] = '<span></span>';
   $form['field_main_font_align']['und']['#title'] = '';
   $form['field_main_font_align']['#attributes']['class'][3] = 'n_visibl_r';
   $form['field_main_font_typeface']['und']['#options'][51] = '<span></span>';

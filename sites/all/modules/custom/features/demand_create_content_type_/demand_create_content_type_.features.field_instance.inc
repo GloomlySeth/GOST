@@ -1212,9 +1212,12 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
       'weight' => 22,
     ),
   );
@@ -3296,7 +3299,7 @@ function demand_create_content_type__field_default_field_instances() {
         'colorfield_colorpicker_type' => 'farbtastic',
         'colorfield_enable_colorpicker' => TRUE,
         'colorfield_options' => array(
-          'colorfield_colorpicker_type' => 'farbtastic',
+          'colorfield_colorpicker_type' => 'minicolors',
           'colorfield_enable_colorpicker' => 1,
         ),
       ),

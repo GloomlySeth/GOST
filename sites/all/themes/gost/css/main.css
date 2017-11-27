@@ -499,7 +499,7 @@ body {
 #edit-profile-demand-create-field-pic-label-align-und-1 + label,
 #edit-profile-demand-create-field-pic-align-pic-und-1 + label,
 #edit-profile-demand-create-field-header-setting-align-und-1 + label,
-#edit-field-main-font-align-und-23 + label,
+#edit-field-main-font-align-und-26 + label,
 #edit-field-table-label-align-und-26 + label,
 #edit-field-pic-align-pic-und-23 + label,
 #edit-field-pic-label-align-und-23 + label {
@@ -510,20 +510,20 @@ body {
 #edit-profile-demand-create-field-pic-label-align-und-1:checked + label,
 #edit-profile-demand-create-field-pic-align-pic-und-1:checked + label,
 #edit-profile-demand-create-field-header-setting-align-und-1:checked + label,
-#edit-field-main-font-align-und-23:checked + label,
+#edit-field-main-font-align-und-26:checked + label,
 #edit-field-table-label-align-und-26:checked + label,
 #edit-field-pic-align-pic-und-23:checked + label,
 #edit-field-pic-label-align-und-23:checked + label {
     background: url('../images/editor_-_demand_create/u101_mouseOver.png') no-repeat;
 }
 
-#edit-field-main-font-align-und-24 + label,
-#edit-field-table-label-align-und-29 + label {
+#edit-field-main-font-align-und-28 + label,
+#edit-field-table-label-align-und-28 + label {
     background: url('../images/editor_-_demand_create/u105.png') no-repeat;
 }
 
-#edit-field-main-font-align-und-24:checked + label,
-#edit-field-table-label-align-und-29:checked + label {
+#edit-field-main-font-align-und-28:checked + label,
+#edit-field-table-label-align-und-28:checked + label {
     background: url('../images/editor_-_demand_create/u105_mouseOver.png') no-repeat;
 }
 
@@ -531,8 +531,7 @@ body {
 #edit-profile-demand-create-field-pic-label-align-und-3 + label,
 #edit-profile-demand-create-field-pic-align-pic-und-3 + label,
 #edit-profile-demand-create-field-header-setting-align-und-3 + label,
-#edit-field-main-font-align-und-25 + label,
-#edit-field-table-label-align-und-27 + label,
+#edit-field-main-font-align-und-27 + label,
 #edit-field-pic-align-pic-und-24 + label,
 #edit-field-pic-label-align-und-24 + label {
     background: url('../images/editor_-_demand_create/u99.png') no-repeat;
@@ -542,7 +541,7 @@ body {
 #edit-profile-demand-create-field-pic-label-align-und-3:checked + label,
 #edit-profile-demand-create-field-pic-align-pic-und-3:checked + label,
 #edit-profile-demand-create-field-header-setting-align-und-3:checked + label,
-#edit-field-main-font-align-und-25:checked + label,
+#edit-field-main-font-align-und-27:checked + label,
 #edit-field-table-label-align-und-27:checked + label,
 #edit-field-pic-align-pic-und-24:checked + label,
 #edit-field-pic-label-align-und-24:checked + label {
@@ -554,7 +553,8 @@ body {
 #edit-profile-demand-create-field-pic-align-pic-und-2 + label,
 #edit-profile-demand-create-field-header-setting-align-und-2 + label,
 #edit-profile-demand-create-field-main-font-align-und-31 + label,
-#edit-field-table-label-align-und-28 + label,
+#edit-field-table-label-align-und-29 + label,
+#edit-field-main-font-align-und-29 + label,
 #edit-field-pic-align-pic-und-25 + label,
 #edit-field-pic-label-align-und-25 + label {
     background: url('../images/editor_-_demand_create/u103.png') no-repeat;
@@ -565,7 +565,8 @@ body {
 #edit-profile-demand-create-field-pic-align-pic-und-2:checked + label,
 #edit-profile-demand-create-field-header-setting-align-und-2:checked + label span,
 #edit-profile-demand-create-field-main-font-align-und-31:checked + label span,
-#edit-field-table-label-align-und-28:checked + label,
+#edit-field-table-label-align-und-29:checked + label,
+#edit-field-main-font-align-und-29:checked + label,
 #edit-field-pic-align-pic-und-25:checked + label,
 #edit-field-pic-label-align-und-25:checked + label {
     background: url('../images/editor_-_demand_create/u103_mouseOver.png') no-repeat;
@@ -1255,46 +1256,46 @@ body {
     position: static;
 }
 
-#edit-field-header-setting-align-und-23 + label span,
-#edit-field-table-label-align-und-28 + label span,
+#edit-field-header-setting-align-und-26 + label span,
 #edit-field-table-label-continue2-und-1 + label span {
     background-image: url(../images/editor_-_demand_create/u101.png);
 }
 
-#edit-field-header-setting-align-und-23:checked + label span,
-#edit-field-table-label-align-und-28:checked + label span,
+#edit-field-header-setting-align-und-26:checked + label span,
 #edit-field-table-label-continue2-und-1:checked + label span {
     background-image: url(../images/editor_-_demand_create/u101_mouseOver.png);
 }
 
-#edit-field-header-setting-align-und-24 + label span,
-#edit-field-table-label-align-und-29 + label span,
+#edit-field-header-setting-align-und-27 + label span,
+#edit-field-table-label-align-und-27 + label span,
 #edit-field-table-label-continue2-und-2 + label span {
     background-image: url(../images/editor_-_demand_create/u99.png);
 }
 
-#edit-field-header-setting-align-und-24:checked + label span,
-#edit-field-table-label-align-und-29:checked + label span,
+#edit-field-header-setting-align-und-27:checked + label span,
+#edit-field-table-label-align-und-27:checked + label span,
 #edit-field-table-label-continue2-und-2:checked + label span {
     background-image: url(../images/editor_-_demand_create/u99_mouseOver.png);
 }
 
-#edit-field-header-setting-align-und-25 + label span,
+#edit-field-header-setting-align-und-29 + label span,
 #edit-field-table-label-align-und-30 + label span,
 #edit-field-table-label-continue2-und-3 + label span {
     background-image: url(../images/editor_-_demand_create/u103.png);
 }
 
-#edit-field-header-setting-align-und-25:checked + label span,
+#edit-field-header-setting-align-und-29:checked + label span,
 #edit-field-table-label-align-und-30:checked + label span,
 #edit-field-table-label-continue2-und-3:checked + label span {
     background-image: url(../images/editor_-_demand_create/u103_mouseOver.png);
 }
 
+#edit-field-header-setting-align-und-28 + label span,
 #edit-field-table-label-align-und-31 + label span {
     background-image: url(../images/editor_-_demand_create/u105.png);
 }
 
+#edit-field-header-setting-align-und-28:checked + label span,
 #edit-field-table-label-align-und-31:checked + label span {
     background-image: url(../images/editor_-_demand_create/u105_mouseOver.png);
 }
