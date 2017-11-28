@@ -1202,10 +1202,7 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Нумерация',
     'weight' => '154',
     'children' => array(
-      0 => 'field_list_number_view',
-      1 => 'field_list_number_division',
-      2 => 'field_list_number_main',
-      3 => 'field_list_number_1',
+      0 => 'field_list_number_1',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -1551,8 +1548,7 @@ function demand_create_content_type__field_group_info() {
     'weight' => '98',
     'children' => array(
       0 => 'group_main_columns_r2',
-      1 => 'group_main_columns_r3',
-      2 => 'group_main_columns_f2',
+      1 => 'group_main_columns_f2',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(

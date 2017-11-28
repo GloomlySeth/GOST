@@ -4190,7 +4190,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 34,
+      'weight' => 134,
     ),
   );
 
@@ -4227,7 +4227,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 35,
+      'weight' => 135,
     ),
   );
 
@@ -4307,7 +4307,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 31,
+      'weight' => 131,
     ),
   );
 
@@ -4350,7 +4350,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 33,
+      'weight' => 133,
     ),
   );
 
@@ -4387,7 +4387,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 28,
+      'weight' => 130,
     ),
   );
 
@@ -4430,7 +4430,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 32,
+      'weight' => 132,
     ),
   );
 
