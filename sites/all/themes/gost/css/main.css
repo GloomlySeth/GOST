@@ -1642,3 +1642,7 @@ body {
 .field-name-field-main-interval-non {
     margin-left: 195px;
 }
+
+.page-user-edit .tabs.primary {
+	display: none;
+}
