@@ -1646,3 +1646,7 @@ body {
 .page-user-edit .tabs.primary {
 	display: none;
 }
+
+body.page-user-edit-company-info #user-profile-form h2 {
+	display: none;
+}
