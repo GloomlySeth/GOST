@@ -23,3 +23,9 @@ function gost_profile_form_user_pass_alter(&$form, &$form_state, $form_id) {
   $form['name']['#title'] = t('Если вы забыли пароль для входа на сайт, введите адрес электронной почты, который вы указывали при регистрации');
   $form['name']['#attributes']['placeholder'] = t('Электронная почта');
 }
+
+function gost_profile_form_profile2_form_alter(&$form, &$form_state) {
+  if($form['#user_category'] == 'company_info'){
+    drupal_set_title('Информация о компании');
+  }
+}
