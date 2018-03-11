@@ -1,6 +1,7 @@
 name = Company info
 core = 7.x
 package = Features
+dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = features
 dependencies[] = field_group
@@ -63,4 +64,3 @@ features[user_permission][] = edit any company_info profile
 features[user_permission][] = edit own company_info profile
 features[user_permission][] = view any company_info profile
 features[user_permission][] = view own company_info profile
-features_exclude[dependencies][ctools] = ctools

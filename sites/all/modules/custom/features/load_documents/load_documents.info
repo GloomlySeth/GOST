@@ -12,7 +12,6 @@ features[file_display][] = document__default__file_field_file_download_link
 features[file_display][] = document__default__file_field_file_table
 features[file_display][] = document__default__file_field_file_url_plain
 features[menu_custom][] = management
-features[menu_links][] = management_file-entity-paths-settings:admin/config/media/fe-paths
 features[user_permission][] = administer_fe_paths
 features[user_permission][] = create files
 features[user_permission][] = delete own document files

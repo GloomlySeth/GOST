@@ -22,11 +22,14 @@ function page_state_of_an_account_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'State of an account';
+  $handler->display->display_options['title'] = 'Состояние счета';
   $handler->display->display_options['css_class'] = 'tableGost';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['access']['perm'] = 'access user profiles';
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    3 => '3',
+    2 => '2',
+  );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -37,20 +40,20 @@ function page_state_of_an_account_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<div class="balance">Balance: 5</div>
-Тариф старт <button disabled class="btn">Rates</button>';
+  $handler->display->display_options['header']['area']['content'] = '<div class="balance">Баланс: 5</div>
+Тариф старт <button disabled class="btn">Смена тарифа</button>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<button disabled class="btn">Replenishment</button>';
+  $handler->display->display_options['footer']['area']['content'] = '<button disabled class="btn">Состояние счета</button>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   /* Field: User: Created date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'users';
   $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['label'] = 'Date';
+  $handler->display->display_options['fields']['created']['label'] = 'Дата';
   $handler->display->display_options['fields']['created']['date_format'] = 'custom';
   $handler->display->display_options['fields']['created']['custom_date_format'] = 'd.m.Y';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
@@ -58,7 +61,7 @@ function page_state_of_an_account_views_default_views() {
   $handler->display->display_options['fields']['created_1']['id'] = 'created_1';
   $handler->display->display_options['fields']['created_1']['table'] = 'users';
   $handler->display->display_options['fields']['created_1']['field'] = 'created';
-  $handler->display->display_options['fields']['created_1']['label'] = 'Time';
+  $handler->display->display_options['fields']['created_1']['label'] = 'Время';
   $handler->display->display_options['fields']['created_1']['date_format'] = 'custom';
   $handler->display->display_options['fields']['created_1']['custom_date_format'] = 'H.m';
   $handler->display->display_options['fields']['created_1']['second_date_format'] = 'long';
@@ -66,19 +69,19 @@ function page_state_of_an_account_views_default_views() {
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = 'Action';
+  $handler->display->display_options['fields']['nothing']['label'] = 'Действие';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Пополнение счета';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing_1']['label'] = 'Document';
+  $handler->display->display_options['fields']['nothing_1']['label'] = 'Документ';
   $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '-';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
   $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing_2']['label'] = 'Amount, BYN';
+  $handler->display->display_options['fields']['nothing_2']['label'] = 'Сумма, бел. руб';
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '5';
   /* Sort criterion: User: Created date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
@@ -107,7 +110,7 @@ function page_state_of_an_account_views_default_views() {
   $handler->display->display_options['path'] = 'state-of-an-account';
   $translatables['bill_count'] = array(
     t('Master'),
-    t('State of an account'),
+    t('Состояние счета'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -121,16 +124,16 @@ function page_state_of_an_account_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('<div class="balance">Balance: 5</div>
-Тариф старт <button disabled class="btn">Rates</button>'),
-    t('<button disabled class="btn">Replenishment</button>'),
-    t('Date'),
-    t('Time'),
-    t('Action'),
+    t('<div class="balance">Баланс: 5</div>
+Тариф старт <button disabled class="btn">Смена тарифа</button>'),
+    t('<button disabled class="btn">Состояние счета</button>'),
+    t('Дата'),
+    t('Время'),
+    t('Действие'),
     t('Пополнение счета'),
-    t('Document'),
+    t('Документ'),
     t('-'),
-    t('Amount, BYN'),
+    t('Сумма, бел. руб'),
     t('5'),
     t('All'),
     t('Page'),

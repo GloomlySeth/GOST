@@ -1393,40 +1393,11 @@ body {
 }
 
 #edit-field-header-setting-color > div,
-#edit-field-table-label-color > div {
-    background-image: url(../images/editor_-_demand_create/btn_4_2_u113.png);
-}
-
-#edit-field-header-setting-background > div,
-#edit-field-table-label-background > div {
-    background-image: url(../images/editor_-_demand_create/btn_4_3_u193.png);
-}
-
-#edit-field-header-setting-background > div,
-#edit-field-header-setting-color > div,
 #edit-field-table-label-color > div,
 #edit-field-table-label-background > div {
     width: 43px;
     background-repeat: no-repeat;
     height: 30px;
-}
-
-#edit-field-header-setting-color:hover > div,
-#edit-field-table-label-color:hover > div {
-    background-image: url(../images/editor_-_demand_create/btn_4_2_u113_mouseOver.png);
-
-}
-
-#edit-field-header-setting-background:hover > div,
-#edit-field-table-label-background:hover > div {
-    background-image: url(../images/editor_-_demand_create/btn_4_3_u193_mouseOver.png);
-}
-
-#edit-field-header-setting-color-und,
-#edit-field-table-label-color-und,
-#edit-field-table-label-background-und,
-#edit-field-header-setting-background-und {
-    visibility: hidden;
 }
 
 .required-fields.group-header-setting-3.field-group-html-element,
@@ -1632,6 +1603,27 @@ body {
 
 #demand-create-node-form .field-group-html-element tbody {
     border-color: #ffffff;
+}
+
+#demand-create-node-form  .group-main-font-r15,
+#demand-create-node-form  .group-main-font-r16 {
+	vertical-align: top;
+}
+
+#demand-create-node-form  #edit-field-main-font-color-und,
+#demand-create-node-form  #edit-field-table-label-color-und,
+#demand-create-node-form  #edit-field-header-setting-color-und {
+	background-image: url('/sites/all/themes/gost/images/editor_-_demand_create/color.png');
+	width: 40px;
+    height: 32px;
+}
+
+#demand-create-node-form  #edit-field-main-font-background-und,
+#demand-create-node-form  #edit-field-table-label-background-und,
+#demand-create-node-form  #edit-field-header-setting-background-und {
+	background-image: url('/sites/all/themes/gost/images/editor_-_demand_create/colorText.png');
+	width: 40px;
+    height: 32px;
 }
 
 .field-name-field-main-margins-shift,

@@ -34,7 +34,7 @@ function menu_left_menu_top_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -45,
     'customized' => 1,
   );
   // Exported menu link: menu-left-menu_-:menutoken/58373e3107af8.
@@ -61,7 +61,7 @@ function menu_left_menu_top_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
   );
   // Exported menu link: menu-left-menu_-:node/add/demand-create.
@@ -107,27 +107,6 @@ function menu_left_menu_top_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
   );
-  // Exported menu link: menu-left-menu_-:user.
-  $menu_links['menu-left-menu_-:user'] = array(
-    'menu_name' => 'menu-left-menu',
-    'link_path' => 'user',
-    'router_path' => 'user',
-    'link_title' => 'Загрузка документа',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-left-menu_-:user',
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-  );
   // Exported menu link: menu-top-menu_:<front>.
   $menu_links['menu-top-menu_:<front>'] = array(
     'menu_name' => 'menu-top-menu',
@@ -142,17 +121,16 @@ function menu_left_menu_top_menu_default_menu_links() {
       'alter' => TRUE,
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -42,
     'customized' => 1,
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Загрузка документа');
   t('Информация о компании');
   t('Личная информация');
   t('Отзывы');

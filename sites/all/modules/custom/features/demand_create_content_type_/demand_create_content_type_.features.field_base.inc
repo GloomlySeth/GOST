@@ -330,33 +330,6 @@ function demand_create_content_type__field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_formula_number_division'.
-  $field_bases['field_formula_number_division'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_formula_number_division',
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'division',
-          'parent' => 0,
-        ),
-      ),
-      'profile2_private' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
   // Exported field_base: 'field_formula_number_setting'.
   $field_bases['field_formula_number_setting'] = array(
     'active' => 1,
@@ -399,6 +372,34 @@ function demand_create_content_type__field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
+        0 => 'Сквозная',
+        1 => 'Привязка к главам (разделам)',
+        2 => 'Привязка к пунктам (подразделам)',
+      ),
+      'allowed_values_function' => '',
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_formula_number_view'.
+  $field_bases['field_formula_number_view'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_formula_number_view',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        '(нет)' => '(нет)',
         0 => '(1)(2)(3)...',
         1 => '1 2 3...',
         2 => '(I) (II) (III)...',
@@ -871,6 +872,33 @@ function demand_create_content_type__field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
+  );
+
+  // Exported field_base: 'field_list_number_type'.
+  $field_bases['field_list_number_type'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_list_number_type',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => 'Сквозная',
+        1 => 'Привязка к главам (разделам)',
+        2 => 'Привязка к пунктам (подразделам)',
+      ),
+      'allowed_values_function' => '',
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_list_number_view2'.
@@ -2775,6 +2803,27 @@ function demand_create_content_type__field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_taxonomy_text'.
+  $field_bases['field_taxonomy_text'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_taxonomy_text',
+    'indexes' => array(
+      'rgb' => array(
+        0 => 'rgb',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'colorfield',
+    'settings' => array(
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'colorfield',
   );
 
   // Exported field_base: 'field_title_main_level'.
