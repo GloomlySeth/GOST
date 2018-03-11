@@ -44,3 +44,35 @@ function gost_form_alter(&$form, &$form_state, $form_id)
     $form['status']['#attributes'] = $attributes;
   }
 }
+
+function gost_select($variables) {
+  $flag = FALSE;
+  switch($variables['element']['#id']) {
+    case 'edit-field-header-setting-color-und':
+    case 'edit-field-main-font-color-und':
+    case 'edit-field-table-label-color-und':
+    case 'edit-field-header-setting-background-und':
+    case 'edit-field-main-font-background-und':
+    case 'edit-field-table-label-background-und':
+    drupal_add_js(path_to_theme() . '/js/demandSelect.js', 'file');
+    $flag = TRUE;
+	$options = '';
+    foreach($variables['element']['#options'] as $key => $value) {
+	  $term = taxonomy_get_term_by_name($value, 'color_text');
+	  $options .= '<option style="background-color: ' . $term[$key]->field_taxonomy_text[LANGUAGE_NONE][0]['rgb'] . ';" value="' . $key . '"></option>';
+	  $variables['element']['#attributes'] = array('class' => array('demandSelect'));
+	}
+	break;
+  }
+  $element = $variables['element'];
+  element_set_attributes($element, array(
+    'id',
+    'name',
+    'size',
+  ));
+  _form_set_class($element, array(
+    'form-select',
+  )); 
+  $options = ($flag) ? $options : form_select_options($element);
+  return '<select' . drupal_attributes($element['#attributes']) . '>' . $options . '</select>';
+}

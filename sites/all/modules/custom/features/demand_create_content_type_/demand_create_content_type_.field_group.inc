@@ -533,8 +533,8 @@ function demand_create_content_type__field_group_info() {
     'weight' => '152',
     'children' => array(
       0 => 'field_formula_number_type',
-      1 => 'field_formula_number_division',
-      2 => 'field_formula_number_setting',
+      1 => 'field_formula_number_setting',
+      2 => 'field_formula_number_view',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -596,8 +596,8 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Формулы',
     'weight' => '11',
     'children' => array(
-      0 => 'group_formula_number',
-      1 => 'group_formula_indents',
+      0 => 'group_formula_indents',
+      1 => 'group_formula_number',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -1038,8 +1038,8 @@ function demand_create_content_type__field_group_info() {
     'weight' => '22',
     'children' => array(
       0 => 'group_header_setting_1',
-      1 => 'group_header_setting_3',
-      2 => 'group_header_setting_2',
+      1 => 'group_header_setting_2',
+      2 => 'group_header_setting_3',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -1101,8 +1101,8 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Колонтитулы',
     'weight' => '5',
     'children' => array(
-      0 => 'group_header_number',
-      1 => 'group_header_filter',
+      0 => 'group_header_filter',
+      1 => 'group_header_number',
       2 => 'group_header_setting',
     ),
     'format_type' => 'div',
@@ -1203,6 +1203,7 @@ function demand_create_content_type__field_group_info() {
     'weight' => '154',
     'children' => array(
       0 => 'field_list_number_1',
+      1 => 'field_list_number_type',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -1547,8 +1548,8 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Колонки',
     'weight' => '98',
     'children' => array(
-      0 => 'group_main_columns_r2',
-      1 => 'group_main_columns_f2',
+      0 => 'group_main_columns_f2',
+      1 => 'group_main_columns_r2',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -2122,10 +2123,10 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Основной текст',
     'weight' => '6',
     'children' => array(
-      0 => 'group_main_margins',
-      1 => 'group_main_interval',
-      2 => 'group_main_columns',
-      3 => 'group_main_font',
+      0 => 'group_main_columns',
+      1 => 'group_main_font',
+      2 => 'group_main_interval',
+      3 => 'group_main_margins',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -3138,13 +3139,13 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Картинки',
     'weight' => '10',
     'children' => array(
-      0 => 'group_pic_size',
+      0 => 'group_pic_align',
       1 => 'group_pic_border',
-      2 => 'group_pic_align',
+      2 => 'group_pic_indents',
       3 => 'group_pic_label',
       4 => 'group_pic_number',
-      5 => 'group_table',
-      6 => 'group_pic_indents',
+      5 => 'group_pic_size',
+      6 => 'group_table',
     ),
     'format_type' => 'div',
     'format_settings' => array(

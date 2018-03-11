@@ -36,7 +36,9 @@ function company_info_user_default_permissions() {
   // Exported permission: 'view own company_info profile'.
   $permissions['view own company_info profile'] = array(
     'name' => 'view own company_info profile',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'profile2',
   );
 

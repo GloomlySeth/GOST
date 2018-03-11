@@ -7,11 +7,13 @@
 include_once 'load_documents.features.inc';
 
 function load_documents_file_insert($file) {
-  $file->origname = basename($file->filename, ".docx") .
+  if($file->source == 'upload ') {
+    $file->origname = basename($file->filename, ".docx") .
     "_" . time() . ".docx";
-  $file->filename = $file->origname;
+    $file->filename = $file->origname;
 
-  file_save($file);
+    file_save($file);
 
-  $file->status = FILE_STATUS_PERMANENT;
+    $file->status = FILE_STATUS_PERMANENT;
+  }
 }
