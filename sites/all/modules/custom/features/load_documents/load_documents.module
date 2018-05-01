@@ -8,10 +8,20 @@ include_once 'load_documents.features.inc';
 
 function load_documents_file_insert($file) {
   if($file->source == 'upload') {
-    $file->origname = basename($file->filename, ".docx") .
-    "_" . time() . ".docx";
-    $file->filename = $file->origname;
+  global $user;
 
+	$fid = db_select('file_managed', 'f')
+	->fields('f', array('fid'))
+	->condition('f.origname', $file->filename)
+	->condition('f.uid', $user->uid)
+	->execute()
+	->fetchCol();
+	
+  if($fid > 1) {
+    $file_old = file_load(min($fid));
+	file_delete($file_old);
+  };
+  
     file_save($file);
 
     $file->status = FILE_STATUS_PERMANENT;
