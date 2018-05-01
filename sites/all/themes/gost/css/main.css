@@ -445,7 +445,7 @@ body {
     text-align: left !important;
     vertical-align: top;
     width: 140px;
-    margin: 24px 0;
+    margin: 0;
     color: rgba(0, 0, 0, .54);
     box-sizing: content-box;
 }
@@ -508,7 +508,12 @@ body {
 #edit-field-main-font-align-und-26 + label,
 #edit-field-table-label-align-und-26 + label,
 #edit-field-pic-align-pic-und-23 + label,
-#edit-field-pic-label-align-und-23 + label {
+#edit-field-list-font-align-und-26 + label span,
+#edit-field-number-font-align-und-26 + label span,
+#edit-field-title-font-align-und-26 + label span,
+#edit-field-pic-label-align-und-26 + label span,
+#edit-field-contents-font-align-und-26 + label span,
+#edit-field-table-number-align-und-26 + label span {
     background: url("../../gost/images/editor_-_demand_create/u101.png") no-repeat;
 }
 
@@ -521,20 +526,43 @@ body {
 #edit-field-main-font-align-und-26:checked + label,
 #edit-field-table-label-align-und-26:checked + label,
 #edit-field-pic-align-pic-und-23:checked + label,
-#edit-field-pic-label-align-und-23:checked + label {
+#edit-field-number-font-align-und-26:checked + label span,
+#edit-field-title-font-align-und-26:checked + label span,
+#edit-field-pic-label-align-und-26:checked + label span,
+#edit-field-contents-font-align-und-26:checked + label span,
+#edit-field-table-number-align-und-26:checked + label span,
+#edit-field-list-font-align-und-26:checked + label span {
     background: url('../images/editor_-_demand_create/u101_mouseOver.png') no-repeat;
 }
 
+#edit-field-number-font-align-und-28 + label span,
+#edit-field-title-font-align-und-28 + label span,
+#edit-field-pic-label-align-und-28 + label span,
+#edit-field-contents-font-align-und-28 + label span,
+#edit-field-table-number-align-und-28 + label span,
+#edit-field-list-font-align-und-28 + label span,
 #edit-field-main-font-align-und-28 + label,
 #edit-field-table-label-align-und-28 + label {
     background: url('../images/editor_-_demand_create/u105.png') no-repeat;
 }
 
+#edit-field-number-font-align-und-28:checked + label span,
+#edit-field-title-font-align-und-28:checked + label span,
+#edit-field-pic-label-align-und-28:checked + label span,
+#edit-field-contents-font-align-und-28:checked + label span,
+#edit-field-table-number-align-und-28:checked + label span,
+#edit-field-list-font-align-und-28:checked + label span,
 #edit-field-main-font-align-und-28:checked + label,
 #edit-field-table-label-align-und-28:checked + label {
     background: url('../images/editor_-_demand_create/u105_mouseOver.png') no-repeat;
 }
 
+#edit-field-number-font-align-und-27 + label span,
+#edit-field-title-font-align-und-27 + label span,
+#edit-field-pic-label-align-und-27 + label span,
+#edit-field-contents-font-align-und-27 + label span,
+#edit-field-table-number-align-und-27 + label span,
+#edit-field-list-font-align-und-27 + label span,
 #edit-field-header-setting-align-und-27 + label span,
 #edit-field-table-label-align-und-27 + label span,
 #edit-field-table-label-continue2-und-24 + label span,
@@ -542,15 +570,16 @@ body {
 #edit-profile-demand-create-field-pic-align-pic-und-3 + label,
 #edit-profile-demand-create-field-header-setting-align-und-3 + label,
 #edit-field-main-font-align-und-27 + label,
-#edit-field-pic-align-pic-und-24 + label,
-#edit-field-pic-label-align-und-24 + label {
+#edit-field-pic-align-pic-und-24 + label {
     background: url('../images/editor_-_demand_create/u99.png') no-repeat;
 }
 
- {
-    background-image: url(../images/editor_-_demand_create/u99.png);
-}
-
+#edit-field-number-font-align-und-27:checked + label span,
+#edit-field-title-font-align-und-27:checked + label span,
+#edit-field-pic-label-align-und-27:checked + label span,
+#edit-field-contents-font-align-und-27:checked + label span,
+#edit-field-table-number-align-und-27:checked + label span,
+#edit-field-list-font-align-und-27:checked + label span,
 #edit-field-header-setting-align-und-27:checked + label span,
 #edit-field-table-label-align-und-27:checked + label span,
 #edit-field-table-label-continue2-und-24:checked + label span,
@@ -559,11 +588,16 @@ body {
 #edit-profile-demand-create-field-header-setting-align-und-3:checked + label,
 #edit-field-main-font-align-und-27:checked + label,
 #edit-field-table-label-align-und-27:checked + label,
-#edit-field-pic-align-pic-und-24:checked + label,
-#edit-field-pic-label-align-und-24:checked + label {
+#edit-field-pic-align-pic-und-24:checked + label {
     background: url('../images/editor_-_demand_create/u99_mouseOver.png') no-repeat;
 }
 
+#edit-field-number-font-align-und-29 + label span,
+#edit-field-title-font-align-und-29 + label span,
+#edit-field-pic-label-align-und-29 + label span,
+#edit-field-contents-font-align-und-29 + label span,
+#edit-field-table-number-align-und-29 + label span,
+#edit-field-list-font-align-und-29 + label span,
 #edit-field-header-setting-align-und-29 + label span,
 #edit-field-table-label-align-und-30 + label span,
 #edit-field-table-label-continue2-und-25 + label span,
@@ -573,11 +607,16 @@ body {
 #edit-profile-demand-create-field-main-font-align-und-31 + label,
 #edit-field-table-label-align-und-29 + label,
 #edit-field-main-font-align-und-29 + label,
-#edit-field-pic-align-pic-und-25 + label,
-#edit-field-pic-label-align-und-25 + label {
+#edit-field-pic-align-pic-und-25 + label {
     background: url('../images/editor_-_demand_create/u103.png') no-repeat;
 }
 
+#edit-field-number-font-align-und-29:checked + label span,
+#edit-field-title-font-align-und-29:checked + label span,
+#edit-field-pic-label-align-und-29:checked + label span,
+#edit-field-contents-font-align-und-29:checked + label span,
+#edit-field-table-number-align-und-29:checked + label span,
+#edit-field-list-font-align-und-29:checked + label span,
 #edit-field-header-setting-align-und-29:checked + label span,
 #edit-field-table-label-align-und-30:checked + label span,
 #edit-field-table-label-continue2-und-25:checked + label span,
@@ -587,41 +626,76 @@ body {
 #edit-profile-demand-create-field-main-font-align-und-31:checked + label span,
 #edit-field-table-label-align-und-29:checked + label,
 #edit-field-main-font-align-und-29:checked + label,
-#edit-field-pic-align-pic-und-25:checked + label,
-#edit-field-pic-label-align-und-25:checked + label {
+#edit-field-pic-align-pic-und-25:checked + label {
     background: url('../images/editor_-_demand_create/u103_mouseOver.png') no-repeat;
 }
 
+#edit-field-number-font-typeface-und-51 + label,
+#edit-field-title-font-typeface-und-51 + label,
+#edit-field-pic-label-typeface-und-51 + label,
+#edit-field-contents-font-typeface-und-51 + label,
+#edit-field-table-number-typeface-und-51 + label,
+#edit-field-list-font-typeface-und-51 + label,
 #edit-field-table-label-typeface-und-51 + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-51 + label,
 #edit-field-main-font-typeface-und-51 + label {
     background: url('../images/editor_-_demand_create/u107.png') no-repeat;
 }
 
+#edit-field-number-font-typeface-und-51:checked + label,
+#edit-field-title-font-typeface-und-51:checked + label,
+#edit-field-pic-label-typeface-und-51:checked + label,
+#edit-field-contents-font-typeface-und-51:checked + label,
+#edit-field-table-number-typeface-und-51:checked + label,
+#edit-field-list-font-typeface-und-51:checked + label,
 #edit-field-table-label-typeface-und-51:checked + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-51:checked + label,
 #edit-field-main-font-typeface-und-51:checked + label {
     background: url('../images/editor_-_demand_create/u107_mouseOver.png') no-repeat;
 }
 
+#edit-field-number-font-typeface-und-49 + label,
+#edit-field-title-font-typeface-und-49 + label,
+#edit-field-pic-label-typeface-und-49 + label,
+#edit-field-contents-font-typeface-und-49 + label,
+#edit-field-table-number-typeface-und-49 + label,
+#edit-field-list-font-typeface-und-49 + label,
 #edit-field-table-label-typeface-und-49 + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-49 + label,
 #edit-field-main-font-typeface-und-49 + label {
     background: url('../images/editor_-_demand_create/u109.png') no-repeat;
 }
 
+#edit-field-number-font-typeface-und-49:checked + label,
+#edit-field-title-font-typeface-und-49:checked + label,
+#edit-field-pic-label-typeface-und-49:checked + label,
+#edit-field-contents-font-typeface-und-49:checked + label,
+#edit-field-table-number-typeface-und-49:checked + label,
+#edit-field-list-font-typeface-und-49:checked + label,
 #edit-field-table-label-typeface-und-49:checked + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-49:checked + label,
 #edit-field-main-font-typeface-und-49:checked + label {
     background: url('../images/editor_-_demand_create/u109_mouseOver.png') no-repeat;
 }
 
+#edit-field-number-font-typeface-und-50 + label,
+#edit-field-title-font-typeface-und-50 + label,
+#edit-field-pic-label-typeface-und-50 + label,
+#edit-field-contents-font-typeface-und-50 + label,
+#edit-field-table-number-typeface-und-50 + label,
+#edit-field-list-font-typeface-und-50 + label,
 #edit-field-table-label-typeface-und-50 + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-50 + label,
 #edit-field-main-font-typeface-und-50 + label {
     background: url('../images/editor_-_demand_create/u111.png') no-repeat;
 }
 
+#edit-field-number-font-typeface-und-50:checked + label,
+#edit-field-title-font-typeface-und-50:checked + label,
+#edit-field-pic-label-typeface-und-50:checked + label,
+#edit-field-contents-font-typeface-und-50:checked + label,
+#edit-field-table-number-typeface-und-50:checked + label,
+#edit-field-list-font-typeface-und-50:checked + label,
 #edit-field-table-label-typeface-und-50:checked + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-50:checked + label,
 #edit-field-main-font-typeface-und-50:checked + label {
@@ -688,6 +762,10 @@ body {
 .page-node-add-demand-create .form-item-profile-demand-create-field-pic-number-type-und label,
 .page-node-add-demand-create .form-item-profile-demand-create-field-pic-indents-top-und-0-value label,
 .page-node-add-demand-create .form-item-profile-demand-create-field-table-label-location-und label,
+.page-node-add-demand-create .form-item-profile-demand-create-field-number-font-type-und label,
+.page-node-add-demand-create .form-item-profile-demand-create-field-title-font-type-und label,
+.page-node-add-demand-create .form-item-profile-demand-create-field-pic-label-type-und label,
+.page-node-add-demand-create .form-item-profile-demand-create-field-contents-font-type-und label,
 .page-node-add-demand-create .form-item-profile-demand-create-field-table-number-type-und label,
 .page-node-add-demand-create .form-item-profile-demand-create-field-formula-indents-text-und-0-value label,
 .page-node-add-demand-create .form-item-profile-demand-create-field-formula-number-type-und label,
@@ -696,6 +774,10 @@ body {
 .page-node-add-demand-create .n_visibl_n .form-item-profile-demand-create-field-number-main-view-und,
 .page-node-add-demand-create .n_visibl_n .form-item-profile-demand-create-field-title-number-view-und,
 .page-node-add-demand-create .n_visibl_n .form-item-profile-demand-create-field-pic-number-view-und,
+.page-node-add-demand-create .n_visibl_n .form-item-profile-demand-create-field-number-font-view-und,
+.page-node-add-demand-create .n_visibl_n .form-item-profile-demand-create-field-title-font-view-und,
+.page-node-add-demand-create .n_visibl_n .form-item-profile-demand-create-field-pic-label-view-und,
+.page-node-add-demand-create .n_visibl_n .form-item-profile-demand-create-field-contents-font-view-und,
 .page-node-add-demand-create .n_visibl_n .form-item-profile-demand-create-field-table-number-view-und,
 .page-node-add-demand-create .n_visibl_n .form-item-profile-demand-create-field-formula-number-view-und,
 .page-node-add-demand-create .n_visibl_n .form-item-profile-demand-create-field-list-number-view-und,
@@ -708,12 +790,20 @@ body {
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios:nth-child(2) label,
 #edit-profile-demand-create-field-list-number-view-und label,
 #edit-profile-demand-create-field-formula-number-view-und label,
+#edit-profile-demand-create-field-number-font-view-und label,
+#edit-profile-demand-create-field-title-font-view-und label,
+#edit-profile-demand-create-field-pic-label-view-und label,
+#edit-profile-demand-create-field-contents-font-view-und label,
 #edit-profile-demand-create-field-table-number-view-und label,
 #edit-profile-demand-create-field-pic-number-view-und label,
 #edit-profile-demand-create-field-title-number-view-und label,
 #edit-profile-demand-create-field-number-main-view-und label,
 .form-item.form-type-radio.form-item-field-number-main-view-und label,
 #edit-field-pic-number-view-und label,
+#edit-field-number-font-view-und label,
+#edit-field-title-font-view-und label,
+#edit-field-pic-label-view-und label,
+#edit-field-contents-font-view-und label,
 #edit-field-table-number-view-und label,
 #edit-field-list-number-view-und label {
     width: 76px;
@@ -725,12 +815,20 @@ body {
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(2) label,
 #edit-profile-demand-create-field-list-number-view-und-12 + label,
 #edit-profile-demand-create-field-formula-number-view-und-12 + label,
+#edit-profile-demand-create-field-number-font-view-und-12 + label,
+#edit-profile-demand-create-field-title-font-view-und-12 + label,
+#edit-profile-demand-create-field-pic-label-view-und-12 + label,
+#edit-profile-demand-create-field-contents-font-view-und-12 + label,
 #edit-profile-demand-create-field-table-number-view-und-12 + label,
 #edit-profile-demand-create-field-pic-number-view-und-12 + label,
 #edit-profile-demand-create-field-title-number-view-und-12 + label,
 #edit-profile-demand-create-field-number-main-view-und-12 + label,
 #edit-field-number-main-view-und-7 + label,
 #edit-field-pic-number-view-und-7 + label,
+#edit-field-number-font-view-und-7 + label,
+#edit-field-title-font-view-und-7 + label,
+#edit-field-pic-label-view-und-7 + label,
+#edit-field-contents-font-view-und-7 + label,
 #edit-field-table-number-view-und-7 + label,
 #edit-field-list-number-view-und-7 + label {
     background: url('../images/editor_-_demand_create/u269.jpg') no-repeat;
@@ -740,12 +838,20 @@ body {
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(3) label,
 #edit-profile-demand-create-field-list-number-view-und-13 + label,
 #edit-profile-demand-create-field-formula-number-view-und-13 + label,
+#edit-profile-demand-create-field-number-font-view-und-13 + label,
+#edit-profile-demand-create-field-title-font-view-und-13 + label,
+#edit-profile-demand-create-field-pic-label-view-und-13 + label,
+#edit-profile-demand-create-field-contents-font-view-und-13 + label,
 #edit-profile-demand-create-field-table-number-view-und-13 + label,
 #edit-profile-demand-create-field-pic-number-view-und-13 + label,
 #edit-profile-demand-create-field-title-number-view-und-13 + label,
 #edit-profile-demand-create-field-number-main-view-und-13 + label,
 #edit-field-number-main-view-und-8 + label,
 #edit-field-pic-number-view-und-8 + label,
+#edit-field-number-font-view-und-8 + label,
+#edit-field-title-font-view-und-8 + label,
+#edit-field-pic-label-view-und-8 + label,
+#edit-field-contents-font-view-und-8 + label,
 #edit-field-table-number-view-und-8 + label,
 #edit-field-list-number-view-und-8 + label {
     background: url('../images/editor_-_demand_create/u271.jpg') no-repeat;
@@ -755,12 +861,20 @@ body {
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(4) label,
 #edit-profile-demand-create-field-list-number-view-und-14 + label,
 #edit-profile-demand-create-field-formula-number-view-und-14 + label,
+#edit-profile-demand-create-field-number-font-view-und-14 + label,
+#edit-profile-demand-create-field-title-font-view-und-14 + label,
+#edit-profile-demand-create-field-pic-label-view-und-14 + label,
+#edit-profile-demand-create-field-contents-font-view-und-14 + label,
 #edit-profile-demand-create-field-table-number-view-und-14 + label,
 #edit-profile-demand-create-field-pic-number-view-und-14 + label,
 #edit-profile-demand-create-field-title-number-view-und-14 + label,
 #edit-profile-demand-create-field-number-main-view-und-14 + label,
 #edit-field-number-main-view-und-9 + label,
 #edit-field-pic-number-view-und-9 + label,
+#edit-field-number-font-view-und-9 + label,
+#edit-field-title-font-view-und-9 + label,
+#edit-field-pic-label-view-und-9 + label,
+#edit-field-contents-font-view-und-9 + label,
 #edit-field-table-number-view-und-9 + label,
 #edit-field-list-number-view-und-9 + label {
     background: url('../images/editor_-_demand_create/u273.jpg') no-repeat;
@@ -770,12 +884,20 @@ body {
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(5) label,
 #edit-profile-demand-create-field-list-number-view-und-15 + label,
 #edit-profile-demand-create-field-formula-number-view-und-15 + label,
+#edit-profile-demand-create-field-number-font-view-und-15 + label,
+#edit-profile-demand-create-field-title-font-view-und-15 + label,
+#edit-profile-demand-create-field-pic-label-view-und-15 + label,
+#edit-profile-demand-create-field-contents-font-view-und-15 + label,
 #edit-profile-demand-create-field-table-number-view-und-15 + label,
 #edit-profile-demand-create-field-pic-number-view-und-15 + label,
 #edit-profile-demand-create-field-title-number-view-und-15 + label,
 #edit-profile-demand-create-field-number-main-view-und-15 + label,
 #edit-field-number-main-view-und-10 + label,
 #edit-field-pic-number-view-und-10 + label,
+#edit-field-number-font-view-und-10 + label,
+#edit-field-title-font-view-und-10 + label,
+#edit-field-pic-label-view-und-10 + label,
+#edit-field-contents-font-view-und-10 + label,
 #edit-field-table-number-view-und-10 + label,
 #edit-field-list-number-view-und-10 + label {
     background: url('../images/editor_-_demand_create/u275.jpg') no-repeat;
@@ -785,12 +907,20 @@ body {
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(6) label,
 #edit-profile-demand-create-field-list-number-view-und-16 + label,
 #edit-profile-demand-create-field-formula-number-view-und-16 + label,
+#edit-profile-demand-create-field-number-font-view-und-16 + label,
+#edit-profile-demand-create-field-title-font-view-und-16 + label,
+#edit-profile-demand-create-field-pic-label-view-und-16 + label,
+#edit-profile-demand-create-field-contents-font-view-und-16 + label,
 #edit-profile-demand-create-field-table-number-view-und-16 + label,
 #edit-profile-demand-create-field-pic-number-view-und-16 + label,
 #edit-profile-demand-create-field-title-number-view-und-16 + label,
 #edit-profile-demand-create-field-number-main-view-und-16 + label,
 #edit-field-number-main-view-und-11 + label,
 #edit-field-pic-number-view-und-11 + label,
+#edit-field-number-font-view-und-11 + label,
+#edit-field-title-font-view-und-11 + label,
+#edit-field-pic-label-view-und-11 + label,
+#edit-field-contents-font-view-und-11 + label,
 #edit-field-table-number-view-und-11 + label,
 #edit-field-list-number-view-und-11 + label {
     background: url('../images/editor_-_demand_create/u277.jpg') no-repeat;
@@ -800,12 +930,20 @@ body {
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(7) label,
 #edit-profile-demand-create-field-list-number-view-und-17 + label,
 #edit-profile-demand-create-field-formula-number-view-und-17 + label,
+#edit-profile-demand-create-field-number-font-view-und-17 + label,
+#edit-profile-demand-create-field-title-font-view-und-17 + label,
+#edit-profile-demand-create-field-pic-label-view-und-17 + label,
+#edit-profile-demand-create-field-contents-font-view-und-17 + label,
 #edit-profile-demand-create-field-table-number-view-und-17 + label,
 #edit-profile-demand-create-field-pic-number-view-und-17 + label,
 #edit-profile-demand-create-field-title-number-view-und-17 + label,
 #edit-profile-demand-create-field-number-main-view-und-17 + label,
 #edit-field-number-main-view-und-12 + label,
 #edit-field-pic-number-view-und-12 + label,
+#edit-field-number-font-view-und-12 + label,
+#edit-field-title-font-view-und-12 + label,
+#edit-field-pic-label-view-und-12 + label,
+#edit-field-contents-font-view-und-12 + label,
 #edit-field-table-number-view-und-12 + label,
 #edit-field-list-number-view-und-12 + label {
     background: url('../images/editor_-_demand_create/u279.jpg') no-repeat;
@@ -815,12 +953,20 @@ body {
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(8) label,
 #edit-profile-demand-create-field-list-number-view-und-18 + label,
 #edit-profile-demand-create-field-formula-number-view-und-18 + label,
+#edit-profile-demand-create-field-number-font-view-und-18 + label,
+#edit-profile-demand-create-field-title-font-view-und-18 + label,
+#edit-profile-demand-create-field-pic-label-view-und-18 + label,
+#edit-profile-demand-create-field-contents-font-view-und-18 + label,
 #edit-profile-demand-create-field-table-number-view-und-18 + label,
 #edit-profile-demand-create-field-pic-number-view-und-18 + label,
 #edit-profile-demand-create-field-title-number-view-und-18 + label,
 #edit-profile-demand-create-field-number-main-view-und-18 + label,
 #edit-field-number-main-view-und-13 + label,
 #edit-field-pic-number-view-und-13 + label,
+#edit-field-number-font-view-und-13 + label,
+#edit-field-title-font-view-und-13 + label,
+#edit-field-pic-label-view-und-13 + label,
+#edit-field-contents-font-view-und-13 + label,
 #edit-field-table-number-view-und-13 + label,
 #edit-field-list-number-view-und-13 + label {
     background: url('../images/editor_-_demand_create/u281.jpg') no-repeat;
@@ -830,12 +976,20 @@ body {
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(9) label,
 #edit-profile-demand-create-field-list-number-view-und-19 + label,
 #edit-profile-demand-create-field-formula-number-view-und-19 + label,
+#edit-profile-demand-create-field-number-font-view-und-19 + label,
+#edit-profile-demand-create-field-title-font-view-und-19 + label,
+#edit-profile-demand-create-field-pic-label-view-und-19 + label,
+#edit-profile-demand-create-field-contents-font-view-und-19 + label,
 #edit-profile-demand-create-field-table-number-view-und-19 + label,
 #edit-profile-demand-create-field-pic-number-view-und-19 + label,
 #edit-profile-demand-create-field-title-number-view-und-19 + label,
 #edit-profile-demand-create-field-number-main-view-und-19 + label,
 #edit-field-number-main-view-und-14 + label,
 #edit-field-pic-number-view-und-14 + label,
+#edit-field-number-font-view-und-14 + label,
+#edit-field-title-font-view-und-14 + label,
+#edit-field-pic-label-view-und-14 + label,
+#edit-field-contents-font-view-und-14 + label,
 #edit-field-table-number-view-und-14 + label,
 #edit-field-list-number-view-und-14 + label {
     background: url('../images/editor_-_demand_create/u283.jpg') no-repeat;
@@ -1079,27 +1233,27 @@ body {
 }
 
 #views-form-document-list-page .views-field-views-bulk-operations {
-	width: 5%
+    width: 5%
 }
 
 #views-form-document-list-page .views-field-filesize {
-	width: 13%
+    width: 13%
 }
 
 #views-form-document-list-page .views-field-timestamp {
-	width: 16%
+    width: 16%
 }
 
 #views-form-document-list-page .views-field-status {
-	width: 17%
+    width: 17%
 }
 
 #views-form-document-list-page .views-field-demand {
-	width: 19%
+    width: 19%
 }
 
 #views-form-document-list-page .views-field-nothing {
-	width: 7%
+    width: 7%
 }
 
 #edit-actionprocessing-my-custom-action {
@@ -1132,8 +1286,8 @@ body {
     color: #333;
 }
 
-#views-exposed-form-document-list-page .views-widget .form-type-radio{
-	margin-right: 5px;
+#views-exposed-form-document-list-page .views-widget .form-type-radio {
+    margin-right: 5px;
 }
 
 .view-id-document_list .views-table tr .views-field-filename-1 {
@@ -1284,7 +1438,19 @@ body {
 #edit-field-header-setting-typeface-und label span,
 #edit-field-table-label-typeface label span,
 .form-item.form-type-radio.form-item-field-main-columns-text-und label span,
-#edit-field-table-label-continue2-und label span {
+#edit-field-table-label-continue2-und label span,
+#edit-field-number-font-align-und label span,
+#edit-field-title-font-align-und label span,
+#edit-field-pic-label-align-und label span,
+#edit-field-contents-font-align-und label span,
+#edit-field-table-number-align-und label span,
+#edit-field-list-font-align-und label span,
+#edit-field-number-font-typeface-und label,
+#edit-field-title-font-typeface-und label,
+#edit-field-pic-label-typeface-und label,
+#edit-field-contents-font-typeface-und label,
+#edit-field-table-number-typeface-und label,
+#edit-field-list-font-typeface-und label {
     position: absolute;
     background-repeat: no-repeat;
     width: 27px;
@@ -1306,31 +1472,67 @@ body {
     background-image: url(../images/editor_-_demand_create/u105_mouseOver.png);
 }
 
+#edit-field-number-font-typeface-und-51 + label span,
+#edit-field-title-font-typeface-und-51 + label span,
+#edit-field-pic-label-typeface-und-51 + label span,
+#edit-field-contents-font-typeface-und-51 + label span,
+#edit-field-table-number-typeface-und-51 + label span,
+#edit-field-list-font-typeface-und-51 + label span,
 #edit-field-header-setting-typeface-und-51 + label span,
 #edit-field-table-label-typeface-und-8 + label span {
     background-image: url(../images/editor_-_demand_create/u107.png);
 }
 
+#edit-field-number-font-typeface-und-51:checked + label span,
+#edit-field-title-font-typeface-und-51:checked + label span,
+#edit-field-pic-label-typeface-und-51:checked + label span,
+#edit-field-contents-font-typeface-und-51:checked + label span,
+#edit-field-table-number-typeface-und-51:checked + label span,
+#edit-field-list-font-typeface-und-51:checked + label span,
 #edit-field-header-setting-typeface-und-51:checked + label span,
 #edit-field-table-label-typeface-und-8:checked + label span {
     background-image: url(../images/editor_-_demand_create/u107_mouseOver.png);
 }
 
+#edit-field-number-font-typeface-und-49 + label span,
+#edit-field-title-font-typeface-und-49 + label span,
+#edit-field-pic-label-typeface-und-49 + label span,
+#edit-field-contents-font-typeface-und-49 + label span,
+#edit-field-table-number-typeface-und-49 + label span,
+#edit-field-list-font-typeface-und-49 + label span,
 #edit-field-header-setting-typeface-und-49 + label span,
 #edit-field-table-label-typeface-und-9 + label span {
     background-image: url(../images/editor_-_demand_create/u109.png);
 }
 
+#edit-field-number-font-typeface-und-49:checked + label span,
+#edit-field-title-font-typeface-und-49:checked + label span,
+#edit-field-pic-label-typeface-und-49:checked + label span,
+#edit-field-contents-font-typeface-und-49:checked + label span,
+#edit-field-table-number-typeface-und-49:checked + label span,
+#edit-field-list-font-typeface-und-49:checked + label span,
 #edit-field-header-setting-typeface-und-49:checked + label span,
 #edit-field-table-label-typeface-und-9:checked + label span {
     background-image: url(../images/editor_-_demand_create/u109_mouseOver.png);
 }
 
+#edit-field-number-font-typeface-und-50 + label span,
+#edit-field-title-font-typeface-und-50 + label span,
+#edit-field-pic-label-typeface-und-50 + label span,
+#edit-field-contents-font-typeface-und-50 + label span,
+#edit-field-table-number-typeface-und-50 + label span,
+#edit-field-list-font-typeface-und-50 + label span,
 #edit-field-header-setting-typeface-und-50 + label span,
 #edit-field-table-label-typeface-und-10 + label span {
     background-image: url(../images/editor_-_demand_create/u111.png);
 }
 
+#edit-field-number-font-typeface-und-50:checked + label span,
+#edit-field-title-font-typeface-und-50:checked + label span,
+#edit-field-pic-label-typeface-und-50:checked + label span,
+#edit-field-contents-font-typeface-und-50:checked + label span,
+#edit-field-table-number-typeface-und-50:checked + label span,
+#edit-field-list-font-typeface-und-50:checked + label span,
 #edit-field-header-setting-typeface-und-50:checked + label span,
 #edit-field-table-label-typeface-und-10:checked + label span {
     background-image: url(../images/editor_-_demand_create/u111_mouseOver.png);
@@ -1343,6 +1545,12 @@ body {
 #edit-field-table-label-align-und-29 + label,
 #edit-field-table-label-align-und-30 + label,
 #edit-field-header-setting-typeface-und div label,
+#edit-field-number-font-typeface-und div label span,
+#edit-field-title-font-typeface-und div label span,
+#edit-field-pic-label-typeface-und div label span,
+#edit-field-contents-font-typeface-und div label span,
+#edit-field-table-number-typeface-und div label span,
+#edit-field-list-font-typeface-und div label span,
 #edit-field-table-label-continue2-und div {
     position: relative;
     width: 27px;
@@ -1376,6 +1584,12 @@ body {
     display: none;
 }
 
+.form-item.form-type-radio.form-item-field-number-font-align-und,
+.form-item.form-type-radio.form-item-field-title-font-align-und,
+.form-item.form-type-radio.form-item-field-pic-label-align-und,
+.form-item.form-type-radio.form-item-field-contents-font-align-und,
+.form-item.form-type-radio.form-item-field-table-number-align-und,
+.form-item.form-type-radio.form-item-field-list-font-align-und,
 .form-item.form-type-radio.form-item-field-main-font-align-und,
 .form-item.form-type-radio.form-item-field-header-setting-align-und,
 .form-item.form-type-radio.form-item-field-table-label-align-und,
@@ -1386,12 +1600,24 @@ body {
     height: 30px;
 }
 
+.field-name-field-number-font-typeface div,
+.field-name-field-title-font-typeface div,
+.field-name-field-pic-label-typeface div,
+.field-name-field-contents-font-typeface div,
+.field-name-field-table-number-typeface div,
+.field-name-field-list-font-typeface div,
 .required-fields.group-header-setting-r14.field-group-html-element.section-content-r div,
 .required-fields.group-table-label-14.field-group-html-element.section-content-r div {
     width: 100px;
     display: flex;
 }
 
+#edit-field-list-font-color > div,
+#edit-field-table-number-color > div,
+#edit-field-pic-label-color > div,
+#edit-field-contents-font-color > div,
+#edit-field-title-font-color > div,
+#edit-field-number-font-color > div,
 #edit-field-header-setting-color > div,
 #edit-field-table-label-color > div,
 #edit-field-table-label-background > div {
@@ -1460,6 +1686,10 @@ body {
 #edit-field-title-number-r-und-0-field-title-number-view2-und > div,
 #edit-field-number-main-view-und > div,
 #edit-field-pic-number-view-und > div,
+#edit-field-number-font-view-und > div,
+#edit-field-title-font-view-und > div,
+#edit-field-pic-label-view-und > div,
+#edit-field-contents-font-view-und > div,
 #edit-field-table-number-view-und > div,
 #edit-field-list-number-view-und > div {
     margin-right: 2px;
@@ -1605,24 +1835,36 @@ body {
     border-color: #ffffff;
 }
 
-#demand-create-node-form  .group-main-font-r15,
-#demand-create-node-form  .group-main-font-r16 {
-	vertical-align: top;
+#demand-create-node-form .group-main-font-r15,
+#demand-create-node-form .group-main-font-r16 {
+    vertical-align: top;
 }
 
-#demand-create-node-form  #edit-field-main-font-color-und,
-#demand-create-node-form  #edit-field-table-label-color-und,
-#demand-create-node-form  #edit-field-header-setting-color-und {
-	background-image: url('/sites/all/themes/gost/images/editor_-_demand_create/color.png');
-	width: 40px;
+#demand-create-node-form #edit-field-list-font-color-und,
+#demand-create-node-form #edit-field-table-number-color-und,
+#demand-create-node-form #edit-field-pic-label-color-und,
+#demand-create-node-form #edit-field-contents-font-color-und,
+#demand-create-node-form #edit-field-title-font-color-und,
+#demand-create-node-form #edit-field-number-font-color-und,
+#demand-create-node-form #edit-field-main-font-color-und,
+#demand-create-node-form #edit-field-table-label-color-und,
+#demand-create-node-form #edit-field-header-setting-color-und {
+    background-image: url('/sites/all/themes/gost/images/editor_-_demand_create/color.png');
+    width: 40px;
     height: 32px;
 }
 
-#demand-create-node-form  #edit-field-main-font-background-und,
-#demand-create-node-form  #edit-field-table-label-background-und,
-#demand-create-node-form  #edit-field-header-setting-background-und {
-	background-image: url('/sites/all/themes/gost/images/editor_-_demand_create/colorText.png');
-	width: 40px;
+#demand-create-node-form #edit-field-list-font-background-und,
+#demand-create-node-form #edit-field-table-number-background-und,
+#demand-create-node-form #edit-field-pic-label-background-und,
+#demand-create-node-form #edit-field-contents-font-background-und,
+#demand-create-node-form #edit-field-title-font-background-und,
+#demand-create-node-form #edit-field-number-font-background-und,
+#demand-create-node-form #edit-field-main-font-background-und,
+#demand-create-node-form #edit-field-table-label-background-und,
+#demand-create-node-form #edit-field-header-setting-background-und {
+    background-image: url('/sites/all/themes/gost/images/editor_-_demand_create/colorText.png');
+    width: 40px;
     height: 32px;
 }
 
@@ -1636,9 +1878,64 @@ body {
 }
 
 .page-user-edit .tabs.primary {
-	display: none;
+    display: none;
 }
 
 body.page-user-edit-company-info #user-profile-form h2 {
-	display: none;
+    display: none;
+}
+
+#demand-create-node-form .group-title,
+#demand-create-node-form .group-pic,
+#demand-create-node-form .group-formula,
+#demand-create-node-form .group-quotes,
+#demand-create-node-form .section-content-l {
+    clear: left;
+}
+
+#demand-create-node-form .title-left > div:first-child {
+    float: left;
+    height: 90px;
+}
+
+#demand-create-node-form .section-content-l .field-name-field-pic-label-typeface,
+#demand-create-node-form .section-content-l .field-name-field-pic-label-align,
+#demand-create-node-form .section-content-l .field-name-field-pic-label-font,
+#demand-create-node-form .section-content-l .field-name-field-number-font-typeface,
+#demand-create-node-form .section-content-l .field-name-field-number-font-align,
+#demand-create-node-form .section-content-l .field-name-field-number-font-font,
+#demand-create-node-form .section-content-l .field-name-field-title-font-typeface,
+#demand-create-node-form .section-content-l .field-name-field-title-font-align,
+#demand-create-node-form .section-content-l .field-name-field-title-font-font,
+#demand-create-node-form .section-content-l .field-name-field-contents-font-typeface,
+#demand-create-node-form .section-content-l .field-name-field-contents-font-align,
+#demand-create-node-form .section-content-l .field-name-field-contents-font-font,
+#demand-create-node-form .section-content-l .field-name-field-table-number-typeface,
+#demand-create-node-form .section-content-l .field-name-field-table-number-align,
+#demand-create-node-form .section-content-l .field-name-field-table-number-font,
+#demand-create-node-form .section-content-l .field-name-field-list-font-typeface,
+#demand-create-node-form .section-content-l .field-name-field-list-font-align,
+#demand-create-node-form .section-content-l .field-name-field-list-font-font {
+    float: left;
+}
+
+#demand-create-node-form .section-content-l .field-name-field-pic-label-background,
+#demand-create-node-form .section-content-l .field-name-field-pic-label-color,
+#demand-create-node-form .section-content-l .field-name-field-number-font-background,
+#demand-create-node-form .section-content-l .field-name-field-number-font-color,
+#demand-create-node-form .section-content-l .field-name-field-title-font-background,
+#demand-create-node-form .section-content-l .field-name-field-title-font-color,
+#demand-create-node-form .section-content-l .field-name-field-contents-font-background,
+#demand-create-node-form .section-content-l .field-name-field-contents-font-color,
+#demand-create-node-form .section-content-l .field-name-field-table-number-background,
+#demand-create-node-form .section-content-l .field-name-field-table-number-color,
+#demand-create-node-form .section-content-l .field-name-field-list-font-background,
+#demand-create-node-form .section-content-l .field-name-field-list-font-color {
+    float: left;
+    margin-top: 3px;
+}
+
+#demand-create-node-form .title-left > div > div {
+    margin: 0 0 5px 0;
+    padding-right: 7px;
 }
