@@ -241,17 +241,18 @@ function processing_form_submit($form, &$form_state) {
               'right' => is_empty($node, 'field_main_margins_right'),
               'mirror' => is_empty($node, 'field_main_margins_mirror'),
               'str' => is_empty($node, 'field_main_margins_str'),
-              'on' => is_empty($node, 'field_main_margins_on'),
-              'shift' => is_empty($node, 'field_main_margins_shift'),
+              'on' => is_empty($node, 'field_main_margins_on'),              
             ),
             'interval' => array(
               'page' => is_empty($node, 'field_main_interval_page'),
               'page2' => is_empty($node, 'field_main_interval_page2'),
-              'mirror' => is_empty($node, 'field_main_interval_shift'),
+              'mirror' => is_empty($node, 'field_main_interval_mirror'),
               'left' => is_empty($node, 'field_main_interval_left'),
+              'after' => is_empty($node, 'field_main_interval_right'),
               'non' => is_empty($node, 'field_main_interval_non'),
               'shift' => is_empty($node, 'field_main_interval_str'),
               'int' => is_empty($node, 'field_main_interval_int'),
+              'shift' => is_empty($node, 'field_main_margins_shift'),
             ),
           ),
           'number' => array(
@@ -266,6 +267,14 @@ function processing_form_submit($form, &$form_state) {
               'table' => is_empty($node, 'field_number_pattern_table'),
               'own2' => is_empty($node, 'field_number_pattern_own2'),
             ),
+            'font' => array(
+              'font' => is_empty($node, 'field_number_font_font'),
+              'size' => is_empty($node, 'field_number_font_size'),
+              'align' => is_empty($node, 'field_number_font_align'),
+              'typeface' => is_empty($node, 'field_number_font_typeface'),
+              'color' => is_empty($node, 'field_number_font_color'),
+              'background' => is_empty($node, 'field_number_font_background'),
+            ),
           ),
           'title' => array(
             'main' => array(
@@ -273,6 +282,14 @@ function processing_form_submit($form, &$form_state) {
               'pattern' => is_empty($node, 'field_title_main_pattern'),
               'own' => is_empty($node, 'field_title_main_own'),
               'text' => is_empty($node, 'field_title_main_text'),
+            ),
+            'font' => array(
+              'font' => is_empty($node, 'field_title_font_font'),
+              'size' => is_empty($node, 'field_title_font_size'),
+              'align' => is_empty($node, 'field_title_font_align'),
+              'typeface' => is_empty($node, 'field_title_font_typeface'),
+              'color' => is_empty($node, 'field_title_font_color'),
+              'background' => is_empty($node, 'field_title_font_background'),
             ),
             'number' => $title_number,
           ),
@@ -282,6 +299,14 @@ function processing_form_submit($form, &$form_state) {
               'division' => is_empty($node, 'field_contents_main_division'),
               'setting' => is_empty($node, 'field_contents_main_setting'),
               'list' => is_empty($node, 'field_contents_main_list'),
+            ),
+            'font' => array(
+              'font' => is_empty($node, 'field_contents_font_font'),
+              'size' => is_empty($node, 'field_contents_font_size'),
+              'align' => is_empty($node, 'field_contents_font_align'),
+              'typeface' => is_empty($node, 'field_contents_font_typeface'),
+              'color' => is_empty($node, 'field_contents_font_color'),
+              'background' => is_empty($node, 'field_contents_font_background'),
             ),
           ),
           'pic' => array(
@@ -299,8 +324,13 @@ function processing_form_submit($form, &$form_state) {
               'align' => is_empty($node, 'field_pic_align_pic'),
             ),
             'label' => array(
-              'align' => is_empty($node, 'field_pic_label_align'),
               'setting' => is_empty($node, 'field_pic_label_setting'),
+              'font' => is_empty($node, 'field_pic_label_font'),
+              'size' => is_empty($node, 'field_pic_label_size'),
+              'align' => is_empty($node, 'field_pic_label_align'),
+              'typeface' => is_empty($node, 'field_pic_label_typeface'),
+              'color' => is_empty($node, 'field_pic_label_color'),
+              'background' => is_empty($node, 'field_pic_label_background'),
             ),
             'indents' => array(
               'top' => is_empty($node, 'field_pic_indents_top'),
@@ -337,17 +367,25 @@ function processing_form_submit($form, &$form_state) {
               'division' => is_empty($node, 'field_table_number_division'),
               'setting' => is_empty($node, 'field_table_number_setting'),
             ),
+            'font' => array(
+              'font' => is_empty($node, 'field_table_number_font'),
+              'size' => is_empty($node, 'field_table_number_size'),
+              'align' => is_empty($node, 'field_table_number_align'),
+              'typeface' => is_empty($node, 'field_table_number_typeface'),
+              'color' => is_empty($node, 'field_table_number_color'),
+              'background' => is_empty($node, 'field_table_number_background'),
+            ),
           ),
           'formula' => array(
             'indents' => array(
               'text' => is_empty($node, 'field_formula_indents_text'),
               'text2' => is_empty($node, 'field_formula_indents_text2'),
-              'formula' => is_empty($node, 'field_formula_indents_formula'),
+              'formula' => is_empty($node, 'f'),
               'formula2' => is_empty($node, 'field_formula_indents_formula2'),
             ),
             'number' => array(
               'type' => is_empty($node, 'field_formula_number_type'),
-              'view' => is_empty($node, 'field_formula_number_division'),
+              'view' => is_empty($node, 'field_formula_number_view'),
               'division' => is_empty($node, 'field_formula_number_setting'),
             ),
           ),
@@ -359,18 +397,28 @@ function processing_form_submit($form, &$form_state) {
               'main' => is_empty($node, 'field_list_formatting_main'),
               'valid' => is_empty($node, 'field_list_formatting_valid'),
             ),
-            'number' => $list_number,
-          ),
+            'number' => array(
+              'type' => is_empty($node, 'field_list_number_type'),
+              'number' => is_empty($node, 'field_list_number_1'),
+            ),
+            'font' => array(
+              'font' => is_empty($node, 'field_list_font_font'),
+              'size' => is_empty($node, 'field_list_font_size'),
+              'align' => is_empty($node, 'field_list_font_align'),
+              'typeface' => is_empty($node, 'field_list_font_typeface'),
+              'color' => is_empty($node, 'field_list_font_color'),
+              'background' => is_empty($node, 'field_list_font_background'),
+            ),
           'quotes' => array(
             'main' => array(
               'symbol' => is_empty($node, 'field_quotes_main_symbol'),
             ),
           ),
+          ),
         ),
-
       );
       $data = json_encode($processing);
-
+var_dump($data);die();
       $options = array(
         'method' => 'POST',
         'data' => $data,
