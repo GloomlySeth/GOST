@@ -16,8 +16,8 @@ function load_documents_file_insert($file) {
 	->condition('f.uid', $user->uid)
 	->execute()
 	->fetchCol();
-	
-  if($fid > 1) {
+
+  if(count($fid) > 1) {
     $file_old = file_load(min($fid));
 	file_delete($file_old);
   };
