@@ -315,7 +315,7 @@ function demand_create_content_type__form_demand_create_node_form_alter(&$form, 
   $form['field_number_font_color']['und']['#title'] = '';
   unset($form['field_number_font_background']['und']['#options']['_none']);
   $form['field_number_font_background']['und']['#title'] = '';
-    unset($form['field_pic_label_font']['und']['#options']['_none']);
+  unset($form['field_pic_label_font']['und']['#options']['_none']);
   unset($form['field_pic_label_size']['und']['#options']['_none']);
   $form['field_pic_label_font']['und']['#title'] = '';
   $form['field_pic_label_size']['und']['#title'] = '';
@@ -335,4 +335,24 @@ function demand_create_content_type__form_demand_create_node_form_alter(&$form, 
   $form['field_pic_label_color']['und']['#title'] = '';
   unset($form['field_pic_label_background']['und']['#options']['_none']);
   $form['field_pic_label_background']['und']['#title'] = '';
+  unset($form['field_pic_font_font']['und']['#options']['_none']);
+  unset($form['field_pic_font_size']['und']['#options']['_none']);
+  $form['field_pic_font_font']['und']['#title'] = '';
+  $form['field_pic_font_size']['und']['#title'] = '';
+  unset($form['field_pic_font_align']['und']['#options']['_none']);
+  $form['field_pic_font_align']['und']['#options'][26] = '<span></span>';
+  $form['field_pic_font_align']['und']['#options'][27] = '<span></span>';
+  $form['field_pic_font_align']['und']['#options'][28] = '<span></span>';
+  $form['field_pic_font_align']['und']['#options'][29] = '<span></span>';
+  $form['field_pic_font_align']['und']['#title'] = '';
+  $form['field_pic_font_align']['#attributes']['class'][3] = 'n_visibl_r';
+  $form['field_pic_font_typeface']['und']['#options'][51] = '<span></span>';
+  $form['field_pic_font_typeface']['und']['#options'][49] = '<span></span>';
+  $form['field_pic_font_typeface']['und']['#options'][50] = '<span></span>';
+  $form['field_pic_font_typeface']['und']['#title'] = '';
+  $form['field_pic_font_typeface']['#attributes']['class'][3] = 'n_visibl';
+  unset($form['field_pic_font_color']['und']['#options']['_none']);
+  $form['field_pic_font_color']['und']['#title'] = '';
+  unset($form['field_pic_font_background']['und']['#options']['_none']);
+  $form['field_pic_font_background']['und']['#title'] = '';
 }

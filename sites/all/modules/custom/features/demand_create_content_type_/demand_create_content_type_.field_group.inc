@@ -87,12 +87,12 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Шрифт',
     'weight' => '33',
     'children' => array(
-      0 => 'field_contents_font_font',
-      1 => 'field_contents_font_size',
-      2 => 'field_contents_font_align',
-      3 => 'field_contents_font_typeface',
-      4 => 'field_contents_font_color',
-      5 => 'field_contents_font_background',
+      0 => 'field_contents_font_align',
+      1 => 'field_contents_font_background',
+      2 => 'field_contents_font_color',
+      3 => 'field_contents_font_font',
+      4 => 'field_contents_font_size',
+      5 => 'field_contents_font_typeface',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -189,8 +189,8 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Содержание',
     'weight' => '9',
     'children' => array(
-      0 => 'group_contents_main',
-      1 => 'group_contents_font',
+      0 => 'group_contents_font',
+      1 => 'group_contents_main',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -316,7 +316,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula_indents_r1';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '40',
+    'weight' => '168',
     'children' => array(
       0 => 'group_formula_indents_r11',
       1 => 'group_formula_indents_r12',
@@ -348,7 +348,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula_indents_r1';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '41',
+    'weight' => '169',
     'children' => array(
       0 => 'group_formula_indents_r13',
       1 => 'group_formula_indents_r14',
@@ -380,7 +380,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula_indents_1';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '166',
+    'weight' => '28',
     'children' => array(
       0 => 'field_formula_indents_text',
     ),
@@ -411,7 +411,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula_indents_1';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '168',
+    'weight' => '29',
     'children' => array(
       0 => 'field_formula_indents_text2',
     ),
@@ -442,7 +442,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula_indents_2';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '171',
+    'weight' => '28',
     'children' => array(
       0 => 'field_formula_indents_formula',
     ),
@@ -473,7 +473,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula_indents_2';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '172',
+    'weight' => '29',
     'children' => array(
       0 => 'field_formula_indents_formula2',
     ),
@@ -536,7 +536,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula';
   $field_group->data = array(
     'label' => 'Интервал',
-    'weight' => '166',
+    'weight' => '28',
     'children' => array(
       0 => 'group_formula_indents_r1',
     ),
@@ -600,7 +600,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_formula';
   $field_group->data = array(
     'label' => 'Настройки нумерации',
-    'weight' => '168',
+    'weight' => '29',
     'children' => array(
       0 => 'group_formula_number_r1',
     ),
@@ -1173,12 +1173,12 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Шрифт',
     'weight' => '30',
     'children' => array(
-      0 => 'field_list_font_font',
-      1 => 'field_list_font_size',
-      2 => 'field_list_font_align',
-      3 => 'field_list_font_typeface',
-      4 => 'field_list_font_color',
-      5 => 'field_list_font_background',
+      0 => 'field_list_font_align',
+      1 => 'field_list_font_background',
+      2 => 'field_list_font_color',
+      3 => 'field_list_font_font',
+      4 => 'field_list_font_size',
+      5 => 'field_list_font_typeface',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -1338,9 +1338,9 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Списки',
     'weight' => '12',
     'children' => array(
-      0 => 'group_list_formatting',
-      1 => 'group_list_number',
-      2 => 'group_list_font',
+      0 => 'group_list_font',
+      1 => 'group_list_formatting',
+      2 => 'group_list_number',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -3031,9 +3031,9 @@ function demand_create_content_type__field_group_info() {
       0 => 'field_pic_label_align',
       1 => 'field_pic_label_background',
       2 => 'field_pic_label_color',
-      3 => 'field_pic_label_typeface',
+      3 => 'field_pic_label_font',
       4 => 'field_pic_label_size',
-      5 => 'field_pic_label_font',
+      5 => 'field_pic_label_typeface',
       6 => 'group_pic_label_r1',
     ),
     'format_type' => 'html-element',
@@ -3063,7 +3063,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_number';
   $field_group->data = array(
     'label' => 'Нумерация',
-    'weight' => '103',
+    'weight' => '108',
     'children' => array(
       0 => 'field_pic_number_type',
       1 => 'field_pic_number_view',
@@ -3098,7 +3098,13 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Нумерация',
     'weight' => '100',
     'children' => array(
-      0 => 'group_pic_number_r1',
+      0 => 'field_pic_font_font',
+      1 => 'field_pic_font_size',
+      2 => 'field_pic_font_align',
+      3 => 'field_pic_font_typeface',
+      4 => 'field_pic_font_color',
+      5 => 'field_pic_font_background',
+      6 => 'group_pic_number_r1',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -3106,7 +3112,7 @@ function demand_create_content_type__field_group_info() {
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
-        'classes' => 'group-pic-align field-group-html-element section-content-l',
+        'classes' => 'group-pic-align field-group-html-element section-content-l title-left',
         'element' => 'div',
         'show_label' => '1',
         'label_element' => 'div',
@@ -3386,14 +3392,14 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table';
   $field_group->data = array(
     'label' => 'Шрифт',
-    'weight' => '136',
+    'weight' => '140',
     'children' => array(
-      0 => 'field_table_number_font',
-      1 => 'field_table_number_size',
-      2 => 'field_table_number_align',
-      3 => 'field_table_number_typeface',
-      4 => 'field_table_number_color',
-      5 => 'field_table_number_background',
+      0 => 'field_table_number_align',
+      1 => 'field_table_number_background',
+      2 => 'field_table_number_color',
+      3 => 'field_table_number_font',
+      4 => 'field_table_number_size',
+      5 => 'field_table_number_typeface',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -3422,7 +3428,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_1';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '133',
+    'weight' => '33',
     'children' => array(
       0 => 'field_table_label_font',
     ),
@@ -3453,7 +3459,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_1';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '134',
+    'weight' => '34',
     'children' => array(
       0 => 'field_table_label_size',
     ),
@@ -3484,7 +3490,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_2';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '132',
+    'weight' => '41',
     'children' => array(
       0 => 'field_table_label_align',
     ),
@@ -3515,7 +3521,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_2';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '133',
+    'weight' => '42',
     'children' => array(
       0 => 'field_table_label_typeface',
     ),
@@ -3546,7 +3552,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_2';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '134',
+    'weight' => '43',
     'children' => array(
       0 => 'field_table_label_color',
     ),
@@ -3577,7 +3583,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_2';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '135',
+    'weight' => '44',
     'children' => array(
       0 => 'field_table_label_background',
     ),
@@ -3608,7 +3614,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_r1';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '128',
+    'weight' => '32',
     'children' => array(
       0 => 'group_table_label_11',
       1 => 'group_table_label_12',
@@ -3640,7 +3646,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table_label_r1';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '129',
+    'weight' => '33',
     'children' => array(
       0 => 'group_table_label_13',
       1 => 'group_table_label_14',
@@ -3712,7 +3718,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table';
   $field_group->data = array(
     'label' => 'Настройки подписи',
-    'weight' => '134',
+    'weight' => '138',
     'children' => array(
       0 => 'group_table_label_r1',
     ),
@@ -3777,7 +3783,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_table';
   $field_group->data = array(
     'label' => 'Настройки нумерации',
-    'weight' => '135',
+    'weight' => '139',
     'children' => array(
       0 => 'group_table_number_r1',
     ),
@@ -3810,9 +3816,9 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Таблицы',
     'weight' => '101',
     'children' => array(
-      0 => 'group_table_label',
-      1 => 'group_table_number',
-      2 => 'group_table_font',
+      0 => 'group_table_font',
+      1 => 'group_table_label',
+      2 => 'group_table_number',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -4007,9 +4013,9 @@ function demand_create_content_type__field_group_info() {
     'label' => 'Заголовки',
     'weight' => '8',
     'children' => array(
-      0 => 'group_title_main',
-      1 => 'group_title_number',
-      2 => 'group_title_font',
+      0 => 'group_title_font',
+      1 => 'group_title_main',
+      2 => 'group_title_number',
     ),
     'format_type' => 'div',
     'format_settings' => array(

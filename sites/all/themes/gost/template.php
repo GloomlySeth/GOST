@@ -66,6 +66,8 @@ function gost_select($variables) {
     case 'edit-field-table-number-color-und':
     case 'edit-field-list-font-background-und':
     case 'edit-field-list-font-color-und':
+    case 'edit-field-pic-font-color-und':
+    case 'edit-field-pic-font-background-und':
       drupal_add_js(path_to_theme() . '/js/demandSelect.js', 'file');
       $flag = TRUE;
       $options = '';
