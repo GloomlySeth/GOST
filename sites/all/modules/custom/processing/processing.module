@@ -422,7 +422,7 @@ var_dump($data);die();
       $options = array(
         'method' => 'POST',
         'data' => $data,
-        'timeout' => 15,
+        'timeout' => 60,
         'headers' => array('Content-Type' => 'application/json'),
       );
       $result = drupal_http_request('http://192.168.3.55:21735', $options);
