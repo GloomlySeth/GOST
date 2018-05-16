@@ -422,7 +422,7 @@ function processing_form_submit($form, &$form_state) {
       $options = array(
         'method' => 'POST',
         'data' => $data,
-        'timeout' => 60,
+        'timeout' => 120,
         'headers' => array('Content-Type' => 'application/json'),
       );
       $result = drupal_http_request('http://192.168.3.55:21735', $options);
