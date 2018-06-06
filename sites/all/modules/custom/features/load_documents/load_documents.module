@@ -8,22 +8,30 @@ include_once 'load_documents.features.inc';
 
 function load_documents_file_insert($file) {
   if($file->source == 'upload') {
-  global $user;
-
-	$fid = db_select('file_managed', 'f')
-	->fields('f', array('fid'))
-	->condition('f.origname', $file->filename)
-	->condition('f.uid', $user->uid)
-	->execute()
-	->fetchCol();
-
-  if(count($fid) > 1) {
-    $file_old = file_load(min($fid));
-	file_delete($file_old);
-  };
-  
-    file_save($file);
-
     $file->status = FILE_STATUS_PERMANENT;
   }
+}
+
+function load_documents_form_file_entity_add_upload_alter($form, &$form_state) {
+
+  if(!empty($form_state['complete form']['upload']['fid']['#value'])) {
+    $file = file_load($form_state['complete form']['upload']['fid']['#value']);;
+    global $user;
+
+    $fid = db_select('file_managed', 'f')
+      ->fields('f', array('fid'))
+      ->condition('f.origname', $file->filename)
+      ->condition('f.uid', $user->uid)
+      ->execute()
+      ->fetchCol();
+
+    if(count($fid) > 1) {
+      $file_old = file_load(min($fid));
+      file_delete($file_old);
+    };
+
+    file_save($file);
+
+  }
+
 }
