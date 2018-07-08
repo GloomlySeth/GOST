@@ -395,35 +395,44 @@ body {
     display: none;
 }
 
+.node-type-demand-create label,
 .page-node-add-demand-create label {
     font-weight: normal;
     font-size: 13px;
 }
 
+.node-type-demand-create select,
+.node-type-demand-create input,
 .page-node-add-demand-create select,
 .page-node-add-demand-create input {
     font-weight: normal;
     font-size: 14px;
 }
 
+.node-type-demand-create input[type="text"],
+.node-type-demand-create .width_sel select,
 .page-node-add-demand-create input[type="text"],
 .page-node-add-demand-create .width_sel select {
     width: 175px;
 }
 
+.node-type-demand-create .data-content,
 .page-node-add-demand-create .data-content {
     padding: 10px 30px;
 }
 
+.node-type-demand-create .section-content,
 .page-node-add-demand-create .section-content {
     display: table-cell;
     padding-right: 15px;
 }
 
+.node-type-demand-create label.option,
 .page-node-add-demand-create label.option {
     font-size: 11px;
 }
 
+.node-type-demand-create h3,
 .page-node-add-demand-create h3 {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     text-align: center;
@@ -435,6 +444,7 @@ body {
     color: inherit;
 }
 
+.node-type-demand-create .section-content-l > div:first-child,
 .page-node-add-demand-create .section-content-l > div:first-child {
     display: table-cell;
     font-size: 15px;
@@ -450,15 +460,21 @@ body {
     box-sizing: content-box;
 }
 
+.node-type-demand-create .section-content-r,
 .page-node-add-demand-create .section-content-r {
     display: table-cell;
     padding-right: 15px;
 }
 
+.node-type-demand-create .section-content-r fieldset,
 .page-node-add-demand-create .section-content-r fieldset {
     width: 190px;
 }
 
+.node-type-demand-create .form-item-profile-demand-create-field-pic-indents-top-und-0-value input,
+.node-type-demand-create .form-item-profile-demand-create-field-formula-indents-text-und-0-value input,
+.node-type-demand-create .form-item-profile-demand-create-field-main-width-number1-und-0-value input,
+.node-type-demand-create .width input,
 .page-node-add-demand-create .form-item-profile-demand-create-field-pic-indents-top-und-0-value input,
 .page-node-add-demand-create .form-item-profile-demand-create-field-formula-indents-text-und-0-value input,
 .page-node-add-demand-create .form-item-profile-demand-create-field-main-width-number1-und-0-value input,
@@ -466,6 +482,7 @@ body {
     width: 90px;
 }
 
+.node-type-demand-create .section-content-r .form-item,
 .page-node-add-demand-create .section-content-r .form-item {
     margin-top: 0px;
     margin-bottom: 8px;
@@ -475,6 +492,8 @@ body {
     height: 30px;
 }
 
+.node-type-demand-create .n_visibl_r .form-item,
+.node-type-demand-create .n_visibl .form-type-checkbox,
 .page-node-add-demand-create .n_visibl_r .form-item,
 .page-node-add-demand-create .n_visibl .form-type-checkbox {
     display: inline-block;
@@ -724,6 +743,13 @@ body {
     background: url('../images/editor_-_demand_create/u111_mouseOver.png') no-repeat;
 }
 
+.node-type-demand-create div.field-name-field-title-number-r .form-radios:nth-child(2) input,
+.node-type-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(1),
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios:nth-child(2) input,
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(1),
+.node-type-demand-create .n_visibl_r input,
+.node-type-demand-create .n_visibl input,
+.node-type-demand-create .n_visibl_n input,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios:nth-child(2) input,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(1),
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios:nth-child(2) input,
@@ -738,12 +764,14 @@ body {
     display: none;
 }
 
+.node-type-demand-create .n_visibl_n input[type=radio]:checked + label,
 .page-node-add-demand-create .n_visibl_n input[type=radio]:checked + label,
 #edit-field-list-number-1-und-0-field-list-number-view2-und input[type=radio]:checked + label,
 #edit-field-title-number-r-und-0-field-title-number-view2-und input[type=radio]:checked + label {
     border: 1px solid #0099cc;
 }
 
+.node-type-demand-create .n_border,
 .page-node-add-demand-create .n_border {
     display: flex;
 }
@@ -774,6 +802,41 @@ body {
 }
 
 .field-name-field-pic-indents-top label,
+.node-type-demand-create div.field-name-field-title-number-r .form-radios > div,
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios > div,
+.node-type-demand-create .form-item-profile-demand-create-field-main-columns-text-und,
+.node-type-demand-create .inline_label label,
+.node-type-demand-create .form-item-profile-demand-create-field-header-filter-from-und-0-value label,
+.node-type-demand-create .form-item-profile-demand-create-field-number-main-type-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-title-number-type-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-pic-border-thickness-und-0-value label,
+.node-type-demand-create .form-item-profile-demand-create-field-pic-number-type-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-pic-indents-top-und-0-value label,
+.node-type-demand-create .form-item-profile-demand-create-field-table-label-location-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-number-font-type-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-title-font-type-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-pic-font-type-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-pic-label-type-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-contents-font-type-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-table-number-type-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-formula-indents-text-und-0-value label,
+.node-type-demand-create .form-item-profile-demand-create-field-formula-number-type-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-list-number-type-und label,
+.node-type-demand-create .form-item-profile-demand-create-field-quotes-main-symbol-und label,
+.node-type-demand-create .n_visibl_n .form-item-profile-demand-create-field-number-main-view-und,
+.node-type-demand-create .n_visibl_n .form-item-profile-demand-create-field-title-number-view-und,
+.node-type-demand-create .n_visibl_n .form-item-profile-demand-create-field-pic-number-view-und,
+.node-type-demand-create .n_visibl_n .form-item-profile-demand-create-field-number-font-view-und,
+.node-type-demand-create .n_visibl_n .form-item-profile-demand-create-field-title-font-view-und,
+.node-type-demand-create .n_visibl_n .form-item-profile-demand-create-field-pic-font-view-und,
+.node-type-demand-create .n_visibl_n .form-item-profile-demand-create-field-pic-label-view-und,
+.node-type-demand-create .n_visibl_n .form-item-profile-demand-create-field-contents-font-view-und,
+.node-type-demand-create .n_visibl_n .form-item-profile-demand-create-field-table-number-view-und,
+.node-type-demand-create .n_visibl_n .form-item-profile-demand-create-field-formula-number-view-und,
+.node-type-demand-create .n_visibl_n .form-item-profile-demand-create-field-list-number-view-und,
+.node-type-demand-create .form-item-profile-demand-create-field-pic-align-pic-und,
+.node-type-demand-create .form-item-profile-demand-create-field-pic-font-align-und,
+.node-type-demand-create .form-item-profile-demand-create-field-pic-label-align-und,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios > div,
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios > div,
 .page-node-add-demand-create .form-item-profile-demand-create-field-main-columns-text-und,
@@ -812,6 +875,8 @@ body {
     display: inline-block;
 }
 
+.node-type-demand-create div.field-name-field-title-number-r .form-radios:nth-child(2) label,
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios:nth-child(2) label,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios:nth-child(2) label,
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios:nth-child(2) label,
 #edit-profile-demand-create-field-list-number-view-und label,
@@ -839,6 +904,8 @@ body {
     display: inline-block;
 }
 
+.node-type-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(2) label,
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(2) label,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(2) label,
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(2) label,
 #edit-profile-demand-create-field-list-number-view-und-12 + label,
@@ -864,6 +931,8 @@ body {
     background: url('../images/editor_-_demand_create/u269.jpg') no-repeat;
 }
 
+.node-type-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(3) label,
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(3) label,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(3) label,
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(3) label,
 #edit-profile-demand-create-field-list-number-view-und-13 + label,
@@ -889,6 +958,8 @@ body {
     background: url('../images/editor_-_demand_create/u271.jpg') no-repeat;
 }
 
+.node-type-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(4) label,
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(4) label,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(4) label,
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(4) label,
 #edit-profile-demand-create-field-list-number-view-und-14 + label,
@@ -914,6 +985,8 @@ body {
     background: url('../images/editor_-_demand_create/u273.jpg') no-repeat;
 }
 
+.node-type-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(5) label,
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(5) label,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(5) label,
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(5) label,
 #edit-profile-demand-create-field-list-number-view-und-15 + label,
@@ -939,6 +1012,8 @@ body {
     background: url('../images/editor_-_demand_create/u275.jpg') no-repeat;
 }
 
+.node-type-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(6) label,
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(6) label,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(6) label,
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(6) label,
 #edit-profile-demand-create-field-list-number-view-und-16 + label,
@@ -964,6 +1039,8 @@ body {
     background: url('../images/editor_-_demand_create/u277.jpg') no-repeat;
 }
 
+.node-type-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(7) label,
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(7) label,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(7) label,
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(7) label,
 #edit-profile-demand-create-field-list-number-view-und-17 + label,
@@ -989,6 +1066,8 @@ body {
     background: url('../images/editor_-_demand_create/u279.jpg') no-repeat;
 }
 
+.node-type-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(8) label,
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(8) label,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(8) label,
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(8) label,
 #edit-profile-demand-create-field-list-number-view-und-18 + label,
@@ -1014,6 +1093,8 @@ body {
     background: url('../images/editor_-_demand_create/u281.jpg') no-repeat;
 }
 
+.node-type-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(9) label,
+.node-type-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(9) label,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(9) label,
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(9) label,
 #edit-profile-demand-create-field-list-number-view-und-19 + label,
@@ -1142,6 +1223,7 @@ body {
     display: none;
 }
 
+.node-type-demand-create #edit-submit,
 .page-node-add-demand-create #edit-submit {
     margin: 2px 10px 30px 0;
 }
