@@ -44,6 +44,14 @@ function is_empty($node, $value){
       $output2 = field_view_value('node', $node, $value, $value2);
       $return[] = $output2['#markup'];
     }
+
+    foreach($return as $key_return => $value_return) {
+      if(preg_match("/[а-яё]/iu", $value_return)) {
+        $value_return = drupal_strtolower($value_return);
+        $return[$key_return] = transliteration_get($value_return);
+      }
+
+    }
     return $return;
   }
   else return NULL;
@@ -418,7 +426,7 @@ function processing_form_submit($form, &$form_state) {
         ),
       );
       $data = json_encode($processing);
-
+      
       $options = array(
         'method' => 'POST',
         'data' => $data,

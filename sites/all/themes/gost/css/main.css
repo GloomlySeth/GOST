@@ -190,7 +190,7 @@ body {
 .header__menu .content > ul.menu li {
     display: inline-block;
     position: relative;
-    padding: 0px;
+    padding: 0;
     height: 57px;
 }
 
@@ -776,6 +776,8 @@ body {
     display: flex;
 }
 
+#edit-field-title-main-firstan-und-0-value,
+#edit-field-title-main-secondan-und-0-value,
 #edit-field-main-interval-str-und,
 #edit-field-main-margins-str-und {
     width: 100px;
@@ -871,7 +873,10 @@ body {
 .page-node-add-demand-create .n_visibl_n .form-item-profile-demand-create-field-list-number-view-und,
 .page-node-add-demand-create .form-item-profile-demand-create-field-pic-align-pic-und,
 .page-node-add-demand-create .form-item-profile-demand-create-field-pic-font-align-und,
-.page-node-add-demand-create .form-item-profile-demand-create-field-pic-label-align-und {
+.page-node-add-demand-create .form-item-profile-demand-create-field-pic-label-align-und,
+#file-entity-add-upload #edit-upload-ajax-wrapper,
+#file-entity-add-upload #edit-actions,
+.view-id-requirements_list .container-inline > div {
     display: inline-block;
 }
 
@@ -1454,12 +1459,6 @@ body {
 .view-id-document_list .container-inline legend,
 .view-id-requirements_list .container-inline legend {
     display: none;
-}
-
-#file-entity-add-upload #edit-upload-ajax-wrapper,
-#file-entity-add-upload #edit-actions,
-.view-id-requirements_list .container-inline > div {
-    display: inline-block;
 }
 
 .view-id-document_list #views-form-document-list-page #edit-actions a.active,
@@ -2060,7 +2059,15 @@ body.page-user-edit-company-info #user-profile-form h2 {
 #demand-create-node-form .section-content-l .field-name-field-table-number-font,
 #demand-create-node-form .section-content-l .field-name-field-list-font-typeface,
 #demand-create-node-form .section-content-l .field-name-field-list-font-align,
-#demand-create-node-form .section-content-l .field-name-field-list-font-font {
+#demand-create-node-form .section-content-l .field-name-field-list-font-font,
+#edit-field-title-main-first,
+#edit-field-title-main-second,
+#edit-field-title-main-firstan,
+#edit-field-title-main-secondan,
+#edit-field-formula-indents-text,
+#edit-field-formula-indents-text2,
+#edit-field-formula-indents-formula,
+#edit-field-formula-indents-formula2 {
     float: left;
 }
 
@@ -2086,4 +2093,21 @@ body.page-user-edit-company-info #user-profile-form h2 {
 #demand-create-node-form .title-left > div > div {
     margin: 0 0 5px 0;
     padding-right: 7px;
+}
+
+#edit-field-title-main-firstan,
+#edit-field-title-main-secondan,
+#edit-field-formula-indents-text2,
+#edit-field-formula-indents-formula2 {
+    margin-left: 5px;
+}
+
+#edit-field-title-main-first,
+#edit-field-title-main-second {
+    margin-top: 18px;
+    clear: left;
+}
+
+#edit-field-quotes-main-symbol {
+    display: table-cell;
 }
