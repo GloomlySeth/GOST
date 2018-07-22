@@ -325,7 +325,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 172,
+      'weight' => 173,
     ),
   );
 
@@ -364,7 +364,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 171,
+      'weight' => 172,
     ),
   );
 
@@ -522,7 +522,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 39,
+      'weight' => 170,
     ),
   );
 
@@ -565,7 +565,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 41,
+      'weight' => 172,
     ),
   );
 
@@ -604,7 +604,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 38,
+      'weight' => 169,
     ),
   );
 
@@ -647,7 +647,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 40,
+      'weight' => 171,
     ),
   );
 
@@ -918,7 +918,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 28,
+      'weight' => 31,
     ),
   );
 
@@ -958,7 +958,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 24,
+      'weight' => 32,
     ),
   );
 
@@ -1004,7 +1004,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 26,
+      'weight' => 168,
     ),
   );
 
@@ -1043,7 +1043,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 166,
+      'weight' => 170,
     ),
   );
 
@@ -1086,7 +1086,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 30,
+      'weight' => 31,
     ),
   );
 
@@ -1113,7 +1113,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_formula_number_type',
-    'label' => 'Вид нумерации:',
+    'label' => 'Формат номера:',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1597,7 +1597,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 177,
+      'weight' => 176,
     ),
   );
 
@@ -1757,7 +1757,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 176,
+      'weight' => 175,
     ),
   );
 
@@ -1923,7 +1923,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 25,
+      'weight' => 26,
     ),
   );
 
@@ -1969,7 +1969,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 24,
+      'weight' => 25,
     ),
   );
 
@@ -2049,7 +2049,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 184,
+      'weight' => 26,
     ),
   );
 
@@ -2088,7 +2088,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 182,
+      'weight' => 25,
     ),
   );
 
@@ -3764,7 +3764,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_number_main_view',
-    'label' => 'Вид нумерации:',
+    'label' => 'Формат номера:',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -4096,7 +4096,7 @@ function demand_create_content_type__field_default_field_instances() {
         ),
       ),
       'type' => 'colorfield_unified_textfield',
-      'weight' => 86,
+      'weight' => 85,
     ),
   );
 
@@ -4216,7 +4216,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 104,
+      'weight' => 128,
     ),
   );
 
@@ -4255,7 +4255,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 107,
+      'weight' => 131,
     ),
   );
 
@@ -4294,7 +4294,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 106,
+      'weight' => 130,
     ),
   );
 
@@ -4333,7 +4333,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 102,
+      'weight' => 126,
     ),
   );
 
@@ -4372,7 +4372,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 103,
+      'weight' => 127,
     ),
   );
 
@@ -4409,7 +4409,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 105,
+      'weight' => 129,
     ),
   );
 
@@ -4455,7 +4455,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 119,
+      'weight' => 107,
     ),
   );
 
@@ -4494,7 +4494,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 120,
+      'weight' => 108,
     ),
   );
 
@@ -4579,7 +4579,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 118,
+      'weight' => 46,
     ),
   );
 
@@ -4701,7 +4701,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 29,
+      'weight' => 175,
     ),
   );
 
@@ -4740,7 +4740,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 32,
+      'weight' => 179,
     ),
   );
 
@@ -4779,7 +4779,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 31,
+      'weight' => 178,
     ),
   );
 
@@ -4818,7 +4818,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 27,
+      'weight' => 173,
     ),
   );
 
@@ -4900,7 +4900,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 28,
+      'weight' => 174,
     ),
   );
 
@@ -4937,7 +4937,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 30,
+      'weight' => 177,
     ),
   );
 
@@ -4980,7 +4980,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 105,
+      'weight' => 128,
     ),
   );
 
@@ -5019,7 +5019,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 103,
+      'weight' => 126,
     ),
   );
 
@@ -5046,7 +5046,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_pic_number_view',
-    'label' => 'Вид нумерации:',
+    'label' => 'Формат номера:',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -5056,7 +5056,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 104,
+      'weight' => 127,
     ),
   );
 
@@ -5102,7 +5102,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 94,
+      'weight' => 172,
     ),
   );
 
@@ -5226,7 +5226,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 23,
+      'weight' => 15,
     ),
   );
 
@@ -5341,7 +5341,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 135,
+      'weight' => 126,
     ),
   );
 
@@ -5423,7 +5423,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 38,
+      'weight' => 51,
     ),
   );
 
@@ -5460,7 +5460,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 41,
+      'weight' => 52,
     ),
   );
 
@@ -5499,7 +5499,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 132,
+      'weight' => 44,
     ),
   );
 
@@ -5542,7 +5542,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 35,
+      'weight' => 47,
     ),
   );
 
@@ -5585,7 +5585,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 37,
+      'weight' => 49,
     ),
   );
 
@@ -5624,7 +5624,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 34,
+      'weight' => 46,
     ),
   );
 
@@ -5667,7 +5667,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 36,
+      'weight' => 48,
     ),
   );
 
@@ -5743,7 +5743,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 132,
+      'weight' => 126,
     ),
   );
 
@@ -5780,7 +5780,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 42,
+      'weight' => 53,
     ),
   );
 
@@ -5820,7 +5820,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 47,
+      'weight' => 56,
     ),
   );
 
@@ -5859,7 +5859,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 44,
+      'weight' => 55,
     ),
   );
 
@@ -5898,7 +5898,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 44,
+      'weight' => 53,
     ),
   );
 
@@ -5941,7 +5941,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 40,
+      'weight' => 51,
     ),
   );
 
@@ -5984,7 +5984,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 45,
+      'weight' => 54,
     ),
   );
 
@@ -6023,7 +6023,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 41,
+      'weight' => 52,
     ),
   );
 
@@ -6062,7 +6062,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 40,
+      'weight' => 51,
     ),
   );
 
@@ -6099,7 +6099,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 43,
+      'weight' => 54,
     ),
   );
 
@@ -6126,7 +6126,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_table_number_view',
-    'label' => 'Вид нумерации:',
+    'label' => 'Формат номера:',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -6136,7 +6136,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 41,
+      'weight' => 52,
     ),
   );
 
@@ -6212,7 +6212,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 172,
+      'weight' => 173,
     ),
   );
 
@@ -6251,7 +6251,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 171,
+      'weight' => 172,
     ),
   );
 
@@ -6374,6 +6374,169 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-demand_create-field_title_main_after'.
+  $field_instances['node-demand_create-field_title_main_after'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 137,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_title_main_after',
+    'label' => 'Интервал gjckt заголовка',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 58,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_title_main_first'.
+  $field_instances['node-demand_create-field_title_main_first'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 138,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_title_main_first',
+    'label' => 'Первая строка',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 59,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_title_main_firstan'.
+  $field_instances['node-demand_create-field_title_main_firstan'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 140,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_title_main_firstan',
+    'label' => 'На',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => 'мм',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 60,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_title_main_interval'.
+  $field_instances['node-demand_create-field_title_main_interval'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 136,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_title_main_interval',
+    'label' => 'Интервал до заголовка',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 57,
+    ),
+  );
+
   // Exported field_instance: 'node-demand_create-field_title_main_level'.
   $field_instances['node-demand_create-field_title_main_level'] = array(
     'bundle' => 'demand_create',
@@ -6455,7 +6618,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 54,
+      'weight' => 55,
     ),
   );
 
@@ -6483,6 +6646,130 @@ function demand_create_content_type__field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_title_main_pattern',
     'label' => 'Шаблон нумерации заголовка:	',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 54,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_title_main_second'.
+  $field_instances['node-demand_create-field_title_main_second'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 139,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_title_main_second',
+    'label' => 'Вторая строка',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 61,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_title_main_secondan'.
+  $field_instances['node-demand_create-field_title_main_secondan'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 141,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_title_main_secondan',
+    'label' => 'На',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => 'мм',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 62,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_title_main_spelling'.
+  $field_instances['node-demand_create-field_title_main_spelling'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 135,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_title_main_spelling',
+    'label' => 'Написание',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -6537,7 +6824,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 55,
+      'weight' => 56,
     ),
   );
 
@@ -6633,17 +6920,21 @@ function demand_create_content_type__field_default_field_instances() {
   t('Верхнее');
   t('Вид нумерации:');
   t('Вид разделителя между подписью и текстом:');
+  t('Вторая строка');
   t('Выбрать шаблон настроек');
   t('Добавить переносы');
   t('Допустимые символы и знаки');
   t('Зеркальные отступы');
   t('Значение');
+  t('Интервал gjckt заголовка');
+  t('Интервал до заголовка');
   t('Количество строк на страницу');
   t('Левое');
   t('Между подписью и рисунком:');
   t('Междустрочный');
   t('На');
   t('Надпись: "Продолжение таблицы ХХХ"');
+  t('Написание');
   t('Начать с:');
   t('Начертание');
   t('Не добавлять интервал между абзацами одного стиля');
@@ -6691,6 +6982,7 @@ function demand_create_content_type__field_default_field_instances() {
   t('Уровень списка:');
   t('Фон текста');
   t('Формат номера');
+  t('Формат номера:');
   t('Цвет текста');
   t('Цвет:');
   t('Число столбцов:');
