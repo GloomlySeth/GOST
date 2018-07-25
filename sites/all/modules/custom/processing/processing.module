@@ -196,8 +196,8 @@ function processing_form_submit($form, &$form_state) {
           'uid' => $user->uid,
         ),
         'file' => array(
-          'patch' => !empty($url) ? $url : NULL,
-          'name' => !empty($form['list_docx']['#options'][$valueId]) ? $form['list_docx']['#options'][$valueId] : NULL,
+          'patch' => !empty($url) ? $url : array(NULL),
+          'name' => !empty($form['list_docx']['#options'][$valueId]) ? $form['list_docx']['#options'][$valueId] : array(NULL),
         ),
         'demands' => array(
           'name' => $node->title,
