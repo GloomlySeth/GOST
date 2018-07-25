@@ -100,7 +100,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_list_number_view2',
-    'label' => 'Вид нумерации:',
+    'label' => 'Формат номеров:',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -115,8 +115,8 @@ function demand_create_content_type__field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'field_collection_item-field_title_number_r-field_title_number_division2'.
-  $field_instances['field_collection_item-field_title_number_r-field_title_number_division2'] = array(
+  // 'field_collection_item-field_title_number_r-field_title_number_ownview2'.
+  $field_instances['field_collection_item-field_title_number_r-field_title_number_ownview2'] = array(
     'bundle' => 'field_title_number_r',
     'default_value' => NULL,
     'deleted' => 0,
@@ -124,27 +124,28 @@ function demand_create_content_type__field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
+        'type' => 'text_default',
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'field_collection_item',
-    'field_name' => 'field_title_number_division2',
-    'label' => 'Вид разделителя между подписью и текстом:',
+    'field_name' => 'field_title_number_ownview2',
+    'label' => 'Свой формат номера',
     'required' => 0,
     'settings' => array(
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'text',
       'settings' => array(
-        'apply_chosen' => '',
+        'size' => 60,
       ),
-      'type' => 'options_select',
-      'weight' => 3,
+      'type' => 'text_textfield',
+      'weight' => 2,
     ),
   );
 
@@ -165,7 +166,7 @@ function demand_create_content_type__field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -182,7 +183,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -216,7 +217,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 1,
+      'weight' => 0,
     ),
   );
 
@@ -238,7 +239,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_title_number_view2',
-    'label' => 'Вид нумерации:',
+    'label' => 'Формат номеров:',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -248,7 +249,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -6397,7 +6398,7 @@ function demand_create_content_type__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_title_main_after',
-    'label' => 'Интервал gjckt заголовка',
+    'label' => 'Интервал после заголовка',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -6918,7 +6919,6 @@ function demand_create_content_type__field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Color');
   t('Верхнее');
-  t('Вид нумерации:');
   t('Вид разделителя между подписью и текстом:');
   t('Вторая строка');
   t('Выбрать шаблон настроек');
@@ -6926,8 +6926,8 @@ function demand_create_content_type__field_default_field_instances() {
   t('Допустимые символы и знаки');
   t('Зеркальные отступы');
   t('Значение');
-  t('Интервал gjckt заголовка');
   t('Интервал до заголовка');
+  t('Интервал после заголовка');
   t('Количество строк на страницу');
   t('Левое');
   t('Между подписью и рисунком:');
@@ -6970,6 +6970,7 @@ function demand_create_content_type__field_default_field_instances() {
   t('Расположение подписи:');
   t('Расположение содержания');
   t('Свой вариант:');
+  t('Свой формат номера');
   t('Символы кавычек:');
   t('Слева');
   t('Справа');
@@ -6983,6 +6984,7 @@ function demand_create_content_type__field_default_field_instances() {
   t('Фон текста');
   t('Формат номера');
   t('Формат номера:');
+  t('Формат номеров:');
   t('Цвет текста');
   t('Цвет:');
   t('Число столбцов:');
