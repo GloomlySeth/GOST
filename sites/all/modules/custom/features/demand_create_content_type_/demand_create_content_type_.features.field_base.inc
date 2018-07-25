@@ -4206,31 +4206,26 @@ function demand_create_content_type__field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_title_number_division2'.
-  $field_bases['field_title_number_division2'] = array(
+  // Exported field_base: 'field_title_number_ownview2'.
+  $field_bases['field_title_number_ownview2'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_title_number_division2',
+    'field_name' => 'field_title_number_ownview2',
     'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
+      'format' => array(
+        0 => 'format',
       ),
     ),
     'locked' => 0,
-    'module' => 'taxonomy',
+    'module' => 'text',
     'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'division',
-          'parent' => 0,
-        ),
-      ),
+      'max_length' => 255,
       'profile2_private' => FALSE,
     ),
     'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_title_number_r'.

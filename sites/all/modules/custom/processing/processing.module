@@ -36,8 +36,9 @@ function processing_block_view($delta = '') {
   return $block;
 }
 
-function is_empty($node, $value){
+function is_empty($node, $value) {
   $output = field_get_items('node', $node, $value);
+
   if(!empty($output)){
     $return = array();
     foreach($output as $value2){
@@ -54,7 +55,7 @@ function is_empty($node, $value){
     }
     return $return;
   }
-  else return NULL;
+  else return array(NULL);
 }
 
 function list_file(){
@@ -174,7 +175,7 @@ function processing_form_submit($form, &$form_state) {
           $title_number[] = array(
             'type' => is_empty($node, 'field_title_number_type2'),
             'view' => is_empty($node, '$field_coll->field_title_number_view2'),
-            'division' => is_empty($node, 'field_title_number_division2'),
+            'ownview' => is_empty($node, 'title_number_ownview2'),
             'setting' => is_empty($node, 'field_title_number_setting2'),
           );
         }
@@ -258,7 +259,7 @@ function processing_form_submit($form, &$form_state) {
               'left' => is_empty($node, 'field_main_interval_left'),
               'after' => is_empty($node, 'field_main_interval_right'),
               'non' => is_empty($node, 'field_main_interval_non'),
-              'shift' => is_empty($node, 'field_main_interval_str'),
+              'str' => is_empty($node, 'field_main_interval_str'),
               'int' => is_empty($node, 'field_main_interval_int'),
               'shift' => is_empty($node, 'field_main_margins_shift'),
             ),
@@ -287,9 +288,16 @@ function processing_form_submit($form, &$form_state) {
           'title' => array(
             'main' => array(
               'level' => is_empty($node, 'field_title_main_level'),
+              'spelling' => is_empty($node, 'field_title_main_spelling'),
               'pattern' => is_empty($node, 'field_title_main_pattern'),
               'own' => is_empty($node, 'field_title_main_own'),
               'text' => is_empty($node, 'field_title_main_text'),
+              'interval' => is_empty($node, 'field_title_main_interval'),
+              'after' => is_empty($node, 'field_title_main_after'),
+              'first' => is_empty($node, 'field_title_main_first'),
+              'firstan' => is_empty($node, 'field_title_main_firstan'),
+              'second' => is_empty($node, 'field_title_main_second'),
+              'secondan' => is_empty($node, 'field_title_main_secondan'),
             ),
             'font' => array(
               'font' => is_empty($node, 'field_title_font_font'),
@@ -426,7 +434,7 @@ function processing_form_submit($form, &$form_state) {
         ),
       );
       $data = json_encode($processing);
-      
+
       $options = array(
         'method' => 'POST',
         'data' => $data,
