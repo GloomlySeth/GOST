@@ -3999,10 +3999,13 @@ function demand_create_content_type__field_default_field_bases() {
     'locked' => 0,
     'module' => 'number',
     'settings' => array(
+      'decimal_separator' => '.',
+      'precision' => 10,
       'profile2_private' => FALSE,
+      'scale' => 2,
     ),
     'translatable' => 0,
-    'type' => 'number_integer',
+    'type' => 'number_decimal',
   );
 
   // Exported field_base: 'field_title_main_interval'.
@@ -4148,10 +4151,13 @@ function demand_create_content_type__field_default_field_bases() {
     'locked' => 0,
     'module' => 'number',
     'settings' => array(
+      'decimal_separator' => '.',
+      'precision' => 10,
       'profile2_private' => FALSE,
+      'scale' => 2,
     ),
     'translatable' => 0,
-    'type' => 'number_integer',
+    'type' => 'number_decimal',
   );
 
   // Exported field_base: 'field_title_main_spelling'.
