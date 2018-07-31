@@ -566,7 +566,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 172,
+      'weight' => 173,
     ),
   );
 
@@ -919,7 +919,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 31,
+      'weight' => 33,
     ),
   );
 
@@ -959,7 +959,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 32,
+      'weight' => 34,
     ),
   );
 
@@ -1005,7 +1005,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 168,
+      'weight' => 33,
     ),
   );
 
@@ -1044,7 +1044,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 170,
+      'weight' => 34,
     ),
   );
 
@@ -1087,7 +1087,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 31,
+      'weight' => 30,
     ),
   );
 
@@ -1842,7 +1842,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 23,
+      'weight' => 25,
     ),
   );
 
@@ -1924,7 +1924,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 26,
+      'weight' => 27,
     ),
   );
 
@@ -1970,7 +1970,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 25,
+      'weight' => 26,
     ),
   );
 
@@ -2007,7 +2007,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 27,
+      'weight' => 28,
     ),
   );
 
@@ -2050,7 +2050,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 26,
+      'weight' => 180,
     ),
   );
 
@@ -2089,7 +2089,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 25,
+      'weight' => 179,
     ),
   );
 
@@ -4048,7 +4048,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 92,
+      'weight' => 177,
     ),
   );
 
@@ -4097,7 +4097,7 @@ function demand_create_content_type__field_default_field_instances() {
         ),
       ),
       'type' => 'colorfield_unified_textfield',
-      'weight' => 85,
+      'weight' => 86,
     ),
   );
 
@@ -4217,7 +4217,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 128,
+      'weight' => 132,
     ),
   );
 
@@ -4256,7 +4256,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 131,
+      'weight' => 135,
     ),
   );
 
@@ -4295,7 +4295,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 130,
+      'weight' => 134,
     ),
   );
 
@@ -4334,7 +4334,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 126,
+      'weight' => 130,
     ),
   );
 
@@ -4373,7 +4373,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 127,
+      'weight' => 131,
     ),
   );
 
@@ -4410,7 +4410,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 129,
+      'weight' => 133,
     ),
   );
 
@@ -4456,7 +4456,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 107,
+      'weight' => 130,
     ),
   );
 
@@ -4495,7 +4495,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 108,
+      'weight' => 137,
     ),
   );
 
@@ -5103,7 +5103,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 172,
+      'weight' => 174,
     ),
   );
 
@@ -5303,7 +5303,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 136,
+      'weight' => 53,
     ),
   );
 
@@ -5381,7 +5381,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 41,
+      'weight' => 53,
     ),
   );
 
@@ -5424,7 +5424,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 51,
+      'weight' => 61,
     ),
   );
 
@@ -5461,7 +5461,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 52,
+      'weight' => 62,
     ),
   );
 
@@ -5543,7 +5543,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 47,
+      'weight' => 58,
     ),
   );
 
@@ -5586,7 +5586,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 49,
+      'weight' => 60,
     ),
   );
 
@@ -5625,7 +5625,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 46,
+      'weight' => 57,
     ),
   );
 
@@ -5668,7 +5668,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 48,
+      'weight' => 59,
     ),
   );
 
@@ -5707,7 +5707,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 30,
+      'weight' => 53,
     ),
   );
 
@@ -5821,7 +5821,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 56,
+      'weight' => 57,
     ),
   );
 
@@ -5860,7 +5860,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 55,
+      'weight' => 56,
     ),
   );
 
@@ -5899,7 +5899,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 53,
+      'weight' => 57,
     ),
   );
 
@@ -5985,7 +5985,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 54,
+      'weight' => 58,
     ),
   );
 
@@ -6063,7 +6063,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 51,
+      'weight' => 55,
     ),
   );
 
@@ -6100,7 +6100,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 54,
+      'weight' => 55,
     ),
   );
 
@@ -6137,7 +6137,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 52,
+      'weight' => 56,
     ),
   );
 
@@ -6252,7 +6252,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 172,
+      'weight' => 171,
     ),
   );
 
@@ -6466,10 +6466,10 @@ function demand_create_content_type__field_default_field_instances() {
         'settings' => array(
           'decimal_separator' => '.',
           'prefix_suffix' => TRUE,
-          'scale' => 0,
+          'scale' => 2,
           'thousand_separator' => '',
         ),
-        'type' => 'number_integer',
+        'type' => 'number_decimal',
         'weight' => 140,
       ),
       'teaser' => array(
@@ -6714,10 +6714,10 @@ function demand_create_content_type__field_default_field_instances() {
         'settings' => array(
           'decimal_separator' => '.',
           'prefix_suffix' => TRUE,
-          'scale' => 0,
+          'scale' => 2,
           'thousand_separator' => '',
         ),
-        'type' => 'number_integer',
+        'type' => 'number_decimal',
         'weight' => 141,
       ),
       'teaser' => array(
