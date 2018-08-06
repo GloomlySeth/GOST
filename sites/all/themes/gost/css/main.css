@@ -767,7 +767,7 @@ body {
 .node-type-demand-create .n_visibl_n input[type=radio]:checked + label,
 .page-node-add-demand-create .n_visibl_n input[type=radio]:checked + label,
 #edit-field-list-number-1-und-0-field-list-number-view2-und input[type=radio]:checked + label,
-#edit-field-title-number-r-und-0-field-title-number-view2-und input[type=radio]:checked + label {
+.page-node-add-demand-create div.field-name-field-title-number-r .form-radios input:checked + label {
     border: 1px solid #0099cc;
 }
 
