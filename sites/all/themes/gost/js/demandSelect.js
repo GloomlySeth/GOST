@@ -28,7 +28,7 @@
                 $(this).css("background-color", $(idSelect).css("background-color"));
             });
 
-            if (settings.extraData._triggering_element_name && settings.extraData._triggering_element_name == 'field_title_number_r_add_more') {
+            if (settings.extraData._triggering_element_name && settings.extraData._triggering_element_name.indexOf('field_title_number_r') + 1) {
                 $('.field-name-field-title-number-r .field-multiple-table input[type="submit"]').val(Drupal.t('Delete title'));
                 $('.field-name-field-title-number-r .field-add-more-submit').val(Drupal.t('Added title'));
             }

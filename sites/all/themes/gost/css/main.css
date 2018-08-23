@@ -508,7 +508,7 @@ body {
     font-size: 13px;
 }
 
-.page-node-add-demand-create .field-name-field-title-font-align .form-radios .form-type-radio.form-item label,
+#demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio.form-item label,
 #edit-profile-demand-create-field-table-label-continue2-und label,
 #edit-profile-demand-create-field-pic-label-align-und label,
 #edit-profile-demand-create-field-pic-font-align-und label,
@@ -539,7 +539,7 @@ body {
 #edit-field-pic-align-pic-und-23 + label,
 #edit-field-list-font-align-und-26 + label span,
 #edit-field-number-font-align-und-26 + label span,
-.page-node-add-demand-create .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(2) label,
+#demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(2) label,
 .field-name-field-title-font-align .form-radios > div:nth-child(1) label,
 #edit-field-pic-font-align-und-26 + label span,
 #edit-field-pic-label-align-und-26 + label span,
@@ -559,7 +559,7 @@ body {
 #edit-field-table-label-align-und-26:checked + label,
 #edit-field-pic-align-pic-und-23:checked + label,
 #edit-field-number-font-align-und-26:checked + label span,
-.page-node-add-demand-create .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(2) input:checked + label,
+#demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(2) input:checked + label,
 #edit-field-pic-font-align-und-26:checked + label span,
 #edit-field-pic-label-align-und-26:checked + label span,
 #edit-field-contents-font-align-und-26:checked + label span,
@@ -569,7 +569,7 @@ body {
 }
 
 #edit-field-number-font-align-und-28 + label span,
-.page-node-add-demand-create .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(5) label,
+#demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(5) label,
 #edit-field-pic-font-align-und-28 + label span,
 #edit-field-pic-label-align-und-28 + label span,
 #edit-field-contents-font-align-und-28 + label span,
@@ -581,7 +581,7 @@ body {
 }
 
 #edit-field-number-font-align-und-28:checked + label span,
-.page-node-add-demand-create .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(5) input:checked + label,
+#demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(5) input:checked + label,
 #edit-field-pic-font-align-und-28:checked + label span,
 #edit-field-pic-label-align-und-28:checked + label span,
 #edit-field-contents-font-align-und-28:checked + label span,
@@ -593,7 +593,7 @@ body {
 }
 
 #edit-field-number-font-align-und-27 + label span,
-.page-node-add-demand-create .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(3) label,
+#demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(3) label,
 #edit-field-pic-font-align-und-27 + label span,
 #edit-field-pic-label-align-und-27 + label span,
 #edit-field-contents-font-align-und-27 + label span,
@@ -612,7 +612,7 @@ body {
 }
 
 #edit-field-number-font-align-und-27:checked + label span,
-.page-node-add-demand-create .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(3) input:checked + label,
+#demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(3) input:checked + label,
 #edit-field-pic-font-align-und-27:checked + label span,
 #edit-field-pic-label-align-und-27:checked + label span,
 #edit-field-contents-font-align-und-27:checked + label span,
@@ -632,7 +632,7 @@ body {
 }
 
 #edit-field-number-font-align-und-29 + label span,
-.page-node-add-demand-create .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(4) label,
+#demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(4) label,
 #edit-field-pic-font-align-und-29 + label span,
 #edit-field-pic-label-align-und-29 + label span,
 #edit-field-contents-font-align-und-29 + label span,
@@ -653,7 +653,7 @@ body {
 }
 
 #edit-field-number-font-align-und-29:checked + label span,
-.page-node-add-demand-create .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(4) input:checked + label,
+#demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(4) input:checked + label,
 #edit-field-pic-font-align-und-29:checked + label span,
 #edit-field-pic-label-align-und-29:checked + label span,
 #edit-field-contents-font-align-und-29:checked + label span,
@@ -759,7 +759,7 @@ body {
 .node-type-demand-create .n_visibl input,
 .node-type-demand-create .n_visibl_n input,
 .page-node-add-demand-create div.field-name-field-title-number-r .form-radios:nth-child(2) input,
-.page-node-add-demand-create div.field-name-field-title-number-r .form-radios div:nth-child(1),
+#demand-create-node-form div.field-name-field-title-number-r .form-radios div:nth-child(1),
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios:nth-child(2) input,
 .page-node-add-demand-create div.field-name-field-list-number-1 .form-radios div:nth-child(1),
 .page-node-add-demand-create .n_visibl_r input,
@@ -812,8 +812,8 @@ body {
 }
 
 .field-name-field-pic-indents-top label,
-.node-type-demand-create div.field-name-field-title-number-r .form-radios > div,
-.node-type-demand-create div.field-name-field-list-number-1 .form-radios > div,
+#demand-create-node-form div.field-name-field-title-number-r .form-radios > div,
+#demand-create-node-form div.field-name-field-list-number-1 .form-radios > div,
 .node-type-demand-create .form-item-profile-demand-create-field-main-columns-text-und,
 .node-type-demand-create .inline_label label,
 .node-type-demand-create .form-item-profile-demand-create-field-header-filter-from-und-0-value label,
@@ -1290,7 +1290,7 @@ body {
     display: none;
 }
 
-.page-node-add-demand-create .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox label,
+#demand-create-node-form .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox label,
 #processing-form #edit-list-docx {
     display: block;
 }
@@ -1566,7 +1566,7 @@ body {
     display: flex;
 }
 
-.page-node-add-demand-create .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox label,
+#demand-create-node-form .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox label,
 #edit-field-header-setting-align label span,
 #edit-field-table-label-align-und label span,
 #edit-field-header-setting-typeface-und label span,
@@ -1608,7 +1608,7 @@ body {
     background-image: url(../images/editor_-_demand_create/u105_mouseOver.png);
 }
 
-.page-node-add-demand-create .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(1) label,
+#demand-create-node-form .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(1) label,
 #edit-field-number-font-typeface-und-51 + label span,
 #edit-field-title-font-typeface-und-51 + label span,
 #edit-field-pic-font-typeface-und-51 + label span,
@@ -1621,7 +1621,7 @@ body {
     background-image: url(../images/editor_-_demand_create/u107.png);
 }
 
-.page-node-add-demand-create .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(1) input:checked + label,
+#demand-create-node-form .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(1) input:checked + label,
 #edit-field-number-font-typeface-und-51:checked + label span,
 #edit-field-title-font-typeface-und-51:checked + label span,
 #edit-field-pic-font-typeface-und-51:checked + label span,
@@ -1634,7 +1634,7 @@ body {
     background-image: url(../images/editor_-_demand_create/u107_mouseOver.png);
 }
 
-.page-node-add-demand-create .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(2) label,
+#demand-create-node-form .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(2) label,
 #edit-field-number-font-typeface-und-49 + label span,
 #edit-field-title-font-typeface-und-49 + label span,
 #edit-field-pic-font-typeface-und-49 + label span,
@@ -1647,7 +1647,7 @@ body {
     background-image: url(../images/editor_-_demand_create/u109.png);
 }
 
-.page-node-add-demand-create .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(2) input:checked + label,
+#demand-create-node-form .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(2) input:checked + label,
 #edit-field-number-font-typeface-und-49:checked + label span,
 #edit-field-title-font-typeface-und-49:checked + label span,
 #edit-field-pic-font-typeface-und-49:checked + label span,
@@ -1660,7 +1660,7 @@ body {
     background-image: url(../images/editor_-_demand_create/u109_mouseOver.png);
 }
 
-.page-node-add-demand-create .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(3) label,
+#demand-create-node-form .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(3) label,
 #edit-field-number-font-typeface-und-50 + label span,
 #edit-field-title-font-typeface-und-50 + label span,
 #edit-field-pic-font-typeface-und-50 + label span,
@@ -1673,7 +1673,7 @@ body {
     background-image: url(../images/editor_-_demand_create/u111.png);
 }
 
-.page-node-add-demand-create .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(3) input:checked + label,
+#demand-create-node-form .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox:nth-child(3) input:checked + label,
 #edit-field-number-font-typeface-und-50:checked + label span,
 #edit-field-title-font-typeface-und-50:checked + label span,
 #edit-field-pic-font-typeface-und-50:checked + label span,
@@ -1733,8 +1733,8 @@ body {
     display: none;
 }
 
-.page-node-add-demand-create .field-name-field-title-font-align .form-radios .form-type-radio,
-.page-node-add-demand-create .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox,
+#demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio,
+#demand-create-node-form .field-name-field-title-font-typeface .form-checkboxes .form-type-checkbox,
 .form-item.form-type-radio.form-item-field-number-font-align-und,
 .form-item.form-type-radio.form-item-field-title-font-align-und,
 .form-item.form-type-radio.form-item-field-pic-font-align-und,
@@ -1766,8 +1766,8 @@ body {
     display: flex;
 }
 
-.page-node-add-demand-create .field-name-field-title-font-color .form-item,
-.page-node-add-demand-create .field-name-field-title-font-background .form-item,
+#demand-create-node-form .field-name-field-title-font-color .form-item,
+#demand-create-node-form .field-name-field-title-font-background .form-item,
 #edit-field-list-font-color > div,
 #edit-field-table-number-color > div,
 #edit-field-pic-font-color > div,
@@ -1998,7 +1998,7 @@ body {
     vertical-align: top;
 }
 
-.page-node-add-demand-create .field-name-field-title-font-color select,
+#demand-create-node-form .field-name-field-title-font-color select,
 #demand-create-node-form #edit-field-list-font-color-und,
 #demand-create-node-form #edit-field-table-number-color-und,
 #demand-create-node-form #edit-field-pic-font-color-und,
@@ -2014,7 +2014,7 @@ body {
     height: 32px;
 }
 
-.page-node-add-demand-create .field-name-field-title-font-background select,
+#demand-create-node-form .field-name-field-title-font-background select,
 #demand-create-node-form #edit-field-list-font-background-und,
 #demand-create-node-form #edit-field-table-number-background-und,
 #demand-create-node-form #edit-field-pic-font-background-und,
@@ -2025,7 +2025,7 @@ body {
 #demand-create-node-form #edit-field-main-font-background-und,
 #demand-create-node-form #edit-field-table-label-background-und,
 #demand-create-node-form #edit-field-header-setting-background-und {
-    background-image: url('/sites/all/themes/gost/images/editor_-_demand_create/colorText.png');
+    background-image: url('../images/editor_-_demand_create/colorText.png');
     width: 40px;
     height: 32px;
 }
