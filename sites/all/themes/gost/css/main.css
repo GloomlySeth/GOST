@@ -1272,6 +1272,7 @@ body {
     -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 .view-id-requirements_list .btnRequirements {
@@ -1407,7 +1408,7 @@ body {
     margin-top: 1px;
 }
 
-.tableGost .view-content table,
+..tableGost .view-content table,
 .view-id-document_list .views-table,
 .view-id-requirements_list .views-table {
     border-spacing: 0;
