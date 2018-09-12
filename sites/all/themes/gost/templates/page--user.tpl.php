@@ -24,7 +24,7 @@
   <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1 class="title" id="page-title">
-          <?php $title == 'Информация о компании' ? print $title : print t('Personal information') . ' ' . $title; ?>
+          <?php $title == 'Информация о компании' ? print $title : print t('Personal information') ; ?>
         </h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
