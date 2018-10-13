@@ -1535,8 +1535,8 @@ body {
 }
 
 #edit-field-setting > div {
-    display: flex;
     justify-content: flex-start;
+    display: flex;
 }
 
 #edit-field-setting label {
