@@ -1527,6 +1527,67 @@ body {
     margin-top: 35px;
 }
 
+
+-div#block-system-main .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div#block-system-main .content .view-content {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin: 30px 0;
+    font-size: 20px;
+
+}
+div#block-system-main .content .view-footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 90px;
+}
+div#block-system-main .content .view-footer div {
+    background: #337ab7;
+    border: none;
+    padding: 7px 12px;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+div#block-system-main .content .view-footer div:last-child {
+    margin-right: 0;
+}
+div#block-system-main .content .view-footer div a {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.42857143;
+    font-weight: 300;
+}
+div#block-system-main .content .view-content .views-row {
+    width: 70%;
+    margin: 0 auto;
+}
+div#block-system-main .content .view-content .views-row .views-field {
+  display: flex;
+  justify-content: space-between;
+  margin:10px 0 30px 0;  
+}
+div#block-system-main .content .view-content .views-row .views-field:last-child {
+    margin-bottom: 10px;
+}
+div#block-system-main .content .view-content .views-row .views-field span{
+    width: 50%; 
+    color: #1a3d5b;
+}
+div#block-system-main .content .view-content .views-row .views-field span:first-child{
+    font-weight: bold; 
+}
+div#block-system-main .content .view-content .views-row .views-field span:last-child {
+    margin-left: 80px; 
+}
+
+
+
+
 #demand-create-node-form .form-item-title,
 #field-demand-note-add-more-wrapper > div {
     width: 550px;
