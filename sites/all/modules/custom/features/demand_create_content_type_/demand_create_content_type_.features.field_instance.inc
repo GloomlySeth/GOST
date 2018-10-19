@@ -3191,49 +3191,6 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-demand_create-field_main_interval_mirror'.
-  $field_instances['node-demand_create-field_main_interval_mirror'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 46,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_main_interval_mirror',
-    'label' => 'Зеркальные отступы',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 37,
-    ),
-  );
-
   // Exported field_instance: 'node-demand_create-field_main_interval_non'.
   $field_instances['node-demand_create-field_main_interval_non'] = array(
     'bundle' => 'demand_create',
@@ -3362,7 +3319,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 33,
+      'weight' => 94,
     ),
   );
 
@@ -3409,49 +3366,6 @@ function demand_create_content_type__field_default_field_instances() {
       'settings' => array(),
       'type' => 'number',
       'weight' => 36,
-    ),
-  );
-
-  // Exported field_instance: 'node-demand_create-field_main_interval_shift'.
-  $field_instances['node-demand_create-field_main_interval_shift'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 39,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_main_interval_shift',
-    'label' => 'Добавить переносы',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 86,
     ),
   );
 
@@ -3579,7 +3493,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 24,
+      'weight' => 31,
     ),
   );
 
@@ -3625,7 +3539,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 31,
+      'weight' => 25,
     ),
   );
 
@@ -3714,7 +3628,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 32,
+      'weight' => 86,
     ),
   );
 
@@ -3753,7 +3667,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 30,
+      'weight' => 24,
     ),
   );
 
