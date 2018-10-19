@@ -377,6 +377,14 @@ function processing_form_submit($form, &$form_state) {
               'continue' => is_empty($node, 'field_table_label_continue'),
               'continue2' => is_empty($node, 'field_table_label_continue2'),
             ),
+            'indents' => array(
+              'top' => is_empty($node, 'field_table_indents_top'),
+              'top2' => is_empty($node, 'field_table_indents_top2'),
+              'text' => is_empty($node, 'field_table_indents_text'),
+              'text2' => is_empty($node, 'field_table_indents_text2'),
+              'pic' => is_empty($node, 'field_table_indents_pic'),
+              'pic2' => is_empty($node, 'field_table_indents_pic2'),
+            ),
             'number' => array(
               'type' => is_empty($node, 'field_table_number_type'),
               'view' => is_empty($node, 'field_table_number_view'),

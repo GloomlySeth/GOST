@@ -104,6 +104,12 @@ function demand_create_content_type__form_alter(&$form, &$form_state, $form_id) 
     $form['field_pic_indents_text2']['und']['#title'] = '';
     unset($form['field_pic_indents_pic2']['und']['#options']['_none']);
     $form['field_pic_indents_pic2']['und']['#title'] = '';
+    unset($form['field_table_indents_top2']['und']['#options']['_none']);
+    $form['field_table_indents_top2']['und']['#title'] = '';
+    unset($form['field_table_indents_text2']['und']['#options']['_none']);
+    $form['field_table_indents_text2']['und']['#title'] = '';
+    unset($form['field_table_indents_pic2']['und']['#options']['_none']);
+    $form['field_table_indents_pic2']['und']['#title'] = '';
     $form['field_main_columns_text']['und']['#title'] = '';
     unset($form['field_formula_indents_formula2']['und']['#options']['_none']);
     $form['field_formula_indents_formula2']['und']['#title'] = '';
@@ -139,6 +145,9 @@ function demand_create_content_type__form_alter(&$form, &$form_state, $form_id) 
     $form['field_pic_indents_top']['#attributes']['class'][] = 'width';
     $form['field_pic_indents_text']['#attributes']['class'][] = 'width';
     $form['field_pic_indents_pic']['#attributes']['class'][] = 'width';
+    $form['field_table_indents_top']['#attributes']['class'][] = 'width';
+    $form['field_table_indents_text']['#attributes']['class'][] = 'width';
+    $form['field_table_indents_pic']['#attributes']['class'][] = 'width';
     $form['field_formula_indents_text']['#attributes']['class'][] = 'width';
     $form['field_formula_indents_formula']['#attributes']['class'][] = 'width';
     $form['field_main_width_number1']['#attributes']['class'][] = 'width';
@@ -160,6 +169,9 @@ function demand_create_content_type__form_alter(&$form, &$form_state, $form_id) 
     $form['field_pic_number_division']['#attributes']['class'][] = 'inline_label';
     $form['field_pic_indents_text']['#attributes']['class'][] = 'inline_label';
     $form['field_pic_indents_pic']['#attributes']['class'][] = 'inline_label';
+    $form['field_table_indents_text']['#attributes']['class'][] = 'inline_label';
+    $form['field_table_indents_top']['#attributes']['class'][] = 'inline_label';
+    $form['field_table_indents_pic']['#attributes']['class'][] = 'inline_label';
     $form['field_table_number_division']['#attributes']['class'][] = 'inline_label';
     $form['field_formula_indents_text']['#attributes']['class'][] = 'inline_label';
     $form['field_formula_indents_formula']['#attributes']['class'][] = 'inline_label';

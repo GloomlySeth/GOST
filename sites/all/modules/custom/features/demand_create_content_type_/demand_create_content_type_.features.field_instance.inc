@@ -4738,7 +4738,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 132,
+      'weight' => 202,
     ),
   );
 
@@ -4777,7 +4777,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 135,
+      'weight' => 205,
     ),
   );
 
@@ -4816,7 +4816,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 134,
+      'weight' => 204,
     ),
   );
 
@@ -4855,7 +4855,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 130,
+      'weight' => 200,
     ),
   );
 
@@ -4894,7 +4894,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 131,
+      'weight' => 201,
     ),
   );
 
@@ -4931,7 +4931,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 133,
+      'weight' => 203,
     ),
   );
 
@@ -4984,7 +4984,11 @@ function demand_create_content_type__field_default_field_instances() {
   // Exported field_instance: 'node-demand_create-field_pic_indents_pic2'.
   $field_instances['node-demand_create-field_pic_indents_pic2'] = array(
     'bundle' => 'demand_create',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -5502,7 +5506,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 128,
+      'weight' => 214,
     ),
   );
 
@@ -5541,7 +5545,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 126,
+      'weight' => 207,
     ),
   );
 
@@ -5578,7 +5582,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 127,
+      'weight' => 213,
     ),
   );
 
@@ -5788,6 +5792,273 @@ function demand_create_content_type__field_default_field_instances() {
       ),
       'type' => 'options_select',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_pic'.
+  $field_instances['node-demand_create-field_table_indents_pic'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 139,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_pic',
+    'label' => 'Между подписью и таблицей:',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 184,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_pic2'.
+  $field_instances['node-demand_create-field_table_indents_pic2'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 140,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_pic2',
+    'label' => 'Между подписью и таблицей:',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 186,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_text'.
+  $field_instances['node-demand_create-field_table_indents_text'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 137,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_text',
+    'label' => 'От подписи таблицы до текста:',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 189,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_text2'.
+  $field_instances['node-demand_create-field_table_indents_text2'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 138,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_text2',
+    'label' => 'От подписи таблицы до текста:',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 191,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_top'.
+  $field_instances['node-demand_create-field_table_indents_top'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 135,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_top',
+    'label' => 'От верхнего края таблицы до текста:',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 194,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_top2'.
+  $field_instances['node-demand_create-field_table_indents_top2'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 136,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_top2',
+    'label' => 'От верхнего края таблицы до текста:',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 196,
     ),
   );
 
@@ -6764,6 +7035,7 @@ function demand_create_content_type__field_default_field_instances() {
   t('Количество строк на страницу');
   t('Левое');
   t('Между подписью и рисунком:');
+  t('Между подписью и таблицей:');
   t('Междустрочный');
   t('На');
   t('Надпись: "Продолжение таблицы ХХХ"');
@@ -6777,7 +7049,9 @@ function demand_create_content_type__field_default_field_instances() {
   t('Нумерация');
   t('Ориентация');
   t('От верхнего края рисунка до текста:');
+  t('От верхнего края таблицы до текста:');
   t('От подписи рисунка до текста:');
+  t('От подписи таблицы до текста:');
   t('От текста до формулы:');
   t('От формулы до текста:');
   t('Отступы от нумерации:');
