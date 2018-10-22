@@ -1299,6 +1299,47 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-demand_create-field_field_table_number_own2'.
+  $field_instances['node-demand_create-field_field_table_number_own2'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 145,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_field_table_number_own2',
+    'label' => 'Свой формат номера',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 59,
+    ),
+  );
+
   // Exported field_instance: 'node-demand_create-field_fields_bottom'.
   $field_instances['node-demand_create-field_fields_bottom'] = array(
     'bundle' => 'demand_create',
@@ -3947,43 +3988,6 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-demand_create-field_number_font_align'.
-  $field_instances['node-demand_create-field_number_font_align'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 120,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_number_font_align',
-    'label' => 'Расположение',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 169,
-    ),
-  );
-
   // Exported field_instance: 'node-demand_create-field_number_font_background'.
   $field_instances['node-demand_create-field_number_font_background'] = array(
     'bundle' => 'demand_create',
@@ -4376,7 +4380,7 @@ function demand_create_content_type__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 69,
+      'weight' => 56,
     ),
   );
 
@@ -4454,7 +4458,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 68,
+      'weight' => 55,
     ),
   );
 
@@ -4738,7 +4742,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 132,
+      'weight' => 202,
     ),
   );
 
@@ -4777,7 +4781,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 135,
+      'weight' => 205,
     ),
   );
 
@@ -4816,7 +4820,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 134,
+      'weight' => 204,
     ),
   );
 
@@ -4855,7 +4859,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 130,
+      'weight' => 200,
     ),
   );
 
@@ -4894,7 +4898,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 131,
+      'weight' => 201,
     ),
   );
 
@@ -4931,7 +4935,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 133,
+      'weight' => 203,
     ),
   );
 
@@ -4984,7 +4988,11 @@ function demand_create_content_type__field_default_field_instances() {
   // Exported field_instance: 'node-demand_create-field_pic_indents_pic2'.
   $field_instances['node-demand_create-field_pic_indents_pic2'] = array(
     'bundle' => 'demand_create',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -5502,7 +5510,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 128,
+      'weight' => 214,
     ),
   );
 
@@ -5541,7 +5549,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 126,
+      'weight' => 207,
     ),
   );
 
@@ -5578,7 +5586,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 127,
+      'weight' => 213,
     ),
   );
 
@@ -5788,6 +5796,442 @@ function demand_create_content_type__field_default_field_instances() {
       ),
       'type' => 'options_select',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_align'.
+  $field_instances['node-demand_create-field_table_align'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 141,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_align',
+    'label' => 'Выравнивание таблицы',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 215,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_border_color'.
+  $field_instances['node-demand_create-field_table_border_color'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'colorfield',
+        'settings' => array(
+          'height' => 20,
+          'width' => 20,
+        ),
+        'type' => 'colorfield_color_swatch',
+        'weight' => 143,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_border_color',
+    'label' => 'Цвет:',
+    'required' => 0,
+    'settings' => array(
+      'colorfield_colorpicker_type' => 'farbtastic',
+      'colorfield_enable_colorpicker' => TRUE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'colorfield',
+      'settings' => array(
+        'colorfield_colorpicker_type' => 'farbtastic',
+        'colorfield_enable_colorpicker' => TRUE,
+        'colorfield_options' => array(
+          'colorfield_colorpicker_type' => 'farbtastic',
+          'colorfield_enable_colorpicker' => 1,
+        ),
+      ),
+      'type' => 'colorfield_unified_textfield',
+      'weight' => 55,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_border_thickness'.
+  $field_instances['node-demand_create-field_table_border_thickness'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 142,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_border_thickness',
+    'label' => 'Толщина: ',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 54,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_border_type'.
+  $field_instances['node-demand_create-field_table_border_type'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 144,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_border_type',
+    'label' => 'Тип',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 56,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_pic'.
+  $field_instances['node-demand_create-field_table_indents_pic'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 139,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_pic',
+    'label' => 'Между подписью и таблицей:',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 184,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_pic2'.
+  $field_instances['node-demand_create-field_table_indents_pic2'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 140,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_pic2',
+    'label' => 'Между подписью и таблицей:',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 186,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_text'.
+  $field_instances['node-demand_create-field_table_indents_text'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 137,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_text',
+    'label' => 'От подписи таблицы до текста:',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 189,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_text2'.
+  $field_instances['node-demand_create-field_table_indents_text2'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 138,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_text2',
+    'label' => 'От подписи таблицы до текста:',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 191,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_top'.
+  $field_instances['node-demand_create-field_table_indents_top'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 135,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_top',
+    'label' => 'От верхнего края таблицы до текста:',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 194,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_table_indents_top2'.
+  $field_instances['node-demand_create-field_table_indents_top2'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 136,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_table_indents_top2',
+    'label' => 'От верхнего края таблицы до текста:',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 196,
     ),
   );
 
@@ -6269,43 +6713,6 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-demand_create-field_table_number_align'.
-  $field_instances['node-demand_create-field_table_number_align'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 120,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_table_number_align',
-    'label' => 'Расположение',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 53,
-    ),
-  );
-
   // Exported field_instance:
   // 'node-demand_create-field_table_number_background'.
   $field_instances['node-demand_create-field_table_number_background'] = array(
@@ -6382,45 +6789,6 @@ function demand_create_content_type__field_default_field_instances() {
       ),
       'type' => 'options_select',
       'weight' => 55,
-    ),
-  );
-
-  // Exported field_instance: 'node-demand_create-field_table_number_division'.
-  $field_instances['node-demand_create-field_table_number_division'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 96,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_table_number_division',
-    'label' => 'Вид разделителя между подписью и текстом:',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => '',
-      ),
-      'type' => 'options_select',
-      'weight' => 57,
     ),
   );
 
@@ -6506,7 +6874,7 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 59,
+      'weight' => 60,
     ),
   );
 
@@ -6584,7 +6952,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 55,
+      'weight' => 57,
     ),
   );
 
@@ -6658,7 +7026,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 56,
+      'weight' => 58,
     ),
   );
 
@@ -6755,6 +7123,7 @@ function demand_create_content_type__field_default_field_instances() {
   t('Вид разделителя между подписью и текстом:');
   t('Вторая строка');
   t('Выбрать шаблон настроек');
+  t('Выравнивание таблицы');
   t('Добавить переносы');
   t('Допустимые символы и знаки');
   t('Зеркальные отступы');
@@ -6764,6 +7133,7 @@ function demand_create_content_type__field_default_field_instances() {
   t('Количество строк на страницу');
   t('Левое');
   t('Между подписью и рисунком:');
+  t('Между подписью и таблицей:');
   t('Междустрочный');
   t('На');
   t('Надпись: "Продолжение таблицы ХХХ"');
@@ -6777,7 +7147,9 @@ function demand_create_content_type__field_default_field_instances() {
   t('Нумерация');
   t('Ориентация');
   t('От верхнего края рисунка до текста:');
+  t('От верхнего края таблицы до текста:');
   t('От подписи рисунка до текста:');
+  t('От подписи таблицы до текста:');
   t('От текста до формулы:');
   t('От формулы до текста:');
   t('Отступы от нумерации:');
@@ -6812,6 +7184,7 @@ function demand_create_content_type__field_default_field_instances() {
   t('Тип');
   t('Тип нумерации');
   t('Толщина:');
+  t('Толщина: ');
   t('Уровень заголовка:');
   t('Уровень списка:');
   t('Фон текста');
