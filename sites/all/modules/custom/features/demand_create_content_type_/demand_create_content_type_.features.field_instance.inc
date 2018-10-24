@@ -4709,43 +4709,6 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-demand_create-field_pic_font_align'.
-  $field_instances['node-demand_create-field_pic_font_align'] = array(
-    'bundle' => 'demand_create',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 131,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_pic_font_align',
-    'label' => 'Расположение',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 202,
-    ),
-  );
-
   // Exported field_instance: 'node-demand_create-field_pic_font_background'.
   $field_instances['node-demand_create-field_pic_font_background'] = array(
     'bundle' => 'demand_create',
@@ -5471,6 +5434,167 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-demand_create-field_pic_number_background'.
+  $field_instances['node-demand_create-field_pic_number_background'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 163,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pic_number_background',
+    'label' => 'Фон текста',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_pic_number_color'.
+  $field_instances['node-demand_create-field_pic_number_color'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 162,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pic_number_color',
+    'label' => 'Цвет текста',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_pic_number_font'.
+  $field_instances['node-demand_create-field_pic_number_font'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => array(
+      0 => array(
+        'tid' => 42,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 159,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pic_number_font',
+    'label' => 'Шрифт',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_pic_number_own2'.
+  $field_instances['node-demand_create-field_pic_number_own2'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 158,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pic_number_own2',
+    'label' => 'Свой формат номера',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 224,
+    ),
+  );
+
   // Exported field_instance: 'node-demand_create-field_pic_number_setting'.
   $field_instances['node-demand_create-field_pic_number_setting'] = array(
     'bundle' => 'demand_create',
@@ -5510,7 +5634,50 @@ function demand_create_content_type__field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 214,
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-demand_create-field_pic_number_size'.
+  $field_instances['node-demand_create-field_pic_number_size'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => array(
+      0 => array(
+        'tid' => 4,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 160,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pic_number_size',
+    'label' => 'Размер',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 2,
     ),
   );
 
@@ -5553,6 +5720,43 @@ function demand_create_content_type__field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-demand_create-field_pic_number_typeface'.
+  $field_instances['node-demand_create-field_pic_number_typeface'] = array(
+    'bundle' => 'demand_create',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 161,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pic_number_typeface',
+    'label' => 'Начертание',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-demand_create-field_pic_number_view'.
   $field_instances['node-demand_create-field_pic_number_view'] = array(
     'bundle' => 'demand_create',
@@ -5586,7 +5790,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 213,
+      'weight' => 2,
     ),
   );
 

@@ -3282,14 +3282,15 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_number_r1';
   $field_group->data = array(
     'label' => 'Нумерация картинки 1',
-    'weight' => '199',
+    'weight' => '2',
     'children' => array(
-      0 => 'field_pic_font_font',
-      1 => 'field_pic_font_size',
-      2 => 'field_pic_font_align',
-      3 => 'field_pic_font_typeface',
-      4 => 'field_pic_font_color',
-      5 => 'field_pic_font_background',
+      0 => 'field_number_pattern_pic',
+      1 => 'field_number_pattern_own',
+      2 => 'field_pic_font_font',
+      3 => 'field_pic_font_size',
+      4 => 'field_pic_font_typeface',
+      5 => 'field_pic_font_color',
+      6 => 'field_pic_font_background',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -3318,7 +3319,7 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_number_r1';
   $field_group->data = array(
     'label' => 'Нумерация картинки 2',
-    'weight' => '206',
+    'weight' => '1',
     'children' => array(
       0 => 'group_pic_number_r21',
     ),
@@ -3349,10 +3350,11 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_pic_number_r1';
   $field_group->data = array(
     'label' => 'Нумерация картинки 3',
-    'weight' => '212',
+    'weight' => '3',
     'children' => array(
       0 => 'field_pic_number_view',
       1 => 'field_pic_number_setting',
+      2 => 'field_pic_number_own2',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -3360,7 +3362,7 @@ function demand_create_content_type__field_group_info() {
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
-        'classes' => 'group-pic-number-r13 field-group-html-element',
+        'classes' => 'group-pic-number-r13 field-group-html-element section-content-r',
         'element' => 'div',
         'show_label' => '0',
         'label_element' => 'div',
@@ -3369,6 +3371,41 @@ function demand_create_content_type__field_group_info() {
     ),
   );
   $field_groups['group_pic_number_r13|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_pic_number_r14|node|demand_create|form';
+  $field_group->group_name = 'group_pic_number_r14';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_pic_number_r1';
+  $field_group->data = array(
+    'label' => 'Нумерация картинки 4',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_pic_number_font',
+      1 => 'field_pic_number_size',
+      2 => 'field_pic_number_typeface',
+      3 => 'field_pic_number_color',
+      4 => 'field_pic_number_background',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'element' => 'div',
+        'show_label' => 0,
+        'label_element' => 'div',
+        'classes' => 'group-pic-number-r14 field-group-html-element',
+        'attributes' => '',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_pic_number_r14|node|demand_create|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -3386,6 +3423,7 @@ function demand_create_content_type__field_group_info() {
       0 => 'group_pic_number_r11',
       1 => 'group_pic_number_r12',
       2 => 'group_pic_number_r13',
+      3 => 'group_pic_number_r14',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -3601,32 +3639,31 @@ function demand_create_content_type__field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Картинки',
+    'label' => 'РИСУНКИ (ИЛЛЮСТРАЦИИ)',
     'weight' => '10',
     'children' => array(
-      0 => 'field_number_pattern_pic',
-      1 => 'field_number_pattern_own',
-      2 => 'group_pic_align',
-      3 => 'group_pic_border',
-      4 => 'group_pic_indents',
-      5 => 'group_pic_label',
-      6 => 'group_pic_number',
-      7 => 'group_pic_size',
-      8 => 'group_table',
+      0 => 'group_pic_align',
+      1 => 'group_pic_border',
+      2 => 'group_pic_indents',
+      3 => 'group_pic_label',
+      4 => 'group_pic_number',
+      5 => 'group_pic_size',
+      6 => 'group_table',
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'РИСУНКИ (ИЛЛЮСТРАЦИИ)',
       'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-pic field-group-div',
         'description' => '',
-        'show_label' => 1,
+        'show_label' => '1',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'fast',
-        'classes' => 'group-pic field-group-div',
-        'required_fields' => 1,
-        'id' => '',
       ),
+      'formatter' => 'open',
     ),
   );
   $field_groups['group_pic|node|demand_create|form'] = $field_group;
@@ -3825,6 +3862,38 @@ function demand_create_content_type__field_group_info() {
     ),
   );
   $field_groups['group_table_font|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_table_header_00|node|demand_create|form';
+  $field_group->group_name = 'group_table_header_00';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_table_header_font';
+  $field_group->data = array(
+    'label' => 'Шрифт шапки таблицы 00',
+    'weight' => '224',
+    'children' => array(
+      0 => 'group_tabe_header_font_10',
+      1 => 'group_table_header_font_20',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Шрифт шапки таблицы 00',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-table-header-00 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_table_header_00|node|demand_create|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -4908,6 +4977,37 @@ function demand_create_content_type__field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_table_text|node|demand_create|form';
+  $field_group->group_name = 'group_table_text';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_table';
+  $field_group->data = array(
+    'label' => 'Шрифт таблицы',
+    'weight' => '53',
+    'children' => array(
+      0 => 'group_table_text_00',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Шрифт таблицы',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-table-text field-group-html-element section-content-l',
+        'element' => 'div',
+        'show_label' => '1',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_table_text|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_table|node|demand_create|form';
   $field_group->group_name = 'group_table';
   $field_group->entity_type = 'node';
@@ -4983,7 +5083,6 @@ function demand_create_content_type__field_group_info() {
   t('Заголовки');
   t('Интервал');
   t('Кавычки');
-  t('Картинки');
   t('Колонки');
   t('Колонтитулы');
   t('Настройка текста');
@@ -4994,6 +5093,7 @@ function demand_create_content_type__field_group_info() {
   t('Нумерация картинки 2');
   t('Нумерация картинки 21');
   t('Нумерация картинки 3');
+  t('Нумерация картинки 4');
   t('Нумерация таблицы');
   t('Нумерация таблицы обертка');
   t('Основной текст');
@@ -5011,6 +5111,7 @@ function demand_create_content_type__field_group_info() {
   t('Отступы и интервалы таблицы 31');
   t('Отступы и интервалы таблицы 32');
   t('Поля');
+  t('РИСУНКИ (ИЛЛЮСТРАЦИИ)');
   t('Размер бумаги');
   t('Размеры');
   t('Размещение рисунка');
@@ -5025,6 +5126,7 @@ function demand_create_content_type__field_group_info() {
   t('Шаблоны');
   t('Ширина и промежуток');
   t('Шрифт');
+  t('Шрифт таблицы');
   t('Шрифт таблицы 00');
   t('Шрифт таблицы 01');
   t('Шрифт таблицы 02');
@@ -5034,6 +5136,7 @@ function demand_create_content_type__field_group_info() {
   t('Шрифт таблицы 22');
   t('Шрифт таблицы 32');
   t('Шрифт таблицы 42');
+  t('Шрифт шапки таблицы 00');
   t('Шрифт шапки таблицы 10');
   t('Шрифт шапки таблицы 11');
   t('Шрифт шапки таблицы 12');
