@@ -4056,6 +4056,37 @@ function demand_create_content_type__field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_table_header_font|node|demand_create|form';
+  $field_group->group_name = 'group_table_header_font';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_table';
+  $field_group->data = array(
+    'label' => 'Шрифт шапки таблицы',
+    'weight' => '52',
+    'children' => array(
+      0 => 'group_table_header_00',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Шрифт шапки таблицы',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-table-header-font field-group-html-element section-content-l',
+        'element' => 'div',
+        'show_label' => '1',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_table_header_font|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_table_headre_font_21|node|demand_create|form';
   $field_group->group_name = 'group_table_headre_font_21';
   $field_group->entity_type = 'node';
@@ -4595,6 +4626,72 @@ function demand_create_content_type__field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_table_number_int_00|node|demand_create|form';
+  $field_group->group_name = 'group_table_number_int_00';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_table_number_int';
+  $field_group->data = array(
+    'label' => 'Шрифт цифр номера 00',
+    'weight' => '227',
+    'children' => array(
+      0 => 'field_int_font',
+      1 => 'field_int_size',
+      2 => 'field_int_typeface',
+      3 => 'field_int_color',
+      4 => 'field_int_background',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Шрифт цифр номера 00',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-table-number-int-00 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_table_number_int_00|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_table_number_int|node|demand_create|form';
+  $field_group->group_name = 'group_table_number_int';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_table';
+  $field_group->data = array(
+    'label' => 'Шрифт цифр номера',
+    'weight' => '227',
+    'children' => array(
+      0 => 'group_table_number_int_00',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Шрифт цифр номера',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-table-number-int field-group-html-element section-content-l',
+        'element' => 'div',
+        'show_label' => '1',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_table_number_int|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_table_number_r1|node|demand_create|form';
   $field_group->group_name = 'group_table_number_r1';
   $field_group->entity_type = 'node';
@@ -5025,6 +5122,7 @@ function demand_create_content_type__field_group_info() {
       4 => 'group_table_border_10',
       5 => 'group_table_text',
       6 => 'group_table_header_font',
+      7 => 'group_table_number_int',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -5136,6 +5234,9 @@ function demand_create_content_type__field_group_info() {
   t('Шрифт таблицы 22');
   t('Шрифт таблицы 32');
   t('Шрифт таблицы 42');
+  t('Шрифт цифр номера');
+  t('Шрифт цифр номера 00');
+  t('Шрифт шапки таблицы');
   t('Шрифт шапки таблицы 00');
   t('Шрифт шапки таблицы 10');
   t('Шрифт шапки таблицы 11');

@@ -518,6 +518,7 @@ body {
 #edit-field-main-font-align-und label,
 #edit-field-table-label-align-und label,
 #edit-field-table-label-typeface-und label,
+#edit-field-int-typeface-und label,
 #edit-field-table-text-typeface-und label,
 #edit-field-table-header-font-typef-und label,
 #edit-profile-demand-create-field-header-setting-typeface-und label,
@@ -711,6 +712,7 @@ body {
 #edit-field-table-number-typeface-und-51 + label,
 #edit-field-list-font-typeface-und-51 + label,
 #edit-field-table-label-typeface-und-51 + label,
+#edit-field-int-typeface-und-51 + label,
 #edit-field-table-text-typeface-und-51 + label,
 #edit-field-table-header-font-typef-und-51 + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-51 + label,
@@ -727,6 +729,7 @@ body {
 #edit-field-table-number-typeface-und-51:checked + label,
 #edit-field-list-font-typeface-und-51:checked + label,
 #edit-field-table-label-typeface-und-51:checked + label,
+#edit-field-int-typeface-und-51:checked + label,
 #edit-field-table-text-typeface-und-51:checked + label,
 #edit-field-table-header-font-typef-und-51:checked + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-51:checked + label,
@@ -743,6 +746,7 @@ body {
 #edit-field-table-number-typeface-und-49 + label,
 #edit-field-list-font-typeface-und-49 + label,
 #edit-field-table-label-typeface-und-49 + label,
+#edit-field-int-typeface-und-49 + label,
 #edit-field-table-text-typeface-und-49 + label,
 #edit-field-table-header-font-typef-und-49 + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-49 + label,
@@ -759,6 +763,7 @@ body {
 #edit-field-table-number-typeface-und-49:checked + label,
 #edit-field-list-font-typeface-und-49:checked + label,
 #edit-field-table-label-typeface-und-49:checked + label,
+#edit-field-int-typeface-und-49:checked + label,
 #edit-field-table-text-typeface-und-49:checked + label,
 #edit-field-table-header-font-typef-und-49:checked + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-49:checked + label,
@@ -775,6 +780,7 @@ body {
 #edit-field-table-number-typeface-und-50 + label,
 #edit-field-list-font-typeface-und-50 + label,
 #edit-field-table-label-typeface-und-50 + label,
+#edit-field-int-typeface-und-50 + label,
 #edit-field-table-text-typeface-und-50 + label,
 #edit-field-table-header-font-typef-und-50 + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-50 + label,
@@ -791,6 +797,7 @@ body {
 #edit-field-table-number-typeface-und-50:checked + label,
 #edit-field-list-font-typeface-und-50:checked + label,
 #edit-field-table-label-typeface-und-50:checked + label,
+#edit-field-int-typeface-und-50:checked + label,
 #edit-field-table-text-typeface-und-50:checked + label,
 #edit-field-table-header-font-typef-und-50:checked + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-50:checked + label,
@@ -2113,6 +2120,7 @@ body {
 
 #demand-create-node-form .field-name-field-title-font-color select,
 #demand-create-node-form #edit-field-list-font-color-und,
+#demand-create-node-form #edit-field-int-color-und,
 #demand-create-node-form #edit-field-table-number-color-und,
 #demand-create-node-form #edit-field-pic-font-color-und,
 #demand-create-node-form #edit-field-pic-label-color-und,
@@ -2143,6 +2151,7 @@ body {
 #demand-create-node-form #edit-field-table-label-background-und,
 #demand-create-node-form #edit-field-table-text-background-und,
 #demand-create-node-form #edit-field-table-header-font-backgrou-und,
+#demand-create-node-form #edit-field-int-background-und,
 #demand-create-node-form #edit-field-header-setting-background-und {
     background-image: url('../images/editor_-_demand_create/colorText.png');
     width: 40px;
@@ -2177,10 +2186,12 @@ body.page-user-edit-company-info #user-profile-form h2 {
 }
 
 #demand-create-node-form .section-content-l .field-name-field-pic-font-typeface,
+#demand-create-node-form .section-content-l .field-name-field-int-typeface,
 #demand-create-node-form .section-content-l .field-name-field-pic-number-typeface,
 #demand-create-node-form .section-content-l .field-name-field-pic-font-align,
 #demand-create-node-form .section-content-l .field-name-field-pic-number-align,
 #demand-create-node-form .section-content-l .field-name-field-pic-font-font,
+#demand-create-node-form .section-content-l .field-name-field-int-font,
 #demand-create-node-form .section-content-l .field-name-field-pic-number-font,
 #demand-create-node-form .section-content-l .field-name-field-pic-label-typeface,
 #demand-create-node-form .section-content-l .field-name-field-pic-label-align,
@@ -2229,12 +2240,14 @@ body.page-user-edit-company-info #user-profile-form h2 {
     margin-bottom: 7px;
 }
 #demand-create-node-form .section-content-l .field-name-field-pic-number-background,
+#demand-create-node-form .section-content-l .field-name-field-int-background,
 #demand-create-node-form .section-content-l .field-name-field-pic-number-color,
+#demand-create-node-form .section-content-l .field-name-field-int-color,
 #demand-create-node-form .section-content-l .field-name-field-pic-font-background,
 #demand-create-node-form .section-content-l .field-name-field-pic-font-color {
   float: left;
   margin-bottom: 7px;
-  padding-right: 8px;
+  padding-left: 8px;
 }
 #demand-create-node-form .title-left > div > div {
     margin: 0 0 5px 0;

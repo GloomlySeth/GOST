@@ -70,7 +70,9 @@ function gost_select($variables)
     case 'edit-field-pic-label-background-und':
     case 'edit-field-pic-label-color-und':
     case 'edit-field-number-font-background-und':
+    case 'edit-field-int-background-und':
     case 'edit-field-number-font-color-und':
+    case 'edit-field-int-color-und':
     case 'edit-field-title-font-background-und':
     case 'edit-field-title-font-color-und':
     case 'edit-field-contents-font-background-und':
