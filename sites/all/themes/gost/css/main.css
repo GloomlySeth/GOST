@@ -518,10 +518,14 @@ body {
 #edit-field-main-font-align-und label,
 #edit-field-table-label-align-und label,
 #edit-field-table-label-typeface-und label,
+#edit-field-table-text-typeface-und label,
+#edit-field-table-header-font-typef-und label,
 #edit-profile-demand-create-field-header-setting-typeface-und label,
 #edit-field-main-font-typeface-und label,
 #edit-field-pic-align-pic-und label,
 #edit-field-pic-font-align-und label,
+#edit-field-table-text-align-und label,
+#edit-field-table-header-font-align-und label,
 #edit-field-pic-label-align-und label {
     width: 27px;
     height: 30px;
@@ -544,6 +548,8 @@ body {
 #edit-field-number-font-align-und-26 + label span,
 #demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(2) label,
 .field-name-field-title-font-align .form-radios > div:nth-child(1) label,
+#edit-field-table-text-align-und-26 + label span,
+#edit-field-table-header-font-align-und-26 + label span,
 #edit-field-pic-font-align-und-26 + label span,
 #edit-field-pic-label-align-und-26 + label span,
 #edit-field-contents-font-align-und-26 + label span,
@@ -566,6 +572,8 @@ body {
 #edit-field-number-font-align-und-26:checked + label span,
 #demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(2) input:checked + label,
 #edit-field-pic-font-align-und-26:checked + label span,
+#edit-field-table-text-align-und-26:checked + label span,
+#edit-field-table-header-font-align-und-26:checked + label span,
 #edit-field-pic-label-align-und-26:checked + label span,
 #edit-field-contents-font-align-und-26:checked + label span,
 #edit-field-table-number-align-und-26:checked + label span,
@@ -576,6 +584,8 @@ body {
 #edit-field-number-font-align-und-28 + label span,
 #demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(5) label,
 #edit-field-pic-font-align-und-28 + label span,
+#edit-field-table-text-align-und-28 + label span,
+#edit-field-table-header-font-align-und-28 + label span,
 #edit-field-pic-label-align-und-28 + label span,
 #edit-field-contents-font-align-und-28 + label span,
 #edit-field-table-number-align-und-28 + label span,
@@ -588,6 +598,8 @@ body {
 #edit-field-number-font-align-und-28:checked + label span,
 #demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(5) input:checked + label,
 #edit-field-pic-font-align-und-28:checked + label span,
+#edit-field-table-text-align-und-28:checked + label span,
+#edit-field-table-header-font-align-und-28:checked + label span,
 #edit-field-pic-label-align-und-28:checked + label span,
 #edit-field-contents-font-align-und-28:checked + label span,
 #edit-field-table-number-align-und-28:checked + label span,
@@ -600,6 +612,8 @@ body {
 #edit-field-number-font-align-und-27 + label span,
 #demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(3) label,
 #edit-field-pic-font-align-und-27 + label span,
+#edit-field-table-text-align-und-27 + label span,
+#edit-field-table-header-font-align-und-27 + label span,
 #edit-field-pic-label-align-und-27 + label span,
 #edit-field-contents-font-align-und-27 + label span,
 #edit-field-table-number-align-und-27 + label span,
@@ -620,6 +634,8 @@ body {
 #edit-field-number-font-align-und-27:checked + label span,
 #demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(3) input:checked + label,
 #edit-field-pic-font-align-und-27:checked + label span,
+#edit-field-table-text-align-und-27:checked + label span,
+#edit-field-table-header-font-align-und-27:checked + label span,
 #edit-field-pic-label-align-und-27:checked + label span,
 #edit-field-contents-font-align-und-27:checked + label span,
 #edit-field-table-number-align-und-27:checked + label span,
@@ -641,6 +657,8 @@ body {
 #edit-field-number-font-align-und-29 + label span,
 #demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(4) label,
 #edit-field-pic-font-align-und-29 + label span,
+#edit-field-table-text-align-und-29 + label span,
+#edit-field-table-header-font-align-und-29 + label span,
 #edit-field-pic-label-align-und-29 + label span,
 #edit-field-contents-font-align-und-29 + label span,
 #edit-field-table-number-align-und-29 + label span,
@@ -663,6 +681,8 @@ body {
 #edit-field-number-font-align-und-29:checked + label span,
 #demand-create-node-form .field-name-field-title-font-align .form-radios .form-type-radio:nth-child(4) input:checked + label,
 #edit-field-pic-font-align-und-29:checked + label span,
+#edit-field-table-text-align-und-29:checked + label span,
+#edit-field-table-header-font-align-und-29:checked + label span,
 #edit-field-pic-label-align-und-29:checked + label span,
 #edit-field-contents-font-align-und-29:checked + label span,
 #edit-field-table-number-align-und-29:checked + label span,
@@ -690,6 +710,8 @@ body {
 #edit-field-table-number-typeface-und-51 + label,
 #edit-field-list-font-typeface-und-51 + label,
 #edit-field-table-label-typeface-und-51 + label,
+#edit-field-table-text-typeface-und-51 + label,
+#edit-field-table-header-font-typef-und-51 + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-51 + label,
 #edit-field-main-font-typeface-und-51 + label {
     background: url('../images/editor_-_demand_create/u107.png') no-repeat;
@@ -703,6 +725,8 @@ body {
 #edit-field-table-number-typeface-und-51:checked + label,
 #edit-field-list-font-typeface-und-51:checked + label,
 #edit-field-table-label-typeface-und-51:checked + label,
+#edit-field-table-text-typeface-und-51:checked + label,
+#edit-field-table-header-font-typef-und-51:checked + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-51:checked + label,
 #edit-field-main-font-typeface-und-51:checked + label {
     background: url('../images/editor_-_demand_create/u107_mouseOver.png') no-repeat;
@@ -716,6 +740,8 @@ body {
 #edit-field-table-number-typeface-und-49 + label,
 #edit-field-list-font-typeface-und-49 + label,
 #edit-field-table-label-typeface-und-49 + label,
+#edit-field-table-text-typeface-und-49 + label,
+#edit-field-table-header-font-typef-und-49 + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-49 + label,
 #edit-field-main-font-typeface-und-49 + label {
     background: url('../images/editor_-_demand_create/u109.png') no-repeat;
@@ -729,6 +755,8 @@ body {
 #edit-field-table-number-typeface-und-49:checked + label,
 #edit-field-list-font-typeface-und-49:checked + label,
 #edit-field-table-label-typeface-und-49:checked + label,
+#edit-field-table-text-typeface-und-49:checked + label,
+#edit-field-table-header-font-typef-und-49:checked + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-49:checked + label,
 #edit-field-main-font-typeface-und-49:checked + label {
     background: url('../images/editor_-_demand_create/u109_mouseOver.png') no-repeat;
@@ -742,6 +770,8 @@ body {
 #edit-field-table-number-typeface-und-50 + label,
 #edit-field-list-font-typeface-und-50 + label,
 #edit-field-table-label-typeface-und-50 + label,
+#edit-field-table-text-typeface-und-50 + label,
+#edit-field-table-header-font-typef-und-50 + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-50 + label,
 #edit-field-main-font-typeface-und-50 + label {
     background: url('../images/editor_-_demand_create/u111.png') no-repeat;
@@ -755,6 +785,8 @@ body {
 #edit-field-table-number-typeface-und-50:checked + label,
 #edit-field-list-font-typeface-und-50:checked + label,
 #edit-field-table-label-typeface-und-50:checked + label,
+#edit-field-table-text-typeface-und-50:checked + label,
+#edit-field-table-header-font-typef-und-50:checked + label,
 #edit-profile-demand-create-field-header-setting-typeface-und-50:checked + label,
 #edit-field-main-font-typeface-und-50:checked + label {
     background: url('../images/editor_-_demand_create/u111_mouseOver.png') no-repeat;
@@ -1584,6 +1616,8 @@ body {
 #edit-field-number-font-align-und label span,
 #edit-field-title-font-align-und label span,
 #edit-field-pic-font-align-und label span,
+#edit-field-table-text-align-und label span,
+#edit-field-table-header-font-align-und label span,
 #edit-field-pic-label-align-und label span,
 #edit-field-contents-font-align-und label span,
 #edit-field-table-number-align-und label span,
@@ -1756,6 +1790,8 @@ body {
 .form-item.form-type-radio.form-item-field-table-label-align-und,
 #edit-field-pic-align-pic-und > div,
 #edit-field-pic-font-align-und div,
+#edit-field-table-text-align-und div,
+#edit-field-table-header-font-align-und div,
 #edit-field-pic-label-align-und div,
 #edit-field-table-label-continue2-und > div,
 #edit-field-table-align-und > div {
@@ -1765,6 +1801,8 @@ body {
 
 .field-name-field-number-font-typeface div,
 .field-name-field-title-font-typeface div,
+.field-name-field-table-text-typeface div,
+.field-name-field-table-header-font-typef div,
 .field-name-field-pic-font-typeface div,
 .field-name-field-pic-label-typeface div,
 .field-name-field-contents-font-typeface div,
@@ -1787,6 +1825,10 @@ body {
 #edit-field-number-font-color > div,
 #edit-field-header-setting-color > div,
 #edit-field-table-label-color > div,
+#edit-field-table-text-color > div,
+#edit-field-table-text-background > div,
+#edit-field-table-header-font-color > div,
+#edit-field-table-header-font-backgrou > div,
 #edit-field-table-label-background > div {
     width: 43px;
     background-repeat: no-repeat;
@@ -2064,6 +2106,8 @@ body {
 #demand-create-node-form #edit-field-number-font-color-und,
 #demand-create-node-form #edit-field-main-font-color-und,
 #demand-create-node-form #edit-field-table-label-color-und,
+#demand-create-node-form #edit-field-table-header-font-color-und,
+#demand-create-node-form #edit-field-table-text-color-und,
 #demand-create-node-form #edit-field-header-setting-color-und {
     background-image: url('../images/editor_-_demand_create/color.png');
     width: 40px;
@@ -2080,6 +2124,8 @@ body {
 #demand-create-node-form #edit-field-number-font-background-und,
 #demand-create-node-form #edit-field-main-font-background-und,
 #demand-create-node-form #edit-field-table-label-background-und,
+#demand-create-node-form #edit-field-table-text-background-und,
+#demand-create-node-form #edit-field-table-header-font-backgrou-und,
 #demand-create-node-form #edit-field-header-setting-background-und {
     background-image: url('../images/editor_-_demand_create/colorText.png');
     width: 40px;
