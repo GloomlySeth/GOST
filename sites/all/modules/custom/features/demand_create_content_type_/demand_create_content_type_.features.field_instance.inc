@@ -2248,7 +2248,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 227,
+      'weight' => 5,
     ),
   );
 
@@ -2287,7 +2287,7 @@ function demand_create_content_type__field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 226,
+      'weight' => 4,
     ),
   );
 
@@ -2410,7 +2410,7 @@ function demand_create_content_type__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 225,
+      'weight' => 3,
     ),
   );
 
@@ -5792,7 +5792,7 @@ function demand_create_content_type__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 224,
+      'weight' => 3,
     ),
   );
 

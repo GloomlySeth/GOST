@@ -472,8 +472,7 @@ body {
     padding-right: 15px;
 }
 
-.node-type-demand-create .section-content-r fieldset,
-.page-node-add-demand-create .section-content-r fieldset {
+.node-type-demand-create .section-content-r fieldset {
     width: 190px;
 }
 
