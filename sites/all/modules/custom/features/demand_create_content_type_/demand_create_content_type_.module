@@ -70,6 +70,7 @@ function demand_create_content_type__form_alter(&$form, &$form_state, $form_id) 
     $form['field_table_label_continue2']['und']['#options'][25] = '<span></span>';
     $form['field_table_label_continue2']['#attributes']['class'][3] = 'n_visibl_r';
     $form['field_title_number_view']['#attributes']['class'][3] = 'n_visibl_n';
+    $form['field_list_number_view']['#attributes']['class'][3] = 'n_visibl_n';
     $form['field_pic_number_view']['und']['#options'][12] = '<span></span>';
     $form['field_pic_number_view']['#attributes']['class'][3] = 'n_visibl_n';
     $form['field_table_number_view']['#attributes']['class'][3] = 'n_visibl_n';
@@ -105,6 +106,7 @@ function demand_create_content_type__form_alter(&$form, &$form_state, $form_id) 
     $form['field_title_main_pattern']['und']['#options']['_none'] = '(нет)';
     $form['field_title_number_type']['und']['#options']['_none'] = '(нет)';
     unset($form['field_title_number_view']['und']['#options']['_none']);
+    unset($form['field_list_number_view']['und']['#options']['_none']);
     $form['field_title_number_division']['und']['#options']['_none'] = '(нет)';
     $form['field_pic_number_type']['und']['#options']['_none'] = '(нет)';
     unset($form['field_pic_number_view']['und']['#options']['_none']);

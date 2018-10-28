@@ -92,6 +92,8 @@ function gost_select($variables)
     default:
       if (stripos($variables['element']['#id'], 'field-title-font-color-und') != false
         || stripos($variables['element']['#id'], 'field-title-font-background-und') != false
+        || stripos($variables['element']['#id'], 'field-list-font-color-und') != false
+        || stripos($variables['element']['#id'], 'field-list-font-background-und') != false
       ) {
         drupal_add_js(path_to_theme() . '/js/demandSelect.js', 'file');
         $variables['element']['#attributes'] = array('class' => array('demandSelect'));
