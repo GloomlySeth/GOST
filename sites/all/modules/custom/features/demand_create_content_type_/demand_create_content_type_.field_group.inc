@@ -121,12 +121,13 @@ function demand_create_content_type__field_group_info() {
   $field_group->parent_name = 'group_contents_main';
   $field_group->data = array(
     'label' => 'Основные',
-    'weight' => '78',
+    'weight' => '1',
     'children' => array(
       0 => 'field_contents_main_position',
-      1 => 'field_contents_main_division',
-      2 => 'field_contents_main_setting',
-      3 => 'field_contents_main_list',
+      1 => 'field_contents_main_setting',
+      2 => 'field_contents_font_symbol',
+      3 => 'field_contents_title',
+      4 => 'group_contents_title_00',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -175,6 +176,135 @@ function demand_create_content_type__field_group_info() {
     ),
   );
   $field_groups['group_contents_main|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_contents_title_00|node|demand_create|form';
+  $field_group->group_name = 'group_contents_title_00';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_contents_main_r1';
+  $field_group->data = array(
+    'label' => 'Заголовки уровней',
+    'weight' => '5',
+    'children' => array(
+      0 => 'group_contents_title_01',
+      1 => 'group_contents_title_02',
+      2 => 'group_contents_title_03',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Заголовки уровней',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-contents-title-00 field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_contents_title_00|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_contents_title_01|node|demand_create|form';
+  $field_group->group_name = 'group_contents_title_01';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_contents_title_00';
+  $field_group->data = array(
+    'label' => 'Заголовки первого уровня',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_contents_first',
+      1 => 'field_contents_second',
+      2 => 'field_contents_firstan',
+      3 => 'field_contents_secondan',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Заголовки первого уровня',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-contents-title-01 field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_contents_title_01|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_contents_title_02|node|demand_create|form';
+  $field_group->group_name = 'group_contents_title_02';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_contents_title_00';
+  $field_group->data = array(
+    'label' => 'Заголовки второго уровня',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_contents_first_02',
+      1 => 'field_contents_second_02',
+      2 => 'field_contents_firstan_02',
+      3 => 'field_contents_secondan_02',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Заголовки второго уровня',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-contents-title-02 field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_contents_title_02|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_contents_title_03|node|demand_create|form';
+  $field_group->group_name = 'group_contents_title_03';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_contents_title_00';
+  $field_group->data = array(
+    'label' => 'Заголовки третьего уровня',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_contents_first_03',
+      1 => 'field_contents_second_03',
+      2 => 'field_contents_firstan_03',
+      3 => 'field_contents_secondan_03',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Заголовки третьего уровня',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-contents-title-03 field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_contents_title_03|node|demand_create|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -5445,6 +5575,10 @@ function demand_create_content_type__field_group_info() {
   t('Границы таблицы');
   t('Границы таблицы 1');
   t('Заголовки');
+  t('Заголовки второго уровня');
+  t('Заголовки первого уровня');
+  t('Заголовки третьего уровня');
+  t('Заголовки уровней');
   t('Интервал');
   t('Кавычки');
   t('Колонки');

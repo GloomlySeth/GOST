@@ -146,6 +146,8 @@ function demand_create_content_type__form_alter(&$form, &$form_state, $form_id) 
     unset($form['field_table_label_continue2']['und']['#options']['_none']);
     $form['field_table_label_continue2']['und']['#title'] = '';
     unset($form['field_contents_main_position']['und']['#options']['_none']);
+    unset($form['field_contents_font_symbol']['und']['#options']['_none']);
+    unset($form['field_contents_title']['und']['#options']['_none']);
     $form['field_contents_main_division']['und']['#options']['_none'] = '(нет)';
     unset($form['field_pic_border_type']['und']['#options']['_none']);
     unset($form['field_table_border_type']['und']['#options']['_none']);

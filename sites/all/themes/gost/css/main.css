@@ -861,6 +861,12 @@ body {
 .field-name-field-list-main-firstan input[type="text"],
 .field-name-field-title-main-secondan input[type="text"],
 .field-name-field-list-main-secondan input[type="text"],
+.field-name-field-contents-firstan input[type="text"],
+.field-name-field-contents-secondan input[type="text"],
+.field-name-field-contents-firstan-02 input[type="text"],
+.field-name-field-contents-secondan-02 input[type="text"],
+.field-name-field-contents-firstan-03 input[type="text"],
+.field-name-field-contents-secondan-03 input[type="text"],
 #edit-field-main-interval-str-und,
 #edit-field-main-margins-str-und {
     width: 100px;
@@ -2271,6 +2277,18 @@ body.page-user-edit-company-info #user-profile-form h2 {
 .field-name-field-list-main-firstan,
 .field-name-field-title-main-secondan,
 .field-name-field-list-main-secondan,
+.field-name-field-contents-first,
+.field-name-field-contents-second,
+.field-name-field-contents-firstan,
+.field-name-field-contents-secondan,
+.field-name-field-contents-first-02,
+.field-name-field-contents-second-02,
+.field-name-field-contents-firstan-02,
+.field-name-field-contents-secondan-02,
+.field-name-field-contents-first-03,
+.field-name-field-contents-second-03,
+.field-name-field-contents-firstan-03,
+.field-name-field-contents-secondan-03,
 #edit-field-formula-indents-text,
 #edit-field-formula-indents-text2,
 #edit-field-formula-indents-formula,
@@ -2280,7 +2298,9 @@ body.page-user-edit-company-info #user-profile-form h2 {
 .form-item-field-list-number-1-und-0-field-list-formatting-number-und-0-value label {
   margin-left: 175px;
 }
-
+.group-contents-title-03{
+  margin-bottom: 10px;
+}
 #demand-create-node-form .section-content-l .field-name-field-pic-label-background,
 #demand-create-node-form .section-content-l .field-name-field-pic-label-color,
 #demand-create-node-form .section-content-l .field-name-field-number-font-background,
@@ -2317,11 +2337,23 @@ body.page-user-edit-company-info #user-profile-form h2 {
 .field-name-field-list-main-firstan,
 .field-name-field-title-main-secondan,
 .field-name-field-list-main-secondan,
+.field-name-field-contents-firstan,
+.field-name-field-contents-secondan,
+.field-name-field-contents-firstan-02,
+.field-name-field-contents-secondan-02,
+.field-name-field-contents-firstan-03,
+.field-name-field-contents-secondan-03,
 #edit-field-formula-indents-text2,
 #edit-field-formula-indents-formula2 {
     margin-left: 5px;
 }
 
+.field-name-field-contents-first,
+.field-name-field-contents-second,
+.field-name-field-contents-first-02,
+.field-name-field-contents-second-02,
+.field-name-field-contents-first-03,
+.field-name-field-contents-second-03,
 .field-name-field-title-main-first,
 .field-name-field-list-main-first,
 .field-name-field-list-main-second,
