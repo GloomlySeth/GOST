@@ -1811,6 +1811,262 @@ function demand_create_content_type__field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_literature_font_00|node|demand_create|form';
+  $field_group->group_name = 'group_literature_font_00';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_literature_font';
+  $field_group->data = array(
+    'label' => 'Шрифт 00',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_literature_setting',
+      1 => 'field_literature_font',
+      2 => 'field_literature_size',
+      3 => 'field_literature_typeface',
+      4 => 'field_literature_color',
+      5 => 'field_literature_background',
+      6 => 'field_literature_align',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Шрифт 00',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-literature-font-00 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_literature_font_00|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_literature_font|node|demand_create|form';
+  $field_group->group_name = 'group_literature_font';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_literature';
+  $field_group->data = array(
+    'label' => 'Шрифт',
+    'weight' => '4',
+    'children' => array(
+      0 => 'group_literature_font_00',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Шрифт',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-literature-font field-group-html-element section-content-l',
+        'element' => 'div',
+        'show_label' => '1',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_literature_font|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_literature_header_00|node|demand_create|form';
+  $field_group->group_name = 'group_literature_header_00';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_literature_header';
+  $field_group->data = array(
+    'label' => 'Заголовко 00',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_literature_header',
+      1 => 'field_literature_header_own',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Заголовко 00',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-literature-header-00 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_literature_header_00|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_literature_header|node|demand_create|form';
+  $field_group->group_name = 'group_literature_header';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_literature';
+  $field_group->data = array(
+    'label' => 'Заголовок',
+    'weight' => '1',
+    'children' => array(
+      0 => 'group_literature_header_00',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Заголовок',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-literature-header field-group-html-element section-content-l',
+        'element' => 'div',
+        'show_label' => '1',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_literature_header|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_literature_number_00|node|demand_create|form';
+  $field_group->group_name = 'group_literature_number_00';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_literature_number';
+  $field_group->data = array(
+    'label' => 'Нумерация 00',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_literature_view',
+      1 => 'field_literature_own',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Нумерация 00',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-literature-number-00 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_literature_number_00|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_literature_number|node|demand_create|form';
+  $field_group->group_name = 'group_literature_number';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_literature';
+  $field_group->data = array(
+    'label' => 'Нумерация',
+    'weight' => '3',
+    'children' => array(
+      0 => 'group_literature_number_00',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Нумерация',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-literature-number field-group-html-element section-content-l',
+        'element' => 'div',
+        'show_label' => '1',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_literature_number|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_literature_style_00|node|demand_create|form';
+  $field_group->group_name = 'group_literature_style_00';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_literature_style';
+  $field_group->data = array(
+    'label' => 'Стиль оформления источников 00',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_literature_style',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Стиль оформления источников 00',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-literature-style-00 field-group-html-element section-content-r',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_literature_style_00|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_literature_style|node|demand_create|form';
+  $field_group->group_name = 'group_literature_style';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'demand_create';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_literature';
+  $field_group->data = array(
+    'label' => 'Стиль оформления источников',
+    'weight' => '2',
+    'children' => array(
+      0 => 'group_literature_style_00',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Стиль оформления источников',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'id' => '',
+        'classes' => 'group-literature-style field-group-html-element  section-content-l',
+        'element' => 'div',
+        'show_label' => '1',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_literature_style|node|demand_create|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_main_columns_f1|node|demand_create|form';
   $field_group->group_name = 'group_main_columns_f1';
   $field_group->entity_type = 'node';
@@ -5579,6 +5835,8 @@ function demand_create_content_type__field_group_info() {
   t('Заголовки первого уровня');
   t('Заголовки третьего уровня');
   t('Заголовки уровней');
+  t('Заголовко 00');
+  t('Заголовок');
   t('Интервал');
   t('Кавычки');
   t('Колонки');
@@ -5587,6 +5845,7 @@ function demand_create_content_type__field_group_info() {
   t('Настройки нумерации');
   t('Настройки подписи');
   t('Нумерация');
+  t('Нумерация 00');
   t('Нумерация картинки 1');
   t('Нумерация картинки 2');
   t('Нумерация картинки 21');
@@ -5618,6 +5877,8 @@ function demand_create_content_type__field_group_info() {
   t('Рисунки (иллюстрации)');
   t('Содержание');
   t('Списки');
+  t('Стиль оформления источников');
+  t('Стиль оформления источников 00');
   t('Таблицы');
   t('Фильтрация нумерации страниц');
   t('Форматирование');
@@ -5626,6 +5887,7 @@ function demand_create_content_type__field_group_info() {
   t('Шаблоны');
   t('Ширина и промежуток');
   t('Шрифт');
+  t('Шрифт 00');
   t('Шрифт таблицы');
   t('Шрифт таблицы 00');
   t('Шрифт таблицы 01');
