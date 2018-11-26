@@ -43,16 +43,20 @@ function is_empty($node, $value) {
     $return = array();
     foreach($output as $value2){
       $output2 = field_view_value('node', $node, $value, $value2);
-      $return[] = $output2['#markup'];
-    }
 
-    foreach($return as $key_return => $value_return) {
-      if(preg_match("/[а-яё]/iu", $value_return)) {
-        $value_return = drupal_strtolower($value_return);
-        $return[$key_return] = transliteration_get($value_return);
+      if(!empty($output2['#markup'])) {
+        $return[] = $output2['#markup'];
       }
-
+      elseif(!empty($output2['#title'])) {
+        if($output2['#title'] == '<span></span>') {
+          $return[] = $output2['#options']['entity']->description;
+        }
+        else {
+          $return[] = $output2['#title'];
+        }
+      }
     }
+
     return $return;
   }
   else return array(NULL);
@@ -441,7 +445,7 @@ function processing_form_submit($form, &$form_state) {
           ),
         ),
       );
-      $data = json_encode($processing);
+      $data = json_encode($processing, JSON_UNESCAPED_UNICODE);
 
       $options = array(
         'method' => 'POST',
@@ -458,8 +462,8 @@ function processing_form_submit($form, &$form_state) {
         drupal_set_message("$result->code: $result->error", 'error');
         $status = 'Ошибка обработки';
       }
-      $processing_db = db_query("REPLACE {processing} 
-    SET 
+      $processing_db = db_query("REPLACE {processing}
+    SET
       entity_id = :eid,
       status = :status,
       demand_id = :did,
