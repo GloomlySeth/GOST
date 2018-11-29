@@ -446,12 +446,13 @@ function processing_form_submit($form, &$form_state) {
         ),
       );
       $data = json_encode($processing, JSON_UNESCAPED_UNICODE);
+      $data = mb_convert_encoding(json_encode($processing, JSON_UNESCAPED_UNICODE), "utf-8", "windows-1251");
 
       $options = array(
         'method' => 'POST',
         'data' => $data,
         'timeout' => 120,
-        'headers' => array('Content-Type' => 'application/json; charset=UTF-8'),
+        'headers' => array('Content-Type' => 'application/json; charset=windows-1251'),
       );
       $result = drupal_http_request('http://192.168.3.55:21735', $options);
       if($result->code == 200){
