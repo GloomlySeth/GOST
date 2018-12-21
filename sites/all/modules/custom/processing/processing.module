@@ -62,7 +62,7 @@ function is_empty($node, $value) {
   else return array(NULL);
 }
 
-function list_file(){
+function list_file() {
   global $base_url;
   global $user;
   $list = '';
@@ -86,13 +86,13 @@ function list_file(){
       }
     }
   }
-  foreach($file as $key => $value){
+  foreach($file as $key => $value) {
     $list .= '<div><a href="' . $key . '" download>' . $value .'</a></div>';
   }
   return $list;
 }
 
-function processing_file_download($uri){
+function processing_file_download($uri) {
   global $user;
   $uri_arr = explode("/", $uri);
   if($uri_arr[2] == $user->uid && $uri_arr[6] == 'Done'){
@@ -162,7 +162,7 @@ function processing_form_submit($form, &$form_state) {
   }
 
 
-  foreach($name as $keyId => $valueId){
+  foreach($name as $keyId => $valueId) {
     if($valueId != 0){
       $uri = db_select('file_managed', 'f');
       $uri->fields('f', array('uri', 'filename'));
@@ -184,7 +184,7 @@ function processing_form_submit($form, &$form_state) {
           );
         }
       }
-      if(!empty($node->field_list_number_1)){
+      if(!empty($node->field_list_number_1)) {
         foreach ($node->field_list_number_1[LANGUAGE_NONE] as $key => $value) {
           $field_coll = field_collection_item_load($value['revision_id']);
           $list_number[] = array(
@@ -450,7 +450,7 @@ function processing_form_submit($form, &$form_state) {
       $options = array(
         'method' => 'POST',
         'data' => $data,
-        'timeout' => 120,
+        'timeout' => 600,
         'headers' => array('Content-Type' => 'application/json; charset=utf-8'),
       );
       $result = drupal_http_request('http://192.168.3.55:21735', $options);
