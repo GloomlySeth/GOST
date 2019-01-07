@@ -453,7 +453,15 @@ function processing_form_submit($form, &$form_state) {
         'timeout' => 600,
         'headers' => array('Content-Type' => 'application/json; charset=utf-8'),
       );
-      $result = drupal_http_request('http://192.168.3.55:21735', $options);
+
+      global $user;
+      if($user->uid == 3) {
+        $result = drupal_http_request('http://192.168.3.55:21736', $options);
+      }
+      else {
+        $result = drupal_http_request('http://192.168.3.55:21735', $options);
+      }
+
       if($result->code == 200){
         drupal_set_message('Успешно отправлено');
         $status = 'В обработке';
