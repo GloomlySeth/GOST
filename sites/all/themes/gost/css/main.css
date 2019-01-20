@@ -2564,3 +2564,13 @@ body.page-user-edit-company-info #user-profile-form h2 {
     margin-top: 0;
 }
 
+.page-file-add #block-block-1 {
+    width: 30%;
+    float: right;
+}
+
+.page-file-add #block-system-main,
+.page-file-add #block-processing-processing-form-block {
+    width: 70%;
+    float: left;
+}
