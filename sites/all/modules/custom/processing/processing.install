@@ -24,6 +24,9 @@ function processing_schema() {
         'type' => 'varchar',
         'length' => 32,
         ),
+      'percent' => array(
+        'type' => 'int',
+        ),
       ),
     'unique keys' => array(
       'entity_id' => array('entity_id'),

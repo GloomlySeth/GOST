@@ -1,8 +1,8 @@
 name = Document details
 core = 7.x
 package = Features
+dependencies[] = ctools
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[views_view][] = document_details_show_more
-features_exclude[dependencies][ctools] = ctools

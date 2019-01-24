@@ -28,9 +28,11 @@ function document_details_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'row';
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Footer: Global: Unfiltered text */
   $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
@@ -123,6 +125,75 @@ function document_details_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['field_language'] = 'ru';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: File: Name */
+  $handler->display->display_options['fields']['filename']['id'] = 'filename';
+  $handler->display->display_options['fields']['filename']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['filename']['field'] = 'filename';
+  $handler->display->display_options['fields']['filename']['label'] = 'Название';
+  $handler->display->display_options['fields']['filename']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['filename']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['filename']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['filename']['link_to_file'] = FALSE;
+  /* Field: File: Extension */
+  $handler->display->display_options['fields']['extension']['id'] = 'extension';
+  $handler->display->display_options['fields']['extension']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['extension']['field'] = 'extension';
+  $handler->display->display_options['fields']['extension']['label'] = 'Тип';
+  /* Field: File: Size */
+  $handler->display->display_options['fields']['filesize']['id'] = 'filesize';
+  $handler->display->display_options['fields']['filesize']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['filesize']['field'] = 'filesize';
+  $handler->display->display_options['fields']['filesize']['label'] = 'Размер';
+  /* Field: Processing: Demand */
+  $handler->display->display_options['fields']['demand']['id'] = 'demand';
+  $handler->display->display_options['fields']['demand']['table'] = 'processing';
+  $handler->display->display_options['fields']['demand']['field'] = 'demand';
+  $handler->display->display_options['fields']['demand']['label'] = 'Применяемое требование';
+  /* Field: Processing: Status document */
+  $handler->display->display_options['fields']['status']['id'] = 'status';
+  $handler->display->display_options['fields']['status']['table'] = 'processing';
+  $handler->display->display_options['fields']['status']['field'] = 'status';
+  $handler->display->display_options['fields']['status']['label'] = 'Состояние';
+  /* Field: File: Upload date */
+  $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['label'] = 'Дата загрузки';
+  $handler->display->display_options['fields']['timestamp']['date_format'] = 'custom';
+  $handler->display->display_options['fields']['timestamp']['custom_date_format'] = 'd.m.Y H:m';
+  $handler->display->display_options['fields']['timestamp']['second_date_format'] = 'long';
+  /* Field: File: Delete link */
+  $handler->display->display_options['fields']['delete']['id'] = 'delete';
+  $handler->display->display_options['fields']['delete']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['delete']['field'] = 'delete';
+  $handler->display->display_options['fields']['delete']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['delete']['text'] = 'Удалить';
+  /* Field: File: Download link */
+  $handler->display->display_options['fields']['download']['id'] = 'download';
+  $handler->display->display_options['fields']['download']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['download']['field'] = 'download';
+  $handler->display->display_options['fields']['download']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['download']['text'] = 'Скачать';
+  /* Field: File: Edit link */
+  $handler->display->display_options['fields']['edit']['id'] = 'edit';
+  $handler->display->display_options['fields']['edit']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['edit']['field'] = 'edit';
+  $handler->display->display_options['fields']['edit']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['edit']['text'] = 'Редактировать';
+  /* Field: File: Link */
+  $handler->display->display_options['fields']['link']['id'] = 'link';
+  $handler->display->display_options['fields']['link']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['link']['field'] = 'link';
+  $handler->display->display_options['fields']['link']['exclude'] = TRUE;
+  /* Field: File: Path */
+  $handler->display->display_options['fields']['uri']['id'] = 'uri';
+  $handler->display->display_options['fields']['uri']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['uri']['field'] = 'uri';
+  $handler->display->display_options['fields']['uri']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['uri']['link_to_file'] = TRUE;
+  $handler->display->display_options['fields']['uri']['file_download_path'] = TRUE;
   $handler->display->display_options['path'] = 'file/%';
   $translatables['document_details_show_more'] = array(
     t('Master'),
@@ -148,6 +219,10 @@ function document_details_views_default_views() {
     t('Path'),
     t('All'),
     t('Page'),
+    t('Применяемое требование'),
+    t('Удалить'),
+    t('Скачать'),
+    t('Редактировать'),
   );
   $export['document_details_show_more'] = $view;
 

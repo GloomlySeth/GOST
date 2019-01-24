@@ -223,6 +223,10 @@ function documents_list_views_default_views() {
   $handler->display->display_options['fields']['uri']['table'] = 'file_managed';
   $handler->display->display_options['fields']['uri']['field'] = 'uri';
   $handler->display->display_options['fields']['uri']['exclude'] = TRUE;
+  /* Field: Processing: Percent */
+  $handler->display->display_options['fields']['percent']['id'] = 'percent';
+  $handler->display->display_options['fields']['percent']['table'] = 'processing';
+  $handler->display->display_options['fields']['percent']['field'] = 'percent';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -259,6 +263,7 @@ function documents_list_views_default_views() {
     t('Новый'),
     t('Требование'),
     t('Path'),
+    t('Percent'),
     t('[uri]'),
   );
   $export['document_list'] = $view;
