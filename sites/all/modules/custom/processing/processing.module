@@ -22,34 +22,29 @@ function processing_menu()
 function processing_get_json()
 {
   global $_POST;
-//  $array = array(
-//    'id' => 260,
-//    'demand_id' => 3,
-//    'demand' => 'TEst',
-//    'percent' => 100,
-//  );
-//  $_POST = json_encode($array);
-//  print_r(json_encode($array));
-//  die();
 
   if ($_POST) {
     $json = drupal_json_decode($_POST);
 
+    $node = node_load($json['demand_id']);
     $updated = db_update('processing');
     if($json['percent'] == 100) {
       $updated->fields(array(
         'percent' => $json['percent'],
         'status' => 'Готов',
+        'demand' => $node->title,
       ));
     }
     else {
       $updated->fields(array(
         'percent' => $json['percent'],
         'status' => 'В обработке',
+        'demand' => $node->title,
       ));
     }
 
-    $updated->condition('entity_id', $json['id'], '=')
+    $updated->condition('entity_id', $json['fid'], '=')
+      ->condition('demand_id', $json['demand_id'], '=')
       ->execute();
   }
 
@@ -263,10 +258,12 @@ function processing_form_submit($form, &$form_state)
           'uid' => $user->uid,
         ),
         'file' => array(
+          'fid' => $valueId,
           'patch' => !empty($url) ? $url : array(NULL),
           'name' => !empty($form['list_docx']['#options'][$valueId]) ? $form['list_docx']['#options'][$valueId] : array(NULL),
         ),
         'demands' => array(
+          'did' => $node->nid,
           'name' => $node->title,
           'note' => is_empty($node, 'field_demand_note'),
           'fields' => array(
