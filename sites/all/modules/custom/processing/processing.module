@@ -637,3 +637,4 @@ function processing_my_custom_action(&$node, $context)
     processing_form_submit($form, $form_state);
   } else form_error(t('Please, create a demand.'));
 }
+
