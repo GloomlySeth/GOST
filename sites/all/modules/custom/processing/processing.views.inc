@@ -30,6 +30,15 @@ function processing_views_data() {
     'sort'   => array('handler' => 'views_handler_sort'),
     'filter' => array('handler' => 'views_handler_filter_string'),
   );
+
+  $data['processing']['percent'] = array(
+    'title'  => 'Percent',
+    'help'   => 'Custom table processing',
+    'group'  => t('Processing'),
+    'field'  => array('handler' => 'views_handler_field'),
+    'sort'   => array('handler' => 'views_handler_sort'),
+    'filter' => array('handler' => 'views_handler_filter_string'),
+  );
  
   return $data;
 }
