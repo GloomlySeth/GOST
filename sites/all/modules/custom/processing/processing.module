@@ -17,11 +17,17 @@ function processing_menu()
 }
 
 /**
- * My custom page callback
+ * Page api callback
  */
 function processing_get_json()
 {
   global $_POST;
+
+  $log = date('Y-m-d H:i:s') . ' ';
+  $log .= is_array($_POST) ? json_encode($_POST) : $_POST;
+  $log .= PHP_EOL;
+
+  file_put_contents('log_processing.log', $log, FILE_APPEND | LOCK_EX);
 
   if ($_POST) {
     $json = drupal_json_decode($_POST);
@@ -637,4 +643,3 @@ function processing_my_custom_action(&$node, $context)
     processing_form_submit($form, $form_state);
   } else form_error(t('Please, create a demand.'));
 }
-
