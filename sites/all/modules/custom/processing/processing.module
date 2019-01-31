@@ -21,27 +21,26 @@ function processing_menu()
  */
 function processing_get_json()
 {
-  global $_POST;
+  $post = file_get_contents("php://input", TRUE);
 
   $log = date('Y-m-d H:i:s') . ' ';
-  $log .= is_array($_POST) ? json_encode($_POST) : $_POST;
+  $log .= is_string($post) ? $post : json_encode($post);
   $log .= PHP_EOL;
 
   file_put_contents('log_processing.log', $log, FILE_APPEND | LOCK_EX);
 
-  if ($_POST) {
-    $json = drupal_json_decode($_POST);
+  if ($post) {
+    $json = drupal_json_decode($post);
 
     $node = node_load($json['demand_id']);
     $updated = db_update('processing');
-    if($json['percent'] == 100) {
+    if ($json['percent'] == 100) {
       $updated->fields(array(
         'percent' => $json['percent'],
         'status' => 'Готов',
         'demand' => $node->title,
       ));
-    }
-    else {
+    } else {
       $updated->fields(array(
         'percent' => $json['percent'],
         'status' => 'В обработке',
@@ -55,6 +54,18 @@ function processing_get_json()
   }
 
   return json_encode(array('result' => 'OK'));
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function processing_theme_registry_alter(&$theme_registry)
+{
+  if (arg(0) == "processing_get_json") {
+    $theme_registry['page']['template'] = 'processing_get_json';
+    $theme_registry['page']['path'] = drupal_get_path('module', 'processing') . '/templates/';
+  }
+  drupal_theme_rebuild();
 }
 
 /**
