@@ -33,24 +33,25 @@ function processing_get_json()
     $json = drupal_json_decode($post);
 
     $node = node_load($json['demand_id']);
-    $updated = db_update('processing');
+    $updated = db_merge('processing')
+      ->key(array('entity_id' => $json['fid']));
     if ($json['percent'] == 100) {
       $updated->fields(array(
         'percent' => $json['percent'],
         'status' => 'Готов',
+        'demand_id' => $json['demand_id'],
         'demand' => $node->title,
       ));
     } else {
       $updated->fields(array(
         'percent' => $json['percent'],
         'status' => 'В обработке',
+        'demand_id' => $json['demand_id'],
         'demand' => $node->title,
       ));
     }
+    $updated->execute();
 
-    $updated->condition('entity_id', $json['fid'], '=')
-      ->condition('demand_id', $json['demand_id'], '=')
-      ->execute();
   }
 
   return json_encode(array('result' => 'OK'));
