@@ -193,6 +193,13 @@ function documents_list_views_default_views() {
   $handler->display->display_options['fields']['filename_1']['table'] = 'file_managed';
   $handler->display->display_options['fields']['filename_1']['field'] = 'filename';
   $handler->display->display_options['fields']['filename_1']['label'] = 'Название';
+  /* Field: File: File ID */
+  $handler->display->display_options['fields']['fid']['id'] = 'fid';
+  $handler->display->display_options['fields']['fid']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['fid']['field'] = 'fid';
+  $handler->display->display_options['fields']['fid']['label'] = '';
+  $handler->display->display_options['fields']['fid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['fid']['element_label_colon'] = FALSE;
   /* Field: File: Size */
   $handler->display->display_options['fields']['filesize']['id'] = 'filesize';
   $handler->display->display_options['fields']['filesize']['table'] = 'file_managed';
@@ -211,6 +218,8 @@ function documents_list_views_default_views() {
   $handler->display->display_options['fields']['status']['table'] = 'processing';
   $handler->display->display_options['fields']['status']['field'] = 'status';
   $handler->display->display_options['fields']['status']['label'] = 'Состояние';
+  $handler->display->display_options['fields']['status']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['status']['alter']['text'] = '<span id="status-[fid]">[status]</span>';
   $handler->display->display_options['fields']['status']['empty'] = 'Новый';
   $handler->display->display_options['fields']['status']['hide_alter_empty'] = FALSE;
   /* Field: Processing: Demand */
@@ -227,6 +236,9 @@ function documents_list_views_default_views() {
   $handler->display->display_options['fields']['percent']['id'] = 'percent';
   $handler->display->display_options['fields']['percent']['table'] = 'processing';
   $handler->display->display_options['fields']['percent']['field'] = 'percent';
+  $handler->display->display_options['fields']['percent']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['percent']['alter']['text'] = '<span id="percent-[fid]">[percent]</span>';
+  $handler->display->display_options['fields']['percent']['element_default_classes'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -260,10 +272,12 @@ function documents_list_views_default_views() {
     t('Размер'),
     t('Дата загрузки'),
     t('Состояние'),
+    t('<span id="status-[fid]">[status]</span>'),
     t('Новый'),
     t('Требование'),
     t('Path'),
     t('Percent'),
+    t('<span id="percent-[fid]">[percent]</span>'),
     t('[uri]'),
   );
   $export['document_list'] = $view;

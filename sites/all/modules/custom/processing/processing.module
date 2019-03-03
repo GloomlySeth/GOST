@@ -13,6 +13,14 @@ function processing_menu()
     ),
   );
 
+  $items['processing_get_ajax'] = array(
+    'page callback' => 'processing_get_ajax',
+    'type' => MENU_CALLBACK,
+    'access arguments' => array(
+      'access content',
+    ),
+  );
+
   return $items;
 }
 
@@ -50,23 +58,57 @@ function processing_get_json()
         'demand' => $node->title,
       ));
     }
-    $updated->execute();
 
+    $updated->execute();
   }
 
-  return json_encode(array('result' => 'OK'));
+  drupal_json_output(array('result' => 'OK'));
+  drupal_exit();
 }
 
 /**
- * Implements hook_theme_registry_alter().
+ * Implements hook_preprocess_page().
  */
-function processing_theme_registry_alter(&$theme_registry)
-{
-  if (arg(0) == "processing_get_json") {
-    $theme_registry['page']['template'] = 'processing_get_json';
-    $theme_registry['page']['path'] = drupal_get_path('module', 'processing') . '/templates/';
+function processing_preprocess_page($variables){
+  if(arg(0) == 'document_list'){
+    global $user;
+    $setting = array('processing' => array('user_id' => $user->uid));
+    drupal_add_js($setting, 'setting');
+    drupal_add_js(drupal_get_path('module', 'processing') . '/js/procent.js');
   }
-  drupal_theme_rebuild();
+}
+
+/**
+ * Page aax callback
+ */
+function processing_get_ajax()
+{
+  $post = file_get_contents("php://input", TRUE);
+
+  if ($post) {
+
+   $query = db_query("SELECT file_managed.fid AS fid, file_managed.timestamp AS file_managed_timestamp, processing.status AS processing_status, processing.percent AS processing_percent
+FROM {file_managed} file_managed
+LEFT JOIN {users} users_file_managed ON file_managed.uid = users_file_managed.uid
+LEFT JOIN {processing} processing ON file_managed.fid = processing.entity_id
+WHERE (( (users_file_managed.uid = :uid ) )AND(( (file_managed.type IN  ('document')) )))
+ORDER BY file_managed_timestamp DESC", array(':uid' => $post))->fetchAll();
+
+    $test = db_query("SELECT file_managed.fid AS fid, processing.status AS processing_status
+FROM {file_managed} file_managed
+LEFT JOIN {users} users_file_managed ON file_managed.uid = users_file_managed.uid
+LEFT JOIN {processing} processing ON file_managed.fid = processing.entity_id
+WHERE (( (users_file_managed.uid = :uid ) )AND(( (file_managed.type IN  ('document')) )))AND( (processing.status = :status ) )
+", array(':uid' => $post, ':status' => 'В обработке'))->fetchAllKeyed();
+
+    $finish = 'true';
+    if(!empty($test)) {
+      $finish = 'false';
+    }
+
+    drupal_json_output(array('uid' => $post, 'query' => $query, 'finish' => $finish));
+    drupal_exit();
+  }
 }
 
 /**
