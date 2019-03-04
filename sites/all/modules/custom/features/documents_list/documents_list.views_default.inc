@@ -227,6 +227,8 @@ function documents_list_views_default_views() {
   $handler->display->display_options['fields']['demand']['table'] = 'processing';
   $handler->display->display_options['fields']['demand']['field'] = 'demand';
   $handler->display->display_options['fields']['demand']['label'] = 'Требование';
+  $handler->display->display_options['fields']['demand']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['demand']['alter']['text'] = '<span id="demand-[fid]">[demand]</span>';
   /* Field: File: Path */
   $handler->display->display_options['fields']['uri']['id'] = 'uri';
   $handler->display->display_options['fields']['uri']['table'] = 'file_managed';
@@ -275,6 +277,7 @@ function documents_list_views_default_views() {
     t('<span id="status-[fid]">[status]</span>'),
     t('Новый'),
     t('Требование'),
+    t('<span id="demand-[fid]">[demand]</span>'),
     t('Path'),
     t('Percent'),
     t('<span id="percent-[fid]">[percent]</span>'),
