@@ -87,7 +87,7 @@ function processing_get_ajax()
 
   if ($post) {
 
-   $query = db_query("SELECT file_managed.fid AS fid, file_managed.timestamp AS file_managed_timestamp, processing.status AS processing_status, processing.percent AS processing_percent
+   $query = db_query("SELECT file_managed.fid AS fid, file_managed.timestamp AS file_managed_timestamp, processing.status AS processing_status, processing.demand AS processing_demand, processing.percent AS processing_percent
 FROM {file_managed} file_managed
 LEFT JOIN {users} users_file_managed ON file_managed.uid = users_file_managed.uid
 LEFT JOIN {processing} processing ON file_managed.fid = processing.entity_id

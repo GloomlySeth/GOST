@@ -14,8 +14,15 @@
                         success: function(data){
                             var status = data.query;
                             status.forEach(function( index ) {
-                                $("#status-" + index.fid).text(index.processing_status);
-                                $("#percent-" + index.fid).text(index.processing_percent);
+                                if(index.processing_status != null) {
+                                    $("#status-" + index.fid).text(index.processing_status);
+                                }
+                                if(index.processing_demand != null) {
+                                    $("#demand-" + index.fid).text(index.processing_demand);
+                                }
+                                if(index.processing_percent != null) {
+                                    $("#percent-" + index.fid).text(index.processing_percent);
+                                }
                             });
 
                             if(data.finish == 'true' || data == undefined) {
