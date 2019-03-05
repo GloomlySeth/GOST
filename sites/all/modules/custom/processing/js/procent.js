@@ -8,7 +8,7 @@
                 function frame() {
                     $.ajax({
                         type: 'POST',
-                        url: 'processing_get_ajax',
+                        url: '/processing_get_ajax',
                         dataType: 'json',
                         data: user_id,
                         success: function(data){
