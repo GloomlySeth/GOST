@@ -20,7 +20,7 @@
       <?php print render($page['sidebar_first']); ?>
     </div>
   </div>
-  
+
   <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1 class="title" id="page-title">

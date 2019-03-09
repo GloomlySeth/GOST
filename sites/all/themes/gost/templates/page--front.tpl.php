@@ -1,4 +1,3 @@
-
 <div class="header">
   <div class="grid__center">
     <div class="header__logo">    
@@ -7,11 +6,14 @@
         <span class="header__site-name"><?php print $site_name; ?></span>
       </a>
     </div>
-
     <div class="header__menu">
       <?php print render($page['header']); ?>
     </div>
-
+  <?php if ($messages): ?>
+    <div id="messages"><div class="section clearfix">
+      <?php print $messages; ?>
+    </div></div> <!-- /.section, /#messages -->
+  <?php endif; ?>
   </div>
 </div>
 <div class="wrap-image">
