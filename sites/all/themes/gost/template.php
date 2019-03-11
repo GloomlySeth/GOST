@@ -145,7 +145,12 @@ function _gost_form_select_options($element)
         $selected = '';
       }
       $term = taxonomy_get_term_by_name($choice, 'color_text');
-      $options .= '<option style="background-color: ' . $term[$key]->field_taxonomy_text[LANGUAGE_NONE][0]['rgb'] . ';" value="' . check_plain($key) . '" ' . $selected . '></option>';
+      if ($key != '_none') {
+        $options .= '<option style="background-color: '
+          . $term[$key]->field_taxonomy_text[LANGUAGE_NONE][0]['rgb']
+          . ';" value="' . check_plain($key) . '" '
+          . $selected . '></option>';
+      }
     }
   }
   return $options;
