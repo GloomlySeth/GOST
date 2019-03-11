@@ -279,9 +279,18 @@ function processing_form_submit($form, &$form_state)
     $name = array($form_state['values']['files_list']);
   }
 
-
   foreach ($name as $keyId => $valueId) {
     if ($valueId != 0) {
+      $statusDemand = db_select('processing', 'p');
+      $statusDemand->fields('p', array('entity_id', 'status'));
+      $statusDemand->condition('p.entity_id', $valueId);
+      $statusDemand = $statusDemand->execute()->fetchAssoc();
+      
+      if (!empty($statusDemand) && $statusDemand['status'] == 'В обработке') {
+        drupal_set_message(t('File is being processed'), 'warning');
+        break;
+      }
+
       $uri = db_select('file_managed', 'f');
       $uri->fields('f', array('uri', 'filename'));
       $uri->condition('f.fid', $valueId);
