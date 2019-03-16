@@ -50,6 +50,13 @@ function processing_get_json()
         'demand_id' => $json['demand_id'],
         'demand' => $node->title,
       ));
+    } elseif ($json['percent'] == '-1') {
+      $updated->fields(array(
+        'percent' => $json['percent'],
+        'status' => 'Ошибка обработки',
+        'demand_id' => $json['demand_id'],
+        'demand' => $node->title,
+      ));
     } else {
       $updated->fields(array(
         'percent' => $json['percent'],
@@ -69,8 +76,9 @@ function processing_get_json()
 /**
  * Implements hook_preprocess_page().
  */
-function processing_preprocess_page($variables){
-  if(arg(0) == 'document_list'){
+function processing_preprocess_page($variables)
+{
+  if (arg(0) == 'document_list') {
     global $user;
     $setting = array('processing' => array('user_id' => $user->uid));
     drupal_add_js($setting, 'setting');
@@ -86,8 +94,7 @@ function processing_get_ajax()
   $post = file_get_contents("php://input", TRUE);
 
   if ($post) {
-
-   $query = db_query("SELECT file_managed.fid AS fid, file_managed.timestamp AS file_managed_timestamp, processing.status AS processing_status, processing.demand AS processing_demand, processing.percent AS processing_percent
+    $query = db_query("SELECT file_managed.fid AS fid, file_managed.timestamp AS file_managed_timestamp, processing.status AS processing_status, processing.demand AS processing_demand, processing.percent AS processing_percent
 FROM {file_managed} file_managed
 LEFT JOIN {users} users_file_managed ON file_managed.uid = users_file_managed.uid
 LEFT JOIN {processing} processing ON file_managed.fid = processing.entity_id
@@ -102,7 +109,7 @@ WHERE (( (users_file_managed.uid = :uid ) )AND(( (file_managed.type IN  ('docume
 ", array(':uid' => $post, ':status' => 'В обработке'))->fetchAllKeyed();
 
     $finish = 'true';
-    if(!empty($test)) {
+    if (!empty($test)) {
       $finish = 'false';
     }
 
@@ -285,7 +292,7 @@ function processing_form_submit($form, &$form_state)
       $statusDemand->fields('p', array('entity_id', 'status'));
       $statusDemand->condition('p.entity_id', $valueId);
       $statusDemand = $statusDemand->execute()->fetchAssoc();
-      
+
       if (!empty($statusDemand) && $statusDemand['status'] == 'В обработке') {
         drupal_set_message(t('File is being processed'), 'warning');
         break;
