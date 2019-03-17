@@ -21,12 +21,12 @@ function gost_preprocess_views_view_table(&$vars)
   if ($vars['view']->name === 'document_list') {
     global $user;
     foreach ($vars['rows'] as $key => $value) {
-      $vars['rows'][$key]['nothing'] = inspected_done($value['nothing']);
+      $vars['rows'][$key]['nothing'] = inspected_done($value['nothing'], $vars['result'][$key]->fid);
     }
   }
 }
 
-function inspected_done($uri)
+function inspected_done($uri, $fid)
 {
   $arr = explode('/', $uri);
   $doc = $arr[count($arr) - 1];
@@ -34,10 +34,15 @@ function inspected_done($uri)
   $arr[] = $doc;
   $link = implode('/', $arr);
   if (file_exists($link)) {
-    $url = '<a href="' . file_create_url($link) . '" download><img src="/sites/all/themes/gost/images/Filetype-Word-doc.ico" width="25" height="25"/></a>';
+    $url = '
+    <span id="file-done-' . $fid . '" class="done">
+    <a href="' . file_create_url($link) . '" download>
+    <img src="/sites/all/themes/gost/images/Filetype-Word-doc.ico" width="25" height="25"/>
+    </a>
+    </span>';
     return ($url);
   }
-  return NULL;
+  return '<span id="file-done-' . $fid . '"></span>';
 }
 
 function gost_form_alter(&$form, &$form_state, $form_id)
