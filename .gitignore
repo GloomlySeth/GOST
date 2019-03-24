@@ -1,0 +1,11 @@
+\settings.php
+files/languages/*.js
+.DS_Store
+._*
+*~
+*.kpf
+*.swp
+*.swo
+.idea
+*.tmp
+/*.xml

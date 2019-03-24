@@ -1,10 +1,16 @@
+<div class="logo__header">
+    <div class="icon__logo">
+        <img src="/<?php print $directory; ?>/images/logo.png" alt="<?php print t('Home'); ?>" />
+    </div>
+    <div class="title__logo">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" >
+            <span class="site-name__logo"><?php print $site_name; ?></span>
+        </a>
+    </div>
+</div>
 <div class="header">
   <div class="grid__center">
-    <div class="header__logo">    
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" >
-        <img src="/<?php print $directory; ?>/images/logo.png" alt="<?php print t('Home'); ?>" />
-        <span class="header__site-name"><?php print $site_name; ?></span>
-      </a>
+    <div class="header__logo">
     </div>
 
     <div class="header__menu">
