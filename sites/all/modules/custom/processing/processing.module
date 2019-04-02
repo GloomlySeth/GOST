@@ -329,6 +329,7 @@ function processing_form_submit($form, &$form_state)
           );
         }
       }
+
       $processing = array(
         'user' => array(
           'uid' => $user->uid,
@@ -383,25 +384,33 @@ function processing_form_submit($form, &$form_state)
               'text' => is_empty($node, 'field_main_columns_text'),
               'number' => is_empty($node, 'field_main_columns_number'),
               'division' => is_empty($node, 'field_main_columns_division'),
-              'width' => is_empty($node, 'field_main_columns_width'),
+              'width' => array(
+                'width' => is_empty($node, 'field_main_columns_width'),
+                'first_number' => is_empty($node, 'field_main_width_number1'),
+                'second_number' => is_empty($node, 'field_main_width_number2'),
+                'first_width' => is_empty($node, 'field_main_width_number1'),
+                'second_width' => is_empty($node, 'field_main_width_number2'),
+                'first_space' => is_empty($node, 'field_main_width_space'),
+                'second_space' => is_empty($node, 'field_main_width_space2'),
+              )
             ),
             'margins' => array(
               'left' => is_empty($node, 'field_main_margins_left'),
               'right' => is_empty($node, 'field_main_margins_right'),
-              'add_mirror_indent' => is_empty($node, 'field_main_margins_mirror'),
               'str' => is_empty($node, 'field_main_margins_str'),
               'on' => is_empty($node, 'field_main_margins_on'),
-              'add_breaks' => is_empty($node, 'field_main_margins_shift'),
+              'mirror' => is_empty($node, 'field_main_margins_mirror'),
+              'breaks' => is_empty($node, 'field_main_margins_shift'),
             ),
             'interval' => array(
-              'on_page_lines' => is_empty($node, 'field_main_interval_page'),
-              'count_page_lines' => is_empty($node, 'field_main_interval_page2'),
-              'mirror' => is_empty($node, 'field_main_interval_mirror'),
               'left' => is_empty($node, 'field_main_interval_left'),
               'after' => is_empty($node, 'field_main_interval_right'),
-              'non' => is_empty($node, 'field_main_interval_non'),
               'str' => is_empty($node, 'field_main_interval_str'),
               'int' => is_empty($node, 'field_main_interval_int'),
+              'on_page_lines' => is_empty($node, 'field_main_interval_page'),
+              'count_page_lines' => is_empty($node, 'field_main_interval_page2'),
+              'non' => is_empty($node, 'field_main_interval_non'),
+
             ),
           ),
           'number' => array(
@@ -409,12 +418,6 @@ function processing_form_submit($form, &$form_state)
               'type' => is_empty($node, 'field_number_main_type'),
               'view' => is_empty($node, 'field_number_main_view'),
               'setting' => is_empty($node, 'field_number_main_setting'),
-            ),
-            'pattern' => array(
-              'pic' => is_empty($node, 'field_number_pattern_pic'),
-              'own' => is_empty($node, 'field_number_pattern_own'),
-              'table' => is_empty($node, 'field_number_pattern_table'),
-              'own2' => is_empty($node, 'field_number_pattern_own2'),
             ),
             'font' => array(
               'font' => is_empty($node, 'field_number_font_font'),
@@ -447,7 +450,12 @@ function processing_form_submit($form, &$form_state)
               'color' => is_empty($node, 'field_title_font_color'),
               'background' => is_empty($node, 'field_title_font_background'),
             ),
-            'number' => $title_number,
+            'number' => array(
+              'type' => is_empty($node, 'field_title_number_type2'),
+              'view' => is_empty($node, 'field_title_number_view2'),
+              'own' => is_empty($node, 'field_title_number_ownview2'),
+              'setting' => is_empty($node, 'field_title_number_setting2')
+            ),
           ),
           'contents' => array(
             'main' => array(
@@ -581,6 +589,7 @@ function processing_form_submit($form, &$form_state)
           ),
         ),
       );
+      die(print_r(dpm(json_encode($processing,JSON_UNESCAPED_UNICODE))));
       $data = json_encode($processing, JSON_UNESCAPED_UNICODE);
 
       $options = array(
@@ -591,34 +600,34 @@ function processing_form_submit($form, &$form_state)
       );
 
       global $user;
-      if ($user->uid == 3) {
-        $result = drupal_http_request('http://192.168.3.55:21736', $options);
-      } else {
-        $result = drupal_http_request('http://192.168.3.55:21735', $options);
-      }
+//      if ($user->uid == 3) {
+//        $result = drupal_http_request('http://192.168.3.55:21736', $options);
+//      } else {
+//        $result = drupal_http_request('http://192.168.3.55:21735', $options);
+//      }
 
-      if ($result->code == 200) {
-        drupal_set_message('Успешно отправлено');
-        $status = 'В обработке';
-        $percent = 0;
-      } else {
-        drupal_set_message("$result->code: $result->error", 'error');
-        $status = 'Ошибка обработки';
-        $percent = 0;
-      }
-      $processing_db = db_query("REPLACE {processing}
-    SET
-      entity_id = :eid,
-      status = :status,
-      demand_id = :did,
-      percent = :percent,
-      demand = :demand",
-        array(
-          ':eid' => $valueId,
-          ':status' => $status,
-          ':did' => $nid,
-          ':demand' => $node->title,
-          ':percent' => $percent));
+//      if ($result->code == 200) {
+//        drupal_set_message('Успешно отправлено');
+//        $status = 'В обработке';
+//        $percent = 0;
+//      } else {
+//        drupal_set_message("$result->code: $result->error", 'error');
+//        $status = 'Ошибка обработки';
+//        $percent = 0;
+//      }
+//      $processing_db = db_query("REPLACE {processing}
+//    SET
+//      entity_id = :eid,
+//      status = :status,
+//      demand_id = :did,
+//      percent = :percent,
+//      demand = :demand",
+//        array(
+//          ':eid' => $valueId,
+//          ':status' => $status,
+//          ':did' => $nid,
+//          ':demand' => $node->title,
+//          ':percent' => $percent));
     }
   }
 }

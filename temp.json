@@ -1,0 +1,1156 @@
+{
+
+  "field_demand_note": {
+    "und": [
+      {
+        "value": "54",
+        "format": null,
+        "safe_value": "54"
+      }
+    ]
+  },
+  "field_fields_top": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_fields_bottom": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_fields_left": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_fields_right": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_paper_size": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_paper_orientation": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_setting": [],
+  "field_pic_size_valid": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_pic_size_2": {
+    "und": [
+      {
+        "value": "5"
+      }
+    ]
+  },
+  "field_pic_size_1": {
+    "und": [
+      {
+        "value": "5"
+      }
+    ]
+  },
+  "field_pic_border_thickness": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_pic_border_color": {
+    "und": [
+      {
+        "rgb": "5"
+      }
+    ]
+  },
+  "field_pic_border_type": [],
+  "field_pic_align_pic": [],
+  "field_pic_label_align": [],
+  "field_pic_label_setting": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_pic_number_type": [],
+  "field_pic_number_view": [],
+  "field_pic_number_setting": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_pic_indents_top": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_pic_indents_top2": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_pic_indents_text": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_pic_indents_text2": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_pic_indents_pic": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_pic_indents_pic2": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_main_interval_page": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_main_interval_page2": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_header_setting_font": {
+    "und": [
+      {
+        "tid": "1"
+      }
+    ]
+  },
+  "field_header_setting_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_header_setting_align": [],
+  "field_header_setting_typeface": [],
+  "field_header_setting_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_header_setting_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_header_setting_text": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_header_number_page": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_main_margins_left": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_main_margins_right": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_main_margins_mirror": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_main_margins_str": [],
+  "field_main_margins_on": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_header_filter_from": {
+    "und": [
+      {
+        "value": "5",
+        "format": null,
+        "safe_value": "5"
+      }
+    ]
+  },
+  "field_header_filter_skip": {
+    "und": [
+      {
+        "value": "5",
+        "format": null,
+        "safe_value": "5"
+      }
+    ]
+  },
+  "field_main_interval_left": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_main_interval_right": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_main_margins_shift": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_main_interval_non": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_main_interval_str": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_main_interval_int": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_main_columns_text": [],
+  "field_main_columns_number": {
+    "und": [
+      {
+        "value": "5"
+      }
+    ]
+  },
+  "field_main_columns_division": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_main_columns_width": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_main_width_number1": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_main_width_number2": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_main_width_width": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_main_width_width2": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_main_width_space": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_main_width_space2": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_number_main_type": [],
+  "field_number_main_view": [],
+  "field_number_main_setting": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_quotes_main_symbol": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_table_label_location": [],
+  "field_table_label_font": {
+    "und": [
+      {
+        "tid": "1"
+      }
+    ]
+  },
+  "field_table_label_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_table_label_align": [],
+  "field_table_label_typeface": [],
+  "field_table_label_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_table_label_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_table_label_header": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_table_label_number": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_table_label_line": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_table_label_continue": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_contents_main_position": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_contents_main_setting": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_number_pattern_pic": [],
+  "field_number_pattern_own": {
+    "und": [
+      {
+        "value": "5",
+        "format": null,
+        "safe_value": "5"
+      }
+    ]
+  },
+  "field_number_pattern_table": [],
+  "field_number_pattern_own2": {
+    "und": [
+      {
+        "value": "5",
+        "format": null,
+        "safe_value": "5"
+      }
+    ]
+  },
+  "field_table_number_type": [],
+  "field_table_number_view": [],
+  "field_table_number_setting": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_formula_number_type": [],
+  "field_formula_number_setting": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_title_number_r": {
+    "und": [
+      {
+        "value": "28",
+        "revision_id": "28"
+      }
+    ]
+  },
+  "field_list_number_1": {
+    "und": [
+      {
+        "value": "29",
+        "revision_id": "29"
+      }
+    ]
+  },
+  "field_main_font_font": {
+    "und": [
+      {
+        "tid": "1"
+      }
+    ]
+  },
+  "field_main_font_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_main_font_align": [],
+  "field_main_font_typeface": [],
+  "field_main_font_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_main_font_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_formula_indents_text": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_formula_indents_text2": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_formula_indents_formula": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_formula_indents_formula2": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_formula_number_view": {
+    "und": [
+      {
+        "value": "(нет)"
+      }
+    ]
+  },
+  "field_number_font_font": {
+    "und": [
+      {
+        "tid": "42"
+      }
+    ]
+  },
+  "field_number_font_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_number_font_typeface": [],
+  "field_number_font_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_number_font_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_contents_font_align": [],
+  "field_contents_font_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_contents_font_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_contents_font_font": {
+    "und": [
+      {
+        "tid": "42"
+      }
+    ]
+  },
+  "field_contents_font_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_contents_font_typeface": [],
+  "field_pic_label_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_pic_label_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_pic_label_font": {
+    "und": [
+      {
+        "tid": "1"
+      }
+    ]
+  },
+  "field_pic_label_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_pic_label_typeface": [],
+  "field_table_number_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_table_number_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_table_number_font": {
+    "und": [
+      {
+        "tid": "42"
+      }
+    ]
+  },
+  "field_table_number_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_table_number_typeface": [],
+  "field_pic_font_font": {
+    "und": [
+      {
+        "tid": "1"
+      }
+    ]
+  },
+  "field_pic_font_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_pic_font_typeface": [],
+  "field_pic_font_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_pic_font_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_field_table_number_own2": {
+    "und": [
+      {
+        "value": "5",
+        "format": null,
+        "safe_value": "5"
+      }
+    ]
+  },
+  "field_table_align": [],
+  "field_table_border_color": {
+    "und": [
+      {
+        "rgb": "5"
+      }
+    ]
+  },
+  "field_table_border_thickness": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_table_border_type": [],
+  "field_table_indents_pic": [],
+  "field_table_indents_pic2": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_table_indents_text": [],
+  "field_table_indents_text2": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_table_indents_top": {
+    "und": [
+      {
+        "value": "55.00"
+      }
+    ]
+  },
+  "field_table_indents_top2": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_int_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_int_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_int_font": {
+    "und": [
+      {
+        "tid": "42"
+      }
+    ]
+  },
+  "field_int_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_int_typeface": [],
+  "field_pic_number_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_pic_number_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_pic_number_font": {
+    "und": [
+      {
+        "tid": "42"
+      }
+    ]
+  },
+  "field_pic_number_own2": {
+    "und": [
+      {
+        "value": "5",
+        "format": null,
+        "safe_value": "5"
+      }
+    ]
+  },
+  "field_pic_number_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_pic_number_typeface": [],
+  "field_table_header_font_align": [],
+  "field_table_header_font_backgrou": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_table_header_font_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_table_header_font_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_table_header_font_typef": [],
+  "field_table_headre_font_font": {
+    "und": [
+      {
+        "tid": "42"
+      }
+    ]
+  },
+  "field_table_text_align": [],
+  "field_table_text_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_table_text_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_table_text_font": {
+    "und": [
+      {
+        "tid": "1"
+      }
+    ]
+  },
+  "field_table_text_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_table_text_typeface": [],
+  "field_contents_first": [],
+  "field_contents_first_02": [],
+  "field_contents_first_03": [],
+  "field_contents_firstan": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_contents_firstan_02": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_contents_firstan_03": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_contents_font_symbol": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_contents_second": [],
+  "field_contents_second_02": [],
+  "field_contents_second_03": [],
+  "field_contents_secondan": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_contents_secondan_02": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_contents_secondan_03": {
+    "und": [
+      {
+        "value": "5.00"
+      }
+    ]
+  },
+  "field_contents_title": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_literature_align": [],
+  "field_literature_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_literature_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_literature_font": {
+    "und": [
+      {
+        "tid": "42"
+      }
+    ]
+  },
+  "field_literature_header": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_literature_header_own": {
+    "und": [
+      {
+        "value": "5",
+        "format": null,
+        "safe_value": "5"
+      }
+    ]
+  },
+  "field_literature_own": {
+    "und": [
+      {
+        "value": "5",
+        "format": null,
+        "safe_value": "5"
+      }
+    ]
+  },
+  "field_literature_setting": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_literature_size": {
+    "und": [
+      {
+        "tid": "4"
+      }
+    ]
+  },
+  "field_literature_style": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_literature_typeface": [],
+  "field_literature_view": [],
+  "field_form_align": [],
+  "field_form_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_form_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_form_divide": [],
+  "field_form_font": {
+    "und": [
+      {
+        "tid": "1"
+      }
+    ]
+  },
+  "field_form_multiply": [],
+  "field_form_num_on": {
+    "und": [
+      {
+        "value": "0"
+      }
+    ]
+  },
+  "field_form_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_form_typeface": [],
+  "field_formula_int_align": [],
+  "field_formula_int_background": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_formula_int_color": {
+    "und": [
+      {
+        "tid": "62"
+      }
+    ]
+  },
+  "field_formula_int_font": {
+    "und": [
+      {
+        "tid": "42"
+      }
+    ]
+  },
+  "field_formula_int_size": {
+    "und": [
+      {
+        "tid": "52"
+      }
+    ]
+  },
+  "field_formula_int_typeface": [],
+  "rdf_mapping": {
+    "rdftype": [
+      "sioc:Item",
+      "foaf:Document"
+    ],
+    "title": {
+      "predicates": [
+        "dc:title"
+      ]
+    },
+    "created": {
+      "predicates": [
+        "dc:date",
+        "dc:created"
+      ],
+      "datatype": "xsd:dateTime",
+      "callback": "date_iso8601"
+    },
+    "changed": {
+      "predicates": [
+        "dc:modified"
+      ],
+      "datatype": "xsd:dateTime",
+      "callback": "date_iso8601"
+    },
+    "body": {
+      "predicates": [
+        "content:encoded"
+      ]
+    },
+    "uid": {
+      "predicates": [
+        "sioc:has_creator"
+      ],
+      "type": "rel"
+    },
+    "name": {
+      "predicates": [
+        "foaf:name"
+      ]
+    },
+    "comment_count": {
+      "predicates": [
+        "sioc:num_replies"
+      ],
+      "datatype": "xsd:integer"
+    },
+    "last_activity": {
+      "predicates": [
+        "sioc:last_activity_date"
+      ],
+      "datatype": "xsd:dateTime",
+      "callback": "date_iso8601"
+    }
+  },
+  "name": "test",
+  "picture": "344",
+  "data": "b:0;"
+}1

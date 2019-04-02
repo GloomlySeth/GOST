@@ -1,0 +1,853 @@
+{
+  "user": {
+    "uid": "3"
+  },
+  "file": {
+    "patch": "http:\/\/wz.argoosnet.by\/system\/files\/3\/raw\/07\/2018\/mazur_for_s.docx",
+    "name": "mazur_for_s.docx"
+  },
+  "demands": {
+    "name": "STP BSUIR",
+    "note": [
+      "aaa"
+    ],
+    "fields": {
+      "top": [
+        "20.00"
+      ],
+      "bottom": [
+        "27.00"
+      ],
+      "left": [
+        "30.00"
+      ],
+      "right": [
+        "15.00"
+      ]
+    },
+    "paper": {
+      "size": [
+        "A4"
+      ],
+      "orientation": [
+        "knizhnaia"
+      ]
+    },
+    "header": {
+      "setting": {
+        "font": [
+          "Times New Roman"
+        ],
+        "size": [
+          14
+        ],
+        "align": [
+          "centred"
+        ],
+        "typeface": [
+          "bold"
+        ],
+        "color": [
+          null
+        ],
+        "background": [
+          null
+        ],
+        "setting": []
+      },
+      "number": {
+        "number_page": [
+          "Vnizu"
+        ]
+      },
+      "filter": {
+        "filter_from": [
+          "3"
+        ],
+        "filter_skip": [
+          "null"
+        ]
+      }
+    },
+    "main": {
+      "font": {
+        "font": [
+          "Times New Roman"
+        ],
+        "size": [
+          14
+        ],
+        "align": [
+          "shirina"
+        ],
+        "typeface": [
+          null
+        ],
+        "color": [
+          null
+        ],
+        "background": [
+          null
+        ]
+      },
+      "columns": {
+        "text": [
+          "odna"
+        ],
+        "number": [
+          null
+        ],
+        "division": [
+          ""
+        ],
+        "width": [
+          ""
+        ]
+      },
+      "margins": {
+        "left": [
+          null
+        ],
+        "right": [
+          null
+        ],
+        "mirror": [
+          ""
+        ],
+        "str": [
+          "otstup"
+        ],
+        "on": [
+          "1.25"
+        ],
+        "add_mirror_indent": [],
+        "add_breaks": []
+      },
+      "interval": {
+        "on_page_lines": [],
+        "count_page_lines": [
+          null
+        ],
+        "mirror": [
+          ""
+        ],
+        "left": [
+          "0.00"
+        ],
+        "after": [
+          "0.00"
+        ],
+        "non": [
+          ""
+        ],
+        "str": [
+          "mnozhitel"
+        ],
+        "int": [
+          "1.15"
+        ],
+        "shift": [
+          ""
+        ]
+      }
+    },
+    "number": {
+      "main": {
+        "type": [
+          "skvoznaya"
+        ],
+        "view": [
+          null
+        ],
+        "setting": [
+          ""
+        ]
+      },
+      "pattern": {
+        "pic": [
+          "risunok"
+        ],
+        "own": [
+          null
+        ],
+        "table": [
+          "tablica"
+        ],
+        "own2": [
+          null
+        ]
+      },
+      "font": {
+        "font": [
+          "Times New Roman"
+        ],
+        "size": [
+          14
+        ],
+        "align": [
+          "shirina"
+        ],
+        "typeface": [
+          null
+        ],
+        "color": [
+          null
+        ],
+        "background": [
+          null
+        ]
+      }
+    },
+    "title": {
+      "main": {
+        "levelhead": [
+          2
+        ],
+        "level": [
+          "H1"
+        ],
+        "spelling": [
+          "zaglavnye"
+        ],
+        "pattern": [
+          null
+        ],
+        "own": [
+          null
+        ],
+        "text": [
+          null
+        ],
+        "interval": [
+          "newpage"
+        ],
+        "after": [
+          "probelstring"
+        ],
+        "first": [
+          "otstup"
+        ],
+        "firstan": [
+          1.25
+        ],
+        "second": [
+          "otstup"
+        ],
+        "secondan": [
+          1.75
+        ]
+      },
+      "font": {
+        "font": [
+          "Times New Roman"
+        ],
+        "size": [
+          14
+        ],
+        "align": [
+          "left"
+        ],
+        "typeface": [
+          null
+        ],
+        "color": [
+          null
+        ],
+        "background": [
+          null
+        ]
+      },
+      "number": [
+        {
+          "type": [
+            null
+          ],
+          "view": [
+            null
+          ],
+          "ownview": [
+            1
+          ],
+          "setting": [
+            null
+          ]
+        },
+        {
+          "main": {
+            "level": [
+              "H2"
+            ],
+            "spelling": [
+              "strochnye"
+            ],
+            "pattern": [
+              null
+            ],
+            "own": [
+              null
+            ],
+            "text": [
+              null
+            ],
+            "interval": [
+              "probelstring"
+            ],
+            "after": [
+              "probelstring"
+            ],
+            "first": [
+              "otstup"
+            ],
+            "firstan": [
+              1.25
+            ],
+            "second": [
+              "otstup"
+            ],
+            "secondan": [
+              0
+            ]
+          },
+          "font": {
+            "font": [
+              "Times New Roman"
+            ],
+            "size": [
+              14
+            ],
+            "align": [
+              "left"
+            ],
+            "typeface": [
+              "solid"
+            ],
+            "color": [
+              null
+            ],
+            "background": [
+              null
+            ]
+          },
+          "number": [
+            {
+              "type": [
+                null
+              ],
+              "view": [
+                null
+              ],
+              "ownview": [
+                1.1
+              ],
+              "setting": [
+                null
+              ]
+            }
+          ]
+        }
+      ],
+      "contents": {
+        "main": {
+          "position": [
+            "v nachale dokumenta"
+          ],
+          "header": [
+            "Soderzhanie"
+          ],
+          "setting": [
+            ""
+          ],
+          "symbols": [
+            "tochki"
+          ]
+        },
+        "font": {
+          "font": [
+            "Times New Roman"
+          ],
+          "size": [
+            12
+          ],
+          "align": [
+            "left"
+          ],
+          "typeface": [
+            null
+          ],
+          "color": [
+            null
+          ],
+          "background": [
+            null
+          ]
+        }
+      },
+      "pic": {
+        "size": {
+          "position": [
+            "dopustimye razmery"
+          ],
+          "size_1": [
+            null
+          ],
+          "size_2": [
+            null
+          ]
+        },
+        "border": {
+          "thickness": [
+            null
+          ],
+          "color": [
+            null
+          ],
+          "type": [
+            null
+          ]
+        },
+        "align": {
+          "align": [
+            "centred"
+          ]
+        },
+        "label": {
+          "setting": [
+            ""
+          ],
+          "font": [
+            "Times New Roman"
+          ],
+          "size": [
+            14
+          ],
+          "align": [
+            "centred"
+          ],
+          "typeface": [
+            null
+          ],
+          "color": [
+            null
+          ],
+          "background": [
+            null
+          ]
+        },
+        "indents": {
+          "top": [
+            "1.00"
+          ],
+          "top2": [
+            "probel. stroki"
+          ],
+          "text": [
+            "1.00"
+          ],
+          "text2": [
+            "probel. stroki"
+          ],
+          "pic": [
+            "1.00"
+          ],
+          "pic2": [
+            "probel. stroki"
+          ]
+        },
+        "number": {
+          "type": [
+            "privyazka k glavam (razdelam)"
+          ],
+          "view": [
+            "Рисунок"
+          ],
+          "ownview": [
+            null
+          ],
+          "setting": [
+            ""
+          ]
+        }
+      },
+      "table": {
+        "label": {
+          "location": [
+            "do tablicy"
+          ],
+          "font": [
+            "Times New Roman"
+          ],
+          "size": [
+            14
+          ],
+          "align": [
+            "shirina"
+          ],
+          "typeface": [
+            null
+          ],
+          "color": [
+            null
+          ],
+          "background": [
+            null
+          ],
+          "header": [
+            "1"
+          ],
+          "number": [
+            ""
+          ],
+          "line": [
+            ""
+          ],
+          "continue": [
+            "1"
+          ],
+          "continue2": [
+            "left"
+          ]
+        },
+        "number": {
+          "type": [
+            "privyazka k glavam (razdelam)"
+          ],
+          "view": [
+            null
+          ],
+          "ownview": [
+            "1.1 – "
+          ],
+          "setting": [
+            ""
+          ]
+        },
+        "font": {
+          "font": [
+            "Times New Roman"
+          ],
+          "size": [
+            12
+          ],
+          "align": [
+            "shirina"
+          ],
+          "typeface": [
+            null
+          ],
+          "color": [
+            null
+          ],
+          "background": [
+            null
+          ]
+        }
+      },
+      "formula": {
+        "indents": {
+          "text": [
+            1.00
+          ],
+          "text2": [
+            " probel. stroki "
+          ],
+          "formula": [
+            1.00
+          ],
+          "formula2": [
+            " probel. stroki "
+          ]
+        },
+        "number": {
+          "type": [
+            "(1)(2)(3)"
+          ],
+          "view": [
+            " privyazka k glavam (razdelam)"
+          ],
+          "division": [
+            ""
+          ]
+        }
+      },
+      "list": {
+        "formatting": {
+          "levellist": [
+            1
+          ],
+          "level": [
+            "S1"
+          ],
+          "indentatio": [
+            1.25
+          ],
+          "number": [
+            null
+          ],
+          "main": [
+            "1"
+          ],
+          "valid": [
+            "1)",
+            "-"
+          ]
+        },
+        "number": {
+          "type": [
+            "skvoznaya"
+          ],
+          "number": [
+            null
+          ]
+        },
+        "font": {
+          "font": [
+            "Times New Roman"
+          ],
+          "size": [
+            14
+          ],
+          "align": [
+            "shirina"
+          ],
+          "typeface": [
+            null
+          ],
+          "color": [
+            null
+          ],
+          "background": [
+            null
+          ]
+        },
+        "quotes": {
+          "main": {
+            "symbol": [
+              "\" \""
+            ]
+          }
+        }
+      }
+    },
+    "font_x": [
+      "Times New Roman"
+    ],
+    "size_x": [
+      14
+    ],
+    "align_x": [
+      "centred"
+    ],
+    "font": [
+      "Times New Roman"
+    ],
+    "size": [
+      14
+    ],
+    "align": [
+      "right"
+    ],
+    "fontpic": [
+      "Times New Roman"
+    ],
+    "view": [
+      null
+    ],
+    "picOwnNumFormat": [
+      "1.1 -"
+    ],
+    "picNumberFont": [
+      "Times New Roman"
+    ],
+    "picNumberSize": [
+      14
+    ],
+    "picNumberTypeface": [
+      null
+    ],
+    "picNumberColor": [
+      null
+    ],
+    "picNumberBackground": [
+      null
+    ],
+    "contents": {
+      "main": {
+        "firstH1": [
+          "otstup"
+        ],
+        "firstH1an": [
+          0
+        ],
+        "secondH1": [
+          "otstup"
+        ],
+        "secondH1an": [
+          0,
+          3
+        ],
+        "firstH2": [
+          "otstup"
+        ],
+        "firstH2an": [
+          0,
+          3
+        ],
+        "secondH2": [
+          "otstup"
+        ],
+        "secondH2an": [
+          1
+        ],
+        "firstH3": [
+          "otstup"
+        ],
+        "firstH3an": [
+          1
+        ],
+        "secondH3": [
+          "otstup"
+        ],
+        "secondH3an": [
+          2,
+          4
+        ]
+      },
+      "font": {
+        "font": [
+          "Times New Roman"
+        ],
+        "size": [
+          12
+        ],
+        "align": [
+          "left"
+        ],
+        "typeface": [
+          null
+        ],
+        "color": [
+          null
+        ],
+        "background": [
+          null
+        ]
+      }
+    },
+    "pic": {
+      " labelpic ": {
+        " sizepic": [
+          14
+        ],
+        "typefacepic": [
+          null
+        ],
+        "colorpic": [
+          null
+        ],
+        "backgroundpic": [
+          null
+        ]
+      }
+    },
+    "table": {
+      "border": {
+        "thickness": [
+          null
+        ],
+        "color": [
+          null
+        ],
+        "type": [
+          null
+        ]
+      },
+      "headfont": {
+        "font": [
+          "Times New Roman"
+        ],
+        "size": [
+          12
+        ],
+        "align": [
+          "centred"
+        ],
+        "typeface": [
+          null
+        ],
+        "color": [
+          null
+        ],
+        "background": [
+          null
+        ]
+      },
+      "tabletext": {
+        "font": [
+          "Times New Roman"
+        ],
+        "size": [
+          12
+        ],
+        "align": [
+          "centred"
+        ],
+        "typeface": [
+          null
+        ],
+        "color": [
+          null
+        ],
+        "background": [
+          null
+        ]
+      },
+      "indents": {
+        "top": [
+          "1.00"
+        ],
+        "top2": [
+          "probel. stroki"
+        ],
+        "lable": [
+          "0.00"
+        ],
+        "lable2": [
+          "probel. stroki"
+        ],
+        "text": [
+          "1.00"
+        ],
+        "text2": [
+          "probel. stroki"
+        ]
+      },
+      "fontlable1": {
+        "fontlabe1": [
+          "Times New Roman"
+        ],
+        "size": [
+          14
+        ],
+        "align": [
+          "left"
+        ],
+        "typeface": [
+          null
+        ],
+        "color": [
+          null
+        ],
+        "background": [
+          null
+        ],
+        "tableTemplate": [
+          "Таблица"
+        ],
+        "tableOwnTemplate": [
+          null
+        ]
+      }
+    }
+  }
+}
+
