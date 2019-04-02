@@ -311,8 +311,6 @@ function processing_form_submit($form, &$form_state)
         foreach ($node->field_title_number_r[LANGUAGE_NONE] as $key => $value) {
 
           $field_coll = field_collection_item_load($value['revision_id']);
-
-          //die(print_r(dpm(json_encode($field_coll,JSON_UNESCAPED_UNICODE))));
           $title_number[] = array(
             'main' => array(
               'level' => $field_coll->field_title_main_level['und'][0]['value'],
