@@ -5,7 +5,7 @@
  * Based on Eric Meyer's "Reset CSS 1.0" tool from
  * http://meyerweb.com/eric/tools/css/reset
  */
-
+@import url("main.css");
 html,
 body,
 div,
