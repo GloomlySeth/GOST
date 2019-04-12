@@ -1,5 +1,22 @@
 <?php
-
+function gost_preprocess_html(&$vars) {
+  $google = array(
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'google-site-verification',
+      'content' => 'ju0XLXiENIUxmvpkRGxh1_uKhwGI44agfUMbgLK_gG4',
+    ),
+  );
+  $yandex = array(
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'yandex-verification',
+      'content' => '77d8af107634263b',
+    ),
+  );
+  drupal_add_html_head($google, 'google-site-verification');
+  drupal_add_html_head($yandex, 'yandex-verification');
+}
 function gost_preprocess_views_view(&$vars)
 {
   if ($vars['view']->name === 'requirements_list'
