@@ -311,6 +311,7 @@ function processing_form_submit($form, &$form_state) {
       $node = node_load($nid);
       $title_number = [];
       $list_number = [];
+      $validatePattern = ['Глава','Гл.','Параграф'];
       if (!empty($node->field_title_number_r)) {
         foreach ($node->field_title_number_r[LANGUAGE_NONE] as $key => $value) {
 
@@ -319,7 +320,7 @@ function processing_form_submit($form, &$form_state) {
             'main' => [
               'level' => $field_coll->field_title_main_level ? $field_coll->field_title_main_level['und'][0]['value'] : null,
               'spelling' => $field_coll->field_title_main_spelling ? $field_coll->field_title_main_spelling['und'][0]['value'] : null,
-              'pattern' => $field_coll->field_title_main_pattern ? $field_coll->field_title_main_pattern['und'][0]['value'] : null,
+              'pattern' => $field_coll->field_title_main_pattern ? $validatePattern[$field_coll->field_title_main_pattern['und'][0]['value']] : null,
               'own' => $field_coll->field_title_main_own ? $field_coll->field_title_main_own['und'][0]['value'] : null,
               'text' => $field_coll->field_title_main_text ? $field_coll->field_title_main_text['und'][0]['value'] : null,
               'interval' => $field_coll->field_title_main_interval ? $field_coll->field_title_main_interval['und'][0]['value'] : null,
