@@ -155,7 +155,11 @@ function processing_block_view($delta = '') {
   }
   return $block;
 }
-
+function validatePattern ($pattern) {
+  $field = field_info_field('field_title_main_pattern');
+  $label = $field['settings']['allowed_values'][$pattern];
+  return $label;
+}
 function is_empty($node, $value) {
   $output = field_get_items('node', $node, $value);
 
@@ -311,16 +315,14 @@ function processing_form_submit($form, &$form_state) {
       $node = node_load($nid);
       $title_number = [];
       $list_number = [];
-      $validatePattern = ['Глава','Гл.','Параграф'];
       if (!empty($node->field_title_number_r)) {
         foreach ($node->field_title_number_r[LANGUAGE_NONE] as $key => $value) {
-
           $field_coll = field_collection_item_load($value['revision_id']);
           $title_number[] = [
             'main' => [
               'level' => $field_coll->field_title_main_level ? $field_coll->field_title_main_level['und'][0]['value'] : null,
               'spelling' => $field_coll->field_title_main_spelling ? $field_coll->field_title_main_spelling['und'][0]['value'] : null,
-              'pattern' => $field_coll->field_title_main_pattern ? $validatePattern[$field_coll->field_title_main_pattern['und'][0]['value']] : null,
+              'pattern' => $field_coll->field_title_main_pattern ?validatePattern($field_coll->field_title_main_pattern['und'][0]['value']) : null,
               'own' => $field_coll->field_title_main_own ? $field_coll->field_title_main_own['und'][0]['value'] : null,
               'text' => $field_coll->field_title_main_text ? $field_coll->field_title_main_text['und'][0]['value'] : null,
               'interval' => $field_coll->field_title_main_interval ? $field_coll->field_title_main_interval['und'][0]['value'] : null,
@@ -365,7 +367,7 @@ function processing_form_submit($form, &$form_state) {
             'number' => [
               'type' => $field_coll->field_list_number_type ? $field_coll->field_list_number_type['und'][0]['value'] : null,
               'number' => $field_coll->field_field_list_number ? $field_coll->field_field_list_number['und'][0]['value'] : null,
-              'view' => $field_coll->field_list_number_view2 ? $field_coll->field_list_number_view2['und'][0]['value'] : null,
+              'view' => $field_coll->field_list_number_view2 ? taxonomy_term_load($field_coll->field_list_number_view2['und'][0]['tid'])->name  : null,
             ],
             'font' => [
               'font' => $field_coll->field_list_font_font ? taxonomy_term_load($field_coll->field_list_font_font['und'][0]['tid'])->name : null,
