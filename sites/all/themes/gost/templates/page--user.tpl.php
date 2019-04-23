@@ -36,6 +36,13 @@
       <?php print render($title_suffix); ?>
   
   <div class="data-content grid__content">
+    <?php if ($messages): ?>
+        <div id="messages">
+            <div class="section clearfix">
+                <?php print $messages; ?>
+            </div>
+        </div> <!-- /.section, /#messages -->
+    <?php endif; ?>
     <?php if ($tabs): ?>
       <div class="tabs">
         <?php print render($tabs); ?>
