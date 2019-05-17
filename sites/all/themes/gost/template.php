@@ -14,8 +14,43 @@ function gost_preprocess_html(&$vars) {
       'content' => '77d8af107634263b',
     ),
   );
+  $yandex_count = array(
+    '#tag' => 'script',
+    '#attributes' => array(
+      'type' => 'text/javascript'
+    ),
+    '#value' => '(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(53538751, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); ',
+  );
+  $google_count = array(
+    '#tag' => 'script',
+
+    '#attributes' => array(
+      'src' => 'https://www.googletagmanager.com/gtag/js?id=UA-139585561-1',
+      'type' => 'text/javascript',
+      'acync' => true,
+    ),
+    '#value' => ''
+  );
+  $script_google = array(
+    '#tag' => 'script',
+    '#attributes' => array(
+      'type' => 'text/javascript'
+    ),
+    '#value' => '  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag(\'js\', new Date());
+                  gtag(\'config\', \'UA-139585561-1\');
+                ',);
+  $noscript = array(
+    '#tag' => 'noscript',
+    '#value' => '<div><img src="https://mc.yandex.ru/watch/53538751" style="position:absolute; left:-9999px;" alt="" /></div>'
+  );
   drupal_add_html_head($google, 'google-site-verification');
+  drupal_add_html_head($google_count, 'google_count');
+  drupal_add_html_head($script_google, 'script_google');
   drupal_add_html_head($yandex, 'yandex-verification');
+  drupal_add_html_head($yandex_count, 'yandex_count');
+  drupal_add_html_head($noscript, 'noscript');
 }
 function gost_preprocess_views_view(&$vars)
 {
