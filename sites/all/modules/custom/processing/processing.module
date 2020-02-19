@@ -703,7 +703,11 @@ function processing_form_submit($form, &$form_state) {
         $percent = 0;
       }
       else {
-        drupal_set_message("$result->code: $result->error", 'error');
+        drupal_set_message(
+          t('We apologise. Currently, technological work is 
+          underway on the document processing server. Try to process 
+          your document later.'
+          ), 'warning');
         $status = 'Ошибка обработки';
         $percent = 0;
       }
