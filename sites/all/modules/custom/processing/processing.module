@@ -698,7 +698,7 @@ function processing_form_submit($form, &$form_state) {
       }
 
       if ($result->code == 200) {
-        drupal_set_message('Успешно отправлено');
+        drupal_set_message(t('successfully sent'));
         $status = 'В обработке';
         $percent = 0;
       }
