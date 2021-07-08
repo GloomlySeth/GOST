@@ -1,0 +1,4 @@
+name = Download documents
+description = Download documents.
+core = 7.x
+version = 1.x
