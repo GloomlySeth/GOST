@@ -1,0 +1,3 @@
+name = gost_profile
+description = Placeholder for user form (registration, forgot password).
+core = 7.x

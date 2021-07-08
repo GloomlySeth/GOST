@@ -2612,3 +2612,7 @@ body.page-user-edit-company-info #user-profile-form h2 {
     width: 70%;
     float: left;
 }
+
+#user-register-form  label {
+  display: none;
+}
